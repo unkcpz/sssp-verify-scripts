@@ -1,0 +1,51 @@
+import os
+
+from aiida import orm
+
+from aiida.plugins import WorkflowFactory, DataFactory
+from aiida.engine import submit
+
+UpfData = DataFactory('pseudo.upf')
+VerificationWorkChain = WorkflowFactory('sssp_workflow.verification')
+
+def submit_verification(pw_code, ph_code, upf, label, dual, test_mode=False):
+    if test_mode:
+        protocol = 'theos-test'
+    else:
+        protocol = 'theos'
+    inputs = {
+        'pw_code': pw_code,
+        'ph_code': ph_code,
+        'pseudo': upf,
+        'label': orm.Str(label),
+        'protocol': orm.Str(protocol),
+        'dual': orm.Float(dual),
+        'options': orm.Dict(
+                dict={
+                    'resources': {
+                        'num_machines': 1,
+                        'num_mpiprocs_per_machine': 128,
+                    },
+                    'max_wallclock_seconds': 1800 * 3,
+                    'withmpi': True,
+                }),
+        'parallelization': orm.Dict(dict={'npool': 16}),
+        'clean_workdir_level': orm.Int(1),
+    }
+
+    node = submit(VerificationWorkChain, **inputs)
+    return node
+
+def verify_pseudos_in_folder(sssp_dir, element, pseudos_dict, pw_code, ph_code, test_mode=False):
+    for key, value in pseudos_dict.items():
+        pp_path = os.path.join(sssp_dir, element, key)
+        dual = value['dual']
+        label = value['label']
+        if test_mode:
+            label = f'{label}::T'
+        with open(pp_path, 'rb') as stream:
+            pseudo = UpfData(stream)
+
+        node = submit_verification(pw_code, ph_code, pseudo, label, dual, test_mode)
+        node.description = label
+        print(node, node.description)
