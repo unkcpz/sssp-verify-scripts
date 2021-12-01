@@ -43,6 +43,10 @@ def get_pseudos_dict(element_dir):
     return d
 
 if __name__ == '__main__':
-    folder = './_sssp/Bi/'
+    import sys
+    
+    element = sys.argv[1]
+    
+    folder = f'./_sssp/{element}/'
     d = get_pseudos_dict(folder)
     print(json.dumps(d, sort_keys=False, indent=4))
