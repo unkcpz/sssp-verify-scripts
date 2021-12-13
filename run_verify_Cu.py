@@ -16,34 +16,34 @@ PSEUDOS_DICT = {
             'dual': 4,
             'label': 'cu/sg15/z=19/nc/v1.2'
         },
-        'cu_pbe_v1.2.uspp.F.UPF': {
-            'dual': 8,
-            'label': 'cu/gbrv/z=19/us/v1.2'
-        },
-        'Cu.pbe-dn-kjpaw_psl.0.2.UPF': {
-            'dual': 8,
-            'label': 'cu/psl(low)/z=11/paw/v0.2'
-        },
-        'Cu.pbe-dn-kjpaw_psl.1.0.0.UPF': {
-            'dual': 8,
-            'label': 'cu/psl(low)/z=11/paw/v1.0.0'
-        },
-        'Cu.pbe-dn-rrkjus_psl.0.2.UPF': {
-            'dual': 8,
-            'label': 'cu/psl(low)/z=11/us/v0.2'
-        },
-        'Cu.pbe-dn-rrkjus_psl.1.0.0.UPF': {
-            'dual': 8,
-            'label': 'cu/psl(low)/z=11/us/v1.0.0'
-        },
-        'Cu.pbe-spn-kjpaw_psl.1.0.0.UPF': {
-            'dual': 8,
-            'label': 'cu/psl/z=19/pav/v1.0.0'
-        }, 
-        'Cu.pbe-spn-rrkjus_psl.1.0.0.UPF': {
-            'dual': 8,
-            'label': 'cu/psl/z=19/us/v1.0.0'
-        },  
+        # 'cu_pbe_v1.2.uspp.F.UPF': {
+        #     'dual': 8,
+        #     'label': 'cu/gbrv/z=19/us/v1.2'
+        # },
+        # 'Cu.pbe-dn-kjpaw_psl.0.2.UPF': {
+        #     'dual': 8,
+        #     'label': 'cu/psl(low)/z=11/paw/v0.2'
+        # },
+        # 'Cu.pbe-dn-kjpaw_psl.1.0.0.UPF': {
+        #     'dual': 8,
+        #     'label': 'cu/psl(low)/z=11/paw/v1.0.0'
+        # },
+        # 'Cu.pbe-dn-rrkjus_psl.0.2.UPF': {
+        #     'dual': 8,
+        #     'label': 'cu/psl(low)/z=11/us/v0.2'
+        # },
+        # 'Cu.pbe-dn-rrkjus_psl.1.0.0.UPF': {
+        #     'dual': 8,
+        #     'label': 'cu/psl(low)/z=11/us/v1.0.0'
+        # },
+        # 'Cu.pbe-spn-kjpaw_psl.1.0.0.UPF': {
+        #     'dual': 8,
+        #     'label': 'cu/psl/z=19/pav/v1.0.0'
+        # }, 
+        # 'Cu.pbe-spn-rrkjus_psl.1.0.0.UPF': {
+        #     'dual': 8,
+        #     'label': 'cu/psl/z=19/us/v1.0.0'
+        # },  
     }
 
 if __name__ == '__main__':
