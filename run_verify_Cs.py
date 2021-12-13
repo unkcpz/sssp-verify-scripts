@@ -30,7 +30,11 @@ PSEUDOS_DICT = {
     },
     'Cs.pbe-spn-kjpaw_psl.1.0.0.UPF': {
         'dual': 8,
-        'label': 'cs/psl/z=9/pav/v1.0.0'
+        'label': 'cs/psl/z=9/paw/v1.0.0'
+    },
+    'Cs.pbe-spn-kjpaw_psl.web.1.0.0.UPF': {
+        'dual': 8,
+        'label': 'cs/psl(web)/z=9/paw/v1.0.0'
     },
     'Cs.pbe-spnl-kjpaw_psl.1.0.0.UPF': {
         'dual': 8,
