@@ -8,7 +8,7 @@ from aiida.engine import submit
 UpfData = DataFactory('pseudo.upf')
 VerificationWorkChain = WorkflowFactory('sssp_workflow.verification')
 
-def submit_verification(pw_code, ph_code, upf, label, dual, test_mode=False):
+def submit_verification(pw_code, ph_code, upf, label, test_mode=False):
     if test_mode:
         protocol = 'test'
     else:
@@ -25,18 +25,17 @@ def submit_verification(pw_code, ph_code, upf, label, dual, test_mode=False):
             # 'convergence:phonon_frequencies',
             # 'convergence:pressure',
         ]),
-        'dual': orm.Float(dual),
         'options': orm.Dict(
                 dict={
                     'resources': {
                         'num_machines': 1,
-                        'num_cores': 8*4,
-                        'memory_Mb': 1024*25*4,
+                        # 'num_cores': 8*2,
+                        # 'memory_Mb': 1024*20*2,
                     },
                     'max_wallclock_seconds': 1200 * 4,
                     'withmpi': True,
                 }),
-        'parallelization': orm.Dict(dict={'npool': 4 * 2}),
+        'parallelization': orm.Dict(dict={'npool': 4}),
         'clean_workdir_level': orm.Int(1),
     }
 
@@ -46,13 +45,12 @@ def submit_verification(pw_code, ph_code, upf, label, dual, test_mode=False):
 def verify_pseudos_in_folder(sssp_dir, element, pseudos_dict, pw_code, ph_code, test_mode=False):
     for key, value in pseudos_dict.items():
         pp_path = os.path.join(sssp_dir, element, key)
-        dual = value['dual']
         label = value['label']
         if test_mode:
             label = f'{label}::T'
         with open(pp_path, 'rb') as stream:
             pseudo = UpfData(stream)
 
-        node = submit_verification(pw_code, ph_code, pseudo, label, dual, test_mode)
+        node = submit_verification(pw_code, ph_code, pseudo, label, test_mode)
         node.description = label
         print(node, node.description)

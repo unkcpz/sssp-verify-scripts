@@ -1,0 +1,41 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+"""
+Running verification workchain
+"""
+import os
+
+from sssp_verify_scripts import verify_pseudos_in_folder
+
+SSSP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '_sssp')
+
+ELEMENT = 'Au'
+
+PSEUDOS_DICT = {                                                         
+    "Au_ONCV_PBE-1.0.oncvpsp2.upf": {                     
+        "label": "au/sg15(onvc2)/z=19/nc/v1.0"
+    },       
+    "Au_ONCV_PBE-1.0.oncvpsp3.upf": {                    
+        "label": "au/sg15(onvc3)/z=19/nc/v1.0"
+    },       
+    "Au_ONCV_PBE-1.0.oncvpsp3-sssp.upf": {                    
+        "label": "au/sg15(onvc3-sssp)/z=19/nc/v1.0"
+    },       
+    "Au_ONCV_PBE-1.0.oncvpsp4.upf": {                    
+        "label": "au/sg15(onvc4)/z=19/nc/v1.0"
+    },           
+    "au_pbe_v1.uspp.F.UPF": {
+        "label": "au/gbrv/z=11/us/v1"
+    },
+}                                                                                                            
+
+
+if __name__ == '__main__':
+    from aiida.orm import load_code
+
+    # pw_code = load_code('pw-6.8@eiger-hq')
+    # ph_code = load_code('ph-6.8@eiger-hq')
+    pw_code = load_code('pw-6.8@eiger-mc-mr0')
+    ph_code = load_code('ph-6.8@eiger-mc-mr0')
+
+    verify_pseudos_in_folder(SSSP_DIR, ELEMENT, PSEUDOS_DICT, pw_code, ph_code, test_mode=False)
