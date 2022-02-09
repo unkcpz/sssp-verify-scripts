@@ -10,7 +10,7 @@ VerificationWorkChain = WorkflowFactory('sssp_workflow.verification')
 
 def submit_verification(pw_code, ph_code, upf, label, dual, test_mode=False):
     if test_mode:
-        protocol = 'theos-test'
+        protocol = 'test'
     else:
         protocol = 'theos'
     inputs = {
@@ -19,17 +19,24 @@ def submit_verification(pw_code, ph_code, upf, label, dual, test_mode=False):
         'pseudo': upf,
         'label': orm.Str(label),
         'protocol': orm.Str(protocol),
+        'properties_list': orm.List(list=[
+            'delta_factor',
+            # 'convergence:cohesive_energy',
+            # 'convergence:phonon_frequencies',
+            # 'convergence:pressure',
+        ]),
         'dual': orm.Float(dual),
         'options': orm.Dict(
                 dict={
                     'resources': {
                         'num_machines': 1,
-                        'num_mpiprocs_per_machine': 128,
+                        'num_cores': 8*4,
+                        'memory_Mb': 1024*25*4,
                     },
-                    'max_wallclock_seconds': 1800 * 3,
+                    'max_wallclock_seconds': 1200 * 4,
                     'withmpi': True,
                 }),
-        'parallelization': orm.Dict(dict={'npool': 16}),
+        'parallelization': orm.Dict(dict={'npool': 4 * 2}),
         'clean_workdir_level': orm.Int(1),
     }
 

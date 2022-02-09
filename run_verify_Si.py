@@ -16,34 +16,34 @@ PSEUDOS_DICT = {
             'dual': 4,
             'label': 'si/sg15/z=4/nc/v1.2'
         },
-        'Si_ONCV_PBE-1.1.upf': {
-            'dual': 4,
-            'label': 'si/sg15/z=4/nc/v1.1'
-        },
-        'Si_ONCV_PBE-1.0.upf': {
-            'dual': 4,
-            'label': 'si/sg15/z=4/nc/v1.0'
-        },
-        'si_pbe_v1.uspp.F.UPF': {
-            'dual': 8,
-            'label': 'si/gbrv/z=4/us/v1'
-        },
-        'Si.pbe-n-kjpaw_psl.0.1.UPF': {
-            'dual': 8,
-            'label': 'si/psl/z=4/paw/v0.1'
-        },
-        'Si.pbe-n-kjpaw_psl.1.0.0.UPF': {
-            'dual': 8,
-            'label': 'si/psl(low)/z=4/paw/v1.0.0'
-        },
-        'Si.pbe-nl-rrkjus_psl.1.0.0.UPF': {
-            'dual': 8,
-            'label': 'si/psl(low)/z=4/us/v1.0.0'
-        },
-        'Si.pbe-n-rrkjus_psl.0.1.UPF': {
-            'dual': 8,
-            'label': 'si/psl/z=4/us/v0.1'
-        },
+        # 'Si_ONCV_PBE-1.1.upf': {
+        #     'dual': 4,
+        #     'label': 'si/sg15/z=4/nc/v1.1'
+        # },
+        # 'Si_ONCV_PBE-1.0.upf': {
+        #     'dual': 4,
+        #     'label': 'si/sg15/z=4/nc/v1.0'
+        # },
+        # 'si_pbe_v1.uspp.F.UPF': {
+        #     'dual': 8,
+        #     'label': 'si/gbrv/z=4/us/v1'
+        # },
+        # 'Si.pbe-n-kjpaw_psl.0.1.UPF': {
+        #     'dual': 8,
+        #     'label': 'si/psl/z=4/paw/v0.1'
+        # },
+        # 'Si.pbe-n-kjpaw_psl.1.0.0.UPF': {
+        #     'dual': 8,
+        #     'label': 'si/psl(low)/z=4/paw/v1.0.0'
+        # },
+        # 'Si.pbe-nl-rrkjus_psl.1.0.0.UPF': {
+        #     'dual': 8,
+        #     'label': 'si/psl(low)/z=4/us/v1.0.0'
+        # },
+        # 'Si.pbe-n-rrkjus_psl.0.1.UPF': {
+        #     'dual': 8,
+        #     'label': 'si/psl/z=4/us/v0.1'
+        # },
     }
 
 if __name__ == '__main__':

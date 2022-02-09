@@ -32,10 +32,10 @@ PSEUDOS_DICT = {
         'dual': 8,
         'label': 'cs/psl/z=9/paw/v1.0.0'
     },
-    'Cs.pbe-spn-kjpaw_psl.web.1.0.0.UPF': {
-        'dual': 8,
-        'label': 'cs/psl(web)/z=9/paw/v1.0.0'
-    },
+    # 'Cs.pbe-spn-kjpaw_psl.web.1.0.0.UPF': {
+    #     'dual': 8,
+    #     'label': 'cs/psl(web)/z=9/paw/v1.0.0'
+    # },
     # 'Cs.pbe-spnl-kjpaw_psl.1.0.0.UPF': {
     #     'dual': 8,
     #     'label': 'cs/psl(low)/z=9/paw/v1.0.0'
@@ -56,4 +56,4 @@ if __name__ == '__main__':
     pw_code = load_code('pw-6.8@eiger-mc-mr0')
     ph_code = load_code('ph-6.8@eiger-mc-mr0')
 
-    verify_pseudos_in_folder(SSSP_DIR, ELEMENT, PSEUDOS_DICT, pw_code, ph_code, test_mode=False)
+    verify_pseudos_in_folder(SSSP_DIR, ELEMENT, PSEUDOS_DICT, pw_code, ph_code, test_mode=True)
