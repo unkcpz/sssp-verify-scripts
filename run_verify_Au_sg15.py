@@ -18,9 +18,6 @@ PSEUDOS_DICT = {
     "Au_ONCV_PBE-1.0.oncvpsp3.upf": {                    
         "label": "au/sg15(onvc3)/z=19/nc/v1.0"
     },       
-    "Au_ONCV_PBE-1.0.oncvpsp3-sssp.upf": {                    
-        "label": "au/sg15(onvc3-sssp)/z=19/nc/v1.0"
-    },       
     "Au_ONCV_PBE-1.0.oncvpsp4.upf": {                    
         "label": "au/sg15(onvc4)/z=19/nc/v1.0"
     },           
@@ -38,4 +35,4 @@ if __name__ == '__main__':
     pw_code = load_code('pw-6.8@eiger-mc-mr0')
     ph_code = load_code('ph-6.8@eiger-mc-mr0')
 
-    verify_pseudos_in_folder(SSSP_DIR, ELEMENT, PSEUDOS_DICT, pw_code, ph_code, test_mode=False)
+    verify_pseudos_in_folder(SSSP_DIR, ELEMENT, PSEUDOS_DICT, pw_code, ph_code)
