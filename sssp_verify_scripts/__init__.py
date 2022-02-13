@@ -29,7 +29,7 @@ def submit_verification(pw_code, ph_code, upf, label):
                         # 'num_cores': 8*2,
                         # 'memory_Mb': 1024*20*2,
                     },
-                    'max_wallclock_seconds': 1200 * 4,
+                    'max_wallclock_seconds': 1200,
                     'withmpi': True,
                 }),
         'parallelization': orm.Dict(dict={'npool': 16}),
