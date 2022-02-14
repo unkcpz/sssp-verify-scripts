@@ -24,6 +24,18 @@ PSEUDOS_DICT = {
     "au_pbe_v1.uspp.F.UPF": {
         "label": "au/gbrv/z=11/us/v1"
     },
+    "Au.dojo-sr-04-std.upf": {      
+        "dual": 4,                  
+        "label": "au/dojo/z=19/nc/v04"   
+    },
+    "Au.pbe-spn-rrkjus_psl.1.0.0.UPF": {
+        "dual": 8,                 
+        "label": "au/psl(low)/z=19/us/v1.0.0"
+    },   
+    "Au.pbe-spfn-rrkjus_psl.1.0.0.UPF": {
+        "dual": 8,
+        "label": "au/psl(high)/z=33/us/v1.0.0"
+    },
 }                                                                                                            
 
 
