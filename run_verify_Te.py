@@ -44,6 +44,10 @@ PSEUDOS_DICT = {
         "dual": 4,
         "label": "te/sg15/z=16/nc/v1.2"
     },
+    # "Te_ONCV4_PBE-1.2.upf": {
+    #     "dual": 4,
+    #     "label": "te/sg15(oncv4)/z=16/nc/v1.2"
+    # },
     "te_pbe_v1.uspp.F.UPF": {
         "dual": 8,
         "label": "te/gbrv/z=6/us/v1"

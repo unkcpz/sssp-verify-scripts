@@ -30,13 +30,15 @@ def get_pseudos_dict(element_dir):
         elif 'uspp.F' in filename:
             dual = 8
             pp_family = 'gbrv'
+        elif 'GGA-PBE-paw' in filename:
+            pp_family = 'atompaw'
         
         pp_type = pp_type.lower()
         if pp_type == 'uspp':
             pp_type = 'us'
             
         d[filename] = {
-            'dual': dual,
+            # 'dual': dual,
             'label': f'{element.lower()}/{pp_family}/z={z}/{pp_type}/v',
         }
     

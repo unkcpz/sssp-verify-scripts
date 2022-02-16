@@ -1,0 +1,1166 @@
+{
+  "na/psl(low)/z=9/us/v": {
+    "delta_factor": {
+      "X2O": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -3208.4670148,
+          "volume0": 43.7598815,
+          "residuals0": 0,
+          "bulk_deriv0": 4.3177109,
+          "num_of_atoms": 3,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2825232,
+          "bulk_modulus0_GPa": 45.2652264,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 41.073312289666,
+            "1": 41.947212551445,
+            "2": 42.821112813201,
+            "3": 43.695013074752,
+            "4": 44.568913336513,
+            "5": 45.442813596681,
+            "6": 46.316713857773
+          },
+          "energies": {
+            "0": -3208.4409478056,
+            "1": -3208.4555823597,
+            "2": -3208.4640582975,
+            "3": -3208.4670014807,
+            "4": -3208.4649689264,
+            "5": -3208.4584640452,
+            "6": -3208.4479331037
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 3
+        }
+      },
+      "X2O3": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -8669.18597,
+          "volume0": 141.3641723,
+          "residuals0": 0,
+          "bulk_deriv0": 4.6128742,
+          "num_of_atoms": 10,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2833001,
+          "bulk_modulus0_GPa": 45.3897002,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 132.77498399579,
+            "1": 135.59998364891,
+            "2": 138.42498330947,
+            "3": 141.24998297025,
+            "4": 144.07498263266,
+            "5": 146.89998229124,
+            "6": 149.72498194692
+          },
+          "energies": {
+            "0": -8669.1028481986,
+            "1": -8669.1499792672,
+            "2": -8669.1769662927,
+            "3": -8669.1859574781,
+            "4": -8669.1788656473,
+            "5": -8669.157389335,
+            "6": -8669.1230659844
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 10
+        }
+      },
+      "X2O5": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -10921.0548038,
+          "volume0": 148.479951,
+          "residuals0": 0,
+          "bulk_deriv0": 4.7696395,
+          "num_of_atoms": 14,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.480847,
+          "bulk_modulus0_GPa": 77.0402234,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 139.68020811123,
+            "1": 142.65212743637,
+            "2": 145.62404676176,
+            "3": 148.59596607988,
+            "4": 151.5678854026,
+            "5": 154.53980472166,
+            "6": 157.51172404035
+          },
+          "energies": {
+            "0": -10920.913783742,
+            "1": -10920.995399661,
+            "2": -10921.041096961,
+            "3": -10921.054786056,
+            "4": -10921.039963335,
+            "5": -10920.999739468,
+            "6": -10920.936898316
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 14
+        }
+      },
+      "XO": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -1885.9334694,
+          "volume0": 27.653921,
+          "residuals0": 0,
+          "bulk_deriv0": 4.5063865,
+          "num_of_atoms": 2,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2672626,
+          "bulk_modulus0_GPa": 42.8202127,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 25.94963928434,
+            "1": 26.501759268355,
+            "2": 27.053879253625,
+            "3": 27.605999238468,
+            "4": 28.158119222823,
+            "5": 28.710239207852,
+            "6": 29.262359192247
+          },
+          "energies": {
+            "0": -1885.9176959509,
+            "1": -1885.9265329838,
+            "2": -1885.9316579757,
+            "3": -1885.9334589611,
+            "4": -1885.9322811164,
+            "5": -1885.9284351955,
+            "6": -1885.9222006594
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 2
+        }
+      },
+      "XO2": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -2448.3964383,
+          "volume0": 36.5991109,
+          "residuals0": 0,
+          "bulk_deriv0": 4.8134877,
+          "num_of_atoms": 3,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.3364066,
+          "bulk_modulus0_GPa": 53.8983043,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 34.372986044776,
+            "1": 35.104326174947,
+            "2": 35.835666302834,
+            "3": 36.567006432153,
+            "4": 37.298346561131,
+            "5": 38.029686688323,
+            "6": 38.761026817654
+          },
+          "energies": {
+            "0": -2448.3707176101,
+            "1": -2448.3853042722,
+            "2": -2448.3936483708,
+            "3": -2448.3964340001,
+            "4": -2448.3942721918,
+            "5": -2448.3877055407,
+            "6": -2448.3772186817
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 3
+        }
+      },
+      "XO3": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -3007.8889633,
+          "volume0": 81.1088317,
+          "residuals0": 0,
+          "bulk_deriv0": 4.8363268,
+          "num_of_atoms": 4,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.1289789,
+          "bulk_modulus0_GPa": 20.6647002,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 76.117421290915,
+            "1": 77.736940897928,
+            "2": 79.356460497202,
+            "3": 80.975980099265,
+            "4": 82.595499698586,
+            "5": 84.21501930354,
+            "6": 85.834538904374
+          },
+          "energies": {
+            "0": -3007.8665478872,
+            "1": -3007.8791453971,
+            "2": -3007.88641451,
+            "3": -3007.8889499307,
+            "4": -3007.8872673148,
+            "5": -3007.8818321131,
+            "6": -3007.873059027
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 4
+        }
+      },
+      "output_delta_analyze": {
+        "output_XO": {
+          "delta": 0.86189460353994,
+          "delta1": 2.2080811715184,
+          "delta_unit": "meV/atom",
+          "delta_relative": 14.464989548933,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 1.8809106212365,
+          "birch_murnaghan_results": [
+            27.653921,
+            0.2672626,
+            4.5063865
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            27.7467,
+            0.2604474499711,
+            4.7083
+          ]
+        },
+        "output_XO2": {
+          "delta": 0.80093436257665,
+          "delta1": 1.2218196859857,
+          "delta_unit": "meV/atom",
+          "delta_relative": 8.0063050940165,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 0.8670668117405,
+          "birch_murnaghan_results": [
+            36.5991109,
+            0.3364066,
+            4.8134877
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            36.669,
+            0.33370276185346,
+            4.751
+          ]
+        },
+        "output_XO3": {
+          "delta": 4.431788495284,
+          "delta1": 8.2004834681155,
+          "delta_unit": "meV/atom",
+          "delta_relative": 53.146882021894,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 7.0249797566379,
+          "birch_murnaghan_results": [
+            81.1088317,
+            0.1289789,
+            4.8363268
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            82.1903,
+            0.11889258225867,
+            3.4038
+          ]
+        },
+        "output_X2O": {
+          "delta": 0.60827961268203,
+          "delta1": 0.92240750711525,
+          "delta_unit": "meV/atom",
+          "delta_relative": 6.0556362406142,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 0.5615778516685,
+          "birch_murnaghan_results": [
+            43.7598815,
+            0.2825232,
+            4.3177109
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            43.6988,
+            0.28221657586429,
+            4.3068
+          ]
+        },
+        "output_X2O3": {
+          "delta": 3.4690654053743,
+          "delta1": 1.6464702767342,
+          "delta_unit": "meV/atom",
+          "delta_relative": 10.789663492415,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 1.9265874966218,
+          "birch_murnaghan_results": [
+            141.3641723,
+            0.2833001,
+            4.6128742
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            141.7156,
+            0.27416877755972,
+            4.7673
+          ]
+        },
+        "output_X2O5": {
+          "delta": 5.2926389027938,
+          "delta1": 1.3896851162925,
+          "delta_unit": "meV/atom",
+          "delta_relative": 9.1003519575024,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 0.90211741486985,
+          "birch_murnaghan_results": [
+            148.479951,
+            0.480847,
+            4.7696395
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            148.783,
+            0.47874351086967,
+            5.018
+          ]
+        }
+      }
+    },
+    "pseudo_info": {
+      "element": "Na",
+      "pp_type": "USPP",
+      "z_valence": 9
+    }
+  },
+  "na/psl/z=9/us/v": {
+    "delta_factor": {
+      "X2O": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -3208.4496656,
+          "volume0": 43.8836619,
+          "residuals0": 0,
+          "bulk_deriv0": 4.3207359,
+          "num_of_atoms": 3,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2816287,
+          "bulk_modulus0_GPa": 45.1219073,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 41.073312289666,
+            "1": 41.947212551445,
+            "2": 42.821112813201,
+            "3": 43.695013074752,
+            "4": 44.568913336513,
+            "5": 45.442813596681,
+            "6": 46.316713857773
+          },
+          "energies": {
+            "0": -3208.4211677149,
+            "1": -3208.4366308556,
+            "2": -3208.4458817736,
+            "3": -3208.4495508205,
+            "4": -3208.4481992311,
+            "5": -3208.4423339534,
+            "6": -3208.4324046557
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 3
+        }
+      },
+      "X2O3": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -8669.143376,
+          "volume0": 141.727463,
+          "residuals0": 0,
+          "bulk_deriv0": 4.6141089,
+          "num_of_atoms": 10,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2824613,
+          "bulk_modulus0_GPa": 45.2553171,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 132.77498399579,
+            "1": 135.59998364891,
+            "2": 138.42498330947,
+            "3": 141.24998297025,
+            "4": 144.07498263266,
+            "5": 146.89998229124,
+            "6": 149.72498194692
+          },
+          "energies": {
+            "0": -8669.0531373549,
+            "1": -8669.1027347272,
+            "2": -8669.1320173051,
+            "3": -8669.1431478493,
+            "4": -8669.1380526538,
+            "5": -8669.118441818,
+            "6": -8669.0858631252
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 10
+        }
+      },
+      "X2O5": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -10921.0173986,
+          "volume0": 148.6757456,
+          "residuals0": 0,
+          "bulk_deriv0": 4.7702562,
+          "num_of_atoms": 14,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.4800387,
+          "bulk_modulus0_GPa": 76.9107048,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 139.68020811123,
+            "1": 142.65212743637,
+            "2": 145.62404676176,
+            "3": 148.59596607988,
+            "4": 151.5678854026,
+            "5": 154.53980472166,
+            "6": 157.51172404035
+          },
+          "energies": {
+            "0": -10920.870099812,
+            "1": -10920.953965295,
+            "2": -10921.001754743,
+            "3": -10921.017392309,
+            "4": -10921.004386628,
+            "5": -10920.965859119,
+            "6": -10920.904603846
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 14
+        }
+      },
+      "XO": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -1885.9254329,
+          "volume0": 27.7240713,
+          "residuals0": 0,
+          "bulk_deriv0": 4.5102466,
+          "num_of_atoms": 2,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2665358,
+          "bulk_modulus0_GPa": 42.7037562,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 25.94963928434,
+            "1": 26.501759268355,
+            "2": 27.053879253625,
+            "3": 27.605999238468,
+            "4": 28.158119222823,
+            "5": 28.710239207852,
+            "6": 29.262359192247
+          },
+          "energies": {
+            "0": -1885.9083431263,
+            "1": -1885.9176303715,
+            "2": -1885.9231745548,
+            "3": -1885.9253660236,
+            "4": -1885.9245528114,
+            "5": -1885.9210478491,
+            "6": -1885.9151326386
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 2
+        }
+      },
+      "XO3": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -3007.8755545,
+          "volume0": 81.363011,
+          "residuals0": 0,
+          "bulk_deriv0": 4.8371949,
+          "num_of_atoms": 4,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.1284048,
+          "bulk_modulus0_GPa": 20.572722,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 76.117421290915,
+            "1": 77.736940897928,
+            "2": 79.356460497202,
+            "3": 80.975980099265,
+            "4": 82.595499698586,
+            "5": 84.21501930354,
+            "6": 85.834538904374
+          },
+          "energies": {
+            "0": -3007.8508346738,
+            "1": -3007.8642173682,
+            "2": -3007.8722180592,
+            "3": -3007.8754359413,
+            "4": -3007.8743907521,
+            "5": -3007.8695516157,
+            "6": -3007.8613367712
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 4
+        }
+      },
+      "output_delta_analyze": {
+        "output_XO": {
+          "delta": 0.24206632256852,
+          "delta1": 0.62021780179072,
+          "delta_unit": "meV/atom",
+          "delta_relative": 4.0679492457489,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 1.2302005083199,
+          "birch_murnaghan_results": [
+            27.7240713,
+            0.2665358,
+            4.5102466
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            27.7467,
+            0.2604474499711,
+            4.7083
+          ]
+        },
+        "output_XO3": {
+          "delta": 3.3421200554073,
+          "delta1": 6.1889084424068,
+          "delta_unit": "meV/atom",
+          "delta_relative": 40.386422209912,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 5.9914265511879,
+          "birch_murnaghan_results": [
+            81.363011,
+            0.1284048,
+            4.8371949
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            82.1903,
+            0.11889258225867,
+            3.4038
+          ]
+        },
+        "output_X2O": {
+          "delta": 1.8251450873109,
+          "delta1": 2.7681598795523,
+          "delta_unit": "meV/atom",
+          "delta_relative": 18.139519838097,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 1.691910866842,
+          "birch_murnaghan_results": [
+            43.8836619,
+            0.2816287,
+            4.3207359
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            43.6988,
+            0.28221657586429,
+            4.3068
+          ]
+        },
+        "output_X2O3": {
+          "delta": 0.96268101283412,
+          "delta1": 0.45700481408018,
+          "delta_unit": "meV/atom",
+          "delta_relative": 2.9967707988856,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 1.504063348194,
+          "birch_murnaghan_results": [
+            141.727463,
+            0.2824613,
+            4.6141089
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            141.7156,
+            0.27416877755972,
+            4.7673
+          ]
+        },
+        "output_X2O5": {
+          "delta": 2.0085960199624,
+          "delta1": 0.52749307079186,
+          "delta_unit": "meV/atom",
+          "delta_relative": 3.4559874004006,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 0.44894371772347,
+          "birch_murnaghan_results": [
+            148.6757456,
+            0.4800387,
+            4.7702562
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            148.783,
+            0.47874351086967,
+            5.018
+          ]
+        }
+      }
+    },
+    "pseudo_info": {
+      "element": "Na",
+      "pp_type": "USPP",
+      "z_valence": 9
+    }
+  },
+  "na/dojo/z=9/nc/v": {
+    "delta_factor": {
+      "X2O5": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -10617.0150528,
+          "volume0": 148.5750538,
+          "residuals0": 0,
+          "bulk_deriv0": 4.7775294,
+          "num_of_atoms": 14,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.4805835,
+          "bulk_modulus0_GPa": 76.9979941,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 139.68020811123,
+            "1": 142.65212743637,
+            "2": 145.62404676176,
+            "3": 148.59596607988,
+            "4": 151.5678854026,
+            "5": 154.53980472166,
+            "6": 157.51172404035
+          },
+          "energies": {
+            "0": -10616.870939801,
+            "1": -10616.953681727,
+            "2": -10617.000415782,
+            "3": -10617.015062717,
+            "4": -10617.00110872,
+            "5": -10616.961705004,
+            "6": -10616.899631348
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 14
+        }
+      },
+      "XO": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -1809.9247361,
+          "volume0": 27.683886,
+          "residuals0": 0,
+          "bulk_deriv0": 4.5137549,
+          "num_of_atoms": 2,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2670145,
+          "bulk_modulus0_GPa": 42.7804556,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 25.94963928434,
+            "1": 26.501759268355,
+            "2": 27.053879253625,
+            "3": 27.605999238468,
+            "4": 28.158119222823,
+            "5": 28.710239207852,
+            "6": 29.262359192247
+          },
+          "energies": {
+            "0": -1809.90840074,
+            "1": -1809.917433967,
+            "2": -1809.9227392343,
+            "3": -1809.9247070255,
+            "4": -1809.9236846938,
+            "5": -1809.919984626,
+            "6": -1809.9138847862
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 2
+        }
+      },
+      "XO3": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -2931.8771732,
+          "volume0": 81.233591,
+          "residuals0": 0,
+          "bulk_deriv0": 4.8356533,
+          "num_of_atoms": 4,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.1287007,
+          "bulk_modulus0_GPa": 20.620137,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 76.117421290915,
+            "1": 77.736940897928,
+            "2": 79.356460497202,
+            "3": 80.975980099265,
+            "4": 82.595499698586,
+            "5": 84.21501930354,
+            "6": 85.834538904374
+          },
+          "energies": {
+            "0": -2931.8536406372,
+            "1": -2931.8666212835,
+            "2": -2931.8742523078,
+            "3": -2931.8771209318,
+            "4": -2931.8757507026,
+            "5": -2931.8706076151,
+            "6": -2931.8621082755
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 4
+        }
+      },
+      "output_delta_analyze": {
+        "output_XO": {
+          "delta": 0.58930813914308,
+          "delta1": 1.5096376013033,
+          "delta_unit": "meV/atom",
+          "delta_relative": 9.8964029097042,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 1.5625245935248,
+          "birch_murnaghan_results": [
+            27.683886,
+            0.2670145,
+            4.5137549
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            27.7467,
+            0.2604474499711,
+            4.7083
+          ]
+        },
+        "output_XO3": {
+          "delta": 3.8959778291471,
+          "delta1": 7.2116218204549,
+          "delta_unit": "meV/atom",
+          "delta_relative": 46.909177846198,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 6.5072854985171,
+          "birch_murnaghan_results": [
+            81.233591,
+            0.1287007,
+            4.8356533
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            82.1903,
+            0.11889258225867,
+            3.4038
+          ]
+        },
+        "output_X2O5": {
+          "delta": 3.687453666373,
+          "delta1": 0.96816875913728,
+          "delta_unit": "meV/atom",
+          "delta_relative": 6.3418137776005,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 0.66628540267318,
+          "birch_murnaghan_results": [
+            148.5750538,
+            0.4805835,
+            4.7775294
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            148.783,
+            0.47874351086967,
+            5.018
+          ]
+        }
+      }
+    },
+    "pseudo_info": {
+      "element": "Na",
+      "pp_type": "NC",
+      "z_valence": 9
+    }
+  },
+  "na/atompaw/z=9/paw/v": {
+    "delta_factor": {
+      "X2O": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -3541.3929476,
+          "volume0": 44.2240572,
+          "residuals0": 0,
+          "bulk_deriv0": 4.3229858,
+          "num_of_atoms": 3,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2811089,
+          "bulk_modulus0_GPa": 45.0386288,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 41.073312289666,
+            "1": 41.947212551445,
+            "2": 42.821112813201,
+            "3": 43.695013074752,
+            "4": 44.568913336513,
+            "5": 45.442813596681,
+            "6": 46.316713857773
+          },
+          "energies": {
+            "0": -3541.35697901,
+            "1": -3541.3748511745,
+            "2": -3541.3863241741,
+            "3": -3541.3920400612,
+            "4": -3541.3925743568,
+            "5": -3541.3884482947,
+            "6": -3541.3801265094
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 3
+        }
+      },
+      "X2O3": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -9334.9821821,
+          "volume0": 142.9664389,
+          "residuals0": 0,
+          "bulk_deriv0": 4.6454179,
+          "num_of_atoms": 10,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2814434,
+          "bulk_modulus0_GPa": 45.0922225,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 132.77498399579,
+            "1": 135.59998364891,
+            "2": 138.42498330947,
+            "3": 141.24998297025,
+            "4": 144.07498263266,
+            "5": 146.89998229124,
+            "6": 149.72498194692
+          },
+          "energies": {
+            "0": -9334.8646797956,
+            "1": -9334.9231833176,
+            "2": -9334.9605955684,
+            "3": -9334.9792277469,
+            "4": -9334.9809928133,
+            "5": -9334.967701413,
+            "6": -9334.9409677254
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 10
+        }
+      },
+      "X2O5": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -11586.8595343,
+          "volume0": 149.4255165,
+          "residuals0": 0,
+          "bulk_deriv0": 4.7913119,
+          "num_of_atoms": 14,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.4789535,
+          "bulk_modulus0_GPa": 76.7368512,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 139.68020811123,
+            "1": 142.65212743637,
+            "2": 145.62404676176,
+            "3": 148.59596607988,
+            "4": 151.5678854026,
+            "5": 154.53980472166,
+            "6": 157.51172404035
+          },
+          "energies": {
+            "0": -11586.686163424,
+            "1": -11586.779106625,
+            "2": -11586.835196225,
+            "3": -11586.858428896,
+            "4": -11586.852374499,
+            "5": -11586.820245203,
+            "6": -11586.764881058
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 14
+        }
+      },
+      "XO": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -2052.3965798,
+          "volume0": 27.9161263,
+          "residuals0": 0,
+          "bulk_deriv0": 4.5268782,
+          "num_of_atoms": 2,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.2663075,
+          "bulk_modulus0_GPa": 42.6671896,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 25.94963928434,
+            "1": 26.501759268355,
+            "2": 27.053879253625,
+            "3": 27.605999238468,
+            "4": 28.158119222823,
+            "5": 28.710239207852,
+            "6": 29.262359192247
+          },
+          "energies": {
+            "0": -2052.3754777393,
+            "1": -2052.3860795665,
+            "2": -2052.3928232276,
+            "3": -2052.3961109069,
+            "4": -2052.3963028832,
+            "5": -2052.3937262373,
+            "6": -2052.3886528109
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 2
+        }
+      },
+      "XO2": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -2614.8418588,
+          "volume0": 36.9849931,
+          "residuals0": 0,
+          "bulk_deriv0": 4.8285645,
+          "num_of_atoms": 3,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.3340002,
+          "bulk_modulus0_GPa": 53.5127549,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 34.372986044776,
+            "1": 35.104326174947,
+            "2": 35.835666302834,
+            "3": 36.567006432153,
+            "4": 37.298346561131,
+            "5": 38.029686688323,
+            "6": 38.761026817654
+          },
+          "energies": {
+            "0": -2614.8063406247,
+            "1": -2614.8241827207,
+            "2": -2614.8355172143,
+            "3": -2614.8410525539,
+            "4": -2614.8414245335,
+            "5": -2614.8371877211,
+            "6": -2614.8288573643
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 3
+        }
+      },
+      "XO3": {
+        "output_birch_murnaghan_fit": {
+          "energy0": -3174.3207362,
+          "volume0": 82.4009248,
+          "residuals0": 0,
+          "bulk_deriv0": 4.8849833,
+          "num_of_atoms": 4,
+          "volume0_unit": "A^3",
+          "bulk_modulus0": 0.1271518,
+          "bulk_modulus0_GPa": 20.3719663,
+          "bulk_modulus0_unit": "eV A^3",
+          "bulk_modulus0_GPa_unit": "GPa"
+        },
+        "output_volume_energy": {
+          "volumes": {
+            "0": 76.117421290915,
+            "1": 77.736940897928,
+            "2": 79.356460497202,
+            "3": 80.975980099265,
+            "4": 82.595499698586,
+            "5": 84.21501930354,
+            "6": 85.834538904374
+          },
+          "energies": {
+            "0": -3174.2851444671,
+            "1": -3174.3019171556,
+            "2": -3174.3130380399,
+            "3": -3174.3191180154,
+            "4": -3174.3207049832,
+            "5": -3174.3183024902,
+            "6": -3174.3123406121
+          },
+          "energy_unit": "eV",
+          "volume_unit": "A^3",
+          "num_of_atoms": 4
+        }
+      },
+      "output_delta_analyze": {
+        "output_XO": {
+          "delta": 1.5803620594865,
+          "delta1": 4.0369520074099,
+          "delta_unit": "meV/atom",
+          "delta_relative": 26.364747553309,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 2.6883672257008,
+          "birch_murnaghan_results": [
+            27.9161263,
+            0.2663075,
+            4.5268782
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            27.7467,
+            0.2604474499711,
+            4.7083
+          ]
+        },
+        "output_XO2": {
+          "delta": 3.721145050625,
+          "delta1": 5.6671912726162,
+          "delta_unit": "meV/atom",
+          "delta_relative": 36.823015174404,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 3.4339706605588,
+          "birch_murnaghan_results": [
+            36.9849931,
+            0.3340002,
+            4.8285645
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            36.669,
+            0.33370276185346,
+            4.751
+          ]
+        },
+        "output_XO3": {
+          "delta": 1.3207009991592,
+          "delta1": 2.4426162770297,
+          "delta_unit": "meV/atom",
+          "delta_relative": 16.015152352189,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 4.160006461514,
+          "birch_murnaghan_results": [
+            82.4009248,
+            0.1271518,
+            4.8849833
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            82.1903,
+            0.11889258225867,
+            3.4038
+          ]
+        },
+        "output_X2O": {
+          "delta": 5.1810272177351,
+          "delta1": 7.8347575179206,
+          "delta_unit": "meV/atom",
+          "delta_relative": 50.601003778031,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 4.7833557830646,
+          "birch_murnaghan_results": [
+            44.2240572,
+            0.2811089,
+            4.3229858
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            43.6988,
+            0.28221657586429,
+            4.3068
+          ]
+        },
+        "output_X2O3": {
+          "delta": 12.336616599692,
+          "delta1": 5.841644386247,
+          "delta_unit": "meV/atom",
+          "delta_relative": 37.95152087168,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 3.7544674112548,
+          "birch_murnaghan_results": [
+            142.9664389,
+            0.2814434,
+            4.6454179
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            141.7156,
+            0.27416877755972,
+            4.7673
+          ]
+        },
+        "output_X2O5": {
+          "delta": 10.615256504224,
+          "delta1": 2.7838971708547,
+          "delta_unit": "meV/atom",
+          "delta_relative": 18.205199373072,
+          "V0_B0_B1_units_info": "all atoms for oxide / per atom for unitary + eV A^3",
+          "delta_relative_unit": "%",
+          "rel_errors_vec_length": 1.7478459634873,
+          "birch_murnaghan_results": [
+            149.4255165,
+            0.4789535,
+            4.7913119
+          ],
+          "reference_wien2k_V0_B0_B1": [
+            148.783,
+            0.47874351086967,
+            5.018
+          ]
+        }
+      }
+    },
+    "pseudo_info": {
+      "element": "Na",
+      "pp_type": "PAW",
+      "z_valence": 9
+    }
+  }
+}
