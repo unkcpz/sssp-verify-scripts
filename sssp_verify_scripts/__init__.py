@@ -18,9 +18,9 @@ def submit_verification(pw_code, ph_code, upf, label):
         'protocol_criteria': orm.Str('precision'),
         'properties_list': orm.List(list=[
             'delta_factor',
-            # 'convergence:cohesive_energy',
-            # 'convergence:phonon_frequencies',
-            # 'convergence:pressure',
+            'convergence:cohesive_energy',
+            'convergence:phonon_frequencies',
+            'convergence:pressure',
         ]),
         'options': orm.Dict(
                 dict={
