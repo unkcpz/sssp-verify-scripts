@@ -5,45 +5,76 @@ from aiida import orm
 from aiida.plugins import WorkflowFactory, DataFactory
 from aiida.engine import submit
 
+from aiida_sssp_workflow.workflows.verifications import DEFAULT_PROPERTIES_LIST
+
 UpfData = DataFactory('pseudo.upf')
 VerificationWorkChain = WorkflowFactory('sssp_workflow.verification')
 
-def submit_verification(pw_code, ph_code, upf, label, dual, test_mode=False):
-    if test_mode:
-        protocol = 'test'
-    else:
-        protocol = 'theos'
+def run_verification(
+    pw_code, ph_code, upf, properties_list=[], label=None, mode='test',
+):
+    """
+    pw_code: code for pw.x calculation
+    ph_code: code for ph.x calculation
+    upf: upf file to verify
+    properties_list: propertios to verified
+    label: if None, label will parsed from filename
+    mode: 
+        test to run on localhost with test protocol
+        precheck: precheck control protocol on convergence verification
+        standard: running a production on eiger
+    """
+    clean_level = 1
+    
     inputs = {
-        'pw_code': pw_code,
-        'ph_code': ph_code,
-        'pseudo': upf,
-        'label': orm.Str(label),
-        'protocol': orm.Str(protocol),
-        'properties_list': orm.List(list=[
-            'delta_factor',
-            # 'convergence:cohesive_energy',
-            # 'convergence:phonon_frequencies',
-            # 'convergence:pressure',
-        ]),
-        'dual': orm.Float(dual),
-        'options': orm.Dict(
-                dict={
-                    'resources': {
-                        'num_machines': 1,
-                        'num_cores': 8*4,
-                        'memory_Mb': 1024*25*4,
-                    },
-                    'max_wallclock_seconds': 1200 * 4,
-                    'withmpi': True,
-                }),
-        'parallelization': orm.Dict(dict={'npool': 4 * 2}),
-        'clean_workdir_level': orm.Int(1),
+        "accuracy": {
+            "protocol": orm.Str("test"),
+            "cutoff_control": orm.Str("test"),
+        },
+        "convergence": {
+            "protocol": orm.Str("test"),
+            "cutoff_control": orm.Str("test"),
+            "criteria": orm.Str("efficiency"),
+            # "preset_ecutwfc": orm.Int(31),
+        },
+        "pw_code": pw_code,
+        "ph_code": ph_code,
+        "pseudo": upf,
+        "properties_list": orm.List(list=properties_list),
+        "label": orm.Str(label),
+        "options": orm.Dict(
+            dict={
+                "resources": {
+                    "num_machines": 1,
+                    "num_mpiprocs_per_machine": 1,
+                },
+                "max_wallclock_seconds": 1800 * 3,
+                "withmpi": True,
+            }
+        ),
+        "parallelization": orm.Dict(dict={}),
+        "clean_workdir_level": orm.Int(clean_level),
     }
 
-    node = submit(VerificationWorkChain, **inputs)
-    return node
+    res, node = run_get_node(VerificationWorkChain, **inputs)
+    return res, node
 
 def verify_pseudos_in_folder(sssp_dir, element, pseudos_dict, pw_code, ph_code, test_mode=False):
+    for key, value in pseudos_dict.items():
+        pp_path = os.path.join(sssp_dir, element, key)
+        dual = value['dual']
+        label = value['label']
+        if test_mode:
+            label = f'{label}::T'
+        with open(pp_path, 'rb') as stream:
+            pseudo = UpfData(stream)
+
+        node = submit_verification(pw_code, ph_code, pseudo, label, dual, test_mode)
+        node.description = label
+        print(node, node.description)
+        
+        
+def verify_pseudos(sssp_path, element, pseudos_dict, pw_code, ph_code, test_mode=False):
     for key, value in pseudos_dict.items():
         pp_path = os.path.join(sssp_dir, element, key)
         dual = value['dual']
