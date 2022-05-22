@@ -1,0 +1,12 @@
+---
+label: "projwfc-7.0"
+description: Quantum ESPRESSO projwfc.x v7.0 Compiled with CpeIntel v21.12
+input_plugin: "quantumespresso.pw"
+on_computer: true
+remote_abs_path: "/apps/eiger/UES/jenkins/1.4.0/software/QuantumESPRESSO/7.0-cpeIntel-21.12/bin/projwfc.x"
+prepend_text: |
+  module load cpeIntel/21.12
+  module load QuantumESPRESSO/7.0
+
+  export OMP_NUM_THREADS=1
+append_text: " "
