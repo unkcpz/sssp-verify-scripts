@@ -20,7 +20,7 @@ SG15 inputs, some (list them) may failed to generate
 
 ## Name convention of pseudopotential UPF file
 
-The filename (it is easy to be done by using `rename` command of linux and script `psp_fn_z_set.py`) will be used to deduct the label name when submit the verification.
+The filename (it is easy to be done by using `rename` command of linux and script `psp_fn_z_set.ipynb`) will be used to deduct the label name when submit the verification.
 The naming conventios is: `<element>.<psp_type>.z_<enum>.<tool>.<library>.<version>.<extra>.upf`
 
     element: the element of pseudopotential.
