@@ -37,7 +37,7 @@ def inputs_from_mode(mode):
             }
         )
         inputs['parallization'] = orm.Dict(dict={})
-        inputs['properties_list'] = DEFAULT_PROPERTIES_LIST
+        inputs['properties_list'] = orm.List(list=DEFAULT_PROPERTIES_LIST)
         
     if mode == 'PRECHECK':
         inputs['pw_code'] = orm.load_code('pw-7.0@eiger-mc-mr0')
@@ -56,7 +56,7 @@ def inputs_from_mode(mode):
             }
         )
         inputs['parallization'] = orm.Dict(dict={'npool': 16})
-        inputs['properties_list'] = DEFAULT_CONVERGENCE_PROPERTIES_LIST
+        inputs['properties_list'] = orm.List(list=DEFAULT_CONVERGENCE_PROPERTIES_LIST)
         
     # if mode == 'standard':
     #     pw_code = load_code('pw-7.0@eiger-mc-mr0')
@@ -93,7 +93,7 @@ def run(profile, mode, filename):
     
     basename = os.path.basename(filename)
     label, _ = os.path.splitext(basename)
-    label = f'({mode}) {label}'
+    label = orm.Str(f'({mode}) {label}')
 
     with open(filename, "rb") as stream:
         pseudo = UpfData(stream)
@@ -107,9 +107,6 @@ def run(profile, mode, filename):
     )
 
     click.echo(node)
-    click.echo(click.format_filename(filename))
-
-    # verify_pseudos_in_folder(SSSP_DIR, ELEMENT, PSEUDOS_DICT, pw_code, ph_code, test_mode=False)
 
 
 if __name__ == '__main__':

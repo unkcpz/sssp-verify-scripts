@@ -22,3 +22,7 @@ verdi -p ${profile} computer setup --config $WDIR/eiger.cscs.ch/multicore-mr32/c
 verdi -p ${profile} computer configure ssh eiger-mc-mr32 --config $WDIR/eiger.cscs.ch/multicore-mr32/computer-configure.yaml
 verdi -p ${profile} code setup --config $WDIR/eiger.cscs.ch/codes/pw-7.0-multicore.yaml --computer eiger-mc-mr32
 verdi -p ${profile} code setup --config $WDIR/eiger.cscs.ch/codes/ph-7.0-multicore.yaml --computer eiger-mc-mr32
+
+# 
+verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.pw
+verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.ph

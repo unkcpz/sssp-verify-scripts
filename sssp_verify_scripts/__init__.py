@@ -5,8 +5,6 @@ from aiida import orm
 from aiida.plugins import WorkflowFactory
 from aiida.engine import submit, run_get_node
 
-from aiida_sssp_workflow.workflows.verifications import DEFAULT_PROPERTIES_LIST
-
 VerificationWorkChain = WorkflowFactory('sssp_workflow.verification')
 
 def run_verification(
@@ -55,12 +53,11 @@ def run_verification(
         "clean_workdir_level": orm.Int(clean_level),  
     }
     
-    # if cutoff_control.value == 'test':
-    #     _, node = run_get_node(VerificationWorkChain, **inputs)
-    # else:
-    #     node = submit(VerificationWorkChain, **inputs)
+    if cutoff_control.value == 'test':
+        _, node = run_get_node(VerificationWorkChain, **inputs)
+    else:
+        node = submit(VerificationWorkChain, **inputs)
         
-    # node.description = label
+    node.description = label.value
         
-    # return node
-    print(inputs)
+    return node
