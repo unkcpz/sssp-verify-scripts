@@ -25,7 +25,9 @@ def main(lib_path, dry_run=True):
                 print(filename)
         
         if '.z_' in filename:
-            raise ValueError(f'Seems already has z_valence in filename {filename}')
+            # raise ValueError(f'Seems already has z_valence in filename {filename}')
+            print(f'Seems already has z_valence set for file {filename}')
+            continue
         
         if '.nc.' in filename:
             new_name = filename.replace('.nc.', f'.nc.z_{z_valence}.')
