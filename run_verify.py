@@ -67,6 +67,7 @@ def inputs_from_mode(mode, computer_label):
             }
         )
         inputs['parallization'] = orm.Dict(dict={'npool': npool})
+        # DEFAULT_CONVERGENCE_PROPERTIES_LIST = ['convergence.cohesive_energy']
         inputs['properties_list'] = orm.List(list=DEFAULT_CONVERGENCE_PROPERTIES_LIST)
         
     # if mode == 'standard':
