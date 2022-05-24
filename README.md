@@ -18,6 +18,20 @@ The La and Ce run on Wentzcovich sinec these two can not generated with latest v
 
 SG15 inputs, some (list them) may failed to generate
 
+### PSLibrary
+
+The PSLibrary pseudopotentials are gerenated by using `ld1.x`. 
+I use inputs file from [PSLibrary](https://github.com/dalcorso/pslibrary) and re-generate pseudopotentials using docker image `pspgen/ld1:0.1.0`. 
+`ld1.x` in the image is compiled from Quantum-Espresso v6.3-MAX with `gfortran7` and `lapack` the in package.
+
+The libraries re-generated are `PBE` and `PBEsol` with inputs:
+
+1. PAW/HIGH from https://github.com/dalcorso/pslibrary/blob/master/paw_ps_high.job
+2. US/HIGH from https://github.com/dalcorso/pslibrary/blob/master/us_ps_high.job
+3. PAW/LOW from
+4. PAW/LOW from
+
+
 ## Name convention of pseudopotential UPF file
 
 The filename (it is easy to be done by using `rename` command of linux and script `psp_fn_z_set.ipynb`) will be used to deduct the label name when submit the verification.
@@ -29,7 +43,7 @@ The naming conventios is: `<element>.<psp_type>.z_<enum>.<tool>.<library>.<versi
     tool: is the tool used for pseudopotential generation
         oncvpsp4: ONCVPSP code version 4.0.1
         oncvpsp3: this is where the dojo from version 3.3.0
-        ldx1: used to generate PSlibrary
+        ld1: used to generate PSlibrary
         uspp: Vanderbilt code used to generate GBRV library
         atompaw: ATOMPAW code for jth and wentzcovitch
     library: is the pseudopotential library, we will run on: 

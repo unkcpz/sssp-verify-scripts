@@ -30,7 +30,7 @@ def run_verification(
         precheck: precheck control protocol on convergence verification
         standard: running a production on eiger
     """
-    clean_level = 1     # hardcoded
+    clean_level = 0     # hardcoded
     
     inputs = {
         "accuracy": {

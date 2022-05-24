@@ -18,7 +18,18 @@ UpfData = DataFactory('pseudo.upf')
 
 SSSP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '_sssp')
 
-def inputs_from_mode(mode):
+def inputs_from_mode(mode, computer_label):
+    if computer_label == 'imx':
+        computer = 'imxgesrv1'
+        mpiprocs = 32
+        npool = 8
+        walltime = 3600
+    else:
+        computer = f'eiger-mc-{computer_label}'
+        mpiprocs = 128
+        npool = 16
+        walltime = 1800
+        
     inputs = {}
     if mode == 'TEST':
         inputs['pw_code'] = orm.load_code('pw-6.7@localhost')
@@ -40,8 +51,8 @@ def inputs_from_mode(mode):
         inputs['properties_list'] = orm.List(list=DEFAULT_PROPERTIES_LIST)
         
     if mode == 'PRECHECK':
-        inputs['pw_code'] = orm.load_code('pw-7.0@eiger-mc-mr0')
-        inputs['ph_code'] = orm.load_code('pw-7.0@eiger-mc-mr0')
+        inputs['pw_code'] = orm.load_code(f'pw-7.0@{computer}')
+        inputs['ph_code'] = orm.load_code(f'ph-7.0@{computer}')
         inputs['protocol'] = orm.Str('acwf')
         inputs['cutoff_control'] = orm.Str('precheck')
         inputs['criteria'] = orm.Str('efficiency')
@@ -49,13 +60,13 @@ def inputs_from_mode(mode):
             dict={
                 "resources": {
                     "num_machines": 1,
-                    "num_mpiprocs_per_machine": 128,
+                    "num_mpiprocs_per_machine": mpiprocs,
                 },
-                "max_wallclock_seconds": 1800,
+                "max_wallclock_seconds": walltime,
                 "withmpi": True,
             }
         )
-        inputs['parallization'] = orm.Dict(dict={'npool': 16})
+        inputs['parallization'] = orm.Dict(dict={'npool': npool})
         inputs['properties_list'] = orm.List(list=DEFAULT_CONVERGENCE_PROPERTIES_LIST)
         
     # if mode == 'standard':
@@ -83,13 +94,15 @@ def inputs_from_mode(mode):
 @click.option('profile', '-p', help='profile')
 @click.option('--mode', type=click.Choice(['TEST', 'PRECHECK', 'STANDARD'], case_sensitive=False), 
               help='mode of verification.')
+@click.option('--computer', type=click.Choice(['mr0', 'mr32', 'imx'], case_sensitive=True),
+              help='computer to run non-test verification.')
 @click.argument('filename', type=click.Path(exists=True))
-def run(profile, mode, filename):
+def run(profile, mode, filename, computer):
     click.echo(profile)
 
     aiida.load_profile(profile)
     
-    inputs = inputs_from_mode(mode=mode)
+    inputs = inputs_from_mode(mode=mode, computer_label=computer)
     
     basename = os.path.basename(filename)
     label, _ = os.path.splitext(basename)
