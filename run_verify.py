@@ -3,6 +3,7 @@
 """
 Running verification workchain
 """
+from email.policy import default
 import os
 import click
 
@@ -18,7 +19,7 @@ UpfData = DataFactory('pseudo.upf')
 
 SSSP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '_sssp')
 
-def inputs_from_mode(mode, computer_label):
+def inputs_from_mode(mode, computer_label, properties_list):
     if computer_label == 'imx':
         computer = 'imxgesrv1'
         mpiprocs = 32
@@ -48,13 +49,32 @@ def inputs_from_mode(mode, computer_label):
             }
         )
         inputs['parallization'] = orm.Dict(dict={})
-        inputs['properties_list'] = orm.List(list=DEFAULT_PROPERTIES_LIST)
+        inputs['properties_list'] = orm.List(list=properties_list)
         
     if mode == 'PRECHECK':
         inputs['pw_code'] = orm.load_code(f'pw-7.0@{computer}')
         inputs['ph_code'] = orm.load_code(f'ph-7.0@{computer}')
         inputs['protocol'] = orm.Str('acwf')
         inputs['cutoff_control'] = orm.Str('precheck')
+        inputs['criteria'] = orm.Str('precision')
+        inputs['options'] = orm.Dict(
+            dict={
+                "resources": {
+                    "num_machines": 1,
+                    "num_mpiprocs_per_machine": mpiprocs,
+                },
+                "max_wallclock_seconds": walltime,
+                "withmpi": True,
+            }
+        )
+        inputs['parallization'] = orm.Dict(dict={'npool': npool})
+        inputs['properties_list'] = orm.List(list=properties_list)
+        
+    if mode == 'STANDARD':
+        inputs['pw_code'] = orm.load_code(f'pw-7.0@{computer}')
+        inputs['ph_code'] = orm.load_code(f'ph-7.0@{computer}')
+        inputs['protocol'] = orm.Str('acwf')
+        inputs['cutoff_control'] = orm.Str('standard')
         inputs['criteria'] = orm.Str('efficiency')
         inputs['options'] = orm.Dict(
             dict={
@@ -67,27 +87,7 @@ def inputs_from_mode(mode, computer_label):
             }
         )
         inputs['parallization'] = orm.Dict(dict={'npool': npool})
-        # DEFAULT_CONVERGENCE_PROPERTIES_LIST = ['convergence.cohesive_energy']
-        inputs['properties_list'] = orm.List(list=DEFAULT_CONVERGENCE_PROPERTIES_LIST)
-        
-    # if mode == 'standard':
-    #     pw_code = load_code('pw-7.0@eiger-mc-mr0')
-    #     ph_code = load_code('ph-7.0@eiger-mc-mr0')
-    #     protocol = orm.Str('acwf')
-    #     cutoff_control = orm.Str('standard')
-    #     criteria = orm.Str('efficiency')
-    #     option = orm.Dict(
-    #         dict={
-    #             "resources": {
-    #                 "num_machines": 1,
-    #                 "num_mpiprocs_per_machine": 128,
-    #             },
-    #             "max_wallclock_seconds": 1800,
-    #             "withmpi": True,
-    #         }
-    #     )
-    #     parollization = orm.Dict(dict={'npool': 16})
-    #     properties_list = DEFAULT_PROPERTIES_LIST
+        inputs['properties_list'] = orm.List(list=properties_list)
         
     return inputs
 
@@ -97,13 +97,21 @@ def inputs_from_mode(mode, computer_label):
               help='mode of verification.')
 @click.option('--computer', type=click.Choice(['mr0', 'mr32', 'imx'], case_sensitive=True),
               help='computer to run non-test verification.')
+@click.option('--property', multiple=True, default=[])
 @click.argument('filename', type=click.Path(exists=True))
-def run(profile, mode, filename, computer):
-    click.echo(profile)
-
-    aiida.load_profile(profile)
+def run(profile, mode, filename, computer, property):
+    if not property:
+        if mode == "PRECHECK":
+            properties_list = DEFAULT_CONVERGENCE_PROPERTIES_LIST
+        else:
+            properties_list = DEFAULT_PROPERTIES_LIST
+    else:
+        properties_list = list(property)
     
-    inputs = inputs_from_mode(mode=mode, computer_label=computer)
+    _profile = aiida.load_profile(profile)
+    click.echo(f'Profile: {_profile.name}')
+    
+    inputs = inputs_from_mode(mode=mode, computer_label=computer, properties_list=properties_list)
     
     basename = os.path.basename(filename)
     label, _ = os.path.splitext(basename)
@@ -121,6 +129,7 @@ def run(profile, mode, filename, computer):
     )
 
     click.echo(node)
+    click.echo(f"calculated on property: {'/'.join(properties_list)}")
 
 
 if __name__ == '__main__':
