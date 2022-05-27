@@ -1,0 +1,26 @@
+ &input
+   title='C',
+   zed=6,
+   rel=1,
+   config='[He] 2s2 2p2 3d-2',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=3,
+   file_pseudopw='C.pbe-n-rrkjus_psl.0.1.UPF',
+   author='Lorenzo Paulatto, exported as US',
+   lloc=2,
+   which_augfun ='PSQ',
+   rmatch_augfun=0.9,
+   nlcc=.true.,
+   new_core_ps=.true.,
+   rcore=0.8,
+   tm=.true.
+ /
+5
+2S  1  0  2.00  0.00  1.00  1.30  0.0
+2S  1  0  0.00  0.05  1.00  1.30  0.0
+2P  2  1  2.00  0.00  1.00  1.45  0.0
+2P  2  1  0.00  0.05  1.00  1.45  0.0
+3D  3  2 -2.00  0.10  1.10  1.10  0.0

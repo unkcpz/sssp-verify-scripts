@@ -29,8 +29,11 @@ The libraries re-generated are `PBE` and `PBEsol` with inputs:
 1. PAW/HIGH from https://github.com/dalcorso/pslibrary/blob/master/paw_ps_high.job
 2. US/HIGH from https://github.com/dalcorso/pslibrary/blob/master/us_ps_high.job
 3. PAW/LOW from
-4. PAW/LOW from
+4. US/LOW from 
+5. PAW/0.x from https://github.com/dalcorso/pslibrary/blob/master/paw_ps_collection.job 
+6. US/0.x from https://github.com/dalcorso/pslibrary/blob/master/us_ps_collection.job
 
+The 0.x PPs have been tested in some cases and no error has been reported so far. The PPs that were in pslibrary.0.1 (See [PSLibrary ChangeLog file](https://github.com/dalcorso/pslibrary/blob/master/ChangeLog)) have been tested extensively
 
 ## Name convention of pseudopotential UPF file
 
@@ -56,3 +59,43 @@ The naming conventios is: `<element>.<psp_type>.z_<enum>.<tool>.<library>.<versi
     version: is for version of pseudopotential. `v0` for no version specified.
     extra: in the extra information related to pseudos that can be used to distingish the small distinctien. 
          
+# Acknowledgements
+
+The SSSP is a verification effort, but it is very important to give credit to the different authors that have generated the pseudopotential libraries that are tested here, and to the original methodological developments that underlie the generation of these pseudopotential tables and datasets. Citations can e.g. be taken from this list (contact us if we need to add more), appropriately for the libraries, methods, and datasets used. Please make an effort to acknowledge these and to ensure reproducibility of your calculations by listing/citing all pseudopotentials used.
+
+## VERIFICATION
+- SSSP: G. Prandini, A. Marrazzo, I. E. Castelli, N. Mounet and N. Marzari, npj Computational Materials 4, 72 (2018).
+WEB: http://materialscloud.org/sssp.
+- K. Lejaeghere et al., Science 351 (6280), 1415 (2016).
+DOI: 10.1126/science.aad3000, WEB: http://molmod.ugent.be/deltacodesdft. An open-access copy is available from Cottenier's page.
+- https://github.com/aiidateam/aiida-sssp-workflow
+
+## LIBRARIES
+- GBRV: K. F. Garrity, J. W. Bennett, K. M. Rabe, and D. Vanderbilt, Comput. Mater. Sci. 81, 446 (2014).
+DOI: 10.1016/j.commatsci.2013.08.053, WEB: http://www.physics.rutgers.edu/gbrv, LICENSE: GNU General Public License (version 3).
+- SG15: M. Schlipf and F. Gygi, Comp. Phys. Comm. 196, 36 (2015).
+DOI: 10.1016/j.cpc.2015.05.011, WEB: http://www.quantum-simulation.org/potentials/sg15_oncv, LICENSE: Creative Commons Attribution-ShareAlike 4.0 International License (CC BY-SA 4.0).
+- Goedecker: A. Willand, Y. O. Kvashnin, L. Genovese, A. Vázquez-Mayagoitia, A. K. Deb, A. Sadeghi, T. Deutsch, and S. Goedecker, J. Chem. Phys. 138, 104109 (2013).
+DOI: 10.1063/1.4793260, WEB: http://bigdft.org/Wiki/index.php?title=New_Soft-Accurate_NLCC_pseudopotentials, LICENSE: Creative Commons Attribution 3.0 Unported License (CC BY 3.0).
+- Pslibrary 0.3.1: E. Küçükbenli et al., arXiv:1404.3015.
+WEB: http://theossrv1.epfl.ch/Main/Pseudopotentials, LICENSE: GNU General Public License (version 2 or later).
+- Pslibrary 1.0.0: A. Dal Corso, Comput. Mater. Sci. 95, 337 (2014).
+DOI: 10.1016/j.commatsci.2014.07.043, WEB: http://www.quantum-espresso.org/pseudopotentials, LICENSE: GNU General Public License (version 2 or later).
+- RE Wentzcovitch: M. Topsakal and R. M. Wentzcovitch, Comput. Mater. Sci. 95, 263 (2014).
+DOI: 10.1016/j.commatsci.2014.07.030, WEB: http://www.mineralscloud.com/resources/repaw/index.shtml.
+- Pseudo Dojo: M.J. van Setten, M. Giantomassi, E. Bousquet, M.J. Verstraete, D.R. Hamann, X. Gonze, G.-M. Rignanese, Comp. Phys. Comm. 226, 39 (2018).
+DOI: 10.1016/j.cpc.2018.01.012, WEB: http://www.pseudo-dojo.org/.
+
+## METHODS
+- Ultrasoft pseudopotentials: D. Vanderbilt, Phys. Rev. B 41, 7892(R) (1990).
+DOI: 10.1103/PhysRevB.41.7892, WEB: http://physics.rutgers.edu/~dhv/uspp.
+- Projector-augmented wave (PAW) method: P. E. Blöchl, Phys. Rev. B 50, 17953 (1994).
+DOI: 10.1103/PhysRevB.50.17953.
+- Norm conserving, multiple projectors pseudopotentials: D. R. Hamann, Phys. Rev. B 88, 085117 (2013).
+DOI: 10.1103/PhysRevB.88.085117, WEB: http://www.mat-simresearch.com.
+- Separable dual-space Gaussian pseudopotentials: S. Goedecker, M. Teter, J. Hutter, Phys. Rev. B 54, 1703 (1996).
+DOI: 10.1103/PhysRevB.54.1703, WEB: http://cp2k.web.psi.ch/potentials.
+
+## OTHER SITES
+- http://www.pseudo-dojo.org
+- http://opium.sourceforge.net

@@ -1,0 +1,28 @@
+ &input
+   title='Tl',
+   zed=81.,
+   rel=1,
+   config='[Xe] 4f14.0 5d10.0 6s2.0 6p1.0',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=3,
+   file_pseudopw='Tl.pbe-dn-rrkjus_psl.0.2.3.UPF',
+   author='ADC',
+   lloc=-1,
+   rcloc=2.2,
+   which_augfun='PSQ',
+   rmatch_augfun=1.67,
+   nlcc=.true.,
+   new_core_ps=.true.,
+   rcore=1.5,
+   tm=.true.
+ /
+6
+6S  1  0  2.00  0.00  1.90  2.00  0.0
+6S  1  0  0.00  5.50  1.60  2.00  0.0
+6P  2  1  1.00  0.00  2.40  2.60  0.0
+6P  2  1  0.00  6.50  1.80  2.60  0.0
+5D  3  2 10.00  0.00  1.60  2.00  0.0
+5D  3  2  0.00 -0.60  1.60  2.00  0.0

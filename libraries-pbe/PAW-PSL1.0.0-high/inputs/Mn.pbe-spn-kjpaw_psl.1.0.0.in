@@ -1,0 +1,29 @@
+ &input
+   title='Mn',
+   zed=25.,
+   rel=1,
+   config='[Ar] 4s2 4p0 3d5',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   lpaw=.true.,
+   pseudotype=3,
+   file_pseudopw='Mn.pbe-spn-kjpaw_psl.1.0.0.UPF',
+   author='ADC',
+   lloc=-1,
+   rcloc=1.4,
+   which_augfun='PSQ',
+   rmatch_augfun_nc=.true.,
+   nlcc=.true.,
+   new_core_ps=.true.,
+   rcore=0.8,
+   tm=.true.
+ /
+6
+3S  1  0  2.00  0.00  0.65  1.40  0.0
+4S  2  0  2.00  0.00  0.65  1.40  0.0
+3P  2  1  6.00  0.00  0.85  1.30  0.0
+4P  3  1  0.00  7.00  0.85  1.30  0.0
+3D  3  2  5.00  0.00  1.00  1.55  0.0
+3D  3  2  0.00  0.05  1.00  1.55  0.0
