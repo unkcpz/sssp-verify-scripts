@@ -31,7 +31,12 @@ def run_verification(
         precheck: precheck control protocol on convergence verification
         standard: running a production on eiger
     """
-    clean_level = 1     # hardcoded
+    if cutoff_control.value == 'precheck':
+        clean_level = 1  # not clean bands workchain and phonon frequencies
+    elif cutoff_control.value == 'standard':
+        clean_level = 2 # phonon frequencies workchan clean only finished okay.
+    else:
+        clean_level = 0
     
     inputs = {
         "accuracy": {

@@ -3,7 +3,6 @@
 """
 Running verification workchain
 """
-from email.policy import default
 import os
 import click
 
@@ -117,7 +116,7 @@ def run(profile, mode, filename, computer, property):
     
     basename = os.path.basename(filename)
     label, _ = os.path.splitext(basename)
-    label = orm.Str(f'({mode}) {label}')
+    label = orm.Str(f'({mode}-{computer}) {label}')
 
     with open(filename, "rb") as stream:
         pseudo = UpfData(stream)

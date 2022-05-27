@@ -2,6 +2,15 @@
 
 This repository store the pseudopotential files as input for SSSP verification and the scripts to run the verification.
 
+## Computer to run
+
+To make things easy and clean, to avoid caching issue that bands workchain of standard that may use precheck calcjob which may be cleaned and fail. 
+I'll try to sure the precheck and standard are run on different machine/account.
+The principles are 
+
+- precheck verification first go to imxgesrv1
+- if precheck on eiger (mr0 if not mentioned), then standard should use another account. mr0/mr32 or mr32/mr0
+
 ## Pseudopotential libraries 
 
 ### Lanthanides
