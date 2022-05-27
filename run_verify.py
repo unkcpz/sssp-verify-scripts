@@ -101,13 +101,15 @@ def inputs_from_mode(mode, computer_label, properties_list):
 @click.argument('filename', type=click.Path(exists=True))
 def run(profile, mode, filename, computer, property):
     if not property:
+        extra_desc = 'all_prop'
         if mode == "PRECHECK":
             properties_list = DEFAULT_CONVERGENCE_PROPERTIES_LIST
         else:
             properties_list = DEFAULT_PROPERTIES_LIST
     else:
         properties_list = list(property)
-    
+        extra_desc = f'{properties_list}'
+        
     _profile = aiida.load_profile(profile)
     click.echo(f'Profile: {_profile.name}')
     
@@ -125,6 +127,7 @@ def run(profile, mode, filename, computer, property):
         **{
             'pseudo': pseudo,
             'label': label,
+            'extra_desc': extra_desc,
         }, 
     )
 

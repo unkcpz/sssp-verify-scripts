@@ -18,6 +18,7 @@ def run_verification(
     parallization,
     properties_list,
     label,
+    extra_desc,
 ):
     """
     pw_code: code for pw.x calculation
@@ -58,6 +59,6 @@ def run_verification(
     else:
         node = submit(VerificationWorkChain, **inputs)
         
-    node.description = label.value
+    node.description = f'{label.value} ({extra_desc})'
         
     return node
