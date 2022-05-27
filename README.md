@@ -35,6 +35,11 @@ The libraries re-generated are `PBE` and `PBEsol` with inputs:
 
 The 0.x PPs have been tested in some cases and no error has been reported so far. The PPs that were in pslibrary.0.1 (See [PSLibrary ChangeLog file](https://github.com/dalcorso/pslibrary/blob/master/ChangeLog)) have been tested extensively
 
+#### Notes 
+
+- Cs.paw.z_9.ld1.psl.v1.0.0-low.upf: manually set z=9 and modified z since -5 in UPF.
+- Cs.us.z_9.ld1.psl.v1.0.0-low.upf: manually set z=9 and modified z since -5 in UPF.
+
 ## Name convention of pseudopotential UPF file
 
 The filename (it is easy to be done by using `rename` command of linux and script `psp_fn_z_set.ipynb`) will be used to deduct the label name when submit the verification.

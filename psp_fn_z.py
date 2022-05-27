@@ -21,8 +21,8 @@ def main(lib_path, dry_run=True):
             try:
                 pseudo = UpfData(stream)
                 z_valence = pseudo.z_valence
-            except:
-                print(filename)
+            except Exception as exc:
+                print(f'{filename} got error {exc}')
         
         if '.z_' in filename:
             # raise ValueError(f'Seems already has z_valence in filename {filename}')
