@@ -22,7 +22,7 @@ def inputs_from_mode(mode, computer_label, properties_list):
     if computer_label == 'imx':
         computer = 'imxgesrv1'
         mpiprocs = 32
-        npool = 8
+        npool = 4
         walltime = 3600
     else:
         computer = f'eiger-mc-{computer_label}'

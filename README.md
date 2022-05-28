@@ -2,6 +2,15 @@
 
 This repository store the pseudopotential files as input for SSSP verification and the scripts to run the verification.
 
+## Command to run
+
+Batch launching precheck or standard verification of pseudos in a folder:
+```bash
+╰$ for FILE in _sssp_pbe/<element>/*.upf; do
+echo $FILE && python run_verify.py --mode <precheck/standard> --computer mr32 -- $FILE
+done
+```
+
 ## Computer to run
 
 To make things easy and clean, to avoid caching issue that bands workchain of standard that may use precheck calcjob which may be cleaned and fail. 

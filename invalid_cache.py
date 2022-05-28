@@ -1,6 +1,7 @@
 """Giving the node invalid cache if it is a calcjob or 
 of its descendant calcjob if it is a workchain."""
 
+from email.policy import default
 import click
 
 import aiida
@@ -10,10 +11,11 @@ aiida.load_profile()
 
 @click.command()
 @click.option('profile', '-p', help='profile')
-@click.option('--find-all', is_flag=True, default=True, 
+@click.option('--find-all', is_flag=True, default=False, 
               help='also find same nodes (cached or source) and invalid_cache.')
+@click.option('--dry-run', is_flag=True, default=False)
 @click.argument('nodes', type=int, nargs=-1)
-def run(profile, find_all, nodes):
+def run(profile, find_all, nodes, dry_run):
     _profile = aiida.load_profile(profile)
     click.echo(f'Profile: {_profile.name}')
     
@@ -37,7 +39,8 @@ def run(profile, find_all, nodes):
         for nn in same_nodes:
             try:
                 click.echo(f'cleanning hash of node pk={nn.pk}')
-                nn.delete_extra('_aiida_hash')
+                if not dry_run:
+                    nn.delete_extra('_aiida_hash')
             except:
                 click.echo(f'{nn} do not have `_aiida_hash` field, might be already cleaned.')
 
