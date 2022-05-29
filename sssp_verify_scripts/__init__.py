@@ -32,9 +32,9 @@ def run_verification(
         standard: running a production on eiger
     """
     if cutoff_control.value == 'test':
-        test_mode = True
+        clean_workchain = False
     else:
-        test_mode = False
+        clean_workchain = True
     
     inputs = {
         "accuracy": {
@@ -54,7 +54,7 @@ def run_verification(
         "properties_list": properties_list,
         "options": options,
         "parallelization": parallization,
-        "test_mode": orm.Bool(test_mode),  
+        "clean_workchain": orm.Bool(clean_workchain),  
     }
     
     if cutoff_control.value == 'test':
