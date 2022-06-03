@@ -1,7 +1,6 @@
 """Giving the node invalid cache if it is a calcjob or 
 of its descendant calcjob if it is a workchain."""
 
-from email.policy import default
 import click
 
 import aiida
