@@ -23,6 +23,7 @@ But it is okay and I can still do that.
 import click
 import os
 import json
+import tarfile
 import aiida
 from tqdm import tqdm
 from pathlib import Path
@@ -160,8 +161,11 @@ def run(pks, element, dst, profile):
         
     with open(os.path.join(dst, json_fn), 'w') as fh:
         json.dump(dict(curated_result), fh, indent=2, sort_keys=True, default=str)
-            
         
+    click.echo('Compressing...')
+    with tarfile.open(f'{dst}.tar.gz', "w:gz") as tar:
+            tar.add(dst, arcname=os.path.basename(dst))
+            
 if __name__ == '__main__':
     run()
 
