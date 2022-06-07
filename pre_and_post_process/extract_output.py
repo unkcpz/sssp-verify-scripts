@@ -39,7 +39,7 @@ process_prop_label_mapping = {
     'delta': 'ConvergenceDeltaWorkChain',
 }
 
-def export_bands_data(band_structure, band_parameters):
+def export_bands_structure(band_structure, band_parameters):
     data = json.loads(
         band_structure._exportcontent(
             "json", comments=False
@@ -49,6 +49,20 @@ def export_bands_data(band_structure, band_parameters):
     data["number_of_electrons"] = band_parameters["number_of_electrons"]
     
     return jsanitize(data)
+
+def export_bands_data(band_structure: orm.BandsData, band_parameters: orm.Dict):
+    bands_arr = band_structure.get_bands()
+    kpoints_arr, weights_arr = band_structure.get_kpoints(also_weights=True)
+    
+    data = {
+        "fermi_level": band_parameters["fermi_energy"],
+        "number_of_electrons": band_parameters["number_of_electrons"],
+        "bands": bands_arr.tolist(),
+        "kpoints": kpoints_arr.tolist(),
+        "weights": weights_arr.tolist(),
+    }
+    
+    return data
 
 def _flatten_output(attr_dict, skip: list=[]):
     """
@@ -140,7 +154,7 @@ def run(pks, element, dst, profile):
                     json.dump(export_bands_data(bands.band_structure, bands.band_parameters), fh)
                 with open(os.path.join(dst, 'band_structure', element, f'{label}.json'), 'w') as fh:
                     bands = called_wf.outputs.band_structure
-                    json.dump(export_bands_data(bands.band_structure, bands.band_parameters), fh)
+                    json.dump(export_bands_structure(bands.band_structure, bands.band_parameters), fh)
                     
                 
                     
