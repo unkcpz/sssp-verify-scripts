@@ -58,7 +58,7 @@ def export_bands_data(band_structure: orm.BandsData, band_parameters: orm.Dict):
         "fermi_level": band_parameters["fermi_energy"],
         "number_of_electrons": band_parameters["number_of_electrons"],
         "bands": bands_arr.tolist(),
-        "kpoints": kpoints_arr.tolist(),
+        "kpoints": kpoints_arr.tolist(),    # TODO: using override JSON encoder
         "weights": weights_arr.tolist(),
     }
     

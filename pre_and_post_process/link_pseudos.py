@@ -3,16 +3,13 @@
 import os
 import sys
 
-from matplotlib.style import library
-
-
 def main():
     
     element = sys.argv[1]
     func = sys.argv[2]  # functional
     
-    func_path = os.path.join(f'libraries-{func}')
-    dst_path = os.path.join(f'_sssp_{func}', element)
+    func_path = os.path.join(f'../libraries-{func}')
+    dst_path = os.path.join(f'../_sssp_{func}', element)
     
     # create element folder if not exist
     if not os.path.exists(dst_path):

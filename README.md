@@ -11,6 +11,15 @@ echo $FILE && python run_verify.py --mode <precheck/standard> --computer mr32 --
 done
 ```
 
+### Soft link pseudos to the files of every element
+
+In the root path of repository run: 
+```
+python ./pre_and_post_process/link_pseudos.py N pbe
+```
+
+to soft link all N pseudopotentials to `_sssp_pbe` folder.
+
 ## Computer to run
 
 To make things easy and clean, to avoid caching issue that bands workchain of standard that may use precheck calcjob which may be cleaned and fail. 
