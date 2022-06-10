@@ -11,6 +11,15 @@ echo $FILE && python run_verify.py --mode <precheck/standard> --computer mr32 --
 done
 ```
 
+## Database maintainance
+
+The prototype database is folder `sssp_db` which contains json files store the results of outputs and bands/band structure information. 
+We use the following way to properly maintain the database and its version. 
+
+1. Everytime there are result changes like new pseudo verification results or updated verification results need to publish. Running `bumpver` to bump db version in `sssp_db/version.txt`. Modify the `sssp_db/CHANGELOG` with information of changes. 
+2. Running `python pre_and_post_process/extract_output.py` without arguments. It will generate `sssp_db.tar.gz`.
+3. push to main with commit info the the DB version is updated.
+
 ### Soft link pseudos to the files of every element
 
 In the root path of repository run: 

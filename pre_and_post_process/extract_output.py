@@ -106,79 +106,88 @@ def get_metadata(node):
 
 @click.command()
 @click.option('profile', '-p', help='profile')
-@click.option('element', '-e', required=True, help='element')
+@click.option('element', '-e', help='element')
 @click.option('--dst', type=click.Path(), help='folder to store the output.')
 @click.argument('pks', nargs=-1)
 def run(pks, element, dst, profile):
     _profile = aiida.load_profile(profile)
     click.echo(f'Profile: {_profile.name}')
     
-    json_fn = f'{element}.json'
-    Path(os.path.join(dst, 'bands', element)).mkdir(parents=True, exist_ok=True)
-    Path(os.path.join(dst, 'band_structure', element)).mkdir(parents=True, exist_ok=True)
+    if not dst:
+        dst='./sssp_db'
     
-    curated_result = {} # all results of pseudos of the elements
-    for pk in tqdm(pks):
-        # meta info of such verification
-        # uuid, label
-        _node  = orm.load_node(pk)
-        label = _node.extras.get("label").split()[-1]   # do not contain the extra machine info
-        assert element == label.split('.')[0]
-        assert f'{label}.upf' ==  _node.inputs.pseudo.filename
+    # if no element provide, element==None, only pack the db to tar file
+    if element:
+        json_fn = f'{element}.json'
+        Path(os.path.join(dst, 'bands', element)).mkdir(parents=True, exist_ok=True)
+        Path(os.path.join(dst, 'band_structure', element)).mkdir(parents=True, exist_ok=True)
         
-        psp_result = {
-            '_metadata': get_metadata(_node),
-        } # the results of one verification
-        
-        psp_result['accuracy'] = {}
-        psp_result['convergence'] = {}
-        for called_wf in _node.called:
-            if called_wf.process_label == 'parse_pseudo_info':
-                psp_result['pseudo_info'] = {
-                    **called_wf.outputs.result.get_dict(),
-                }
-            # delta
-            if called_wf.process_label == 'DeltaMeasureWorkChain':
-                psp_result['accuracy']['delta'] = _flatten_output(_node.outputs.accuracy.delta)
-                psp_result['accuracy']['delta']['_metadata'] = get_metadata(called_wf)
-            # bands
-            if called_wf.process_label == 'BandsMeasureWorkChain':
-                psp_result['accuracy']['bands'] = {
-                    'bands': f'bands/{element}/{label}.json',
-                    'band_structure': f'band_structure/{element}/{label}.json',
-                }
-                psp_result['accuracy']['bands']['_metadata'] = get_metadata(called_wf)
-                
-                with open(os.path.join(dst, 'bands', element, f'{label}.json'), 'w') as fh:
-                    bands = called_wf.outputs.bands
-                    json.dump(export_bands_data(bands.band_structure, bands.band_parameters), fh)
-                with open(os.path.join(dst, 'band_structure', element, f'{label}.json'), 'w') as fh:
-                    bands = called_wf.outputs.band_structure
-                    json.dump(export_bands_structure(bands.band_structure, bands.band_parameters), fh)
+        curated_result = {} # all results of pseudos of the elements
+        for pk in tqdm(pks):
+            # meta info of such verification
+            # uuid, label
+            _node  = orm.load_node(pk)
+            label = _node.extras.get("label").split()[-1]   # do not contain the extra machine info
+            assert element == label.split('.')[0]
+            assert f'{label}.upf' ==  _node.inputs.pseudo.filename
+            
+            psp_result = {
+                '_metadata': get_metadata(_node),
+            } # the results of one verification
+            
+            psp_result['accuracy'] = {}
+            psp_result['convergence'] = {}
+            for called_wf in _node.called:
+                if called_wf.process_label == 'parse_pseudo_info':
+                    psp_result['pseudo_info'] = {
+                        **called_wf.outputs.result.get_dict(),
+                    }
+                # delta
+                if called_wf.process_label == 'DeltaMeasureWorkChain':
+                    psp_result['accuracy']['delta'] = _flatten_output(_node.outputs.accuracy.delta)
+                    psp_result['accuracy']['delta']['_metadata'] = get_metadata(called_wf)
+                # bands
+                if called_wf.process_label == 'BandsMeasureWorkChain':
+                    psp_result['accuracy']['bands'] = {
+                        'bands': f'bands/{element}/{label}.json',
+                        'band_structure': f'band_structure/{element}/{label}.json',
+                    }
+                    psp_result['accuracy']['bands']['_metadata'] = get_metadata(called_wf)
                     
-                
+                    with open(os.path.join(dst, 'bands', element, f'{label}.json'), 'w') as fh:
+                        bands = called_wf.outputs.bands
+                        json.dump(export_bands_data(bands.band_structure, bands.band_parameters), fh)
+                    with open(os.path.join(dst, 'band_structure', element, f'{label}.json'), 'w') as fh:
+                        bands = called_wf.outputs.band_structure
+                        json.dump(export_bands_structure(bands.band_structure, bands.band_parameters), fh)
+                        
                     
-                
-            # convergence
-            for k, v in process_prop_label_mapping.items():
-                if called_wf.process_label == v:
-                    try:
-                        output_res = _flatten_output(_node.outputs.convergence[k])
-                    except KeyError:
-                        # run but not finished therefore no output node
-                        output_res = {'message': 'error'}
-                    psp_result['convergence'][k] = output_res
-                    psp_result['convergence'][k]['_metadata'] = get_metadata(called_wf)
-                
+                        
+                    
+                # convergence
+                for k, v in process_prop_label_mapping.items():
+                    if called_wf.process_label == v:
+                        try:
+                            output_res = _flatten_output(_node.outputs.convergence[k])
+                        except KeyError:
+                            # run but not finished therefore no output node
+                            output_res = {'message': 'error'}
+                        psp_result['convergence'][k] = output_res
+                        psp_result['convergence'][k]['_metadata'] = get_metadata(called_wf)
+                    
+            
+            curated_result[f'{label}'] = psp_result
+            
+        with open(os.path.join(dst, json_fn), 'w') as fh:
+            json.dump(dict(curated_result), fh, indent=2, sort_keys=True, default=str)
         
-        curated_result[f'{label}'] = psp_result
-        
-    with open(os.path.join(dst, json_fn), 'w') as fh:
-        json.dump(dict(curated_result), fh, indent=2, sort_keys=True, default=str)
-        
-    click.echo('Compressing...')
-    with tarfile.open(f'{dst}.tar.gz', "w:gz") as tar:
-            tar.add(dst, arcname=os.path.basename(dst))
+    else:
+        # if no element and pks as argument, simply pach for new version
+        # # resursive to imply same order and use bz2 since no timestamp that 
+        # generate unidentical tarball.
+        click.echo('Compressing...')
+        with tarfile.open(f'{dst}.tar.gz', "w:bz2") as tar:
+            tar.add(dst, arcname=os.path.basename(dst), recursive=True)
             
 if __name__ == '__main__':
     run()
