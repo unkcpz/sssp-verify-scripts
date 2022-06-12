@@ -1,10 +1,12 @@
 {
   "O.nc.z_6.oncvpsp3.dojo.v4-std": {
-    "_metadata": {
-      "_aiida_hash": "58640dcd9d5e65e243bc004c2ea49e3515784f7a9e97632328aad3d5146e6d0f",
-      "ctime": "2022-05-29 14:06:55.430132+00:00",
-      "uuid": "685d1da2-67df-4afb-94e8-28861bae3563"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "58640dcd9d5e65e243bc004c2ea49e3515784f7a9e97632328aad3d5146e6d0f",
+        "ctime": "2022-05-29 14:06:55.430132+00:00",
+        "uuid": "685d1da2-67df-4afb-94e8-28861bae3563"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -1161,11 +1163,13 @@
     }
   },
   "O.nc.z_6.oncvpsp3.dojo.v4-str": {
-    "_metadata": {
-      "_aiida_hash": "da5b10174c6837c08681a233adade22739adca0cb0a7908e8c3e7ce635ab763c",
-      "ctime": "2022-05-30 08:06:37.178669+00:00",
-      "uuid": "b62f7c81-c2ce-4e04-bb8b-e51a542799fd"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "da5b10174c6837c08681a233adade22739adca0cb0a7908e8c3e7ce635ab763c",
+        "ctime": "2022-05-30 08:06:37.178669+00:00",
+        "uuid": "b62f7c81-c2ce-4e04-bb8b-e51a542799fd"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -2336,11 +2340,13 @@
     }
   },
   "O.nc.z_6.oncvpsp4.sg15.v0": {
-    "_metadata": {
-      "_aiida_hash": "00a8fed7d421b43de078efea6d9d34c22075ee039bbd8f4a6a0ae25f2c1541d6",
-      "ctime": "2022-05-29 14:07:12.408803+00:00",
-      "uuid": "e61651a8-705c-4530-9b65-408eb2aaa3a3"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "00a8fed7d421b43de078efea6d9d34c22075ee039bbd8f4a6a0ae25f2c1541d6",
+        "ctime": "2022-05-29 14:07:12.408803+00:00",
+        "uuid": "e61651a8-705c-4530-9b65-408eb2aaa3a3"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -3511,11 +3517,13 @@
     }
   },
   "O.paw.z_6.atompaw.jth.v1.1-std": {
-    "_metadata": {
-      "_aiida_hash": "377e6b7d26d0a5813c88bbe2a1b835d2d312408bb4a1037ab0a6a22973c2a5ed",
-      "ctime": "2022-05-29 00:43:06.036578+00:00",
-      "uuid": "f0e1e77d-7cb1-4e03-8139-57c0673745ae"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "377e6b7d26d0a5813c88bbe2a1b835d2d312408bb4a1037ab0a6a22973c2a5ed",
+        "ctime": "2022-05-29 00:43:06.036578+00:00",
+        "uuid": "f0e1e77d-7cb1-4e03-8139-57c0673745ae"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -4712,11 +4720,13 @@
     }
   },
   "O.paw.z_6.atompaw.jth.v1.1-str": {
-    "_metadata": {
-      "_aiida_hash": "8c3bae2c42149a98841bf8c9eb54669fcd9a1c22ad1e52cb115a6b23ffb49b9b",
-      "ctime": "2022-05-29 23:48:05.488562+00:00",
-      "uuid": "8616e6b5-3457-4ce5-b943-d914a7fee995"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "8c3bae2c42149a98841bf8c9eb54669fcd9a1c22ad1e52cb115a6b23ffb49b9b",
+        "ctime": "2022-05-29 23:48:05.488562+00:00",
+        "uuid": "8616e6b5-3457-4ce5-b943-d914a7fee995"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -5789,11 +5799,13 @@
     }
   },
   "O.paw.z_6.ld1.psl.v0.1": {
-    "_metadata": {
-      "_aiida_hash": "40acad6cb4d2709581fa0093c392311c2e487a689b40b15a089eb71a2654ab31",
-      "ctime": "2022-05-29 19:02:23.160842+00:00",
-      "uuid": "d6f0aff3-6ffe-4ade-bbbd-66f93bc3cdb8"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "40acad6cb4d2709581fa0093c392311c2e487a689b40b15a089eb71a2654ab31",
+        "ctime": "2022-05-29 19:02:23.160842+00:00",
+        "uuid": "d6f0aff3-6ffe-4ade-bbbd-66f93bc3cdb8"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -6983,11 +6995,13 @@
     }
   },
   "O.paw.z_6.ld1.psl.v1.0.0-high": {
-    "_metadata": {
-      "_aiida_hash": "9ea2cfd475f41f7265d7ec185a47e72863ae061e261e27f70707d3dbc57350f6",
-      "ctime": "2022-05-29 23:48:22.097209+00:00",
-      "uuid": "05194b89-2099-48a0-8b3f-026b0d917a9d"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "9ea2cfd475f41f7265d7ec185a47e72863ae061e261e27f70707d3dbc57350f6",
+        "ctime": "2022-05-29 23:48:22.097209+00:00",
+        "uuid": "05194b89-2099-48a0-8b3f-026b0d917a9d"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -8184,11 +8198,13 @@
     }
   },
   "O.paw.z_6.ld1.psl.v1.0.0-low": {
-    "_metadata": {
-      "_aiida_hash": "5f622e7a8a5cd8ca054ffa068d9675c1214c098a7f85ec6b7e3251d8cb9576e8",
-      "ctime": "2022-05-29 23:48:31.405603+00:00",
-      "uuid": "f3f4149b-ce9c-4876-a413-4df2055dc4b1"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "5f622e7a8a5cd8ca054ffa068d9675c1214c098a7f85ec6b7e3251d8cb9576e8",
+        "ctime": "2022-05-29 23:48:31.405603+00:00",
+        "uuid": "f3f4149b-ce9c-4876-a413-4df2055dc4b1"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -8562,11 +8578,13 @@
     }
   },
   "O.us.z_6.ld1.psl.v0.1": {
-    "_metadata": {
-      "_aiida_hash": "d98c339e56ad01d4c8db4b95b2da2c130775b0d88ee669e8a98249431e1902a6",
-      "ctime": "2022-05-29 19:01:44.943868+00:00",
-      "uuid": "db53af2b-d8b4-42a0-8cf2-efe00375ce46"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "d98c339e56ad01d4c8db4b95b2da2c130775b0d88ee669e8a98249431e1902a6",
+        "ctime": "2022-05-29 19:01:44.943868+00:00",
+        "uuid": "db53af2b-d8b4-42a0-8cf2-efe00375ce46"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -9612,11 +9630,13 @@
     }
   },
   "O.us.z_6.ld1.psl.v1.0.0-high": {
-    "_metadata": {
-      "_aiida_hash": "2ca562e5ba6f31551fd7b631b60dd9586d8bcd135518c1cfe8969c67385d02f8",
-      "ctime": "2022-05-29 00:43:43.221552+00:00",
-      "uuid": "3e6c8d8e-cb2c-44aa-9ae1-7ed20ebaaad0"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "2ca562e5ba6f31551fd7b631b60dd9586d8bcd135518c1cfe8969c67385d02f8",
+        "ctime": "2022-05-29 00:43:43.221552+00:00",
+        "uuid": "3e6c8d8e-cb2c-44aa-9ae1-7ed20ebaaad0"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -10813,11 +10833,13 @@
     }
   },
   "O.us.z_6.ld1.psl.v1.0.0-low": {
-    "_metadata": {
-      "_aiida_hash": "eeabfc2c5280def42f916ebf671393404019adb48895391b1466a5d2d46727fe",
-      "ctime": "2022-05-29 19:01:16.547719+00:00",
-      "uuid": "2b64bd0e-3690-40f4-85ee-dd47c1019e8a"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "eeabfc2c5280def42f916ebf671393404019adb48895391b1466a5d2d46727fe",
+        "ctime": "2022-05-29 19:01:16.547719+00:00",
+        "uuid": "2b64bd0e-3690-40f4-85ee-dd47c1019e8a"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -12014,11 +12036,13 @@
     }
   },
   "O.us.z_6.uspp.gbrv.v1.2": {
-    "_metadata": {
-      "_aiida_hash": "d5fc448732d8170ec4f231d1eecc7685843cd873e8d685ab284d13332b3bdbd7",
-      "ctime": "2022-05-29 14:07:52.130236+00:00",
-      "uuid": "e7caee8a-9a4c-4551-bb61-d6bf3bb14ea2"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "d5fc448732d8170ec4f231d1eecc7685843cd873e8d685ab284d13332b3bdbd7",
+        "ctime": "2022-05-29 14:07:52.130236+00:00",
+        "uuid": "e7caee8a-9a4c-4551-bb61-d6bf3bb14ea2"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {

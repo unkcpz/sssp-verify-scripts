@@ -1,10 +1,17 @@
 {
   "Ba.nc.z_10.oncvpsp3.dojo.v4-sp": {
-    "_metadata": {
-      "_aiida_hash": "e8328b34a79c6949f8e655f5476c3edbe09b13598f1a62c286291abde301b1f6",
-      "ctime": "2022-06-12 09:58:07.992027+00:00",
-      "uuid": "8aa7faa7-6651-41d7-abfa-94dac288ee9e"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "e8328b34a79c6949f8e655f5476c3edbe09b13598f1a62c286291abde301b1f6",
+        "ctime": "2022-06-12 09:58:07.992027+00:00",
+        "uuid": "8aa7faa7-6651-41d7-abfa-94dac288ee9e"
+      },
+      {
+        "_aiida_hash": "3dbda2b3230065d7d1da2dd351d2db50cf632b7aedd9145a37b72a0cc5af248a",
+        "ctime": "2022-06-12 18:35:45.997126+00:00",
+        "uuid": "a7a1fa84-b054-4c70-a6c6-7462f2d02d7d"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -315,20 +322,20 @@
               0.0543637,
               2.8244011
             ],
-            "delta": 159.17604535011,
-            "delta/natoms": 159.17604535011,
-            "delta1": 579.63942162714,
-            "delta_relative": 53.881441136325,
+            "delta": 0.16714085734513,
+            "delta/natoms": 0.16714085734513,
+            "delta1": 0.91270307049028,
+            "delta_relative": 6.0150650759383,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 1,
-            "nu/natoms": 266.06074068203,
+            "nu/natoms": 1.9294255623555,
             "reference_wien2k_V0_B0_B1": [
-              126.2802,
+              63.1401,
               0.054157574685289,
               3.77
             ],
-            "rel_errors_vec_length": 266.06074068203
+            "rel_errors_vec_length": 1.9294255623555
           }
         },
         "X2O": {
@@ -711,8 +718,8 @@
         },
         "_metadata": {
           "_aiida_hash": "451560d9c3bed0615dc3ee9737a15c513e18d20fb23ba46e0d8400020ba03aa6",
-          "ctime": "2022-06-12 09:58:09.334905+00:00",
-          "uuid": "7b5c7a97-7db8-43a4-aff8-bac029a65836"
+          "ctime": "2022-06-12 18:36:21.750750+00:00",
+          "uuid": "eb5c9d4d-d650-485a-9366-327c7ee89ed0"
         },
         "output_parameters": {
           "BCC": {
@@ -740,10 +747,10 @@
             "nu/natoms": 0.59954451972813
           },
           "TYPICAL": {
-            "delta": 159.17604535011,
-            "delta/natoms": 159.17604535011,
-            "nu": 266.06074068203,
-            "nu/natoms": 266.06074068203
+            "delta": 0.16714085734513,
+            "delta/natoms": 0.16714085734513,
+            "nu": 1.9294255623555,
+            "nu/natoms": 1.9294255623555
           },
           "X2O": {
             "delta": 1.1091202837142,
@@ -1589,11 +1596,18 @@
     }
   },
   "Ba.nc.z_10.oncvpsp3.dojo.v4-str": {
-    "_metadata": {
-      "_aiida_hash": "f65723b9f85354686c4ad42987756fa64efa74a4485cb3b867b53059b65a0b88",
-      "ctime": "2022-06-12 10:01:09.810837+00:00",
-      "uuid": "89c758a0-97bc-411b-bd2c-ca44e123c22f"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "f65723b9f85354686c4ad42987756fa64efa74a4485cb3b867b53059b65a0b88",
+        "ctime": "2022-06-12 10:01:09.810837+00:00",
+        "uuid": "89c758a0-97bc-411b-bd2c-ca44e123c22f"
+      },
+      {
+        "_aiida_hash": "321656264056a3a821aea764fa0f85c447f4fa26abfee341facf192dbc407b4f",
+        "ctime": "2022-06-12 18:35:36.941533+00:00",
+        "uuid": "550393c3-0407-4c87-bbad-c92b9f177432"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -1904,20 +1918,20 @@
               0.0548286,
               2.8913904
             ],
-            "delta": 157.61188680344,
-            "delta/natoms": 157.61188680344,
-            "delta1": 570.71242543361,
-            "delta_relative": 53.823250506628,
+            "delta": 0.66773600581333,
+            "delta/natoms": 0.66773600581333,
+            "delta1": 3.6232870214838,
+            "delta_relative": 23.80941821626,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 1,
-            "nu/natoms": 264.60016647506,
+            "nu/natoms": 2.9192732238162,
             "reference_wien2k_V0_B0_B1": [
-              126.2802,
+              63.1401,
               0.054157574685289,
               3.77
             ],
-            "rel_errors_vec_length": 264.60016647506
+            "rel_errors_vec_length": 2.9192732238162
           }
         },
         "X2O": {
@@ -2300,8 +2314,8 @@
         },
         "_metadata": {
           "_aiida_hash": "24767331d25db4b4b08c837b7b9897cb1c4a3c02fc9842957f8885dc74cd0980",
-          "ctime": "2022-06-12 10:01:10.912253+00:00",
-          "uuid": "a5ab4a38-7b56-4e89-9773-b5013ac33233"
+          "ctime": "2022-06-12 18:36:34.851594+00:00",
+          "uuid": "d5519c52-af5f-4bd9-b88b-b15e28153a45"
         },
         "output_parameters": {
           "BCC": {
@@ -2329,10 +2343,10 @@
             "nu/natoms": 3.9083605891642
           },
           "TYPICAL": {
-            "delta": 157.61188680344,
-            "delta/natoms": 157.61188680344,
-            "nu": 264.60016647506,
-            "nu/natoms": 264.60016647506
+            "delta": 0.66773600581333,
+            "delta/natoms": 0.66773600581333,
+            "nu": 2.9192732238162,
+            "nu/natoms": 2.9192732238162
           },
           "X2O": {
             "delta": 13.198202232736,
@@ -3178,11 +3192,18 @@
     }
   },
   "Ba.paw.z_10.ld1.psl.v1.0.0-high": {
-    "_metadata": {
-      "_aiida_hash": "1423194636354db0b62e8455b81fb05e486b8520a3340e121cf3e8d202bb0f93",
-      "ctime": "2022-06-12 09:58:36.728849+00:00",
-      "uuid": "48639538-089b-417d-8c73-e29f78df6e90"
-    },
+    "_metadata": [
+      {
+        "_aiida_hash": "1423194636354db0b62e8455b81fb05e486b8520a3340e121cf3e8d202bb0f93",
+        "ctime": "2022-06-12 09:58:36.728849+00:00",
+        "uuid": "48639538-089b-417d-8c73-e29f78df6e90"
+      },
+      {
+        "_aiida_hash": "f8d3ca8f2a396718dab096e4c133c4246e7ceb12c6fd7dde0dd07dd77bd92c31",
+        "ctime": "2022-06-12 18:35:15.918104+00:00",
+        "uuid": "821c9d84-9394-4ea4-b848-342b744eab73"
+      }
+    ],
     "accuracy": {
       "bands": {
         "_metadata": {
@@ -3493,20 +3514,20 @@
               0.0549412,
               2.8946378
             ],
-            "delta": 157.65458639796,
-            "delta/natoms": 157.65458639796,
-            "delta1": 570.42485575284,
-            "delta_relative": 53.704529287925,
+            "delta": 0.57695051820189,
+            "delta/natoms": 0.57695051820189,
+            "delta1": 3.1286414760383,
+            "delta_relative": 20.57524780928,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 1,
-            "nu/natoms": 264.87480022802,
+            "nu/natoms": 2.7010626074296,
             "reference_wien2k_V0_B0_B1": [
-              126.2802,
+              63.1401,
               0.054157574685289,
               3.77
             ],
-            "rel_errors_vec_length": 264.87480022802
+            "rel_errors_vec_length": 2.7010626074296
           }
         },
         "X2O": {
@@ -3889,8 +3910,8 @@
         },
         "_metadata": {
           "_aiida_hash": "d049756a10000d9872952e5a18450d6c7b7c4547b269def38be3dbe146643d69",
-          "ctime": "2022-06-12 09:58:37.923263+00:00",
-          "uuid": "ce625e31-a075-45a6-90ff-b875b0bd4e95"
+          "ctime": "2022-06-12 18:36:37.257527+00:00",
+          "uuid": "70f904fc-f7f0-4a36-9a6c-1f49b00c8065"
         },
         "output_parameters": {
           "BCC": {
@@ -3918,10 +3939,10 @@
             "nu/natoms": 3.5512811234555
           },
           "TYPICAL": {
-            "delta": 157.65458639796,
-            "delta/natoms": 157.65458639796,
-            "nu": 264.87480022802,
-            "nu/natoms": 264.87480022802
+            "delta": 0.57695051820189,
+            "delta/natoms": 0.57695051820189,
+            "nu": 2.7010626074296,
+            "nu/natoms": 2.7010626074296
           },
           "X2O": {
             "delta": 13.374159689139,

@@ -109,9 +109,10 @@ def get_metadata(node):
 @click.command()
 @click.option('profile', '-p', help='profile')
 @click.option('element', '-e', help='element')
+@click.option('update', '-U', is_flag=True, default=False, help='update output use input node.')
 @click.option('--dst', type=click.Path(), help='folder to store the output.')
 @click.argument('pks', nargs=-1)
-def run(pks, element, dst, profile):
+def run(pks, element, dst, profile, update):
     _profile = aiida.load_profile(profile)
     click.echo(f'Profile: {_profile.name}')
     
@@ -124,7 +125,12 @@ def run(pks, element, dst, profile):
         Path(os.path.join(dst, 'bands', element)).mkdir(parents=True, exist_ok=True)
         Path(os.path.join(dst, 'band_structure', element)).mkdir(parents=True, exist_ok=True)
         
-        curated_result = {} # all results of pseudos of the elements
+        if update:
+            with open(os.path.join(dst, json_fn), 'r') as fh:
+                curated_result = json.load(fh)
+        else:
+            curated_result = {} # all results of pseudos of the elements
+            
         for pk in tqdm(pks):
             # meta info of such verification
             # uuid, label
@@ -133,12 +139,22 @@ def run(pks, element, dst, profile):
             assert element == label.split('.')[0]
             assert f'{label}.upf' ==  _node.inputs.pseudo.filename
             
-            psp_result = {
-                '_metadata': get_metadata(_node),
-            } # the results of one verification
-            
-            psp_result['accuracy'] = {}
-            psp_result['convergence'] = {}
+            if update:
+                # append the new _metadata of the output node if it update the previous result
+                psp_result = curated_result[label]
+                metadata = get_metadata(_node)
+                if metadata['_aiida_hash'] in [i.get('_aiida_hash') for i in psp_result['_metadata']]:
+                    click.echo(f'_metadata of {label} is in the list, do nothing.')
+                    continue
+                else:
+                    psp_result['_metadata'] += [get_metadata(_node)]
+            else:
+                psp_result = {
+                    '_metadata': [get_metadata(_node)],
+                } # the results of one verification
+                psp_result['accuracy'] = {}
+                psp_result['convergence'] = {}
+                
             for called_wf in _node.called:
                 if called_wf.process_label == 'parse_pseudo_info':
                     psp_result['pseudo_info'] = {
@@ -162,10 +178,7 @@ def run(pks, element, dst, profile):
                     with open(os.path.join(dst, 'band_structure', element, f'{label}.json'), 'w') as fh:
                         bands = called_wf.outputs.band_structure
                         json.dump(export_bands_structure(bands.band_structure, bands.band_parameters), fh)
-                        
-                    
-                        
-                    
+                            
                 # convergence
                 for k, v in process_prop_label_mapping.items():
                     if called_wf.process_label == v:
