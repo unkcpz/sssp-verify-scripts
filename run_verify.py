@@ -96,7 +96,7 @@ def inputs_from_mode(mode, computer_label, properties_list):
               help='mode of verification.')
 @click.option('--computer', type=click.Choice(['mr0', 'mr32', 'imx'], case_sensitive=True),
               help='computer to run non-test verification.')
-@click.option('--test-mode', is_flag=True, default=False, 
+@click.option('--test-mode', is_flag=True, default=False, # TODO: rename to `--no-cleanup`
               help='in test mode the remote folder will not being cleaned.')
 @click.option('--property', multiple=True, default=[])
 @click.argument('filename', type=click.Path(exists=True))

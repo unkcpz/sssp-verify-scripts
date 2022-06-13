@@ -32,7 +32,8 @@ def run(profile, find_all, nodes, dry_run):
         
     for n in nodes_to_process:
         if find_all:
-            same_nodes = n.get_all_same_nodes
+            same_nodes = n.get_all_same_nodes()
+            print(same_nodes)
         else:
             same_nodes = [n]
         for nn in same_nodes:
