@@ -19,6 +19,7 @@ def run_verification(
     properties_list,
     label,
     extra_desc,
+    clean_workchain,
 ):
     """
     pw_code: code for pw.x calculation
@@ -31,11 +32,6 @@ def run_verification(
         precheck: precheck control protocol on convergence verification
         standard: running a production on eiger
     """
-    if cutoff_control.value == 'test':
-        clean_workchain = False
-    else:
-        clean_workchain = True
-    
     inputs = {
         "accuracy": {
             "protocol": protocol,
@@ -56,7 +52,7 @@ def run_verification(
         "parallelization": parallization,
         "clean_workchain": orm.Bool(clean_workchain),  
     }
-    
+   
     if cutoff_control.value == 'test':
         _, node = run_get_node(VerificationWorkChain, **inputs)
     else:
