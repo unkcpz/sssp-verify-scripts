@@ -1,0 +1,10 @@
+label: "ph-7.0"
+description: "QuantumESPRESSO 7.0"
+input_plugin: "quantumespresso.ph"
+on_computer: true
+remote_abs_path: "/usr/local/share/qe-7.0/bin/ph.x"
+computer: "localhost"
+prepend_text: |
+  source /opt/intel/bin/compilervars.sh intel64
+  source /opt/intel/mkl/bin/mklvars.sh intel64
+append_text: " "

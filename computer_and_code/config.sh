@@ -8,8 +8,8 @@ WDIR="$HOME/Projects/WP-SSSP/sssp-verify-scripts/computer_and_code"
 # localhost
 verdi -p ${profile} computer setup --config $WDIR/localhost/theos38/computer-setup.yaml -n
 verdi -p ${profile} computer configure local localhost --config $WDIR/localhost/theos38/computer-configure.yaml -n
-verdi -p ${profile} code setup --config $WDIR/localhost/codes/pw-6.7.yaml
-verdi -p ${profile} code setup --config $WDIR/localhost/codes/ph-6.7.yaml
+verdi -p ${profile} code setup --config $WDIR/localhost/codes/pw-7.0.yaml
+verdi -p ${profile} code setup --config $WDIR/localhost/codes/ph-7.0.yaml
 
 # eiger mr0
 verdi -p ${profile} computer setup --config $WDIR/eiger.cscs.ch/multicore-mr0/computer-setup.yaml -n
