@@ -117,6 +117,10 @@ def run(pks, element, dst, profile, override, mylabel):
     _profile = aiida.load_profile(profile)
     click.echo(f'Profile: {_profile.name}')
     
+    # can't use mylabel with more than one node output
+    if mylabel and len(pks) > 1:
+        raise ValueError("cant use label with more than one node.")
+    
     if not dst:
         dst='./sssp_db'
     
@@ -179,12 +183,16 @@ def run(pks, element, dst, profile, override, mylabel):
                     }
                     psp_result['accuracy']['bands']['_metadata'] = get_metadata(called_wf)
                     
-                    with open(os.path.join(dst, 'bands', element, f'{label}.json'), 'w') as fh:
-                        bands = called_wf.outputs.bands
-                        json.dump(export_bands_data(bands.band_structure, bands.band_parameters), fh)
-                    with open(os.path.join(dst, 'band_structure', element, f'{label}.json'), 'w') as fh:
-                        bands = called_wf.outputs.band_structure
-                        json.dump(export_bands_structure(bands.band_structure, bands.band_parameters), fh)
+                    try:
+                        with open(os.path.join(dst, 'bands', element, f'{label}.json'), 'w') as fh:
+                            bands = called_wf.outputs.bands
+                            json.dump(export_bands_data(bands.band_structure, bands.band_parameters), fh)
+                        with open(os.path.join(dst, 'band_structure', element, f'{label}.json'), 'w') as fh:
+                            bands = called_wf.outputs.band_structure
+                            json.dump(export_bands_structure(bands.band_structure, bands.band_parameters), fh)
+                    except Exception:
+                        # bands not finished okay
+                        pass
                             
                 # convergence
                 for k, v in process_prop_label_mapping.items():
