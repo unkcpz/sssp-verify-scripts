@@ -109,10 +109,10 @@ def get_metadata(node):
 @click.command()
 @click.option('profile', '-p', help='profile')
 @click.option('element', '-e', help='element')
-@click.option('update', '-U', is_flag=True, default=False, help='update output use input node.')
+@click.option('override', '--override', is_flag=True, default=False, help='Purge previous results of element, careful to use.')
 @click.option('--dst', type=click.Path(), help='folder to store the output.')
 @click.argument('pks', nargs=-1)
-def run(pks, element, dst, profile, update):
+def run(pks, element, dst, profile, override):
     _profile = aiida.load_profile(profile)
     click.echo(f'Profile: {_profile.name}')
     
@@ -124,12 +124,15 @@ def run(pks, element, dst, profile, update):
         json_fn = f'{element}.json'
         Path(os.path.join(dst, 'bands', element)).mkdir(parents=True, exist_ok=True)
         Path(os.path.join(dst, 'band_structure', element)).mkdir(parents=True, exist_ok=True)
+        Path(os.path.join(dst, json_fn)).touch(exist_ok=True)
         
-        if update:
+        # read the results from the <element>.json, if not exist, create the json and set to {}
+        try:
             with open(os.path.join(dst, json_fn), 'r') as fh:
                 curated_result = json.load(fh)
-        else:
-            curated_result = {} # all results of pseudos of the elements
+        except json.decoder.JSONDecodeError:
+            # newly create empty file
+            curated_result = {}
             
         for pk in tqdm(pks):
             # meta info of such verification
@@ -137,9 +140,17 @@ def run(pks, element, dst, profile, update):
             _node  = orm.load_node(pk)
             label = _node.extras.get("label").split()[-1]   # do not contain the extra machine info
             assert element == label.split('.')[0]
-            assert f'{label}.upf' ==  _node.inputs.pseudo.filename
             
-            if update:
+            # TODO label check
+            
+            # if override or newly run element
+            if override or label not in curated_result:
+                psp_result = {
+                    '_metadata': [get_metadata(_node)],
+                } # the results of one verification
+                psp_result['accuracy'] = {}
+                psp_result['convergence'] = {}
+            else:
                 # append the new _metadata of the output node if it update the previous result
                 psp_result = curated_result[label]
                 metadata = get_metadata(_node)
@@ -148,12 +159,6 @@ def run(pks, element, dst, profile, update):
                     continue
                 else:
                     psp_result['_metadata'] += [get_metadata(_node)]
-            else:
-                psp_result = {
-                    '_metadata': [get_metadata(_node)],
-                } # the results of one verification
-                psp_result['accuracy'] = {}
-                psp_result['convergence'] = {}
                 
             for called_wf in _node.called:
                 if called_wf.process_label == 'parse_pseudo_info':
