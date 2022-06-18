@@ -111,8 +111,9 @@ def get_metadata(node):
 @click.option('element', '-e', help='element')
 @click.option('override', '--override', is_flag=True, default=False, help='Purge previous results of element, careful to use.')
 @click.option('--dst', type=click.Path(), help='folder to store the output.')
+@click.option('mylabel', '--label', required=False, help='custom set label.')
 @click.argument('pks', nargs=-1)
-def run(pks, element, dst, profile, override):
+def run(pks, element, dst, profile, override, mylabel):
     _profile = aiida.load_profile(profile)
     click.echo(f'Profile: {_profile.name}')
     
@@ -139,7 +140,7 @@ def run(pks, element, dst, profile, override):
             # uuid, label
             _node  = orm.load_node(pk)
             assert _node.get_attribute("process_label") == "VerificationWorkChain"
-            label = _node.extras.get("label").split()[-1]   # do not contain the extra machine info
+            label = mylabel or _node.extras.get("label").split()[-1]   # do not contain the extra machine info
             assert element == label.split('.')[0]
             
             # TODO label check
