@@ -2,6 +2,8 @@
 
 import os
 import sys
+import filecmp
+from turtle import st
 
 def main():
     
@@ -37,6 +39,24 @@ def main():
             if psp_filename.startswith(f'{element}.'):
                 src = os.path.join('..', '..', psp_folder, psp_filename)
                 dst = os.path.join(link_dst_path, psp_filename)
+                
+                if folder == 'NC-DOJOv4-stringent':
+                    str_src = os.path.join('.', psp_folder, psp_filename)
+                    
+                    std_src = str_src.replace("stringent", "standard").replace("-str.upf", "-std.upf")
+                    
+                    if filecmp.cmp(str_src, std_src):
+                        print(f'DOJO std and str for {element} are the same. SKIP')
+                        continue
+                    
+                if folder == 'PAW-JTH1.1-standard':
+                    str_src = os.path.join('.', psp_folder, psp_filename)
+                    
+                    std_src = str_src.replace("stringent", "standard").replace("-str.upf", "-std.upf")
+                    
+                    if filecmp.cmp(str_src, std_src):
+                        print(f'JTH std and str for {element} are the same. SKIP')
+                        continue
                 
                 try:
                     os.symlink(src, dst)
