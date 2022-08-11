@@ -19,16 +19,18 @@ UpfData = DataFactory('pseudo.upf')
 SSSP_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), '_sssp')
 
 def inputs_from_mode(mode, computer_label, properties_list):
-    if computer_label == 'imx':
-        computer = 'imxgesrv1'
+    if 'imx' in computer_label:
         mpiprocs = 32
         npool = 4
         walltime = 3600
-    else:
-        computer = f'eiger-mc-{computer_label}'
+    elif 'eiger-mc' in computer_label:
         mpiprocs = 128
         npool = 16
         walltime = 1800
+    elif 'daint-mc' in computer_label:
+        mpiprocs = 36
+        npool = 4
+        walltime = 3600
         
     inputs = {}
     if mode == 'TEST':
@@ -51,8 +53,8 @@ def inputs_from_mode(mode, computer_label, properties_list):
         inputs['properties_list'] = orm.List(list=properties_list)
         
     if mode == 'PRECHECK':
-        inputs['pw_code'] = orm.load_code(f'pw-7.0@{computer}')
-        inputs['ph_code'] = orm.load_code(f'ph-7.0@{computer}')
+        inputs['pw_code'] = orm.load_code(f'pw-7.0@{computer_label}')
+        inputs['ph_code'] = orm.load_code(f'ph-7.0@{computer_label}')
         inputs['protocol'] = orm.Str('acwf')
         inputs['cutoff_control'] = orm.Str('precheck')
         inputs['criteria'] = orm.Str('precision')
@@ -70,8 +72,8 @@ def inputs_from_mode(mode, computer_label, properties_list):
         inputs['properties_list'] = orm.List(list=properties_list)
         
     if mode == 'STANDARD':
-        inputs['pw_code'] = orm.load_code(f'pw-7.0@{computer}')
-        inputs['ph_code'] = orm.load_code(f'ph-7.0@{computer}')
+        inputs['pw_code'] = orm.load_code(f'pw-7.0@{computer_label}')
+        inputs['ph_code'] = orm.load_code(f'ph-7.0@{computer_label}')
         inputs['protocol'] = orm.Str('acwf')
         inputs['cutoff_control'] = orm.Str('standard')
         inputs['criteria'] = orm.Str('efficiency')
@@ -94,8 +96,8 @@ def inputs_from_mode(mode, computer_label, properties_list):
 @click.option('profile', '-p', help='profile')
 @click.option('--mode', type=click.Choice(['TEST', 'PRECHECK', 'STANDARD'], case_sensitive=False), 
               help='mode of verification.')
-@click.option('--computer', type=click.Choice(['mr0', 'mr32', 'imx'], case_sensitive=True),
-              help='computer to run non-test verification.')
+@click.option('--computer', type=str,
+              help='computer (aiida) to run non-test verification.')
 @click.option('--test-mode', is_flag=True, default=False, # TODO: rename to `--no-cleanup`
               help='in test mode the remote folder will not being cleaned.')
 @click.option('--property', multiple=True, default=[])
