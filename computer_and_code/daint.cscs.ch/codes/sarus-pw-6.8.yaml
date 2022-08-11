@@ -1,0 +1,13 @@
+label: "sarus-pw-6.8"
+description: "doing pw in sarus containerized"
+input_plugin: "quantumespresso.pw"
+on_container: true
+on_computer: true
+image: "jusong/qe-mpich314:v01"
+container_engine_command: "sarus run --mount=src=$PWD,dst=/workdir,type=bind --workdir=/rundir {image}"
+escape_execline: False
+remote_abs_path: "/usr/local/bin/pw.x"
+computer: "daint-mc-mr0"
+use_double_quotes: true
+prepend_text: " "
+append_text: " "
