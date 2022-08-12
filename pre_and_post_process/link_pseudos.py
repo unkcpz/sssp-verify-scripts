@@ -1,6 +1,8 @@
 """create links to pseudopotentials to folder catogriesed by elements"""
 
+from fnmatch import fnmatch
 import os
+import re
 import sys
 import filecmp
 from turtle import st
@@ -42,17 +44,30 @@ def main():
                 
                 if folder == 'NC-DOJOv4-stringent':
                     str_src = os.path.join('.', psp_folder, psp_filename)
-                    
-                    std_src = str_src.replace("stringent", "standard").replace("-str.upf", "-std.upf")
+                    try:
+                        fn = [f for f in os.listdir(os.path.join('.', func_path, "NC-DOJOv4-standard")) 
+                            if fnmatch(f, f'{element}.nc.*.dojo.*.upf')][0]
+                    except:
+                        print(f"{fn} not exist.")
+                        continue
+                        
+                    std_src = os.path.join('.', func_path, "NC-DOJOv4-standard", fn)
                     
                     if filecmp.cmp(str_src, std_src):
                         print(f'DOJO std and str for {element} are the same. SKIP')
                         continue
                     
-                if folder == 'PAW-JTH1.1-standard':
+                if folder == 'PAW-JTH1.1-stringent':
                     str_src = os.path.join('.', psp_folder, psp_filename)
                     
-                    std_src = str_src.replace("stringent", "standard").replace("-str.upf", "-std.upf")
+                    try:
+                        fn = [f for f in os.listdir(os.path.join('.', func_path, "PAW-JTH1.1-standard")) 
+                            if fnmatch(f, f'{element}.paw.*.jth.*.upf')][0]
+                    except:
+                        print(f"{fn} not exist.")
+                        continue
+                        
+                    std_src = os.path.join('.', func_path, "PAW-JTH1.1-standard", fn)
                     
                     if filecmp.cmp(str_src, std_src):
                         print(f'JTH std and str for {element} are the same. SKIP')
