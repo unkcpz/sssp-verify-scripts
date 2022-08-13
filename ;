@@ -1,0 +1,18 @@
+Na full DB updated
+
+# Please enter the commit message for your changes. Lines starting
+# with '#' will be ignored, and an empty message aborts the commit.
+#
+# Date:      Sun Aug 14 00:07:16 2022 +0200
+#
+# On branch main
+# Your branch and 'origin/main' have diverged,
+# and have 1 and 1 different commits each, respectively.
+#   (use "git pull" to merge the remote branch into yours)
+#
+# Changes to be committed:
+#	modified:   sssp_db.tar.gz
+#	modified:   sssp_db/Na.json
+#	modified:   sssp_db/band_structure/Na/Na.paw.z_9.ld1.psl.v1.0.0-low.json
+#	modified:   sssp_db/bands/Na/Na.paw.z_9.ld1.psl.v1.0.0-low.json
+#
