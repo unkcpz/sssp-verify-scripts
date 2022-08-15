@@ -1,5 +1,5 @@
 ---
-label: "daint-mc-mr32"
+label: "daint-mc-mr32-mem"
 hostname: "daint.cscs.ch"
 description: Piz Daint supercomputer at CSCS Lugano, Switzerland, multicore partition.
 transport: ssh

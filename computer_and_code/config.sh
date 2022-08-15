@@ -5,6 +5,10 @@
 profile="$1"
 WDIR="$HOME/Projects/WP-SSSP/sssp-verify-scripts/computer_and_code"
 
+# 
+verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.pw
+verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.ph
+
 # localhost
 verdi -p ${profile} computer setup --config $WDIR/localhost/theos38/computer-setup.yaml -n
 verdi -p ${profile} computer configure local localhost --config $WDIR/localhost/theos38/computer-configure.yaml -n
@@ -35,6 +39,8 @@ verdi -p ${profile} computer configure ssh daint-mc-mr32 --config $WDIR/daint.cs
 verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/pw-7.0-multicore.yaml --computer daint-mc-mr32
 verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/ph-7.0-multicore.yaml --computer daint-mc-mr32
 
-# 
-verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.pw
-verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.ph
+# daint mr32 mem
+verdi -p ${profile} computer setup --config $WDIR/daint.cscs.ch/multicore/computer-setup-mem.yaml -n
+verdi -p ${profile} computer configure ssh daint-mc-mr32-mem --config $WDIR/daint.cscs.ch/multicore/computer-configure.yaml
+verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/pw-7.0-multicore.yaml --computer daint-mc-mr32-mem
+verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/ph-7.0-multicore.yaml --computer daint-mc-mr32-mem
