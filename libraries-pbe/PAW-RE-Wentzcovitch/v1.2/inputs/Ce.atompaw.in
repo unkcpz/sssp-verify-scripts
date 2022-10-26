@@ -1,0 +1,48 @@
+Ce  58                                                          
+GGA-PBE  loggrid 2001 scalarrelativistic logderivrange -8 8 500  
+6 5 5 4 0                                                       
+5 2 1                                                           
+4 3 1                                                           
+0 0 0                                                           
+c                                                               
+c                                                               
+c                                                               
+c                                                               
+v                                                               
+v                                                               
+c                                                               
+c                                                               
+c                                                               
+v                                                               
+c                                                               
+c                                                               
+v                                                               
+v                                                               
+3                                                               
+2.335 1.9458 2.335 1.631930               ! rpaw, rshape, rveff, rcore
+n                                                               
+y                                                               
+2.0                                                             
+n                                                               
+y                                                               
+2.0                                                             
+n                                                               
+y                                                               
+2.0                                                             
+n                                                               
+VANDERBILT BESSELSHAPE                                          
+4 0.0                                                           
+2.295
+2.295
+2.295
+2.295
+2.295
+2.295
+2.295
+2.295
+ABINITOUT
+default
+PWSCFOUT                                                        
+UPFDX  0.0125d0  UPFXMIN  -7.d0  UPFZMESH  58.0
+END
+0
