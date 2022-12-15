@@ -1,0 +1,87 @@
+ Completed calculations for Eu
+ Exchange-correlation type: GGA, Perdew-Burke-Ernzerhof modified (PBEsol)
+  Radial integration grid is logarithmic 
+r0 =   1.0731559E-04 h =   6.7608823E-03   n =      2001 rmax =   8.0000000E+01
+ Scalar relativistic calculation
+   AEatom converged in          44  iterations
+     for nz =  63.00
+     delta  =    1.7178758660217019E-015
+  All Electron Orbital energies:         
+  n  l     occupancy       energy
+ 1  0      2.0000000E+00 -3.5541894E+03
+ 2  0      2.0000000E+00 -5.8408588E+02
+ 3  0      2.0000000E+00 -1.2896223E+02
+ 4  0      2.0000000E+00 -2.5999727E+01
+ 5  0      2.0000000E+00 -3.5461615E+00
+ 6  0      2.0000000E+00 -3.0009523E-01
+ 2  1      6.0000000E+00 -5.2049416E+02
+ 3  1      6.0000000E+00 -1.0917619E+02
+ 4  1      6.0000000E+00 -1.9480005E+01
+ 5  1      6.0000000E+00 -1.9582951E+00
+ 3  2      1.0000000E+01 -8.2713069E+01
+ 4  2      1.0000000E+01 -1.0397161E+01
+ 5  2      1.0000000E+00 -1.9553666E-01
+ 4  3      6.0000000E+00 -6.1735479E-01
+
+  Total energy
+     Total                    :    -21680.356022552391     
+ Completed calculations for Eu
+ Exchange-correlation type: GGA, Perdew-Burke-Ernzerhof modified (PBEsol)
+  Radial integration grid is logarithmic 
+r0 =   1.0731559E-04 h =   6.7608823E-03   n =      2001 rmax =   8.0000000E+01
+ Scalar relativistic calculation
+   SCatom converged in           5  iterations
+     for nz =  63.00
+     delta  =    7.8218377796764839E-014
+   Valence Electron Orbital energies:         
+  n  l     occupancy       energy
+ 5  0      2.0000000E+00 -3.5461615E+00
+ 6  0      2.0000000E+00 -3.0009522E-01
+ 5  1      6.0000000E+00 -1.9582951E+00
+ 5  2      1.0000000E+00 -1.9553665E-01
+ 4  3      6.0000000E+00 -6.1735479E-01
+
+  Total energy
+     Total                    :    -21680.356022539836     
+     Valence                  :    -634.01628996886859     
+  paw parameters: 
+       lmax =            3
+         rc =    2.5617663454677957     
+        irc =         1492
+   rc_shape =    2.1343129421375870     
+    rc_vloc =    2.5617663454677957     
+    rc_core =    2.5617663454677957     
+ Vloc: Norm-conserving Troullier-Martins with l= 4;e=   0.0000E+00
+ Projector type: polynomial pseudization + Vanderbilt ortho.
+ Bessel compensation charge shape zeroed at   2.1343E+00
+
+Number of basis functions     8
+ No.    n nodes    l      Energy         Cp coeff         Occ
+    1    5    4    0 -3.5461615E+00  2.8994311E+00  2.0000000E+00
+    2    6    5    0 -3.0009522E-01  2.3779424E+01  2.0000000E+00
+    3    5    3    1 -1.9582951E+00  1.1601522E+00  6.0000000E+00
+    4  999    4    1  2.0000000E+00  1.1482255E+00  0.0000000E+00
+    5    5    2    2 -1.9553665E-01  9.8422799E+00  1.0000000E+00
+    6  999    3    2  2.0000000E+00  1.0702069E+00  0.0000000E+00
+    7    4    0    3 -6.1735479E-01  1.6667025E+01  6.0000000E+00
+    8  999    1    3  2.0000000E+00 -9.7961902E+00  0.0000000E+00
+ Completed diagonalization of ovlp with info =        0
+  
+ Eigenvalues of overlap operator (in the basis of projectors):
+    1        7.20226693E-01
+    2        8.39681485E-01
+    3        1.62846016E+00
+    4        2.04540648E+00
+    5        1.10430613E+01
+    6        4.29900425E+01
+    7        5.15708580E+01
+    8        6.15893442E+04
+  
+  Summary of PAW energies
+        Total valence energy       -634.01628791420080     
+          Smooth energy             32.241523648869290     
+          One center               -666.25781156307005     
+          Smooth kinetic            18.678402321898297     
+          Vloc energy              0.85092186614929999     
+          Smooth exch-corr         -8.6452001654170996     
+          One-center xc            -467.09235449964780     

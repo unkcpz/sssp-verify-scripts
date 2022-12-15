@@ -1,8 +1,8 @@
 label: "localhost"
 hostname: "localhost"
 description: EPFL theospc38 computer for test purpose
-transport: "local"
-scheduler: "direct"
+transport: "core.local"
+scheduler: "core.direct"
 work_dir: "/scratch/{username}/aiida_run/"
 shebang: "#!/bin/bash"
 mpirun_command: "mpirun -np {tot_num_mpiprocs}"
