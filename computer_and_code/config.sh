@@ -5,15 +5,15 @@
 profile="$1"
 WDIR="$HOME/Projects/WP-SSSP/sssp-verify-scripts/computer_and_code"
 
-# 
-verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.pw
-verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.ph
+# # 
+# verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.pw
+# verdi -p ${profile} config set caching.enabled_for -a aiida.calculations:quantumespresso.ph
 
-# localhost
-verdi -p ${profile} computer setup --config $WDIR/localhost/theos38/computer-setup.yaml -n
-verdi -p ${profile} computer configure local localhost --config $WDIR/localhost/theos38/computer-configure.yaml -n
-verdi -p ${profile} code setup --config $WDIR/localhost/codes/pw-7.0.yaml
-verdi -p ${profile} code setup --config $WDIR/localhost/codes/ph-7.0.yaml
+# # localhost
+# verdi -p ${profile} computer setup --config $WDIR/localhost/theos38/computer-setup.yaml -n
+# verdi -p ${profile} computer configure local localhost --config $WDIR/localhost/theos38/computer-configure.yaml -n
+# verdi -p ${profile} code setup --config $WDIR/localhost/codes/pw-7.0.yaml
+# verdi -p ${profile} code setup --config $WDIR/localhost/codes/ph-7.0.yaml
 
 # # eiger mr32
 # verdi -p ${profile} computer setup --config $WDIR/eiger.cscs.ch/multicore-mr32/computer-setup.yaml -n
@@ -39,11 +39,11 @@ verdi -p ${profile} code setup --config $WDIR/localhost/codes/ph-7.0.yaml
 # verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/pw-7.0-multicore.yaml --computer daint-mc-mr32-mem
 # verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/ph-7.0-multicore.yaml --computer daint-mc-mr32-mem
 
-# daint mrcloud
-verdi -p ${profile} computer setup --config $WDIR/daint.cscs.ch/multicore/computer-setup-mrcloud.yaml -n
-verdi -p ${profile} computer configure ssh daint-mc-mrcloud --config $WDIR/daint.cscs.ch/multicore/computer-configure.yaml
-verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/pw-7.0-multicore.yaml --computer daint-mc-mrcloud
-verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/ph-7.0-multicore.yaml --computer daint-mc-mrcloud
+# # daint mrcloud
+# verdi -p ${profile} computer setup --config $WDIR/daint.cscs.ch/multicore/computer-setup-mrcloud.yaml -n
+# verdi -p ${profile} computer configure ssh daint-mc-mrcloud --config $WDIR/daint.cscs.ch/multicore/computer-configure.yaml
+# verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/pw-7.0-multicore.yaml --computer daint-mc-mrcloud
+# verdi -p ${profile} code setup --config $WDIR/daint.cscs.ch/codes/ph-7.0-multicore.yaml --computer daint-mc-mrcloud
 
 # daint s1192
 verdi -p ${profile} computer setup --config $WDIR/daint.cscs.ch/multicore/computer-setup-s1192.yaml -n

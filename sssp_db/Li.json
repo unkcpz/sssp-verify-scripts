@@ -1,789 +1,4 @@
 {
-  "Li.nc.oncv.ga.v04": {
-    "_metadata": [
-      {
-        "_aiida_hash": "58bb26c1c9f16d07400b05083804b1967b40d6ef7d41a827568ed235bbe288b6",
-        "ctime": "2022-10-18 16:14:37.115408+00:00",
-        "uuid": "3c6cc7af-3777-46e7-817c-ea061d5e2197"
-      }
-    ],
-    "accuracy": {
-      "delta": {
-        "BCC": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 3.3518455,
-              "bulk_modulus0": 0.0887862,
-              "bulk_modulus0_GPa": 14.2251251,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -7.9477424,
-              "num_of_atoms": 1,
-              "residuals0": 0,
-              "volume0": 19.7779991,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -7.9472265801693,
-                -7.9464864305395,
-                -7.9475031838821,
-                -7.9477271335679,
-                -7.9460631574699,
-                -7.9442930569764,
-                -7.9419675721468
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 1,
-              "volume_unit": "A^3",
-              "volumes": [
-                20.265925079126,
-                19.049969574803,
-                19.455288076873,
-                19.86060657762,
-                20.671243582012,
-                21.076562083034,
-                21.481880584489
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              19.7779991,
-              0.0887862,
-              3.3518455
-            ],
-            "delta": 1.4930048773468,
-            "delta/natoms": 1.4930048773468,
-            "delta1": 15.914115829619,
-            "delta_relative": 97.98549332297,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 1,
-            "nu/natoms": 9.8521373732159,
-            "reference_wien2k_V0_B0_B1": [
-              20.267495555898,
-              0.086680989602292,
-              3.3468965113134
-            ],
-            "rel_errors_vec_length": 9.8521373732159
-          }
-        },
-        "Diamond": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 2.7129487,
-              "bulk_modulus0": 0.0341115,
-              "bulk_modulus0_GPa": 5.4652607,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -14.8548384,
-              "num_of_atoms": 2,
-              "residuals0": 0,
-              "volume0": 49.8623343,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -14.85409720793,
-                -14.85394713715,
-                -14.854731913449,
-                -14.854762934426,
-                -14.852786027418,
-                -14.850876876755,
-                -14.848413566268
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 2,
-              "volume_unit": "A^3",
-              "volumes": [
-                51.36158948436,
-                48.279894117175,
-                49.307125906063,
-                50.334357694684,
-                52.388821276063,
-                53.416053064198,
-                54.443284854592
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              49.8623343,
-              0.0341115,
-              2.7129487
-            ],
-            "delta": 1.8203376087367,
-            "delta/natoms": 0.91016880436837,
-            "delta1": 19.849343331536,
-            "delta_relative": 117.78527581048,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 2,
-            "nu/natoms": 6.0888194627158,
-            "reference_wien2k_V0_B0_B1": [
-              51.400439965415,
-              0.033719285706924,
-              2.9633276192676
-            ],
-            "rel_errors_vec_length": 12.177638925432
-          }
-        },
-        "FCC": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 3.3374397,
-              "bulk_modulus0": 0.0882025,
-              "bulk_modulus0_GPa": 14.1315969,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -7.9493152,
-              "num_of_atoms": 1,
-              "residuals0": 0,
-              "volume0": 19.733698,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -7.9488195345565,
-                -7.9480449625266,
-                -7.9490668860321,
-                -7.9493026726697,
-                -7.9476784251915,
-                -7.9459352639677,
-                -7.9436403919444
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 1,
-              "volume_unit": "A^3",
-              "volumes": [
-                20.212866209974,
-                19.000094238238,
-                19.404351562538,
-                19.808608886216,
-                20.617123535497,
-                21.021380858857,
-                21.425638184485
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              19.733698,
-              0.0882025,
-              3.3374397
-            ],
-            "delta": 1.4872950551412,
-            "delta/natoms": 1.4872950551412,
-            "delta1": 15.986403165764,
-            "delta_relative": 98.374407642559,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 1,
-            "nu/natoms": 9.8910986492498,
-            "reference_wien2k_V0_B0_B1": [
-              20.224339488182,
-              0.086184093300681,
-              3.3298070148458
-            ],
-            "rel_errors_vec_length": 9.8910986492498
-          }
-        },
-        "SC": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 3.327642,
-              "bulk_modulus0": 0.0786654,
-              "bulk_modulus0_GPa": 12.6035989,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -7.8280837,
-              "num_of_atoms": 1,
-              "residuals0": 0,
-              "volume0": 19.890399,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -7.8275794877062,
-                -7.8270334912973,
-                -7.8278996296325,
-                -7.8280615373641,
-                -7.8265081755398,
-                -7.8248972616395,
-                -7.8227921890158
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 1,
-              "volume_unit": "A^3",
-              "volumes": [
-                20.40472126624,
-                19.18043799063,
-                19.588532415149,
-                19.996626841548,
-                20.812815691672,
-                21.220910116103,
-                21.629004542754
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              19.890399,
-              0.0786654,
-              3.327642
-            ],
-            "delta": 1.4008054771037,
-            "delta/natoms": 1.4008054771037,
-            "delta1": 16.778535454973,
-            "delta_relative": 102.55622606506,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 1,
-            "nu/natoms": 10.410858105519,
-            "reference_wien2k_V0_B0_B1": [
-              20.410100183998,
-              0.076496191891677,
-              3.3119926083077
-            ],
-            "rel_errors_vec_length": 10.410858105519
-          }
-        },
-        "TYPICAL": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 3.3381045,
-              "bulk_modulus0": 0.0882702,
-              "bulk_modulus0_GPa": 14.1424562,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -23.8471633,
-              "num_of_atoms": 3,
-              "residuals0": 0,
-              "volume0": 59.235655,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -23.845286065157,
-                -23.843925495984,
-                -23.846657927053,
-                -23.847044328698,
-                -23.841565996925,
-                -23.8360502495,
-                -23.828890118172
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 3,
-              "volume_unit": "A^3",
-              "volumes": [
-                60.854131937138,
-                57.202884021321,
-                58.419966657893,
-                59.637049297827,
-                62.071214576247,
-                63.288297212757,
-                64.505379853813
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              59.235655,
-              0.0882702,
-              3.3381045
-            ],
-            "delta": 4.317164818724,
-            "delta/natoms": 1.4390549395747,
-            "delta1": 15.442445831094,
-            "delta_relative": 95.453060633595,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 3,
-            "nu/natoms": 3.1826273422696,
-            "reference_wien2k_V0_B0_B1": [
-              60.6573,
-              0.086376244793098,
-              3.34
-            ],
-            "rel_errors_vec_length": 9.5478820268087
-          }
-        },
-        "X2O": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.4762016,
-              "bulk_modulus0": 0.5435481,
-              "bulk_modulus0_GPa": 87.0860451,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -586.323097,
-              "num_of_atoms": 3,
-              "residuals0": 0,
-              "volume0": 25.1261776,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -586.32125862146,
-                -586.27856477717,
-                -586.29973645801,
-                -586.31372025191,
-                -586.32301334753,
-                -586.31957600557,
-                -586.31147558489
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 3,
-              "volume_unit": "A^3",
-              "volumes": [
-                24.720005608739,
-                23.236805271744,
-                23.731205383893,
-                24.225605497482,
-                25.214405722199,
-                25.708805833148,
-                26.203205946118
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              25.1261776,
-              0.5435481,
-              4.4762016
-            ],
-            "delta": 7.6941492632537,
-            "delta/natoms": 2.5647164210846,
-            "delta1": 11.135243021156,
-            "delta_relative": 70.581508224595,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 3,
-            "nu/natoms": 2.685552449593,
-            "reference_wien2k_V0_B0_B1": [
-              24.7225,
-              0.49464499663093,
-              3.8956
-            ],
-            "rel_errors_vec_length": 8.0566573487791
-          }
-        },
-        "X2O3": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.8510721,
-              "bulk_modulus0": 0.5694684,
-              "bulk_modulus0_GPa": 91.2389418,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -3426.3083088,
-              "num_of_atoms": 10,
-              "residuals0": 0,
-              "volume0": 91.4848794,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -3426.2940230077,
-                -3426.1039366641,
-                -3426.1949214621,
-                -3426.2572483196,
-                -3426.3080140126,
-                -3426.3016895428,
-                -3426.2772614757
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 10,
-              "volume_unit": "A^3",
-              "volumes": [
-                89.389990992189,
-                84.026591532818,
-                85.814391350526,
-                87.602191174741,
-                91.177790813271,
-                92.965590628996,
-                94.753390448909
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              91.4848794,
-              0.5694684,
-              4.8510721
-            ],
-            "delta": 38.129931277678,
-            "delta/natoms": 3.8129931277678,
-            "delta1": 14.651125637355,
-            "delta_relative": 90.436296236464,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 10,
-            "nu/natoms": 1.0332896779127,
-            "reference_wien2k_V0_B0_B1": [
-              89.5533,
-              0.50723411496529,
-              4.3299
-            ],
-            "rel_errors_vec_length": 10.332896779127
-          }
-        },
-        "X2O5": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.6339368,
-              "bulk_modulus0": 0.616727,
-              "bulk_modulus0_GPa": 98.8105984,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -5675.3517432,
-              "num_of_atoms": 14,
-              "residuals0": 0,
-              "volume0": 123.2833488,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -5675.351355801,
-                -5675.213803074,
-                -5675.2960632222,
-                -5675.3405634942,
-                -5675.3320563994,
-                -5675.2858966412,
-                -5675.2156874623
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 14,
-              "volume_unit": "A^3",
-              "volumes": [
-                123.67600066782,
-                116.25544062948,
-                118.72896063984,
-                121.20248065389,
-                126.14952068283,
-                128.62304069431,
-                131.09656070409
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              123.2833488,
-              0.616727,
-              4.6339368
-            ],
-            "delta": 10.54834067014,
-            "delta/natoms": 0.75345290500997,
-            "delta1": 2.6066179703808,
-            "delta_relative": 17.06837301711,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 14,
-            "nu/natoms": 0.12161975422178,
-            "reference_wien2k_V0_B0_B1": [
-              123.781,
-              0.61005544248962,
-              4.5735
-            ],
-            "rel_errors_vec_length": 1.7026765591049
-          }
-        },
-        "XO": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.858355,
-              "bulk_modulus0": 0.5023827,
-              "bulk_modulus0_GPa": 80.4906167,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -574.7742791,
-              "num_of_atoms": 2,
-              "residuals0": 0,
-              "volume0": 16.8762704,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -574.7741336329,
-                -574.7535369286,
-                -574.76462774426,
-                -574.77133167675,
-                -574.77346341653,
-                -574.76970307545,
-                -574.76319125533
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 2,
-              "volume_unit": "A^3",
-              "volumes": [
-                16.778006740612,
-                15.771326336872,
-                16.106886471271,
-                16.442446605776,
-                17.113566875559,
-                17.449127010618,
-                17.784687144393
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              16.8762704,
-              0.5023827,
-              4.858355
-            ],
-            "delta": 1.2547268263567,
-            "delta/natoms": 0.62736341317835,
-            "delta1": 2.9361285865356,
-            "delta_relative": 19.228268944495,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 2,
-            "nu/natoms": 3.0148044219928,
-            "reference_wien2k_V0_B0_B1": [
-              16.8294,
-              0.44722015883223,
-              4.0253
-            ],
-            "rel_errors_vec_length": 6.0296088439855
-          }
-        },
-        "XO2": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 5.0160861,
-              "bulk_modulus0": 0.6387204,
-              "bulk_modulus0_GPa": 102.3343318,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -1137.7771024,
-              "num_of_atoms": 3,
-              "residuals0": 0,
-              "volume0": 25.0966186,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -1137.7765562532,
-                -1137.7348198415,
-                -1137.7568401093,
-                -1137.7704365492,
-                -1137.7760408696,
-                -1137.769637759,
-                -1137.7580123757
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 3,
-              "volume_unit": "A^3",
-              "volumes": [
-                24.890999520714,
-                23.397539549569,
-                23.895359539789,
-                24.393179529795,
-                25.388819511794,
-                25.886639500412,
-                26.384459492265
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              25.0966186,
-              0.6387204,
-              5.0160861
-            ],
-            "delta": 4.1565945632694,
-            "delta/natoms": 1.3855315210898,
-            "delta1": 5.0993408321456,
-            "delta_relative": 33.170835608527,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 3,
-            "nu/natoms": 1.8155128122878,
-            "reference_wien2k_V0_B0_B1": [
-              24.9256,
-              0.58176206999508,
-              4.5304
-            ],
-            "rel_errors_vec_length": 5.4465384368634
-          }
-        },
-        "XO3": {
-          "ecutrho": 1600,
-          "ecutwfc": 200,
-          "eos": {
-            "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.829863,
-              "bulk_modulus0": 0.355659,
-              "bulk_modulus0_GPa": 56.9828819,
-              "bulk_modulus0_GPa_unit": "GPa",
-              "bulk_modulus0_unit": "eV A^3",
-              "energy0": -1698.1228516,
-              "num_of_atoms": 4,
-              "residuals0": 0,
-              "volume0": 48.9846665,
-              "volume0_unit": "A^3"
-            },
-            "output_volume_energy": {
-              "energies": [
-                -1698.0838727067,
-                -1697.964920729,
-                -1698.0152344409,
-                -1698.0544996509,
-                -1698.1043892734,
-                -1698.1169780758,
-                -1698.1224713738
-              ],
-              "energy_unit": "eV",
-              "num_of_atoms": 4,
-              "volume_unit": "A^3",
-              "volumes": [
-                45.908015621935,
-                43.153534686049,
-                44.071694998585,
-                44.989855311116,
-                46.826175935617,
-                47.744336248236,
-                48.662496558904
-              ]
-            }
-          },
-          "output_parameters": {
-            "V0_B0_B1_units_info": "eV/A^3 for B0",
-            "birch_murnaghan_results": [
-              48.9846665,
-              0.355659,
-              4.829863
-            ],
-            "delta": 35.289448266726,
-            "delta/natoms": 8.8223620666815,
-            "delta1": 40.782011880382,
-            "delta_relative": 178.1606352104,
-            "delta_relative_unit": "%",
-            "delta_unit": "meV/atom",
-            "natoms": 4,
-            "nu/natoms": 6.2483032984156,
-            "reference_wien2k_V0_B0_B1": [
-              46.0617,
-              0.32622668553174,
-              5.5488
-            ],
-            "rel_errors_vec_length": 24.993213193662
-          }
-        },
-        "_metadata": {
-          "_aiida_hash": "4a47fb5d888993a8eec99d85cda0ecaa38e166140f26d1e07f4216db5ff131e9",
-          "ctime": "2022-10-18 16:14:38.309456+00:00",
-          "uuid": "caf8a612-0439-4f89-998c-090ae763100d"
-        },
-        "output_parameters": {
-          "BCC": {
-            "delta": 1.4930048773468,
-            "delta/natoms": 1.4930048773468,
-            "nu": 9.8521373732159,
-            "nu/natoms": 9.8521373732159
-          },
-          "Diamond": {
-            "delta": 1.8203376087367,
-            "delta/natoms": 0.91016880436837,
-            "nu": 12.177638925432,
-            "nu/natoms": 6.0888194627158
-          },
-          "FCC": {
-            "delta": 1.4872950551412,
-            "delta/natoms": 1.4872950551412,
-            "nu": 9.8910986492498,
-            "nu/natoms": 9.8910986492498
-          },
-          "SC": {
-            "delta": 1.4008054771037,
-            "delta/natoms": 1.4008054771037,
-            "nu": 10.410858105519,
-            "nu/natoms": 10.410858105519
-          },
-          "TYPICAL": {
-            "delta": 4.317164818724,
-            "delta/natoms": 1.4390549395747,
-            "nu": 9.5478820268087,
-            "nu/natoms": 3.1826273422696
-          },
-          "X2O": {
-            "delta": 7.6941492632537,
-            "delta/natoms": 2.5647164210846,
-            "nu": 8.0566573487791,
-            "nu/natoms": 2.685552449593
-          },
-          "X2O3": {
-            "delta": 38.129931277678,
-            "delta/natoms": 3.8129931277678,
-            "nu": 10.332896779127,
-            "nu/natoms": 1.0332896779127
-          },
-          "X2O5": {
-            "delta": 10.54834067014,
-            "delta/natoms": 0.75345290500997,
-            "nu": 1.7026765591049,
-            "nu/natoms": 0.12161975422178
-          },
-          "XO": {
-            "delta": 1.2547268263567,
-            "delta/natoms": 0.62736341317835,
-            "nu": 6.0296088439855,
-            "nu/natoms": 3.0148044219928
-          },
-          "XO2": {
-            "delta": 4.1565945632694,
-            "delta/natoms": 1.3855315210898,
-            "nu": 5.4465384368634,
-            "nu/natoms": 1.8155128122878
-          },
-          "XO3": {
-            "delta": 35.289448266726,
-            "delta/natoms": 8.8223620666815,
-            "nu": 24.993213193662,
-            "nu/natoms": 6.2483032984156
-          }
-        }
-      }
-    },
-    "convergence": {},
-    "pseudo_info": {
-      "element": "Li",
-      "pp_type": "nc",
-      "z_valence": 1
-    }
-  },
   "Li.nc.z_1.ld1.theos.v0-tm-local": {
     "_metadata": [
       {
@@ -5557,12 +4772,12 @@
       "z_valence": 1
     }
   },
-  "Li.nc.z_1.oncvpsp4.opsp.v1.0": {
+  "Li.nc.z_1.oncvpsp4.opsp.v1": {
     "_metadata": [
       {
-        "_aiida_hash": "299c6aafd40580f20107ffbb11cfce2839a038812498db620335dd42125cdbdc",
-        "ctime": "2022-11-04 18:19:24.441222+00:00",
-        "uuid": "faafadfa-4364-424f-84db-0223088f4a25"
+        "_aiida_hash": "3aada6accfb70c2cb0c50efb8575c57ac6fbaa6ea2f74d4586f69c118058f0b8",
+        "ctime": "2023-01-05 09:29:18.695486+00:00",
+        "uuid": "ce693417-26aa-4d46-b76c-2ca4dddd15d3"
       }
     ],
     "accuracy": {
@@ -5572,26 +4787,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 3.3588355,
-              "bulk_modulus0": 0.0888164,
-              "bulk_modulus0_GPa": 14.2299569,
+              "bulk_deriv0": 3.3583429,
+              "bulk_modulus0": 0.0888116,
+              "bulk_modulus0_GPa": 14.2291909,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -7.9472993,
+              "energy0": -7.9165041,
               "num_of_atoms": 1,
               "residuals0": 0,
-              "volume0": 19.8114025,
+              "volume0": 19.839283,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -7.9468511991346,
-                -7.9459238351866,
-                -7.9470075285326,
-                -7.9472939283434,
-                -7.9457416549744,
-                -7.9440218955404,
-                -7.9417433503471
+                -7.9161090026244,
+                -7.9150251732216,
+                -7.9161646499036,
+                -7.9165030234568,
+                -7.9150449014746,
+                -7.9133675917987,
+                -7.9111286391684
               ],
               "energy_unit": "eV",
               "num_of_atoms": 1,
@@ -5610,24 +4825,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              19.8114025,
-              0.0888164,
-              3.3588355
+              19.839283,
+              0.0888116,
+              3.3583429
             ],
-            "delta": 1.3908633281429,
-            "delta/natoms": 1.3908633281429,
-            "delta1": 14.810471820967,
-            "delta_relative": 92.018727746557,
+            "delta": 1.3055753992594,
+            "delta/natoms": 1.3055753992594,
+            "delta1": 13.893007382644,
+            "delta_relative": 86.926957407543,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 1,
-            "nu/natoms": 9.1848848415831,
+            "nu/natoms": 8.6273286846645,
             "reference_wien2k_V0_B0_B1": [
               20.267495555898,
               0.086680989602292,
               3.3468965113134
             ],
-            "rel_errors_vec_length": 9.1848848415831
+            "rel_errors_vec_length": 8.6273286846645
           }
         },
         "Diamond": {
@@ -5635,26 +4850,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 2.7246074,
-              "bulk_modulus0": 0.0341452,
-              "bulk_modulus0_GPa": 5.47066,
+              "bulk_deriv0": 2.7164484,
+              "bulk_modulus0": 0.0340764,
+              "bulk_modulus0_GPa": 5.4596472,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -14.8541655,
+              "energy0": -14.7926825,
               "num_of_atoms": 2,
               "residuals0": 0,
-              "volume0": 49.9829547,
+              "volume0": 50.0191942,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -14.853537741886,
-                -14.853131475931,
-                -14.85400713825,
-                -14.854123602972,
-                -14.852301664793,
-                -14.85046312767,
-                -14.848066212959
+                -14.792088315493,
+                -14.791606129778,
+                -14.792507098684,
+                -14.792648869992,
+                -14.790877544987,
+                -14.78906390628,
+                -14.786691481813
               ],
               "energy_unit": "eV",
               "num_of_atoms": 2,
@@ -5673,24 +4888,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              49.9829547,
-              0.0341452,
-              2.7246074
+              50.0191942,
+              0.0340764,
+              2.7164484
             ],
-            "delta": 1.6781503247093,
-            "delta/natoms": 0.83907516235463,
-            "delta1": 18.268056294661,
-            "delta_relative": 110.14682819116,
+            "delta": 1.6342002316757,
+            "delta/natoms": 0.81710011583785,
+            "delta1": 17.80131320351,
+            "delta_relative": 107.80798529305,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 2,
-            "nu/natoms": 5.6075088896406,
+            "nu/natoms": 5.4607709873693,
             "reference_wien2k_V0_B0_B1": [
               51.400439965415,
               0.033719285706924,
               2.9633276192676
             ],
-            "rel_errors_vec_length": 11.215017779281
+            "rel_errors_vec_length": 10.921541974739
           }
         },
         "FCC": {
@@ -5698,26 +4913,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 3.3410866,
-              "bulk_modulus0": 0.0882295,
-              "bulk_modulus0_GPa": 14.1359243,
+              "bulk_deriv0": 3.3407859,
+              "bulk_modulus0": 0.0882192,
+              "bulk_modulus0_GPa": 14.1342833,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -7.9488588,
+              "energy0": -7.9180451,
               "num_of_atoms": 1,
               "residuals0": 0,
-              "volume0": 19.7677611,
+              "volume0": 19.7963278,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -7.9484305478301,
-                -7.9474663124575,
-                -7.9485561283647,
-                -7.9488550454119,
-                -7.9473442694028,
-                -7.945651993466,
-                -7.9434046053068
+                -7.9176698475791,
+                -7.9165462895565,
+                -7.9176928411981,
+                -7.9180446843862,
+                -7.9166299645606,
+                -7.9149810907804,
+                -7.9127742475825
               ],
               "energy_unit": "eV",
               "num_of_atoms": 1,
@@ -5736,24 +4951,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              19.7677611,
-              0.0882295,
-              3.3410866
+              19.7963278,
+              0.0882192,
+              3.3407859
             ],
-            "delta": 1.3838445905979,
-            "delta/natoms": 1.3838445905979,
-            "delta1": 14.859481163463,
-            "delta_relative": 92.290774638961,
+            "delta": 1.2969666992829,
+            "delta/natoms": 1.2969666992829,
+            "delta1": 13.917482669834,
+            "delta_relative": 87.067458386599,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 1,
-            "nu/natoms": 9.2083779831792,
+            "nu/natoms": 8.6350454547763,
             "reference_wien2k_V0_B0_B1": [
               20.224339488182,
               0.086184093300681,
               3.3298070148458
             ],
-            "rel_errors_vec_length": 9.2083779831792
+            "rel_errors_vec_length": 8.6350454547763
           }
         },
         "SC": {
@@ -5761,26 +4976,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 3.3359577,
-              "bulk_modulus0": 0.0786799,
-              "bulk_modulus0_GPa": 12.6059155,
+              "bulk_deriv0": 3.3315959,
+              "bulk_modulus0": 0.078637,
+              "bulk_modulus0_GPa": 12.5990385,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -7.8275006,
+              "energy0": -7.7966975,
               "num_of_atoms": 1,
               "residuals0": 0,
-              "volume0": 19.9299656,
+              "volume0": 19.9547839,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -7.8270704987788,
-                -7.8263287164659,
-                -7.8272647880566,
-                -7.8274918670515,
-                -7.8260559223468,
-                -7.8244980706443,
-                -7.8224426587953
+                -7.796311159097,
+                -7.7954467895017,
+                -7.7964261271921,
+                -7.7966940232621,
+                -7.795332773805,
+                -7.7938089363318,
+                -7.7917854978584
               ],
               "energy_unit": "eV",
               "num_of_atoms": 1,
@@ -5799,24 +5014,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              19.9299656,
-              0.0786799,
-              3.3359577
+              19.9547839,
+              0.078637,
+              3.3315959
             ],
-            "delta": 1.2937614986411,
-            "delta/natoms": 1.2937614986411,
-            "delta1": 15.479740703629,
-            "delta_relative": 95.677913877824,
+            "delta": 1.2265066685112,
+            "delta/natoms": 1.2265066685112,
+            "delta1": 14.670075430445,
+            "delta_relative": 91.263200432938,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 1,
-            "nu/natoms": 9.6252753426207,
+            "nu/natoms": 9.1289880710864,
             "reference_wien2k_V0_B0_B1": [
               20.410100183998,
               0.076496191891677,
               3.3119926083077
             ],
-            "rel_errors_vec_length": 9.6252753426207
+            "rel_errors_vec_length": 9.1289880710864
           }
         },
         "TYPICAL": {
@@ -5824,26 +5039,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 3.3452958,
-              "bulk_modulus0": 0.0883034,
-              "bulk_modulus0_GPa": 14.1477774,
+              "bulk_deriv0": 3.3444633,
+              "bulk_modulus0": 0.0882915,
+              "bulk_modulus0_GPa": 14.1458678,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -23.845803,
+              "energy0": -23.7533774,
               "num_of_atoms": 3,
               "residuals0": 0,
-              "volume0": 59.3372964,
+              "volume0": 59.4221679,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -23.844152302865,
-                -23.842229002283,
-                -23.845162933647,
-                -23.84573654961,
-                -23.840594278422,
-                -23.835229554175,
-                -23.828210513871
+                -23.751905440854,
+                -23.749511655452,
+                -23.752612936824,
+                -23.753343154299,
+                -23.748484425726,
+                -23.743247731038,
+                -23.736348420821
               ],
               "energy_unit": "eV",
               "num_of_atoms": 3,
@@ -5862,24 +5077,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              59.3372964,
-              0.0883034,
-              3.3452958
+              59.4221679,
+              0.0882915,
+              3.3444633
             ],
-            "delta": 4.0078095106077,
-            "delta/natoms": 1.3359365035359,
-            "delta1": 14.321020060687,
-            "delta_relative": 89.314205345064,
+            "delta": 3.7492907272326,
+            "delta/natoms": 1.2497635757442,
+            "delta1": 13.388703410056,
+            "delta_relative": 84.077873695292,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 3,
-            "nu/natoms": 2.9564366375414,
+            "nu/natoms": 2.7671682045407,
             "reference_wien2k_V0_B0_B1": [
               60.6573,
               0.086376244793098,
               3.34
             ],
-            "rel_errors_vec_length": 8.8693099126242
+            "rel_errors_vec_length": 8.3015046136222
           }
         },
         "X2O": {
@@ -5887,26 +5102,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.4956386,
-              "bulk_modulus0": 0.54471,
-              "bulk_modulus0_GPa": 87.2722006,
+              "bulk_deriv0": 4.4865139,
+              "bulk_modulus0": 0.5529252,
+              "bulk_modulus0_GPa": 88.5884161,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -586.315082,
+              "energy0": -586.3128718,
               "num_of_atoms": 3,
               "residuals0": 0,
-              "volume0": 25.199832,
+              "volume0": 24.9568858,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -586.31250431124,
-                -586.26676510497,
-                -586.28906116017,
-                -586.30405585696,
-                -586.31507973262,
-                -586.31238308452,
-                -586.30495219993
+                -586.31223927236,
+                -586.27552512958,
+                -586.29462479963,
+                -586.30661672026,
+                -586.31215083537,
+                -586.30693971938,
+                -586.29713219255
               ],
               "energy_unit": "eV",
               "num_of_atoms": 3,
@@ -5925,24 +5140,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              25.199832,
-              0.54471,
-              4.4956386
+              24.9568858,
+              0.5529252,
+              4.4865139
             ],
-            "delta": 9.0537687330105,
-            "delta/natoms": 3.0179229110035,
-            "delta1": 13.06897404412,
-            "delta_relative": 81.761771079336,
+            "delta": 4.760009427756,
+            "delta/natoms": 1.586669809252,
+            "delta1": 6.8504536422814,
+            "delta_relative": 44.384152074736,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 3,
-            "nu/natoms": 3.0278695420435,
+            "nu/natoms": 2.2601260120773,
             "reference_wien2k_V0_B0_B1": [
               24.7225,
               0.49464499663093,
               3.8956
             ],
-            "rel_errors_vec_length": 9.0836086261305
+            "rel_errors_vec_length": 6.780378036232
           }
         },
         "X2O3": {
@@ -5950,26 +5165,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.8696135,
-              "bulk_modulus0": 0.5709198,
-              "bulk_modulus0_GPa": 91.4714786,
+              "bulk_deriv0": 4.8490611,
+              "bulk_modulus0": 0.5785196,
+              "bulk_modulus0_GPa": 92.6890934,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -3426.2911318,
+              "energy0": -3426.3455475,
               "num_of_atoms": 10,
               "residuals0": 0,
-              "volume0": 91.691718,
+              "volume0": 90.9627175,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -3426.2738008681,
-                -3426.0741333963,
-                -3426.1686986682,
-                -3426.2342035431,
-                -3426.2903010346,
-                -3426.2862085786,
-                -3426.2637673507
+                -3426.3374145518,
+                -3426.1669663915,
+                -3426.2511135132,
+                -3426.3069017473,
+                -3426.3454017732,
+                -3426.3333151569,
+                -3426.3033522944
               ],
               "energy_unit": "eV",
               "num_of_atoms": 10,
@@ -5988,24 +5203,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              91.691718,
-              0.5709198,
-              4.8696135
+              90.9627175,
+              0.5785196,
+              4.8490611
             ],
-            "delta": 42.156790678718,
-            "delta/natoms": 4.2156790678718,
-            "delta1": 16.158147582899,
-            "delta_relative": 98.474897485999,
+            "delta": 28.751527919016,
+            "delta/natoms": 2.8751527919016,
+            "delta1": 10.987141870928,
+            "delta_relative": 69.606186507473,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 10,
-            "nu/natoms": 1.1158867675379,
+            "nu/natoms": 0.90895923170731,
             "reference_wien2k_V0_B0_B1": [
               89.5533,
               0.50723411496529,
               4.3299
             ],
-            "rel_errors_vec_length": 11.158867675379
+            "rel_errors_vec_length": 9.0895923170731
           }
         },
         "X2O5": {
@@ -6013,26 +5228,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.661449,
-              "bulk_modulus0": 0.6171806,
-              "bulk_modulus0_GPa": 98.8832719,
+              "bulk_deriv0": 4.6624159,
+              "bulk_modulus0": 0.6198778,
+              "bulk_modulus0_GPa": 99.3154216,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -5675.35109,
+              "energy0": -5675.3316665,
               "num_of_atoms": 14,
               "residuals0": 0,
-              "volume0": 123.31708,
+              "volume0": 122.84942,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -5675.3507740216,
-                -5675.2116144624,
-                -5675.2944989759,
-                -5675.3395305501,
-                -5675.3318559876,
-                -5675.2860173237,
-                -5675.2161568587
+                -5675.3299691503,
+                -5675.2099307581,
+                -5675.2859771869,
+                -5675.3246482363,
+                -5675.305531151,
+                -5675.254543141,
+                -5675.1798753769
               ],
               "energy_unit": "eV",
               "num_of_atoms": 14,
@@ -6051,24 +5266,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              123.31708,
-              0.6171806,
-              4.661449
+              122.84942,
+              0.6198778,
+              4.6624159
             ],
-            "delta": 9.7955541813622,
-            "delta/natoms": 0.69968244152587,
-            "delta1": 2.419370660998,
-            "delta_relative": 15.8457282736,
+            "delta": 19.856692254772,
+            "delta/natoms": 1.4183351610551,
+            "delta1": 4.9028611465406,
+            "delta_relative": 31.958345940253,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 14,
-            "nu/natoms": 0.11533426531687,
+            "nu/natoms": 0.22341779354206,
             "reference_wien2k_V0_B0_B1": [
               123.781,
               0.61005544248962,
               4.5735
             ],
-            "rel_errors_vec_length": 1.6146797144362
+            "rel_errors_vec_length": 3.1278491095888
           }
         },
         "XO": {
@@ -6076,26 +5291,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.8813627,
-              "bulk_modulus0": 0.5038729,
-              "bulk_modulus0_GPa": 80.7293771,
+              "bulk_deriv0": 4.8760814,
+              "bulk_modulus0": 0.5126637,
+              "bulk_modulus0_GPa": 82.1378225,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -574.7719284,
+              "energy0": -574.7744749,
               "num_of_atoms": 2,
               "residuals0": 0,
-              "volume0": 16.9107213,
+              "volume0": 16.7536605,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -574.77166175083,
-                -574.74975223333,
-                -574.76133761589,
-                -574.7684766584,
-                -574.77132949984,
-                -574.76786739552,
-                -574.76161911765
+                -574.77446574784,
+                -574.75785510304,
+                -574.76756153957,
+                -574.77293755654,
+                -574.77257374035,
+                -574.76764140498,
+                -574.76000561867
               ],
               "energy_unit": "eV",
               "num_of_atoms": 2,
@@ -6114,24 +5329,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              16.9107213,
-              0.5038729,
-              4.8813627
+              16.7536605,
+              0.5126637,
+              4.8760814
             ],
-            "delta": 1.767567383655,
-            "delta/natoms": 0.88378369182749,
-            "delta1": 4.1255057648679,
-            "delta_relative": 26.941032527778,
+            "delta": 1.3507505666159,
+            "delta/natoms": 0.67537528330793,
+            "delta1": 3.1383911382077,
+            "delta_relative": 20.591815035807,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 2,
-            "nu/natoms": 3.1875667080632,
+            "nu/natoms": 3.5765155794929,
             "reference_wien2k_V0_B0_B1": [
               16.8294,
               0.44722015883223,
               4.0253
             ],
-            "rel_errors_vec_length": 6.3751334161264
+            "rel_errors_vec_length": 7.1530311589857
           }
         },
         "XO2": {
@@ -6139,26 +5354,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 5.0300081,
-              "bulk_modulus0": 0.6398866,
-              "bulk_modulus0_GPa": 102.5211842,
+              "bulk_deriv0": 5.0201861,
+              "bulk_modulus0": 0.6481931,
+              "bulk_modulus0_GPa": 103.8520271,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -1137.7739279,
+              "energy0": -1137.7888883,
               "num_of_atoms": 3,
               "residuals0": 0,
-              "volume0": 25.1342991,
+              "volume0": 24.9569116,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -1137.7731602726,
-                -1137.7295868203,
-                -1137.752297577,
-                -1137.7665030076,
-                -1137.7731198637,
-                -1137.7671366247,
-                -1137.7558826768
+                -1137.7888325328,
+                -1137.7529445277,
+                -1137.7729190437,
+                -1137.7845681009,
+                -1137.7865478651,
+                -1137.7784562881,
+                -1137.7652187664
               ],
               "energy_unit": "eV",
               "num_of_atoms": 3,
@@ -6177,24 +5392,24 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              25.1342991,
-              0.6398866,
-              5.0300081
+              24.9569116,
+              0.6481931,
+              5.0201861
             ],
-            "delta": 4.9585758589943,
-            "delta/natoms": 1.6528586196648,
-            "delta1": 6.0728357670868,
-            "delta_relative": 39.375507479015,
+            "delta": 1.6868417025869,
+            "delta/natoms": 0.56228056752895,
+            "delta1": 2.0592430346926,
+            "delta_relative": 13.489835137179,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 3,
-            "nu/natoms": 1.9490049122756,
+            "nu/natoms": 1.8207116172695,
             "reference_wien2k_V0_B0_B1": [
               24.9256,
               0.58176206999508,
               4.5304
             ],
-            "rel_errors_vec_length": 5.8470147368268
+            "rel_errors_vec_length": 5.4621348518086
           }
         },
         "XO3": {
@@ -6202,26 +5417,26 @@
           "ecutwfc": 200,
           "eos": {
             "output_birch_murnaghan_fit": {
-              "bulk_deriv0": 4.8212692,
-              "bulk_modulus0": 0.3563688,
-              "bulk_modulus0_GPa": 57.0965978,
+              "bulk_deriv0": 4.7976325,
+              "bulk_modulus0": 0.3600687,
+              "bulk_modulus0_GPa": 57.689395,
               "bulk_modulus0_GPa_unit": "GPa",
               "bulk_modulus0_unit": "eV A^3",
-              "energy0": -1698.1101257,
+              "energy0": -1698.1418262,
               "num_of_atoms": 4,
               "residuals0": 0,
-              "volume0": 49.1835011,
+              "volume0": 48.7958334,
               "volume0_unit": "A^3"
             },
             "output_volume_energy": {
               "energies": [
-                -1698.065696727,
-                -1697.940318509,
-                -1697.9929782504,
-                -1698.0343799622,
-                -1698.0879799929,
-                -1698.1021734505,
-                -1698.1091233739
+                -1698.1072093252,
+                -1697.9928689967,
+                -1698.0415659443,
+                -1698.0792979289,
+                -1698.1263257302,
+                -1698.1375681133,
+                -1698.1417617957
               ],
               "energy_unit": "eV",
               "num_of_atoms": 4,
@@ -6240,97 +5455,882 @@
           "output_parameters": {
             "V0_B0_B1_units_info": "eV/A^3 for B0",
             "birch_murnaghan_results": [
-              49.1835011,
-              0.3563688,
-              4.8212692
+              48.7958334,
+              0.3600687,
+              4.7976325
             ],
-            "delta": 37.740621149715,
-            "delta/natoms": 9.4351552874288,
-            "delta1": 43.478384602125,
-            "delta_relative": 181.14017063663,
+            "delta": 33.268836703993,
+            "delta/natoms": 8.3172091759982,
+            "delta1": 38.275914883444,
+            "delta_relative": 174.5335349484,
             "delta_relative_unit": "%",
             "delta_unit": "meV/atom",
             "natoms": 4,
-            "nu/natoms": 6.6512138687632,
+            "nu/natoms": 5.8994204086879,
             "reference_wien2k_V0_B0_B1": [
               46.0617,
               0.32622668553174,
               5.5488
             ],
-            "rel_errors_vec_length": 26.604855475053
+            "rel_errors_vec_length": 23.597681634752
           }
         },
         "_metadata": {
-          "_aiida_hash": "a0e7ed370cbdf0ef9a199d26eac791e85917f36855355ca1921c4efde8c428ac",
-          "ctime": "2022-11-04 18:19:26.247254+00:00",
-          "uuid": "69c7ccc9-5ee3-4922-a1b3-74341bb72cee"
+          "_aiida_hash": "7375727d23ce81f00c8deb7115ee6ce066c8c28d0b8741ff0517727a1e0b0052",
+          "ctime": "2023-01-05 09:29:33.744243+00:00",
+          "uuid": "fef2f63b-70f6-4cde-a2d5-8bde1cf38e2e"
         },
         "output_parameters": {
           "BCC": {
-            "delta": 1.3908633281429,
-            "delta/natoms": 1.3908633281429,
-            "nu": 9.1848848415831,
-            "nu/natoms": 9.1848848415831
+            "delta": 1.3055753992594,
+            "delta/natoms": 1.3055753992594,
+            "nu": 8.6273286846645,
+            "nu/natoms": 8.6273286846645
           },
           "Diamond": {
-            "delta": 1.6781503247093,
-            "delta/natoms": 0.83907516235463,
-            "nu": 11.215017779281,
-            "nu/natoms": 5.6075088896406
+            "delta": 1.6342002316757,
+            "delta/natoms": 0.81710011583785,
+            "nu": 10.921541974739,
+            "nu/natoms": 5.4607709873693
           },
           "FCC": {
-            "delta": 1.3838445905979,
-            "delta/natoms": 1.3838445905979,
-            "nu": 9.2083779831792,
-            "nu/natoms": 9.2083779831792
+            "delta": 1.2969666992829,
+            "delta/natoms": 1.2969666992829,
+            "nu": 8.6350454547763,
+            "nu/natoms": 8.6350454547763
           },
           "SC": {
-            "delta": 1.2937614986411,
-            "delta/natoms": 1.2937614986411,
-            "nu": 9.6252753426207,
-            "nu/natoms": 9.6252753426207
+            "delta": 1.2265066685112,
+            "delta/natoms": 1.2265066685112,
+            "nu": 9.1289880710864,
+            "nu/natoms": 9.1289880710864
           },
           "TYPICAL": {
-            "delta": 4.0078095106077,
-            "delta/natoms": 1.3359365035359,
-            "nu": 8.8693099126242,
-            "nu/natoms": 2.9564366375414
+            "delta": 3.7492907272326,
+            "delta/natoms": 1.2497635757442,
+            "nu": 8.3015046136222,
+            "nu/natoms": 2.7671682045407
           },
           "X2O": {
-            "delta": 9.0537687330105,
-            "delta/natoms": 3.0179229110035,
-            "nu": 9.0836086261305,
-            "nu/natoms": 3.0278695420435
+            "delta": 4.760009427756,
+            "delta/natoms": 1.586669809252,
+            "nu": 6.780378036232,
+            "nu/natoms": 2.2601260120773
           },
           "X2O3": {
-            "delta": 42.156790678718,
-            "delta/natoms": 4.2156790678718,
-            "nu": 11.158867675379,
-            "nu/natoms": 1.1158867675379
+            "delta": 28.751527919016,
+            "delta/natoms": 2.8751527919016,
+            "nu": 9.0895923170731,
+            "nu/natoms": 0.90895923170731
           },
           "X2O5": {
-            "delta": 9.7955541813622,
-            "delta/natoms": 0.69968244152587,
-            "nu": 1.6146797144362,
-            "nu/natoms": 0.11533426531687
+            "delta": 19.856692254772,
+            "delta/natoms": 1.4183351610551,
+            "nu": 3.1278491095888,
+            "nu/natoms": 0.22341779354206
           },
           "XO": {
-            "delta": 1.767567383655,
-            "delta/natoms": 0.88378369182749,
-            "nu": 6.3751334161264,
-            "nu/natoms": 3.1875667080632
+            "delta": 1.3507505666159,
+            "delta/natoms": 0.67537528330793,
+            "nu": 7.1530311589857,
+            "nu/natoms": 3.5765155794929
           },
           "XO2": {
-            "delta": 4.9585758589943,
-            "delta/natoms": 1.6528586196648,
-            "nu": 5.8470147368268,
-            "nu/natoms": 1.9490049122756
+            "delta": 1.6868417025869,
+            "delta/natoms": 0.56228056752895,
+            "nu": 5.4621348518086,
+            "nu/natoms": 1.8207116172695
           },
           "XO3": {
-            "delta": 37.740621149715,
-            "delta/natoms": 9.4351552874288,
-            "nu": 26.604855475053,
-            "nu/natoms": 6.6512138687632
+            "delta": 33.268836703993,
+            "delta/natoms": 8.3172091759982,
+            "nu": 23.597681634752,
+            "nu/natoms": 5.8994204086879
+          }
+        }
+      }
+    },
+    "convergence": {},
+    "pseudo_info": {
+      "element": "Li",
+      "pp_type": "nc",
+      "z_valence": 1
+    }
+  },
+  "Li.nc.z_1.oncvpsp4.opsp.v1-largerc": {
+    "_metadata": [
+      {
+        "_aiida_hash": "d1cbec83650da2700d6a048290de9f7f783b680a0c97ce8ae70d7dfe968bf81d",
+        "ctime": "2023-01-05 13:51:06.249424+00:00",
+        "uuid": "c4f2acdd-faf2-4577-87dc-84fc38de4a55"
+      }
+    ],
+    "accuracy": {
+      "delta": {
+        "BCC": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 3.3531138,
+              "bulk_modulus0": 0.0887666,
+              "bulk_modulus0_GPa": 14.2219875,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -7.9478501,
+              "num_of_atoms": 1,
+              "residuals0": 0,
+              "volume0": 19.7837833,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -7.9473464463134,
+                -7.9465741872511,
+                -7.9476022333179,
+                -7.9478369315001,
+                -7.9461926836551,
+                -7.944431835032,
+                -7.9421150578451
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 1,
+              "volume_unit": "A^3",
+              "volumes": [
+                20.265925079126,
+                19.049969574803,
+                19.455288076873,
+                19.86060657762,
+                20.671243582012,
+                21.076562083034,
+                21.481880584489
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              19.7837833,
+              0.0887666,
+              3.3531138
+            ],
+            "delta": 1.4751620077014,
+            "delta/natoms": 1.4751620077014,
+            "delta1": 15.72341205474,
+            "delta_relative": 96.966599695171,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 1,
+            "nu/natoms": 9.7347186612768,
+            "reference_wien2k_V0_B0_B1": [
+              20.267495555898,
+              0.086680989602292,
+              3.3468965113134
+            ],
+            "rel_errors_vec_length": 9.7347186612768
+          }
+        },
+        "Diamond": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 2.7118921,
+              "bulk_modulus0": 0.0340905,
+              "bulk_modulus0_GPa": 5.4619037,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -14.8552962,
+              "num_of_atoms": 2,
+              "residuals0": 0,
+              "volume0": 49.8742639,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -14.854567012465,
+                -14.854391907212,
+                -14.855184982983,
+                -14.855224575546,
+                -14.853264131425,
+                -14.851363280234,
+                -14.848907997106
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 2,
+              "volume_unit": "A^3",
+              "volumes": [
+                51.36158948436,
+                48.279894117175,
+                49.307125906063,
+                50.334357694684,
+                52.388821276063,
+                53.416053064198,
+                54.443284854592
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              49.8742639,
+              0.0340905,
+              2.7118921
+            ],
+            "delta": 1.8058167534279,
+            "delta/natoms": 0.90290837671393,
+            "delta1": 19.69478277153,
+            "delta_relative": 117.05492764066,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 2,
+            "nu/natoms": 6.0404282494733,
+            "reference_wien2k_V0_B0_B1": [
+              51.400439965415,
+              0.033719285706924,
+              2.9633276192676
+            ],
+            "rel_errors_vec_length": 12.080856498947
+          }
+        },
+        "FCC": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 3.3387336,
+              "bulk_modulus0": 0.0881836,
+              "bulk_modulus0_GPa": 14.1285767,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -7.9494213,
+              "num_of_atoms": 1,
+              "residuals0": 0,
+              "volume0": 19.7394901,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -7.9489376319607,
+                -7.9481310865552,
+                -7.9491643027849,
+                -7.949410701862,
+                -7.9478061826368,
+                -7.9460721372264,
+                -7.9437859728458
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 1,
+              "volume_unit": "A^3",
+              "volumes": [
+                20.212866209974,
+                19.000094238238,
+                19.404351562538,
+                19.808608886216,
+                20.617123535497,
+                21.021380858857,
+                21.425638184485
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              19.7394901,
+              0.0881836,
+              3.3387336
+            ],
+            "delta": 1.4695418402874,
+            "delta/natoms": 1.4695418402874,
+            "delta1": 15.795002753228,
+            "delta_relative": 97.353782261279,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 1,
+            "nu/natoms": 9.7732852255118,
+            "reference_wien2k_V0_B0_B1": [
+              20.224339488182,
+              0.086184093300681,
+              3.3298070148458
+            ],
+            "rel_errors_vec_length": 9.7732852255118
+          }
+        },
+        "SC": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 3.3274216,
+              "bulk_modulus0": 0.0786435,
+              "bulk_modulus0_GPa": 12.6000816,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -7.8282131,
+              "num_of_atoms": 1,
+              "residuals0": 0,
+              "volume0": 19.8960051,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -7.8277198984448,
+                -7.8271464185386,
+                -7.8280220808581,
+                -7.82819324046,
+                -7.8266568857503,
+                -7.8250538631513,
+                -7.8229564097149
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 1,
+              "volume_unit": "A^3",
+              "volumes": [
+                20.40472126624,
+                19.18043799063,
+                19.588532415149,
+                19.996626841548,
+                20.812815691672,
+                21.220910116103,
+                21.629004542754
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              19.8960051,
+              0.0786435,
+              3.3274216
+            ],
+            "delta": 1.3855054449831,
+            "delta/natoms": 1.3855054449831,
+            "delta1": 16.595309193214,
+            "delta_relative": 101.60029274412,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 1,
+            "nu/natoms": 10.297303778382,
+            "reference_wien2k_V0_B0_B1": [
+              20.410100183998,
+              0.076496191891677,
+              3.3119926083077
+            ],
+            "rel_errors_vec_length": 10.297303778382
+          }
+        },
+        "TYPICAL": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 3.3393343,
+              "bulk_modulus0": 0.0882492,
+              "bulk_modulus0_GPa": 14.1390845,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -23.8474828,
+              "num_of_atoms": 3,
+              "residuals0": 0,
+              "volume0": 59.2529858,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -23.845645799646,
+                -23.844189854574,
+                -23.846955619588,
+                -23.847373858552,
+                -23.841954303367,
+                -23.836465903382,
+                -23.82933203104
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 3,
+              "volume_unit": "A^3",
+              "volumes": [
+                60.854131937138,
+                57.202884021321,
+                58.419966657893,
+                59.637049297827,
+                62.071214576247,
+                63.288297212757,
+                64.505379853813
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              59.2529858,
+              0.0882492,
+              3.3393343
+            ],
+            "delta": 4.2639416868476,
+            "delta/natoms": 1.4213138956159,
+            "delta1": 15.251696844624,
+            "delta_relative": 94.420926697241,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 3,
+            "nu/natoms": 3.143430481446,
+            "reference_wien2k_V0_B0_B1": [
+              60.6573,
+              0.086376244793098,
+              3.34
+            ],
+            "rel_errors_vec_length": 9.430291444338
+          }
+        },
+        "X2O": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 4.4729574,
+              "bulk_modulus0": 0.5429068,
+              "bulk_modulus0_GPa": 86.9833036,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -586.3197237,
+              "num_of_atoms": 3,
+              "residuals0": 0,
+              "volume0": 25.1466503,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -586.31769637926,
+                -586.27424823541,
+                -586.29568617964,
+                -586.30992113461,
+                -586.31967437472,
+                -586.31644737676,
+                -586.30854505494
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 3,
+              "volume_unit": "A^3",
+              "volumes": [
+                24.720005608739,
+                23.236805271744,
+                23.731205383893,
+                24.225605497482,
+                25.214405722199,
+                25.708805833148,
+                26.203205946118
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              25.1466503,
+              0.5429068,
+              4.4729574
+            ],
+            "delta": 8.0561100474109,
+            "delta/natoms": 2.6853700158036,
+            "delta1": 11.661502395726,
+            "delta_relative": 73.671934769085,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 3,
+            "nu/natoms": 2.7623970245471,
+            "reference_wien2k_V0_B0_B1": [
+              24.7225,
+              0.49464499663093,
+              3.8956
+            ],
+            "rel_errors_vec_length": 8.2871910736412
+          }
+        },
+        "X2O3": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 4.8482309,
+              "bulk_modulus0": 0.5685989,
+              "bulk_modulus0_GPa": 91.0996322,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -3426.2958922,
+              "num_of_atoms": 10,
+              "residuals0": 0,
+              "volume0": 91.546779,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -3426.2807631726,
+                -3426.0883142006,
+                -3426.1801256805,
+                -3426.2432394912,
+                -3426.2954667076,
+                -3426.2898198013,
+                -3426.2660352834
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 10,
+              "volume_unit": "A^3",
+              "volumes": [
+                89.389990992189,
+                84.026591532818,
+                85.814391350526,
+                87.602191174741,
+                91.177790813271,
+                92.965590628996,
+                94.753390448909
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              91.546779,
+              0.5685989,
+              4.8482309
+            ],
+            "delta": 39.247412849656,
+            "delta/natoms": 3.9247412849656,
+            "delta1": 15.087538708106,
+            "delta_relative": 92.803156379687,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 10,
+            "nu/natoms": 1.0515719873591,
+            "reference_wien2k_V0_B0_B1": [
+              89.5533,
+              0.50723411496529,
+              4.3299
+            ],
+            "rel_errors_vec_length": 10.515719873591
+          }
+        },
+        "X2O5": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 4.6567168,
+              "bulk_modulus0": 0.6164146,
+              "bulk_modulus0_GPa": 98.7605447,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -5675.3464123,
+              "num_of_atoms": 14,
+              "residuals0": 0,
+              "volume0": 123.3165039,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -5675.3460958406,
+                -5675.2071463533,
+                -5675.2899092318,
+                -5675.3348740021,
+                -5675.3271938613,
+                -5675.281402137,
+                -5675.2116144624
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 14,
+              "volume_unit": "A^3",
+              "volumes": [
+                123.67600066782,
+                116.25544062948,
+                118.72896063984,
+                121.20248065389,
+                126.14952068283,
+                128.62304069431,
+                131.09656070409
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              123.3165039,
+              0.6164146,
+              4.6567168
+            ],
+            "delta": 9.8158662312517,
+            "delta/natoms": 0.70113330223227,
+            "delta1": 2.4259072884041,
+            "delta_relative": 15.888396154886,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 14,
+            "nu/natoms": 0.11390766446848,
+            "reference_wien2k_V0_B0_B1": [
+              123.781,
+              0.61005544248962,
+              4.5735
+            ],
+            "rel_errors_vec_length": 1.5947073025587
+          }
+        },
+        "XO": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 4.8544667,
+              "bulk_modulus0": 0.501647,
+              "bulk_modulus0_GPa": 80.3727472,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -574.7719674,
+              "num_of_atoms": 2,
+              "residuals0": 0,
+              "volume0": 16.8911006,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -574.77177481413,
+                -574.75068000545,
+                -574.76194728694,
+                -574.76881720886,
+                -574.771250995,
+                -574.76762779929,
+                -574.76124468902
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 2,
+              "volume_unit": "A^3",
+              "volumes": [
+                16.778006740612,
+                15.771326336872,
+                16.106886471271,
+                16.442446605776,
+                17.113566875559,
+                17.449127010618,
+                17.784687144393
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              16.8911006,
+              0.501647,
+              4.8544667
+            ],
+            "delta": 1.4532602340455,
+            "delta/natoms": 0.72663011702276,
+            "delta1": 3.4018474310225,
+            "delta_relative": 22.255281748722,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 2,
+            "nu/natoms": 3.0168946391143,
+            "reference_wien2k_V0_B0_B1": [
+              16.8294,
+              0.44722015883223,
+              4.0253
+            ],
+            "rel_errors_vec_length": 6.0337892782287
+          }
+        },
+        "XO2": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 5.0127882,
+              "bulk_modulus0": 0.6379083,
+              "bulk_modulus0_GPa": 102.2042256,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -1137.7738926,
+              "num_of_atoms": 3,
+              "residuals0": 0,
+              "volume0": 25.1115796,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -1137.7732642201,
+                -1137.7308943273,
+                -1137.7531375924,
+                -1137.7669450565,
+                -1137.7729376835,
+                -1137.7667125353,
+                -1137.7552550462
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 3,
+              "volume_unit": "A^3",
+              "volumes": [
+                24.890999520714,
+                23.397539549569,
+                23.895359539789,
+                24.393179529795,
+                25.388819511794,
+                25.886639500412,
+                26.384459492265
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              25.1115796,
+              0.6379083,
+              5.0127882
+            ],
+            "delta": 4.4561083164255,
+            "delta/natoms": 1.4853694388085,
+            "delta1": 5.4687908475829,
+            "delta_relative": 35.533081237694,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 3,
+            "nu/natoms": 1.8388386094597,
+            "reference_wien2k_V0_B0_B1": [
+              24.9256,
+              0.58176206999508,
+              4.5304
+            ],
+            "rel_errors_vec_length": 5.5165158283791
+          }
+        },
+        "XO3": {
+          "ecutrho": 1600,
+          "ecutwfc": 200,
+          "eos": {
+            "output_birch_murnaghan_fit": {
+              "bulk_deriv0": 4.8316574,
+              "bulk_modulus0": 0.3550972,
+              "bulk_modulus0_GPa": 56.8928645,
+              "bulk_modulus0_GPa_unit": "GPa",
+              "bulk_modulus0_unit": "eV A^3",
+              "energy0": -1698.1175934,
+              "num_of_atoms": 4,
+              "residuals0": 0,
+              "volume0": 49.018778,
+              "volume0_unit": "A^3"
+            },
+            "output_volume_energy": {
+              "energies": [
+                -1698.0777806221,
+                -1697.9579445466,
+                -1698.0085705092,
+                -1698.0481297382,
+                -1698.0985600509,
+                -1698.1113982455,
+                -1698.1171285547
+              ],
+              "energy_unit": "eV",
+              "num_of_atoms": 4,
+              "volume_unit": "A^3",
+              "volumes": [
+                45.908015621935,
+                43.153534686049,
+                44.071694998585,
+                44.989855311116,
+                46.826175935617,
+                47.744336248236,
+                48.662496558904
+              ]
+            }
+          },
+          "output_parameters": {
+            "V0_B0_B1_units_info": "eV/A^3 for B0",
+            "birch_murnaghan_results": [
+              49.018778,
+              0.3550972,
+              4.8316574
+            ],
+            "delta": 35.664689036212,
+            "delta/natoms": 8.9161722590529,
+            "delta1": 41.234842667173,
+            "delta_relative": 178.72600843266,
+            "delta_relative_unit": "%",
+            "delta_unit": "meV/atom",
+            "natoms": 4,
+            "nu/natoms": 6.3134147554529,
+            "reference_wien2k_V0_B0_B1": [
+              46.0617,
+              0.32622668553174,
+              5.5488
+            ],
+            "rel_errors_vec_length": 25.253659021812
+          }
+        },
+        "_metadata": {
+          "_aiida_hash": "13b95a821f3b9dd9900169a65f0f4a12abee126d5d93730b891ba5b75c50df11",
+          "ctime": "2023-01-05 13:51:07.293940+00:00",
+          "uuid": "d490f7bd-e90b-49bd-81a0-30ef1ddfce07"
+        },
+        "output_parameters": {
+          "BCC": {
+            "delta": 1.4751620077014,
+            "delta/natoms": 1.4751620077014,
+            "nu": 9.7347186612768,
+            "nu/natoms": 9.7347186612768
+          },
+          "Diamond": {
+            "delta": 1.8058167534279,
+            "delta/natoms": 0.90290837671393,
+            "nu": 12.080856498947,
+            "nu/natoms": 6.0404282494733
+          },
+          "FCC": {
+            "delta": 1.4695418402874,
+            "delta/natoms": 1.4695418402874,
+            "nu": 9.7732852255118,
+            "nu/natoms": 9.7732852255118
+          },
+          "SC": {
+            "delta": 1.3855054449831,
+            "delta/natoms": 1.3855054449831,
+            "nu": 10.297303778382,
+            "nu/natoms": 10.297303778382
+          },
+          "TYPICAL": {
+            "delta": 4.2639416868476,
+            "delta/natoms": 1.4213138956159,
+            "nu": 9.430291444338,
+            "nu/natoms": 3.143430481446
+          },
+          "X2O": {
+            "delta": 8.0561100474109,
+            "delta/natoms": 2.6853700158036,
+            "nu": 8.2871910736412,
+            "nu/natoms": 2.7623970245471
+          },
+          "X2O3": {
+            "delta": 39.247412849656,
+            "delta/natoms": 3.9247412849656,
+            "nu": 10.515719873591,
+            "nu/natoms": 1.0515719873591
+          },
+          "X2O5": {
+            "delta": 9.8158662312517,
+            "delta/natoms": 0.70113330223227,
+            "nu": 1.5947073025587,
+            "nu/natoms": 0.11390766446848
+          },
+          "XO": {
+            "delta": 1.4532602340455,
+            "delta/natoms": 0.72663011702276,
+            "nu": 6.0337892782287,
+            "nu/natoms": 3.0168946391143
+          },
+          "XO2": {
+            "delta": 4.4561083164255,
+            "delta/natoms": 1.4853694388085,
+            "nu": 5.5165158283791,
+            "nu/natoms": 1.8388386094597
+          },
+          "XO3": {
+            "delta": 35.664689036212,
+            "delta/natoms": 8.9161722590529,
+            "nu": 25.253659021812,
+            "nu/natoms": 6.3134147554529
           }
         }
       }
