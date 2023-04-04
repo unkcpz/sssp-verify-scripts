@@ -1,0 +1,20 @@
+ &input
+   title='Mo',
+   zed=42.0,
+   rel=1,
+   config='[Kr] 4d5.0 5s1 5p0',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=2,
+   file_pseudopw='Mo.pbe-n-nc.UPF',
+   author='TM',
+   lloc=0,
+   nlcc=.true.,
+   tm=.true.
+ /
+3
+5P  2  1  0.00  0.00  2.65  2.65  0.0
+4D  3  2  5.00  0.00  2.45  2.45  0.0
+5S  1  0  1.00  0.00  2.45  2.45  0.0

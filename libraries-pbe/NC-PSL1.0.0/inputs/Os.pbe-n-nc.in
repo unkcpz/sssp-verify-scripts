@@ -1,0 +1,20 @@
+ &input
+   title='Os',
+   zed=76.,
+   rel=1,
+   config='[Xe] 4f14 6s2.0 6p0.0 5d6.0',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=2,
+   file_pseudopw='Os.pbe-n-nc.UPF',
+   author='TM',
+   lloc=0,
+   nlcc=.true.,
+   tm=.true.
+ /
+3
+6P  2  1  0.00  0.00  2.40  2.40  0.0
+5D  3  2  6.00  0.00  2.40  2.40  0.0
+6S  1  0  2.00  0.00  2.40  2.40  0.0
