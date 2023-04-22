@@ -1,0 +1,26 @@
+&input
+  title='I',
+  zed=53.,
+  rel=1,
+  config='[Kr] 4d10.0 5s2.0 5p5.0 5d-2.0',
+  iswitch=3,
+  dft='PBE'
+/
+&inputp
+  lpaw=.true.,
+  pseudotype=3,
+  file_pseudopw='I.paw.ld1.psl.v0.2.upf',
+  author='ADC',
+  lloc=2,
+  which_augfun ='PSQ',
+  rmatch_augfun= 1.6,
+  nlcc=.true.,
+  new_core_ps=.true.,
+  tm=.true.
+/
+5
+5S  1  0  2.00  0.00  1.70  1.90  0.0
+5S  1  0  0.00 -1.00  1.70  1.90  0.0
+5P  2  1  5.00  0.00  1.70  1.80  0.0
+5P  2  1  0.00  0.20  1.70  1.80  0.0
+5D  3  2 -2.00  1.50  2.00  2.00  0.0

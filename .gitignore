@@ -1,2 +1,8 @@
 _build/
 *.pyc
+
+# the temporary files of the ld1 generationg process
+ld1.test
+ld1.wfc
+ld1ps.wfc
+out
