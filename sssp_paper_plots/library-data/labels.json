@@ -1,0 +1,25 @@
+{
+    "references":
+    {
+        "all-electron average":
+        {
+            "oxides": "results-oxides-verification-PBE-v1-AE-average.json",
+            "unaries": "results-unaries-verification-PBE-v1-AE-average.json"
+        }
+    },
+    "methods-main":
+    {
+        "Quantum ESPRESSO@PW|SSSP-prec-v1.3":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-SSSP-1.3.0-PBE-precision-tmp.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-SSSP-1.3.0-PBE-precision-tmp.json",
+            "short_label": "SSSP_1_3"
+        },
+        "Quantum ESPRESSO@PW|SSSP-prec-v1.1.2":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-SSSP-1.1.2-PBE-precision-tmp.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-SSSP-1.1.2-PBE-precision-tmp.json",
+            "short_label": "SSSP_1_1_2"
+        }
+    },
+    "methods-supplementary": {
+    }
+}    

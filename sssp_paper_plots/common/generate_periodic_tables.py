@@ -8,7 +8,7 @@ import pylab as pl
 from scipy.optimize import curve_fit
 import tqdm
 
-import acwf_paper_plots.quantities_for_comparison as qc
+import sssp_paper_plots.quantities_for_comparison as qc
 
 # As found in the paper, nu and eps can be roughly related via just a multiplication: nu=NU_EPS_FACTOR*eps
 # Use this to set a consistent maximum colorbar value
@@ -111,6 +111,13 @@ if len(sys.argv) == 2:
         #         }
         #     }
         # }
+        
+    if sys.argv[1] == "SSSP-prec-112":
+        # Figure S39
+        USE_AE_AVERAGE_AS_REFERENCE = True
+        LABELS_KEY = 'methods-main'
+        ONLY_CODES = ["Quantum ESPRESSO@PW|SSSP-prec-v1.1.2"]
+        QUANTITIES=["epsilon"]
 
     if sys.argv[1] == "SI-VASP-1":
         # S27
@@ -286,7 +293,7 @@ quantity_for_comparison_map = {
 
 def load_data(SET_NAME):
 
-    DATA_FOLDER = "../../../code-data"
+    DATA_FOLDER = "../../library-data"
     with open(os.path.join(DATA_FOLDER, "labels.json")) as fhandle:
         labels_data = json.load(fhandle)
     
@@ -337,7 +344,7 @@ def load_data(SET_NAME):
 def calculate_quantities(plugin_data, compare_plugin_data, QUANTITY):
     prefactor = PREFACTOR_DICT.get(QUANTITY, 1.)
 
-    all_systems = set(plugin_data['eos_data'].keys())
+    # all_systems = set(plugin_data['eos_data'].keys())
     all_systems = set(plugin_data['BM_fit_data'].keys())
     #all_systems.update(compare_plugin_data['BM_fit_data'].keys())
 
