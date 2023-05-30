@@ -3,7 +3,7 @@
 import os
 
 pseudos = [
-    "PAW-PSL1.0.0-high/Si.paw.z_4.ld1.psl.v1.0.0-high.upf",
+    # "PAW-PSL1.0.0-high/Si.paw.z_4.ld1.psl.v1.0.0-high.upf",
     "PAW-PSL1.0.0-high/Cs.paw.z_9.ld1.psl.v1.0.0-high.upf",
     "PAW-PSL1.0.0-high/Cu.paw.z_19.ld1.psl.v1.0.0-high.upf",
     "PAW-PSL1.0.0-high/Fe.paw.z_16.ld1.psl.v1.0.0-high.upf",
@@ -23,16 +23,16 @@ pseudos = [
 ]
 
 criteria = "efficiency"
-conf = "BCC"
-# conf = None
+# conf = "Diamond"
+conf = None
 base_path = "/home/jyu/Projects/WP-SSSP/sssp-verify-scripts/libraries-pbe"
 
 for pseudo in pseudos:
     pseudo_path = os.path.join(base_path, pseudo)
     if conf is not None:
-        command = f"aiida-sssp-workflow launch --configuration {conf} --property convergence.delta --property convergence.cohesive_energy --property convergence.pressure --pw-code pw-7.0@eiger-mc-mr32-mem --ph-code ph-7.0@eiger-mc-mr32-mem --protocol acwf --cutoff-control standard --criteria {criteria} --withmpi True --num-mpiprocs 128 --npool 8  -- {pseudo_path}"
+        command = f"aiida-sssp-workflow launch --configuration {conf} --property convergence.phonon_frequencies --property convergence.bands --pw-code pw-7.0@eiger-mc-mr32-mem --ph-code ph-7.0@eiger-mc-mr32-mem --protocol acwf-k0.10 --cutoff-control standard --criteria {criteria} --withmpi True --num-mpiprocs 128 --npool 8  -- {pseudo_path}"
     else:
-        command = f"aiida-sssp-workflow launch --property convergence.delta --property convergence.cohesive_energy --property convergence.pressure --pw-code pw-7.0@eiger-mc-mr32-mem --ph-code ph-7.0@eiger-mc-mr32-mem --protocol acwf --cutoff-control standard --criteria {criteria} --withmpi True --num-mpiprocs 128 --npool 8  -- {pseudo_path}"
+        command = f"aiida-sssp-workflow launch  --property convergence.phonon_frequencies --property convergence.bands --pw-code pw-7.0@eiger-mc-mr32-mem --ph-code ph-7.0@eiger-mc-mr32-mem --protocol acwf-k0.10 --cutoff-control standard --criteria {criteria} --withmpi True --num-mpiprocs 128 --npool 8  -- {pseudo_path}"
     os.system(command)
     # print(command)
     print(f"Launched {pseudo}")

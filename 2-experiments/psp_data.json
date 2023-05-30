@@ -1,0 +1,1821 @@
+{
+  "Si.paw.z_4.ld1.psl.v1.0.0-high": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    }
+  },
+  "Cs.paw.z_9.ld1.psl.v1.0.0-high": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    }
+  },
+  "Cu.paw.z_19.ld1.psl.v1.0.0-high": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 210.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 330.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 358.0,
+        "dual": 6.51
+      },
+      "pressure": {
+        "wfc_cutoff": 100.0,
+        "rho_cutoff": 600.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 480.0,
+        "dual": 6.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 330.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 358.0,
+        "dual": 6.51
+      },
+      "pressure": {
+        "wfc_cutoff": 100.0,
+        "rho_cutoff": 600.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 480.0,
+        "dual": 6.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 210.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 330.0,
+        "dual": 6.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 210.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 330.0,
+        "dual": 6.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 330.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 420.0,
+        "dual": 7.0
+      },
+      "pressure": {
+        "wfc_cutoff": 120.0,
+        "rho_cutoff": 720.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 488.0,
+        "dual": 6.51
+      }
+    }
+  },
+  "Fe.paw.z_16.ld1.psl.v1.0.0-high": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 240.0,
+        "dual": 8.0
+      },
+      "bands": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 400.0,
+        "dual": 8.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 200.0,
+        "rho_cutoff": 3600.0,
+        "dual": 18.0
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 720.0,
+        "dual": 8.0
+      },
+      "delta": {
+        "wfc_cutoff": 150.0,
+        "rho_cutoff": 1500.0,
+        "dual": 10.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 280.0,
+        "dual": 8.0
+      },
+      "bands": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 400.0,
+        "dual": 8.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 200.0,
+        "rho_cutoff": 3600.0,
+        "dual": 18.0
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 720.0,
+        "dual": 8.0
+      },
+      "delta": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 720.0,
+        "dual": 8.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 280.0,
+        "dual": 8.0
+      },
+      "bands": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 400.0,
+        "dual": 8.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 320.0,
+        "dual": 8.0
+      },
+      "bands": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 400.0,
+        "dual": 8.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 280.0,
+        "dual": 8.0
+      },
+      "bands": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 400.0,
+        "dual": 8.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 200.0,
+        "rho_cutoff": 3600.0,
+        "dual": 18.0
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 720.0,
+        "dual": 8.0
+      },
+      "delta": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 600.0,
+        "dual": 8.0
+      }
+    }
+  },
+  "Te.paw.z_16.ld1.psl.v1.0.0-high": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 390.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 420.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 420.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 100.0,
+        "rho_cutoff": 600.0,
+        "dual": 6.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 390.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 560.0,
+        "dual": 8.0
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 420.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 540.0,
+        "dual": 6.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 390.0,
+        "dual": 6.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 390.0,
+        "dual": 6.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 210.0,
+        "dual": 7.0
+      },
+      "bands": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 390.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 455.0,
+        "dual": 7.0
+      },
+      "pressure": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 630.0,
+        "dual": 7.0
+      }
+    }
+  },
+  "Hf.paw.z_26.ld1.psl.v1.0.0-high.spfn": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 300.0,
+        "dual": 10.0
+      },
+      "bands": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 360.0,
+        "dual": 8.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 900.0,
+        "dual": 18.0
+      },
+      "pressure": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 440.0,
+        "dual": 8.0
+      },
+      "delta": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 720.0,
+        "dual": 16.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 300.0,
+        "dual": 10.0
+      },
+      "bands": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 360.0,
+        "dual": 8.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 1260.0,
+        "dual": 18.0
+      },
+      "pressure": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 440.0,
+        "dual": 8.0
+      },
+      "delta": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 405.0,
+        "dual": 9.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 270.0,
+        "dual": 9.0
+      },
+      "bands": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 360.0,
+        "dual": 8.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 240.0,
+        "dual": 8.0
+      },
+      "bands": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 360.0,
+        "dual": 8.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 240.0,
+        "dual": 8.0
+      },
+      "bands": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 405.0,
+        "dual": 9.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 1620.0,
+        "dual": 18.0
+      },
+      "pressure": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 720.0,
+        "dual": 12.0
+      },
+      "delta": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 810.0,
+        "dual": 18.0
+      }
+    }
+  },
+  "Sn.paw.z_14.ld1.psl.v1.0.0-high": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 240.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 300.0,
+        "dual": 7.5
+      },
+      "pressure": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 270.0,
+        "dual": 6.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 240.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 300.0,
+        "dual": 7.5
+      },
+      "pressure": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 240.0,
+        "dual": 6.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 240.0,
+        "dual": 6.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 240.0,
+        "dual": 6.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 240.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 300.0,
+        "dual": 7.5
+      },
+      "pressure": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 270.0,
+        "dual": 6.0
+      }
+    }
+  },
+  "Ar.paw.z_8.ld1.psl.v1.0.0-high": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 180.0,
+        "dual": 6.0
+      },
+      "pressure": {
+        "wfc_cutoff": 120.0,
+        "rho_cutoff": 720.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 225.0,
+        "dual": 7.5
+      }
+    }
+  },
+  "U.paw.z_14.ld1.psl.v1.0.0-high": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 240.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 200.0,
+        "rho_cutoff": 1600.0,
+        "dual": 8.0
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 540.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 120.0,
+        "rho_cutoff": 720.0,
+        "dual": 6.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 390.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 200.0,
+        "rho_cutoff": 1600.0,
+        "dual": 8.0
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 540.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 540.0,
+        "dual": 6.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 240.0,
+        "dual": 6.0
+      },
+      "bands": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 480.0,
+        "dual": 6.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 300.0,
+        "dual": 7.5
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 360.0,
+        "dual": 8.0
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 450.0,
+        "dual": 6.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 200.0,
+        "rho_cutoff": 1600.0,
+        "dual": 8.0
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 540.0,
+        "dual": 6.0
+      },
+      "delta": {
+        "wfc_cutoff": 120.0,
+        "rho_cutoff": 720.0,
+        "dual": 6.0
+      }
+    }
+  },
+  "Si.nc.z_4.oncvpsp3.dojo.v0.4.1-std": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 120.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 120.0,
+        "dual": 4.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "pressure": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      }
+    }
+  },
+  "Cs.nc.z_9.oncvpsp3.dojo.v0.4.1-std": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 110.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 90.0,
+        "dual": 3.0
+      },
+      "pressure": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 70.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 110.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 90.0,
+        "dual": 3.0
+      },
+      "pressure": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 70.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 110.0,
+        "dual": 2.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 120.0,
+        "dual": 2.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 120.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 90.0,
+        "dual": 3.0
+      },
+      "pressure": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 80.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 90.0,
+        "dual": 3.0
+      }
+    }
+  },
+  "Cu.nc.z_19.oncvpsp3.dojo.v0.4.1-std": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 192.0,
+        "dual": 3.49
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 188.0,
+        "dual": 2.51
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 280.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 225.0,
+        "dual": 2.5
+      },
+      "delta": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 280.0,
+        "dual": 3.5
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 210.0,
+        "dual": 3.5
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 188.0,
+        "dual": 2.51
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 280.0,
+        "dual": 4.0
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 225.0,
+        "dual": 2.5
+      },
+      "delta": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 262.0,
+        "dual": 3.49
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 192.0,
+        "dual": 3.49
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 188.0,
+        "dual": 2.51
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 200.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 188.0,
+        "dual": 2.51
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 175.0,
+        "dual": 3.5
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 188.0,
+        "dual": 2.51
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 280.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 270.0,
+        "dual": 3.0
+      },
+      "delta": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 270.0,
+        "dual": 3.0
+      }
+    }
+  },
+  "Fe.nc.z_16.oncvpsp3.dojo.v0.4.1-std": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 122.0,
+        "dual": 3.49
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 150.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 280.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 180.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 120.0,
+        "rho_cutoff": 300.0,
+        "dual": 2.5
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 165.0,
+        "dual": 3.0
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 150.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 262.0,
+        "dual": 3.49
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 180.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 180.0,
+        "dual": 2.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 138.0,
+        "dual": 2.51
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 150.0,
+        "dual": 2.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 180.0,
+        "dual": 3.0
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 150.0,
+        "dual": 2.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 135.0,
+        "dual": 3.0
+      },
+      "bands": {
+        "wfc_cutoff": 75.0,
+        "rho_cutoff": 150.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 280.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 90.0,
+        "rho_cutoff": 180.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 80.0,
+        "rho_cutoff": 200.0,
+        "dual": 2.5
+      }
+    }
+  },
+  "Te.nc.z_16.oncvpsp3.dojo.v0.4.1-std": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 120.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 192.0,
+        "dual": 3.49
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 210.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 175.0,
+        "dual": 2.5
+      },
+      "delta": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 195.0,
+        "dual": 3.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      },
+      "bands": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 150.0,
+        "dual": 2.5
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 210.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 175.0,
+        "dual": 2.5
+      },
+      "delta": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 180.0,
+        "dual": 3.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 122.0,
+        "dual": 3.49
+      },
+      "bands": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 150.0,
+        "dual": 2.5
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 120.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 150.0,
+        "dual": 2.5
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 140.0,
+        "dual": 3.5
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 192.0,
+        "dual": 3.49
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 228.0,
+        "dual": 3.51
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 210.0,
+        "dual": 3.0
+      },
+      "delta": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 180.0,
+        "dual": 3.0
+      }
+    }
+  },
+  "Hf.nc.z_12.oncvpsp3.dojo.v0.4.1-std": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 70.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 100.0,
+        "dual": 2.0
+      },
+      "pressure": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 100.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 90.0,
+        "dual": 2.0
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 90.0,
+        "dual": 3.0
+      },
+      "bands": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 88.0,
+        "dual": 2.51
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 100.0,
+        "dual": 2.0
+      },
+      "pressure": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 100.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 45.0,
+        "rho_cutoff": 90.0,
+        "dual": 2.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 75.0,
+        "dual": 2.5
+      },
+      "bands": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 88.0,
+        "dual": 2.51
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 90.0,
+        "dual": 3.0
+      },
+      "bands": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 88.0,
+        "dual": 2.51
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 60.0,
+        "dual": 2.0
+      },
+      "bands": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 70.0,
+        "dual": 2.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 80.0,
+        "dual": 2.0
+      },
+      "pressure": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 110.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 50.0,
+        "rho_cutoff": 100.0,
+        "dual": 2.0
+      }
+    }
+  },
+  "Sn.nc.z_14.oncvpsp3.dojo.v0.4.1-std": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 90.0,
+        "dual": 3.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 138.0,
+        "dual": 2.51
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 210.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 175.0,
+        "dual": 2.5
+      },
+      "delta": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 192.0,
+        "dual": 3.49
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 120.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 138.0,
+        "dual": 2.51
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 210.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 175.0,
+        "dual": 2.5
+      },
+      "delta": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 165.0,
+        "dual": 3.0
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 120.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 138.0,
+        "dual": 2.51
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 138.0,
+        "dual": 2.51
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 90.0,
+        "dual": 3.0
+      },
+      "bands": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 138.0,
+        "dual": 2.51
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 60.0,
+        "rho_cutoff": 210.0,
+        "dual": 3.5
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 175.0,
+        "dual": 2.5
+      },
+      "delta": {
+        "wfc_cutoff": 55.0,
+        "rho_cutoff": 192.0,
+        "dual": 3.49
+      }
+    }
+  },
+  "Ar.nc.z_8.oncvpsp3.dojo.v0.4.1-std": {
+    "GS": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 120.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 120.0,
+        "dual": 3.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 120.0,
+        "dual": 3.0
+      },
+      "pressure": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 130.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 100.0,
+        "dual": 2.5
+      }
+    },
+    "BCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 140.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 120.0,
+        "dual": 3.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 120.0,
+        "dual": 3.0
+      },
+      "pressure": {
+        "wfc_cutoff": 65.0,
+        "rho_cutoff": 130.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 122.0,
+        "dual": 3.49
+      }
+    },
+    "FCC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 120.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 120.0,
+        "dual": 3.0
+      }
+    },
+    "SC": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 30.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.5
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 120.0,
+        "dual": 3.0
+      }
+    },
+    "Diamond": {
+      "phonon_frequencies": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 160.0,
+        "dual": 4.0
+      },
+      "bands": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 120.0,
+        "dual": 3.0
+      },
+      "cohesive_energy": {
+        "wfc_cutoff": 40.0,
+        "rho_cutoff": 100.0,
+        "dual": 2.5
+      },
+      "pressure": {
+        "wfc_cutoff": 70.0,
+        "rho_cutoff": 140.0,
+        "dual": 2.0
+      },
+      "delta": {
+        "wfc_cutoff": 35.0,
+        "rho_cutoff": 105.0,
+        "dual": 3.0
+      }
+    }
+  }
+}
