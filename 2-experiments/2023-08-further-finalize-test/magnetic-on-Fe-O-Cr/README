@@ -1,0 +1,8 @@
+The calculation to see if magnetization should be turned on for Fe/O/Cr convergence tests.
+
+Run on cohesive energy convergence tests for Fe/O/Cr, because cohesive energy not dependent on reference data which also may cause problems. Meanwhile it usually give the largest cutoff energy.
+
+Run using GS convergence tests for Fe/O/Cr with magnetization turned on.
+Keep on GS rather than Diamond because the Diamond tests are not yet working.
+
+Compare the results with the results from the Diamond convergence tests for Fe/O/Cr with magnetization turned off.
