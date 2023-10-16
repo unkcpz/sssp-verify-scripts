@@ -143,7 +143,7 @@ def run(pks, element, dst, profile, override, mylabel):
             # meta info of such verification
             # uuid, label
             _node  = orm.load_node(pk)
-            assert _node.get_attribute("process_label") == "VerificationWorkChain"
+            assert _node.get_attribute("process_label") == "PseudoVerificationWorkChain"
             label = mylabel or _node.extras.get("label").split()[-1]   # do not contain the extra machine info
             assert element == label.split('.')[0]
             

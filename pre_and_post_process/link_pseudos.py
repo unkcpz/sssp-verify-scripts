@@ -23,6 +23,7 @@ def main():
         "NC-DOJOv4-standard",
         "NC-DOJOv4-stringent",
         "NC-SG15-ONCVPSP4",
+        "NC-SPMS",
         "PAW-JTH1.1-standard",
         "PAW-JTH1.1-stringent",
         "PAW-PSL0.x",
@@ -35,6 +36,7 @@ def main():
         "UNCATOGRIZED",
         "PAW-RE-Wentzcovitch/legacy",
         "PAW-RE-Wentzcovitch/neo",
+        "PAW-ACT-UNIMARBURG",
     ]:
         psp_folder = os.path.join(func_path, folder)
         for psp_filename in os.listdir(psp_folder):

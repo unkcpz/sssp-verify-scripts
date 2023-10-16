@@ -1,0 +1,53 @@
+{
+  "O.paw.z_6.ld1.psl.v1.0.0-high": {
+    "GS-mag-on": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "GS-mag-off": {
+      "wfc_cutoff": 50.0,
+      "rho_cutoff": 400.0,
+      "dual": 8.0
+    },
+    "Diamond-mag-off": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 320.0,
+      "dual": 8.0
+    }
+  },
+  "O.us.z_6.ld1.psl.v1.0.0-low": {
+    "GS-mag-on": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "GS-mag-off": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "Diamond-mag-off": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 320.0,
+      "dual": 8.0
+    }
+  },
+  "O.nc.z_6.oncvpsp3.dojo.v0.4.1-std": {
+    "GS-mag-on": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 280.0,
+      "dual": 4.0
+    },
+    "GS-mag-off": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 280.0,
+      "dual": 4.0
+    },
+    "Diamond-mag-off": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 280.0,
+      "dual": 4.0
+    }
+  }
+}

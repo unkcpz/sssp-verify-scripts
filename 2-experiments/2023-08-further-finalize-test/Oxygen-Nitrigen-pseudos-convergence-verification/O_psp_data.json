@@ -1,0 +1,353 @@
+{
+  "O.nc.z_6.oncvpsp3.dojo.v0.4.1-str": {
+    "cohesive_energy": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 300.0,
+      "dual": 4.0
+    },
+    "bands": {
+      "wfc_cutoff": 65.0,
+      "rho_cutoff": 260.0,
+      "dual": 4.0
+    },
+    "pressure": {
+      "wfc_cutoff": 90.0,
+      "rho_cutoff": 270.0,
+      "dual": 3.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 210.0,
+      "dual": 3.5
+    },
+    "delta": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 262.0,
+      "dual": 3.49
+    }
+  },
+  "O.nc.z_6.oncvpsp4.sg15.v0": {
+    "cohesive_energy": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 300.0,
+      "dual": 4.0
+    },
+    "bands": {
+      "wfc_cutoff": 65.0,
+      "rho_cutoff": 162.0,
+      "dual": 2.49
+    },
+    "pressure": {
+      "wfc_cutoff": 90.0,
+      "rho_cutoff": 180.0,
+      "dual": 2.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 75.0,
+      "dual": 2.5
+    },
+    "delta": {
+      "wfc_cutoff": 100.0,
+      "rho_cutoff": 300.0,
+      "dual": 3.0
+    }
+  },
+  "O.paw.z_6.atompaw.jth.v1.1-std": {
+    "cohesive_energy": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 35.0,
+      "rho_cutoff": 280.0,
+      "dual": 8.0
+    },
+    "pressure": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 560.0,
+      "dual": 8.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "delta": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 480.0,
+      "dual": 8.0
+    }
+  },
+  "O.paw.z_6.atompaw.jth.v1.1-str": {
+    "cohesive_energy": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 35.0,
+      "rho_cutoff": 280.0,
+      "dual": 8.0
+    },
+    "pressure": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 560.0,
+      "dual": 8.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "delta": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 480.0,
+      "dual": 8.0
+    }
+  },
+  "O.paw.z_6.ld1.psl.v0.1": {
+    "cohesive_energy": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 480.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 320.0,
+      "dual": 8.0
+    },
+    "pressure": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 560.0,
+      "dual": 8.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "delta": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 560.0,
+      "dual": 8.0
+    }
+  },
+  "O.paw.z_6.ld1.psl.v1.0.0-high": {
+    "cohesive_energy": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 320.0,
+      "dual": 8.0
+    },
+    "pressure": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 600.0,
+      "dual": 8.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "delta": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    }
+  },
+  "O.paw.z_6.ld1.psl.v1.0.0-low": {
+    "cohesive_energy": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 35.0,
+      "rho_cutoff": 280.0,
+      "dual": 8.0
+    },
+    "pressure": {
+      "wfc_cutoff": 65.0,
+      "rho_cutoff": 520.0,
+      "dual": 8.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "delta": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 480.0,
+      "dual": 8.0
+    }
+  },
+  "O.us.z_6.ld1.psl.v0.1": {
+    "cohesive_energy": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 990.0,
+      "dual": 18.0
+    },
+    "bands": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 640.0,
+      "dual": 16.0
+    },
+    "pressure": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 700.0,
+      "dual": 10.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 360.0,
+      "dual": 12.0
+    },
+    "delta": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 700.0,
+      "dual": 10.0
+    }
+  },
+  "O.us.z_6.ld1.psl.v1.0.0-high": {
+    "cohesive_energy": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 320.0,
+      "dual": 8.0
+    },
+    "pressure": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 600.0,
+      "dual": 8.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "delta": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    }
+  },
+  "O.us.z_6.ld1.psl.v1.0.0-low": {
+    "cohesive_energy": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 35.0,
+      "rho_cutoff": 280.0,
+      "dual": 8.0
+    },
+    "pressure": {
+      "wfc_cutoff": 65.0,
+      "rho_cutoff": 520.0,
+      "dual": 8.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "delta": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 480.0,
+      "dual": 8.0
+    }
+  },
+  "O.us.z_6.uspp.gbrv.v1.2": {
+    "cohesive_energy": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 440.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "pressure": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 320.0,
+      "dual": 8.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 240.0,
+      "dual": 8.0
+    },
+    "delta": {
+      "wfc_cutoff": 55.0,
+      "rho_cutoff": 990.0,
+      "dual": 18.0
+    }
+  },
+  "O.nc.z_6.oncvpsp3.dojo.v0.4.1-std": {
+    "cohesive_energy": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 280.0,
+      "dual": 4.0
+    },
+    "bands": {
+      "wfc_cutoff": 65.0,
+      "rho_cutoff": 260.0,
+      "dual": 4.0
+    },
+    "pressure": {
+      "wfc_cutoff": 80.0,
+      "rho_cutoff": 240.0,
+      "dual": 3.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 160.0,
+      "dual": 4.0
+    },
+    "delta": {
+      "wfc_cutoff": 65.0,
+      "rho_cutoff": 228.0,
+      "dual": 3.51
+    }
+  },
+  "O.nc.z_6.oncvpsp4.spms.v1": {
+    "cohesive_energy": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 300.0,
+      "dual": 4.0
+    },
+    "bands": {
+      "wfc_cutoff": 65.0,
+      "rho_cutoff": 260.0,
+      "dual": 4.0
+    },
+    "pressure": {
+      "wfc_cutoff": 80.0,
+      "rho_cutoff": 240.0,
+      "dual": 3.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 160.0,
+      "dual": 4.0
+    },
+    "delta": {
+      "wfc_cutoff": 65.0,
+      "rho_cutoff": 228.0,
+      "dual": 3.51
+    }
+  }
+}

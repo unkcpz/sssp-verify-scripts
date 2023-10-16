@@ -1,0 +1,110 @@
+{
+  "N.paw.z_5.atompaw.jth.v1.1-std": {
+    "cohesive_energy": {
+      "wfc_cutoff": 80.0,
+      "rho_cutoff": 640.0,
+      "dual": 8.0
+    },
+    "bands": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 240.0,
+      "dual": 6.0
+    },
+    "pressure": {
+      "wfc_cutoff": 50.0,
+      "rho_cutoff": 325.0,
+      "dual": 6.5
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 30.0,
+      "rho_cutoff": 180.0,
+      "dual": 6.0
+    },
+    "delta": {
+      "wfc_cutoff": 90.0,
+      "rho_cutoff": 540.0,
+      "dual": 6.0
+    }
+  },
+  "N.nc.z_5.oncvpsp3.dojo.v0.4.1-std": {
+    "cohesive_energy": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 175.0,
+      "dual": 2.5
+    },
+    "bands": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 120.0,
+      "dual": 2.0
+    },
+    "pressure": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 150.0,
+      "dual": 2.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 40.0,
+      "rho_cutoff": 160.0,
+      "dual": 4.0
+    },
+    "delta": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 188.0,
+      "dual": 2.51
+    }
+  },
+  "N.nc.z_5.oncvpsp4.sg15.v0": {
+    "cohesive_energy": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 210.0,
+      "dual": 3.0
+    },
+    "bands": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 120.0,
+      "dual": 2.0
+    },
+    "pressure": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 150.0,
+      "dual": 2.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 35.0,
+      "rho_cutoff": 70.0,
+      "dual": 2.0
+    },
+    "delta": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 150.0,
+      "dual": 2.0
+    }
+  },
+  "N.nc.z_5.oncvpsp4.spms.v1": {
+    "cohesive_energy": {
+      "wfc_cutoff": 70.0,
+      "rho_cutoff": 175.0,
+      "dual": 2.5
+    },
+    "bands": {
+      "wfc_cutoff": 60.0,
+      "rho_cutoff": 120.0,
+      "dual": 2.0
+    },
+    "pressure": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 150.0,
+      "dual": 2.0
+    },
+    "phonon_frequencies": {
+      "wfc_cutoff": 35.0,
+      "rho_cutoff": 140.0,
+      "dual": 4.0
+    },
+    "delta": {
+      "wfc_cutoff": 75.0,
+      "rho_cutoff": 188.0,
+      "dual": 2.51
+    }
+  }
+}
