@@ -1,0 +1,422 @@
+{
+    "Ag": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Ag.nc.z_19.oncvpsp3.sg15.v1.0.upf",
+        "md5": "94f47bd0669c641108e45594df92fabc"
+    },
+    "Al": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Al.paw.z_3.ld1.psl.v1.0.0-high.upf",
+        "md5": "939656cdb33dac99315362649e200a28"
+    },
+    "Ar": {
+        "cutoff_rho": 165.0,
+        "cutoff_wfc": 80.0,
+        "filename": "Ar.nc.z_8.oncvpsp3.sg15.v1.1.upf",
+        "md5": "46d28409cdd246843f76b7675277a949"
+    },
+    "As": {
+        "cutoff_rho": 210.0,
+        "cutoff_wfc": 35.0,
+        "filename": "As.us.z_5.ld1.psl.v0.2.upf",
+        "md5": "d11cfb355aab383900989f10b15e01f2"
+    },
+    "Au": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Au.nc.z_19.oncvpsp3.sg15.v1.0.upf",
+        "md5": "d14007822ba0e19f0206237467fc06c2"
+    },
+    "B": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 50.0,
+        "filename": "B.us.z_3.uspp.gbrv.v1.4.upf",
+        "md5": "cc6de2960df11db49a60e589f9ebb39b"
+    },
+    "Ba": {
+        "cutoff_rho": 240.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Ba.paw.z_10.ld1.psl.v1.0.0-high.upf",
+        "md5": "5a193876eeb355933d19bba2519acd30"
+    },
+    "Be": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Be.nc.z_4.oncvpsp3.sg15.v1.0.upf",
+        "md5": "28b8ff6b8130143f4fef2c47cbef089d"
+    },
+    "Bi": {
+        "cutoff_rho": 270.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Bi.us.z_15.uspp.gbrv.v1.upf",
+        "md5": "cceb9f28ec65b6d7ff33140f5b0b1758"
+    },
+    "Br": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Br.us.z_7.uspp.gbrv.v1.4.upf",
+        "md5": "d3ffb7b29f6225aa16fe06858fb2a80b"
+    },
+    "C": {
+        "cutoff_rho": 360.0,
+        "cutoff_wfc": 60.0,
+        "filename": "C.paw.z_4.ld1.psl.v1.0.0-high.upf",
+        "md5": "2f113e96bb0d4e20d82c787bf582c5ce"
+    },
+    "Ca": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Ca.us.z_10.uspp.gbrv.v1.upf",
+        "md5": "403a4c14b9e4d4dfdc3024c9a3812218"
+    },
+    "Cd": {
+        "cutoff_rho": 540.0,
+        "cutoff_wfc": 90.0,
+        "filename": "Cd.us.z_12.ld1.psl.v0.3.1.upf",
+        "md5": "2b46ec62a0e224ac2599e5e0e87ce680"
+    },
+    "Cl": {
+        "cutoff_rho": 210.0,
+        "cutoff_wfc": 35.0,
+        "filename": "Cl.us.z_7.ld1.psl.v1.0.0-high.upf",
+        "md5": "fa60ceceb3c79951c992d1b39b085546"
+    },
+    "Co": {
+        "cutoff_rho": 2400.0,
+        "cutoff_wfc": 150.0,
+        "filename": "Co.us.z_17.uspp.gbrv.v1.2.upf",
+        "md5": "5f91765df6ddd3222702df6e7b74a16d"
+    },
+    "Cr": {
+        "cutoff_rho": 1440.0,
+        "cutoff_wfc": 90.0,
+        "filename": "Cr.us.z_14.uspp.gbrv.v1.5.upf",
+        "md5": "0d52af634a40206e4dee301ad30da4bf"
+    },
+    "Cs": {
+        "cutoff_rho": 210.0,
+        "cutoff_wfc": 35.0,
+        "filename": "Cs.us.z_9.uspp.gbrv.v1.upf",
+        "md5": "3476d69cb178dfad3ffaa59df4e07ca4"
+    },
+    "Cu": {
+        "cutoff_rho": 245.0,
+        "cutoff_wfc": 80.0,
+        "filename": "Cu.nc.z_19.oncvpsp3.sg15.v1.0.upf",
+        "md5": "695ac441eccbb634fec39edbf1c7156d"
+    },
+    "F": {
+        "cutoff_rho": 260.0,
+        "cutoff_wfc": 80.0,
+        "filename": "F.nc.z_7.oncvpsp3.dojo.v0.4.1-std.upf",
+        "md5": "e79d493a50113cefedcefee2f1adb6e7"
+    },
+    "Fe": {
+        "cutoff_rho": 960.0,
+        "cutoff_wfc": 120.0,
+        "filename": "Fe.paw.z_16.ld1.psl.v0.2.1.upf",
+        "md5": "68a15159d752cb02f0c0b7d318cfa057"
+    },
+    "Ga": {
+        "cutoff_rho": 450.0,
+        "cutoff_wfc": 75.0,
+        "filename": "Ga.paw.z_13.ld1.psl.v1.0.0-high.upf",
+        "md5": "2e46c8df442aaa821195767af3579387"
+    },
+    "Ge": {
+        "cutoff_rho": 240.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Ge.us.z_14.uspp.gbrv.v1.4.upf",
+        "md5": "9c9eaa91e581c3f09632fb3098b2c6b2"
+    },
+    "H": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 70.0,
+        "filename": "H.nc.z_1.oncvpsp3.sg15.v1.0.upf",
+        "md5": "1790becc920ee074925cf490c71280fe"
+    },
+    "He": {
+        "cutoff_rho": 320.0,
+        "cutoff_wfc": 80.0,
+        "filename": "He.nc.z_2.oncvpsp3.sg15.v1.0.upf",
+        "md5": "e7160162b946020f132a727efeb32d00"
+    },
+    "Hf": {
+        "cutoff_rho": 110.0,
+        "cutoff_wfc": 55.0,
+        "filename": "Hf.nc.z_12.oncvpsp3.dojo.v0.4.1-std.upf",
+        "md5": "54f7ec7f43d5d93247b4f856bff61d17"
+    },
+    "Hg": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 70.0,
+        "filename": "Hg.nc.z_20.oncvpsp3.sg15.v1.0.upf",
+        "md5": "dd5a8773074bfcf4280086d4d95875c4"
+    },
+    "I": {
+        "cutoff_rho": 210.0,
+        "cutoff_wfc": 35.0,
+        "filename": "I.paw.z_7.ld1.psl.v0.2-deprecated.upf",
+        "md5": "a5f62b98ba307d8dbe20f48726f3c6cd"
+    },
+    "In": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 50.0,
+        "filename": "In.us.z_13.ld1.psl.v0.2.2.upf",
+        "md5": "ae87617e0f623b725542938e7d7061e1"
+    },
+    "Ir": {
+        "cutoff_rho": 720.0,
+        "cutoff_wfc": 90.0,
+        "filename": "Ir.us.z_15.uspp.gbrv.v1.2.upf",
+        "md5": "8836f839c3459d2b385c504ce6d91f2c"
+    },
+    "K": {
+        "cutoff_rho": 540.0,
+        "cutoff_wfc": 90.0,
+        "filename": "K.paw.z_9.ld1.psl.v1.0.0-high.upf",
+        "md5": "5dfb2b066461e5423df3ff3a3739a548"
+    },
+    "Kr": {
+        "cutoff_rho": 240.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Kr.nc.z_8.oncvpsp3.sg15.v1.0.upf",
+        "md5": "f2280ecf57a6c8a47e066f0532d843fa"
+    },
+    "Li": {
+        "cutoff_rho": 240.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Li.us.z_3.uspp.gbrv.v1.4.upf",
+        "md5": "e912e257baa3777c20ea3d68f190483c"
+    },
+    "Mg": {
+        "cutoff_rho": 240.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Mg.us.z_10.uspp.gbrv.v1.4.upf",
+        "md5": "8ffbd8f729fef71095aac5bd8316fb1f"
+    },
+    "Mn": {
+        "cutoff_rho": 2400.0,
+        "cutoff_wfc": 150.0,
+        "filename": "Mn.us.z_15.uspp.gbrv.v1.5.upf",
+        "md5": "82ef2b46521d7a7d9e736dc3972e4928"
+    },
+    "Mo": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 55.0,
+        "filename": "Mo.nc.z_14.oncvpsp3.sg15.v1.0.upf",
+        "md5": "1b5d28e075c9ccadda658a603575cd1f"
+    },
+    "N": {
+        "cutoff_rho": 188.0,
+        "cutoff_wfc": 75.0,
+        "filename": "N.nc.z_5.oncvpsp3.dojo.v0.4.1-std.upf",
+        "md5": "d34365f73bb0e2ee98afc20ec3e87676"
+    },
+    "Na": {
+        "cutoff_rho": 200.0,
+        "cutoff_wfc": 100.0,
+        "filename": "Na.nc.z_9.oncvpsp3.sg15.v1.0.upf",
+        "md5": "24a298df0a6742ae313db96548fdb2a4"
+    },
+    "Nb": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Nb.paw.z_13.ld1.psl.v0.3.0.upf",
+        "md5": "01f37a8e1192cefd1b04151b2f6ac6d3"
+    },
+    "Ne": {
+        "cutoff_rho": 480.0,
+        "cutoff_wfc": 120.0,
+        "filename": "Ne.nc.z_8.oncvpsp3.sg15.v1.0.upf",
+        "md5": "9b5acc4cb48b9d80e669eadd528e4e8f"
+    },
+    "Ni": {
+        "cutoff_rho": 1800.0,
+        "cutoff_wfc": 100.0,
+        "filename": "Ni.us.z_18.uspp.gbrv.v1.4.upf",
+        "md5": "1ee80287db30b12d2bc1f57a5b5d6409"
+    },
+    "O": {
+        "cutoff_rho": 560.0,
+        "cutoff_wfc": 70.0,
+        "filename": "O.paw.z_6.ld1.psl.v0.1.upf",
+        "md5": "a60b4d0ae3a5477449b52f76b61da220"
+    },
+    "Os": {
+        "cutoff_rho": 240.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Os.us.z_16.uspp.gbrv.v1.2.upf",
+        "md5": "a3fb40a04f0c37c25c34bbc47164c9a8"
+    },
+    "P": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 30.0,
+        "filename": "P.us.z_5.ld1.psl.v1.0.0-high.upf",
+        "md5": "6c1fe66e5fe6a552967721b615186bc2"
+    },
+    "Pb": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Pb.paw.z_14.ld1.psl.v0.2.2.upf",
+        "md5": "d0f0b58ade218c432f4a4313b2c38cf0"
+    },
+    "Pd": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Pd.nc.z_18.oncvpsp3.sg15.v1.0.upf",
+        "md5": "eb77f42b51d86fb18e25f68156a31cf1"
+    },
+    "Po": {
+        "cutoff_rho": 750.0,
+        "cutoff_wfc": 100.0,
+        "filename": "Po.us.z_16.ld1.psl.v1.0.0-high.upf",
+        "md5": "aa0c17ca2598bbca9fb39936fef69849"
+    },
+    "Pt": {
+        "cutoff_rho": 600.0,
+        "cutoff_wfc": 100.0,
+        "filename": "Pt.us.z_32.ld1.psl.v1.0.0-high.upf",
+        "md5": "6db0971d9e5fe6983b225c1263cdd731"
+    },
+    "Rb": {
+        "cutoff_rho": 60.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Rb.nc.z_9.oncvpsp3.sg15.v1.0.upf",
+        "md5": "55a5172d6bfbce6759a58e35d43f6aa9"
+    },
+    "Re": {
+        "cutoff_rho": 390.0,
+        "cutoff_wfc": 65.0,
+        "filename": "Re.us.z_15.uspp.gbrv.v1.2.upf",
+        "md5": "85f993410f3e006da9d71c142b4ad953"
+    },
+    "Rh": {
+        "cutoff_rho": 130.0,
+        "cutoff_wfc": 65.0,
+        "filename": "Rh.nc.z_17.oncvpsp3.sg15.v1.0.upf",
+        "md5": "ba07c69523b14cacd10683cd4c4284c1"
+    },
+    "Rn": {
+        "cutoff_rho": 1600.0,
+        "cutoff_wfc": 200.0,
+        "filename": "Rn.paw.z_18.ld1.psl.v1.0.0-high.upf",
+        "md5": "2ee8f183081cd84b04ed791df1fb0731"
+    },
+    "Ru": {
+        "cutoff_rho": 120.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Ru.nc.z_16.oncvpsp3.sg15.v1.0.upf",
+        "md5": "be037bb81c227cfb9b1461a9f099f4bd"
+    },
+    "S": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 30.0,
+        "filename": "S.us.z_6.uspp.gbrv.v1.4.upf",
+        "md5": "88d86576ff6df21479756cfb9bdac1df"
+    },
+    "Sb": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Sb.us.z_15.uspp.gbrv.v1.4.upf",
+        "md5": "9bc50dfb53373b713f5709b9110fe27f"
+    },
+    "Sc": {
+        "cutoff_rho": 450.0,
+        "cutoff_wfc": 75.0,
+        "filename": "Sc.paw.z_11.ld1.psl.v0.2.3.upf",
+        "md5": "09ffd027b68115cae58afb346bba9fa5"
+    },
+    "Se": {
+        "cutoff_rho": 262.0,
+        "cutoff_wfc": 35.0,
+        "filename": "Se.us.z_6.uspp.gbrv.v1.upf",
+        "md5": "1b3568f3a8ae88f9a2a0ad0698632c85"
+    },
+    "Si": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Si.us.z_4.ld1.psl.v1.0.0-high.upf",
+        "md5": "8e298c2a3df40404922b81d9358831a3"
+    },
+    "Sn": {
+        "cutoff_rho": 540.0,
+        "cutoff_wfc": 90.0,
+        "filename": "Sn.us.z_14.uspp.gbrv.v1.4.upf",
+        "md5": "469debedee59599fedebd795477fea03"
+    },
+    "Sr": {
+        "cutoff_rho": 240.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Sr.us.z_10.uspp.gbrv.v1.upf",
+        "md5": "6b418c05fbe9db5448babca5e47b7a5b"
+    },
+    "Ta": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Ta.us.z_13.uspp.gbrv.v1.upf",
+        "md5": "f8bbe9446314a3b8ea5d9f3e3836c939"
+    },
+    "Tc": {
+        "cutoff_rho": 120.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Tc.nc.z_15.oncvpsp3.sg15.v1.0.upf",
+        "md5": "1c2b1e6c8b361b656073c0c20ed4f60a"
+    },
+    "Te": {
+        "cutoff_rho": 1500.0,
+        "cutoff_wfc": 200.0,
+        "filename": "Te.us.z_6.uspp.gbrv.v1.upf",
+        "md5": "c319670d6894cc26e93307826a071b75"
+    },
+    "Ti": {
+        "cutoff_rho": 210.0,
+        "cutoff_wfc": 35.0,
+        "filename": "Ti.us.z_12.uspp.gbrv.v1.4.upf",
+        "md5": "88a00a6731bd790ddea75d31a80cb452"
+    },
+    "Tl": {
+        "cutoff_rho": 540.0,
+        "cutoff_wfc": 90.0,
+        "filename": "Tl.us.z_13.uspp.gbrv.v1.2.upf",
+        "md5": "b76cf1f7e72655a2b2c53cf6385d7059"
+    },
+    "V": {
+        "cutoff_rho": 720.0,
+        "cutoff_wfc": 120.0,
+        "filename": "V.us.z_13.uspp.gbrv.v1.4.upf",
+        "md5": "22b79981416ebb76fdaf5b1b8640f6fb"
+    },
+    "W": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 50.0,
+        "filename": "W.us.z_14.uspp.gbrv.v1.2.upf",
+        "md5": "9c083fa34c2a2ea0f02f1f893e16e1c8"
+    },
+    "Xe": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 75.0,
+        "filename": "Xe.nc.z_18.oncvpsp3.sg15.v1.1.upf",
+        "md5": "f6ea899d5a535d3f5731d9e48edfe3e3"
+    },
+    "Y": {
+        "cutoff_rho": 270.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Y.us.z_11.uspp.gbrv.v1.4.upf",
+        "md5": "d034151ed7554c50b6e82763ed42c788"
+    },
+    "Zn": {
+        "cutoff_rho": 1200.0,
+        "cutoff_wfc": 200.0,
+        "filename": "Zn.us.z_20.uspp.gbrv.v1.upf",
+        "md5": "df62231357ef9e81f77b2b3087fa5675"
+    },
+    "Zr": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Zr.us.z_12.uspp.gbrv.v1.upf",
+        "md5": "5db81b1e868ab7776c4564c113de050b"
+    }
+}

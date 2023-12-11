@@ -1,0 +1,29 @@
+{
+    "references":
+    {
+        "all-electron average":
+        {
+            "oxides": "results-oxides-verification-PBE-v1-AE-average.json",
+            "unaries": "results-unaries-verification-PBE-v1-AE-average.json"
+        }
+    },
+    "methods-main":
+    {
+        "AE-average|WIEN2K+FLEUR":
+        {
+            "oxides": "results-oxides-verification-PBE-v1-AE-average.json",
+            "unaries": "results-unaries-verification-PBE-v1-AE-average.json",
+            "short_label": "AE-average"
+        },
+        "SSSP-v1.3-lib|QE|dojo-v0.5-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-sssp-lib-with-dojo-oxygen.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-sssp-lib-with-dojo-oxygen.json",
+            "short_label": "sssp-lib|dojo-oxygen"
+        },
+        "SSSP-v1.3-lib|QE|psl-us-0.1-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-sssp-lib-with-psl-us-0.1-oxygen.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-sssp-lib-with-psl-us-0.1-oxygen.json",
+            "short_label": "sssp-lib|psl-us-0.1-oxygen"
+        }
+    }
+}    

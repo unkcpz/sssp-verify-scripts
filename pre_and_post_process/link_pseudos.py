@@ -20,8 +20,9 @@ def main():
         os.mkdir(os.path.join(f'./_sssp_{func}', element))
     
     for folder in [
-        "NC-DOJOv4-standard",
-        "NC-DOJOv4-stringent",
+        "NC-DOJOv0.4-standard",
+        "NC-DOJOv0.5-standard",
+        "NC-DOJOv0.4-stringent",
         "NC-SG15-ONCVPSP4",
         "NC-SPMS",
         "PAW-JTH1.1-standard",
@@ -37,7 +38,11 @@ def main():
         "PAW-RE-Wentzcovitch/legacy",
         "PAW-RE-Wentzcovitch/neo",
         "PAW-ACT-UNIMARBURG",
-    ]:
+    ]:  
+        # dojo v0.5 standard only for elements Ba, Bi, I, Pb, Po, Rb, Rn, S, Te, Tl, and Xe.
+        if folder == 'NC-DOJOv0.5-standard' and element not in ['Ba', 'Bi', 'I', 'Pb', 'Po', 'Rb', 'Rn', 'S', 'Te', 'Tl', 'Xe']:
+            continue
+
         psp_folder = os.path.join(func_path, folder)
         for psp_filename in os.listdir(psp_folder):
             if psp_filename.startswith(f'{element}.'):

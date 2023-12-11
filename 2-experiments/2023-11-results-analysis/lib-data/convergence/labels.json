@@ -1,0 +1,25 @@
+{
+    "methods-main":
+    {
+        "SSSP-prec-v1.3|MIX@precision":{
+            "metadata": "results-verification-PBE-quantum_espresso-sssp-prec-v1.3-PBE-precision.json",
+           "short_label": "SSSP-prec-v1.3"
+        },
+        "SSSP-prec-v1.1.2|MIX@precision":{
+            "metadata": "results-verification-PBE-quantum_espresso-sssp-prec-v1.1.2-PBE-precision.json",
+           "short_label": "SSSP-prec-v1.1.2"
+        },
+        "PseudoDojo-v0.5|NC@precision":{
+            "metadata": "results-verification-PBE-quantum_espresso-dojo-std-v0.5-PBE-precision.json",
+            "short_label": "dojo-v0.5"
+        },
+        "SPMS|NC@precision":{
+            "metadata": "results-verification-PBE-quantum_espresso-spms-PBE-precision.json",
+            "short_label": "SPMS"
+        },
+        "SG15|NC@precision":{
+            "metadata": "results-verification-PBE-quantum_espresso-sg15-PBE-precision.json",
+            "short_label": "SG15"
+        }
+    }
+}    

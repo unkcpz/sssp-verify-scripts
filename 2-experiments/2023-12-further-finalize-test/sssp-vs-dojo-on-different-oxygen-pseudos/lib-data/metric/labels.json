@@ -1,0 +1,49 @@
+{
+    "references":
+    {
+        "all-electron average":
+        {
+            "oxides": "results-oxides-verification-PBE-v1-AE-average.json",
+            "unaries": "results-unaries-verification-PBE-v1-AE-average.json"
+        }
+    },
+    "methods-main":
+    {
+        "AE-average|WIEN2K+FLEUR":
+        {
+            "oxides": "results-oxides-verification-PBE-v1-AE-average.json",
+            "unaries": "results-unaries-verification-PBE-v1-AE-average.json",
+            "short_label": "AE-average"
+        },
+        "sample-elements|QE|dojo-v0.5-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-dojo-v0.5-oxygen-pseudo.json",
+            "unaries": "",
+            "short_label": "dojo-v0.5-oxygen-pseudo"
+        },
+        "sample-elements|QE|sssp-v1.3-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-sssp-v1.3-oxygen-pseudo.json",
+            "unaries": "",
+            "short_label": "sssp-v1.3-oxygen-pseudo"
+        },
+        "uspp-pseudos|QE|dojo-v0.5-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-uspp-ele-with-dojo-oxygen.json",
+            "unaries": "",
+            "short_label": "uspp|dojo-oxygen"
+        },
+        "uspp-pseudos|QE|sssp-1.3-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-uspp-ele-with-sssp-oxygen.json",
+            "unaries": "",
+            "short_label": "uspp|sssp-oxygen"
+        },
+        "dojo-pseudos|QE|dojo-0.5-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-dojo-ele-with-dojo-oxygen.json",
+            "unaries": "",
+            "short_label": "dojo|dojo-oxygen"
+        },
+        "dojo-pseudos|QE|sssp-1.3-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-dojo-ele-with-sssp-oxygen.json",
+            "unaries": "",
+            "short_label": "dojo|sssp-oxygen"
+        }
+    }
+}    

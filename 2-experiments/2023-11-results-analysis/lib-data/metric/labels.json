@@ -1,0 +1,74 @@
+{
+    "references":
+    {
+        "all-electron average":
+        {
+            "oxides": "results-oxides-verification-PBE-v1-AE-average.json",
+            "unaries": "results-unaries-verification-PBE-v1-AE-average.json"
+        }
+    },
+    "methods-main":
+    {
+        "AE-average|WIEN2K+FLEUR":
+        {
+            "oxides": "results-oxides-verification-PBE-v1-AE-average.json",
+            "unaries": "results-unaries-verification-PBE-v1-AE-average.json",
+            "short_label": "AE-average"
+        },
+        "PseudoDojo-v0.5b1|abinit@ACWF":{
+            "oxides": "results-oxides-verification-PBE-v1-abinit-PseudoDojo-0.5b1-PBE-SR-standard-psp8-acwf.json",
+            "unaries": "results-unaries-verification-PBE-v1-abinit-PseudoDojo-0.5b1-PBE-SR-standard-psp8-acwf.json",
+            "short_label": "dojo-v0.5b1-abinit-acwf"
+        },
+        "SSSP-prec-v1.3@ACWF":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-SSSP-1.3-PBE-precision-acwf.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-SSSP-1.3-PBE-precision-acwf.json",
+            "short_label": "SSSP-prec-v1.3"
+        },
+        "PseudoDojo-v0.5|qe@SSSP":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-PseudoDojo-0.5-PBE-SR-standard-upf.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-PseudoDojo-0.5-PBE-SR-standard-upf.json",
+            "short_label": "dojo-v0.5-qe-sssp"
+        },
+        "PseudoDojo-v0.4.1|qe@SSSP":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-PseudoDojo-0.4.1-PBE-SR-standard-upf.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-PseudoDojo-0.4.1-PBE-SR-standard-upf.json",
+            "short_label": "dojo-v0.4.1-qe-sssp"
+        },
+        "PseudoDojo-v0.5|qe@SSSP|dojo-oxygen":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-dojov0.5-with-dojo-oxygen.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-dojov0.5-with-dojo-oxygen.json",
+            "short_label": "dojo-v0.5-qe-sssp-dojo-oxygen"
+        },
+        "PseudoDojo-v0.5|qe@SSSP|dojo-oxygen-trim":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-dojov0.5-with-dojo-oxygen-trim.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-dojov0.5-with-dojo-oxygen-trim.json",
+            "short_label": "dojo-v0.5-qe-sssp-dojo-oxygen-trim"
+        },
+        "SSSP-prec-v1.3@SSSP":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-SSSP-1.3-PBE-precision.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-SSSP-1.3-PBE-precision.json",
+           "short_label": "SSSP-prec-v1.3"
+        },
+        "SSSP-prec-v1.1.2@SSSP":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-SSSP-1.1.2-PBE-precision.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-SSSP-1.1.2-PBE-precision.json",
+           "short_label": "SSSP-prec-v1.1.2"
+        },
+        "Quantum ESPRESSO@PW|PseudoDojo-v0.4":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-PseudoDojo-0.4-PBE-SR-standard-upf.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-PseudoDojo-0.4-PBE-SR-standard-upf.json",
+            "short_label": "dojo-v0.4-qe-acwf"
+        },
+        "ABINIT@PW|PseudoDojo-v0.4":{
+            "oxides": "results-oxides-verification-PBE-v1-abinit-PseudoDojo-0.4-PBE-SR-standard-psp8.json",
+            "unaries": "results-unaries-verification-PBE-v1-abinit-PseudoDojo-0.4-PBE-SR-standard-psp8.json",
+            "short_label": "dojo-v0.4-abinit-acwf"
+        },
+        "WIEN2k@(L)APW+lo+LO":{
+            "oxides": "results-oxides-verification-PBE-v1-wien2k-dk_0.06.json",
+            "unaries": "results-unaries-verification-PBE-v1-wien2k-dk_0.06.json",
+            "short_label": "WIEN2k"
+        }
+    }
+}    

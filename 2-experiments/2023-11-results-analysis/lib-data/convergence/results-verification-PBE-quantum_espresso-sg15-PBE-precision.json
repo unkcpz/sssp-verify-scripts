@@ -1,0 +1,404 @@
+{
+    "Ag": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Ag.nc.z_19.oncvpsp4.sg15.v0.upf",
+        "md5": "edb8f0297962ec96d172b4beb581d467"
+    },
+    "Al": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 70.0,
+        "filename": "Al.nc.z_11.oncvpsp4.sg15.v0.upf",
+        "md5": "44ebdfc766c18ed142bec7be4b1cd027"
+    },
+    "As": {
+        "cutoff_rho": 60.0,
+        "cutoff_wfc": 30.0,
+        "filename": "As.nc.z_5.oncvpsp4.sg15.v0.upf",
+        "md5": "9d7f2111332f88f0de644458dee8a474"
+    },
+    "Au": {
+        "cutoff_rho": 130.0,
+        "cutoff_wfc": 65.0,
+        "filename": "Au.nc.z_19.oncvpsp4.sg15.v0.upf",
+        "md5": "3f0624b67c0cbf9c057b4426ee923dd3"
+    },
+    "B": {
+        "cutoff_rho": 88.0,
+        "cutoff_wfc": 40.0,
+        "filename": "B.nc.z_3.oncvpsp4.sg15.v0.upf",
+        "md5": "4af2cbb1a8fba803c084b36cc6369f58"
+    },
+    "Ba": {
+        "cutoff_rho": 90.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Ba.nc.z_10.oncvpsp4.sg15.v0.upf",
+        "md5": "632479727e736e8041eb97035cd01df7"
+    },
+    "Be": {
+        "cutoff_rho": 135.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Be.nc.z_4.oncvpsp4.sg15.v0.upf",
+        "md5": "aefd6b9f97aff7e45bd95f2b3454a095"
+    },
+    "Bi": {
+        "cutoff_rho": 120.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Bi.nc.z_15.oncvpsp4.sg15.v0.upf",
+        "md5": "ef30454eec4d3dfa2af31720bdbfe8b1"
+    },
+    "Br": {
+        "cutoff_rho": 800.0,
+        "cutoff_wfc": 200.0,
+        "filename": "Br.nc.z_7.oncvpsp4.sg15.v0.upf",
+        "md5": "aa451e83a938786a912a738f7874fe1d"
+    },
+    "C": {
+        "cutoff_rho": 150.0,
+        "cutoff_wfc": 75.0,
+        "filename": "C.nc.z_4.oncvpsp4.sg15.v0.upf",
+        "md5": "056b64380caab0ce28d76c0a50195ca4"
+    },
+    "Ca": {
+        "cutoff_rho": 120.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Ca.nc.z_10.oncvpsp4.sg15.v0.upf",
+        "md5": "332eb42c9716c94f9321ccd07db38193"
+    },
+    "Cd": {
+        "cutoff_rho": 88.0,
+        "cutoff_wfc": 40.0,
+        "filename": "Cd.nc.z_20.oncvpsp4.sg15.v0.upf",
+        "md5": "0e4a700e67016e49b21422cbf6713bf4"
+    },
+    "Cl": {
+        "cutoff_rho": 100.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Cl.nc.z_7.oncvpsp4.sg15.v0.upf",
+        "md5": "4257a8ea5cd510292e3dbfce4f4c023e"
+    },
+    "Co": {
+        "cutoff_rho": 220.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Co.nc.z_17.oncvpsp4.sg15.v0.upf",
+        "md5": "ae842baa7d6f75fd0888cd6d6456e537"
+    },
+    "Cr": {
+        "cutoff_rho": 125.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Cr.nc.z_14.oncvpsp4.sg15.v0.upf",
+        "md5": "9a0893cb553a9e7531e776321285115a"
+    },
+    "Cs": {
+        "cutoff_rho": 90.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Cs.nc.z_9.oncvpsp4.sg15.v0.upf",
+        "md5": "6964f8f0ce346fcfaf60d7d0b1644f32"
+    },
+    "Cu": {
+        "cutoff_rho": 245.0,
+        "cutoff_wfc": 80.0,
+        "filename": "Cu.nc.z_19.oncvpsp4.sg15.v0.upf",
+        "md5": "d25923398c173a667ea569949d771a9c"
+    },
+    "F": {
+        "cutoff_rho": 600.0,
+        "cutoff_wfc": 150.0,
+        "filename": "F.nc.z_7.oncvpsp4.sg15.v0.upf",
+        "md5": "06398c567218d199ce096f8d95934da6"
+    },
+    "Fe": {
+        "cutoff_rho": 228.0,
+        "cutoff_wfc": 70.0,
+        "filename": "Fe.nc.z_16.oncvpsp4.sg15.v0.upf",
+        "md5": "ebdcc94bbe74e26053d14e9a3510886b"
+    },
+    "Ga": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 150.0,
+        "filename": "Ga.nc.z_13.oncvpsp4.sg15.v0.upf",
+        "md5": "c1f2b8467cd69fe0a03a3f616d5cae01"
+    },
+    "Ge": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Ge.nc.z_14.oncvpsp4.sg15.v0.upf",
+        "md5": "ab536e3577da70538831b20919fc60fe"
+    },
+    "H": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 70.0,
+        "filename": "H.nc.z_1.oncvpsp4.sg15.v0.upf",
+        "md5": "39a7d154f04d65093d603a437119a874"
+    },
+    "He": {
+        "cutoff_rho": 320.0,
+        "cutoff_wfc": 80.0,
+        "filename": "He.nc.z_2.oncvpsp4.sg15.v0.upf",
+        "md5": "af6f24ee3142eab2fe48c36e4d6cb96c"
+    },
+    "Hf": {
+        "cutoff_rho": 158.0,
+        "cutoff_wfc": 65.0,
+        "filename": "Hf.nc.z_26.oncvpsp4.sg15.v0.upf",
+        "md5": "b8386eb19f3136b1607bf07e0f22637c"
+    },
+    "Hg": {
+        "cutoff_rho": 800.0,
+        "cutoff_wfc": 200.0,
+        "filename": "Hg.nc.z_20.oncvpsp4.sg15.v0.upf",
+        "md5": "1db68231b2aadc6af208def1cb0b2786"
+    },
+    "I": {
+        "cutoff_rho": 160.0,
+        "cutoff_wfc": 65.0,
+        "filename": "I.nc.z_17.oncvpsp4.sg15.v0.upf",
+        "md5": "01aece6dfeaff728ece6f409764611b3"
+    },
+    "In": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 70.0,
+        "filename": "In.nc.z_13.oncvpsp4.sg15.v0.upf",
+        "md5": "d2cd5ac194aa82b297c7382c63b3e478"
+    },
+    "Ir": {
+        "cutoff_rho": 800.0,
+        "cutoff_wfc": 200.0,
+        "filename": "Ir.nc.z_17.oncvpsp4.sg15.v0.upf",
+        "md5": "9c3eeecce9453aa4dc66784d73c9ccec"
+    },
+    "K": {
+        "cutoff_rho": 260.0,
+        "cutoff_wfc": 65.0,
+        "filename": "K.nc.z_9.oncvpsp4.sg15.v0.upf",
+        "md5": "000da9fdcdf3a7217ad5a32a406c92de"
+    },
+    "Kr": {
+        "cutoff_rho": 240.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Kr.nc.z_8.oncvpsp4.sg15.v0.upf",
+        "md5": "bf4e14db893fb75ad14a401ff0e842a5"
+    },
+    "Li": {
+        "cutoff_rho": 150.0,
+        "cutoff_wfc": 65.0,
+        "filename": "Li.nc.z_3.oncvpsp4.sg15.v0.upf",
+        "md5": "921593770ca67f0e673df956bcc6aad7"
+    },
+    "Mg": {
+        "cutoff_rho": 200.0,
+        "cutoff_wfc": 100.0,
+        "filename": "Mg.nc.z_10.oncvpsp4.sg15.v0.upf",
+        "md5": "697e2d2a450a3533b3f596528ba6b86d"
+    },
+    "Mn": {
+        "cutoff_rho": 150.0,
+        "cutoff_wfc": 65.0,
+        "filename": "Mn.nc.z_15.oncvpsp4.sg15.v0.upf",
+        "md5": "3ee2bff9592c59ecf0d493d48bfae715"
+    },
+    "Mo": {
+        "cutoff_rho": 90.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Mo.nc.z_14.oncvpsp4.sg15.v0.upf",
+        "md5": "d5f53a8bb32d4a2a7069830d4abe143d"
+    },
+    "N": {
+        "cutoff_rho": 210.0,
+        "cutoff_wfc": 75.0,
+        "filename": "N.nc.z_5.oncvpsp4.sg15.v0.upf",
+        "md5": "96ffff97e0151f959a6f31fbc6ba247c"
+    },
+    "Na": {
+        "cutoff_rho": 200.0,
+        "cutoff_wfc": 100.0,
+        "filename": "Na.nc.z_9.oncvpsp4.sg15.v0.upf",
+        "md5": "9057de7ea77c92b17896858bcb792927"
+    },
+    "Nb": {
+        "cutoff_rho": 135.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Nb.nc.z_13.oncvpsp4.sg15.v0.upf",
+        "md5": "52d7e351943a038c80db9dd5394b7dfa"
+    },
+    "Ne": {
+        "cutoff_rho": 260.0,
+        "cutoff_wfc": 65.0,
+        "filename": "Ne.nc.z_8.oncvpsp4.sg15.v0.upf",
+        "md5": "22733b72342497c6ff008383a14fa6ac"
+    },
+    "Ni": {
+        "cutoff_rho": 700.0,
+        "cutoff_wfc": 200.0,
+        "filename": "Ni.nc.z_18.oncvpsp4.sg15.v0.upf",
+        "md5": "0d55d7fcc3e8b37b0ab21db49a0ac701"
+    },
+    "O": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 100.0,
+        "filename": "O.nc.z_6.oncvpsp4.sg15.v0.upf",
+        "md5": "ad0a67c837742344284c54e2d0b72db6"
+    },
+    "Os": {
+        "cutoff_rho": 200.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Os.nc.z_16.oncvpsp4.sg15.v0.upf",
+        "md5": "041e72d8539117506aaf1479dd576257"
+    },
+    "P": {
+        "cutoff_rho": 130.0,
+        "cutoff_wfc": 65.0,
+        "filename": "P.nc.z_5.oncvpsp4.sg15.v0.upf",
+        "md5": "201b8c17a0b2f89171a895bbb3c17047"
+    },
+    "Pb": {
+        "cutoff_rho": 120.0,
+        "cutoff_wfc": 35.0,
+        "filename": "Pb.nc.z_14.oncvpsp4.sg15.v0.upf",
+        "md5": "c829934dba43a338770bc893586d7126"
+    },
+    "Pd": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Pd.nc.z_18.oncvpsp4.sg15.v0.upf",
+        "md5": "e31d0a448cfd495e6d34c25f6b4028bf"
+    },
+    "Pt": {
+        "cutoff_rho": 120.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Pt.nc.z_18.oncvpsp4.sg15.v0.upf",
+        "md5": "1942fd54f1722cb2690a7f6de5d99f31"
+    },
+    "Rb": {
+        "cutoff_rho": 60.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Rb.nc.z_9.oncvpsp4.sg15.v0.upf",
+        "md5": "7b38bf92facc4aa82b0a17d6c665c01d"
+    },
+    "Re": {
+        "cutoff_rho": 100.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Re.nc.z_15.oncvpsp4.sg15.v0.upf",
+        "md5": "959219665b712529e239862d3766d4c7"
+    },
+    "Rh": {
+        "cutoff_rho": 120.0,
+        "cutoff_wfc": 60.0,
+        "filename": "Rh.nc.z_17.oncvpsp4.sg15.v0.upf",
+        "md5": "17febc3e24ec492278a7dcc45224f667"
+    },
+    "Ru": {
+        "cutoff_rho": 112.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Ru.nc.z_16.oncvpsp4.sg15.v0.upf",
+        "md5": "ac8269906c24807c9a0e79ae14346148"
+    },
+    "S": {
+        "cutoff_rho": 150.0,
+        "cutoff_wfc": 75.0,
+        "filename": "S.nc.z_6.oncvpsp4.sg15.v0.upf",
+        "md5": "60218ac70ebae3b2a37e8a10ce36f5a6"
+    },
+    "Sb": {
+        "cutoff_rho": 160.0,
+        "cutoff_wfc": 55.0,
+        "filename": "Sb.nc.z_15.oncvpsp4.sg15.v0.upf",
+        "md5": "93a1c609108f177401493fb6107f0e58"
+    },
+    "Sc": {
+        "cutoff_rho": 90.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Sc.nc.z_11.oncvpsp4.sg15.v0.upf",
+        "md5": "ad40f0c7b41d0cf5f983aa0d7a308293"
+    },
+    "Se": {
+        "cutoff_rho": 60.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Se.nc.z_6.oncvpsp4.sg15.v0.upf",
+        "md5": "45e224093ef6895286dac0d8259b9b98"
+    },
+    "Si": {
+        "cutoff_rho": 90.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Si.nc.z_4.oncvpsp4.sg15.v0.upf",
+        "md5": "b4e1412760a6ce4ddd1fe66de31876e4"
+    },
+    "Sn": {
+        "cutoff_rho": 140.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Sn.nc.z_14.oncvpsp4.sg15.v0.upf",
+        "md5": "b0841ca438839e718fa1b345f6bf817d"
+    },
+    "Sr": {
+        "cutoff_rho": 60.0,
+        "cutoff_wfc": 30.0,
+        "filename": "Sr.nc.z_10.oncvpsp4.sg15.v0.upf",
+        "md5": "e51527cb6c02933588f29db9b31d96a7"
+    },
+    "Ta": {
+        "cutoff_rho": 158.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Ta.nc.z_27.oncvpsp4.sg15.v0.upf",
+        "md5": "39a5fb851c45629c5deeff132e8a4de9"
+    },
+    "Tc": {
+        "cutoff_rho": 112.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Tc.nc.z_15.oncvpsp4.sg15.v0.upf",
+        "md5": "d4c32d1ce6b3de50c59c50d6f9cbd881"
+    },
+    "Te": {
+        "cutoff_rho": 180.0,
+        "cutoff_wfc": 55.0,
+        "filename": "Te.nc.z_16.oncvpsp4.sg15.v0.upf",
+        "md5": "14b1871e301c9ed410caa30e6d8f5a40"
+    },
+    "Ti": {
+        "cutoff_rho": 135.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Ti.nc.z_12.oncvpsp4.sg15.v0.upf",
+        "md5": "fe453cd00be1c5a1bd593509ded7c0bb"
+    },
+    "Tl": {
+        "cutoff_rho": 120.0,
+        "cutoff_wfc": 35.0,
+        "filename": "Tl.nc.z_13.oncvpsp4.sg15.v0.upf",
+        "md5": "c222d660a7deb5ad528ffa4170923198"
+    },
+    "V": {
+        "cutoff_rho": 400.0,
+        "cutoff_wfc": 200.0,
+        "filename": "V.nc.z_13.oncvpsp4.sg15.v0.upf",
+        "md5": "ee4625f38857e169c24b588644bab8e8"
+    },
+    "W": {
+        "cutoff_rho": 400.0,
+        "cutoff_wfc": 100.0,
+        "filename": "W.nc.z_28.oncvpsp4.sg15.v0.upf",
+        "md5": "3adb05d16096ebecd2faf0e56d181d02"
+    },
+    "Xe": {
+        "cutoff_rho": 300.0,
+        "cutoff_wfc": 75.0,
+        "filename": "Xe.nc.z_18.oncvpsp4.sg15.v0.upf",
+        "md5": "3cd450322c014cb3281468930e08f9a2"
+    },
+    "Y": {
+        "cutoff_rho": 90.0,
+        "cutoff_wfc": 45.0,
+        "filename": "Y.nc.z_11.oncvpsp4.sg15.v0.upf",
+        "md5": "c534913dff7ec5b77d46e93fe4f4e00d"
+    },
+    "Zn": {
+        "cutoff_rho": 210.0,
+        "cutoff_wfc": 80.0,
+        "filename": "Zn.nc.z_20.oncvpsp4.sg15.v0.upf",
+        "md5": "d3e0693a3e3cfcaee4e3dc1279f3583f"
+    },
+    "Zr": {
+        "cutoff_rho": 100.0,
+        "cutoff_wfc": 50.0,
+        "filename": "Zr.nc.z_12.oncvpsp4.sg15.v0.upf",
+        "md5": "438a69223a8ee59a17c2f033bcc92e64"
+    }
+}
