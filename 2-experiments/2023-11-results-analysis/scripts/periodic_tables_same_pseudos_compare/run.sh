@@ -13,8 +13,11 @@
 #../common/generate_periodic_tables.py SI-PSEUDODOJO-SECTION-2k
 #../common/generate_periodic_tables.py SI-PSEUDODOJO-SECTION-2l
 
-# dojo v0.5: abinit vs qe (dojo oxygen) 
-../common/generate_periodic_tables.py SI-PSEUDODOJO-SECTION-2m
+## dojo v0.5: abinit vs qe (dojo oxygen) 
+#../common/generate_periodic_tables.py SI-PSEUDODOJO-SECTION-2m
+#
+## dojo v0.5: abinit vs qe (dojo oxygen, trim)
+#../common/generate_periodic_tables.py SI-PSEUDODOJO-SECTION-2n
 
-# dojo v0.5: abinit vs qe (dojo oxygen, trim)
-../common/generate_periodic_tables.py SI-PSEUDODOJO-SECTION-2n
+# dojo v0.5: abinit vs qe (dojo oxygen, trim, dojo-cutoff)
+../common/generate_periodic_tables.py SI-PSEUDODOJO-SECTION-2i

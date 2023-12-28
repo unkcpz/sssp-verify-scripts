@@ -56,7 +56,12 @@ def main():
 
         for conf in conf_list:
             # Extract volumes and energies for each configuration
-            volume_energy_dict = measure_precision_out[conf].eos.output_volume_energy.get_dict()
+            try:
+                volume_energy_dict = measure_precision_out[conf].eos.output_volume_energy.get_dict()
+            except:
+                print(f"WARNING! Missing output for {element} {conf}.")
+                # If the configuration was not computed
+                continue
             volumes = volume_energy_dict["volumes"]
             energies = volume_energy_dict["energies"]
 

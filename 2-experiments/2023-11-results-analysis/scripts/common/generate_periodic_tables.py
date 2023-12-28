@@ -221,31 +221,7 @@ if len(sys.argv) == 2:
         REFERENCE_CODE_LABEL = "PseudoDojo-v0.5b1|abinit@ACWF"
         LABELS_KEY = 'methods-main'
         ONLY_CODES = ["PseudoDojo-v0.5|qe@SSSP|dojo-oxygen"]
-        QUANTITIES=["nu"]
-        HIGHLIGHT = {
-            "unaries": {
-                "nu" : {
-                    "PseudoDojo-v0.5|qe@SSSP|dojo-oxygen": {
-                        "X/SC": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X/FCC": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X/BCC": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X/Diamond": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        },
-                }
-            },
-            "unaries": {
-                "nu" : {
-                    "PseudoDojo-v0.5|qe@SSSP|dojo-oxygen": {
-                        "XO": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "XO2": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "XO3": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X2O": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X2O3": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X2O5": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        },
-                }
-            }
-        }
+        QUANTITIES=["epsilon"]
 
     if sys.argv[1] == "SI-PSEUDODOJO-SECTION-2n":
         # Section S16
@@ -253,31 +229,15 @@ if len(sys.argv) == 2:
         REFERENCE_CODE_LABEL = "PseudoDojo-v0.5b1|abinit@ACWF"
         LABELS_KEY = 'methods-main'
         ONLY_CODES = ["PseudoDojo-v0.5|qe@SSSP|dojo-oxygen-trim"]
-        QUANTITIES=["nu"]
-        HIGHLIGHT = {
-            "unaries": {
-                "nu" : {
-                    "PseudoDojo-v0.5|qe@SSSP|dojo-oxygen": {
-                        "X/SC": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X/FCC": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X/BCC": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X/Diamond": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        },
-                }
-            },
-            "unaries": {
-                "nu" : {
-                    "PseudoDojo-v0.5|qe@SSSP|dojo-oxygen": {
-                        "XO": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "XO2": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "XO3": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X2O": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X2O3": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        "X2O5": ["Bi", "Cd", "Cu", "Pb", "Pd", "Po", "Rn", "Te", "Tl", "Xe", "Zn"],
-                        },
-                }
-            }
-        }
+        QUANTITIES=["epsilon"]
+
+    if sys.argv[1] == "SI-PSEUDODOJO-SECTION-2i":
+        # Section S16
+        USE_AE_AVERAGE_AS_REFERENCE = False
+        REFERENCE_CODE_LABEL = "PseudoDojo-v0.5b1|abinit@ACWF"
+        LABELS_KEY = 'methods-main'
+        ONLY_CODES = ["PseudoDojo-v0.5|qe@SSSP|dojo-oxygen-trim|dojo-cutoff"]
+        QUANTITIES=["epsilon"]
 
     if sys.argv[1] == "SI-PSEUDODOJO-SECTION-3":
         # Section S16

@@ -1,0 +1,50 @@
+{
+    "pressure": {
+        "used_criteria": "precision",
+        "wavefunction_cutoff": 30.0,
+        "chargedensity_cutoff": 60.0,
+        "all_criteria_wavefunction_cutoff": {
+            "precision": 30.0,
+            "efficiency": 30.0
+        },
+        "wfc_scan_healthy": 1.0,
+        "rho_scan_healthy": 1.0
+    },
+    "delta": {
+        "used_criteria": "precision",
+        "wavefunction_cutoff": 30.0,
+        "chargedensity_cutoff": 60.0,
+        "all_criteria_wavefunction_cutoff": {
+            "precision": 30.0,
+            "efficiency": 30.0
+        },
+        "wfc_scan_healthy": 1.0,
+        "rho_scan_healthy": 1.0
+    },
+    "phonon_frequencies": {
+        "used_criteria": "precision",
+        "wavefunction_cutoff": 30.0,
+        "chargedensity_cutoff": 60.0,
+        "all_criteria_wavefunction_cutoff": {
+            "precision": 30.0,
+            "efficiency": 30.0
+        },
+        "wfc_scan_healthy": 1.0,
+        "rho_scan_healthy": 1.0
+    },
+    "cohesive_energy": {
+        "used_criteria": "precision",
+        "wavefunction_cutoff": 30.0,
+        "chargedensity_cutoff": 60.0,
+        "all_criteria_wavefunction_cutoff": {
+            "precision": 30.0,
+            "efficiency": 30.0
+        },
+        "wfc_scan_healthy": 1.0,
+        "rho_scan_healthy": 1.0
+    },
+    "recommended_cutoffs": {
+        "wavefunction_cutoff": 30.0,
+        "chargedensity_cutoff": 60.0
+    }
+}

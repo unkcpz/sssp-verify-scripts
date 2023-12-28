@@ -447,7 +447,7 @@ def export_json_file(SET_NAME, QUANTITY, collect, list_confs, short_labels, plug
         json.dump(data_to_export, fhandle)
 
 BINS = 50
-EXCLUDE_ELEMENTS = ["Sr", "Si", "P", "N", "Li", "He", "H", "C", "Be", "B", "Al"]
+EXCLUDE_ELEMENTS = []
 
 def create_histo(SET_NAME, QUANTITY, collect, list_confs, short_labels, plugin, reference_short_label, unaries, SET_MAX_SCALE):
     """
@@ -473,16 +473,19 @@ def create_histo(SET_NAME, QUANTITY, collect, list_confs, short_labels, plugin, 
     #print(collect)
     data = []
 
+    lim = 2.0
+
     for conf in list_confs:
         #data += collect[conf]["values"]
         elements = collect[conf]["elements"]
         values = collect[conf]["values"]
         for i, ele in enumerate(elements):
+            if values[i] > lim:
+                print(f"Found outlier {ele}-{conf}: {values[i]}")
             if ele in EXCLUDE_ELEMENTS:
                 continue
             data.append(values[i])
        
-    lim = 1.0
     hist_y, bins, patches = ax.hist(data, bins=BINS, range=[0,lim], alpha=0.5)
     countBig = 0
     countSmall = 0

@@ -43,7 +43,7 @@ else:
     pseudos = [
  #'H.nc.z_1.ld1.psl.v1.0.0.upf', 
  #'He.nc.z_2.ld1.psl.v1.0.0.upf',
- 'Li.nc.z_1.ld1.psl.v1.0.0.upf',
+ #'Li.nc.z_1.ld1.psl.v1.0.0.upf',
  #'Be.nc.z_2.ld1.psl.v1.0.0.upf',
  #'B.nc.z_3.ld1.psl.v1.0.0.upf', 
  #'C.nc.z_4.ld1.psl.v1.0.0.upf',  
@@ -111,11 +111,10 @@ else:
  'Ra.nc.z_2.ld1.psl.v1.0.0.upf',
 ]
 
-
-    #computer = 'eiger-mc-mr32-mem'
-    computer = 'daint-mc-mrcloud-mem'
-    mpiprocs = 36 # 128 for eiger
-    npool = 4 # 8 for eiger
+    computer = 'eiger-mc-mr33-mem'
+    #computer = 'daint-mc-mrcloud-mem'
+    mpiprocs = 128 # 128 for eiger
+    npool = 16 # 8 for eiger
     base_path = lib_path
 
     for pseudo in pseudos:
@@ -124,3 +123,4 @@ else:
         os.system(command)
         #print(command)
         print(f"Launched {pseudo}")
+
