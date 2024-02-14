@@ -75,7 +75,7 @@ pseudos = {
 }
 
 comment = "PAW-PSL-1.0.0-high"
-computer = 'eiger-mc-mr33-mem'
+computer = 'eiger-mc-mr32-mem'
 #computer = 'daint-mc-mrcloud-mem'
 #mpiprocs = 36 # 36 for daint
 mpiprocs = 128 # 128 for eiger

@@ -184,24 +184,29 @@ def generate_box_plt(set_names, file_name, material_set_label, file_suffix, only
                         DEFAULT_PREFACTOR, DEFAULT_WB0, DEFAULT_WB01
                     )
 
-                    if quantity_name == '% difference in B0' and quantity_value < -5 and code_label == 'SSSP-prec-v1.3@SSSP':
-                        # Check for I-SC seems acwf paper use I pseudo form SSSP-v1.1.2
+                    #if quantity_name == '% difference in B0' and quantity_value < -5 and code_label == 'SSSP-prec-v1.3@SSSP':
+                    #    # Check for I-SC seems acwf paper use I pseudo form SSSP-v1.1.2
+                    #    continue
+
+                    if quantity_name == '% difference in V0' and abs(quantity_value) > 0.5 and "SSSP-NC-curated" in code_label:
+                        print(f"{quantity_name} outliers should not happened {element}-{configuration} for {code_label}, value={quantity_value}")
                         continue
 
-                    if (code_label == 'PseudoDojo-v0.4.1|qe@SSSP' or code_label == 'PseudoDojo-v0.5|abinit@ACWF') and quantity_name == '% difference in V0' and abs(quantity_value) > 1.0:
-                        if element in ['Cu', 'Zn', 'Ne']:
-                            continue
-                        print(f"{quantity_name} outliers should not happened {element}-{configuration} for {code_label}, value={quantity_value}")
+                    #if (code_label == 'PseudoDojo-v0.4.1|qe@SSSP' or code_label == 'PseudoDojo-v0.5|abinit@ACWF') and quantity_name == '% difference in V0' and abs(quantity_value) > 1.0:
+                    #    if element in ['Cu', 'Zn', 'Ne']:
+                    #        continue
+                    #    print(f"{quantity_name} outliers should not happened {element}-{configuration} for {code_label}, value={quantity_value}")
 
-                    if (code_label == 'PseudoDojo-v0.4.1|qe@SSSP' or code_label == 'PseudoDojo-v0.5|abinit@ACWF') and quantity_name == '% difference in B0' and abs(quantity_value) > 10:
-                        print(f"{quantity_name} outliers should not happened {element}-{configuration} for {code_label}, value={quantity_value}")
-                        if element in ['Cu', 'Zn', 'Ne']:
-                            continue
+                    #if (code_label == 'PseudoDojo-v0.4.1|qe@SSSP' or code_label == 'PseudoDojo-v0.5|abinit@ACWF') and quantity_name == '% difference in B0' and abs(quantity_value) > 10:
+                    #    print(f"{quantity_name} outliers should not happened {element}-{configuration} for {code_label}, value={quantity_value}")
+                    #    if element in ['Cu', 'Zn', 'Ne']:
+                    #        continue
 
-                    if (code_label == 'PseudoDojo-v0.4.1|qe@SSSP' or code_label == 'PseudoDojo-v0.5|abinit@ACWF') and quantity_name == '% difference in B1' and abs(quantity_value) > 40:
-                        print(f"{quantity_name} outliers should not happened {element}-{configuration} for {code_label}, value={quantity_value}")
-                        if element in ['Cu', 'Zn', 'Ne']:
-                            continue
+                    #if (code_label == 'PseudoDojo-v0.4.1|qe@SSSP' or code_label == 'PseudoDojo-v0.5|abinit@ACWF') and quantity_name == '% difference in B1' and abs(quantity_value) > 40:
+                    #    print(f"{quantity_name} outliers should not happened {element}-{configuration} for {code_label}, value={quantity_value}")
+                    #    if element in ['Cu', 'Zn', 'Ne']:
+                    #        continue
+
 
                     plugin_values.append(quantity_value)
                     if quantity_value < xlims[quantity_name][0]:

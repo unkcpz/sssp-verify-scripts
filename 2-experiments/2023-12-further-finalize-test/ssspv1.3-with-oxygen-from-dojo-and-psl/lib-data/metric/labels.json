@@ -15,6 +15,11 @@
             "unaries": "results-unaries-verification-PBE-v1-AE-average.json",
             "short_label": "AE-average"
         },
+        "SSSP-v1.3-lib|QE|dojo-str-v0.5-oxygen-pseudo":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-sssp-lib-with-dojo-str-oxygen.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-sssp-lib-with-dojo-str-oxygen.json",
+            "short_label": "sssp-lib|dojo-str-oxygen"
+        },
         "SSSP-v1.3-lib|QE|dojo-v0.5-oxygen-pseudo":{
             "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-sssp-lib-with-dojo-oxygen.json",
             "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-sssp-lib-with-dojo-oxygen.json",
@@ -24,6 +29,16 @@
             "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-sssp-lib-with-psl-us-0.1-oxygen.json",
             "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-sssp-lib-with-psl-us-0.1-oxygen.json",
             "short_label": "sssp-lib|psl-us-0.1-oxygen"
+        },
+        "SSSP-NC-curated-v1|qe@SSSP":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-lib-NC-curated-precision-v24-0001.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-lib-NC-curated-precision-v24-0001.json",
+            "short_label": "sssp-nc-v1-qe-sssp"
+        },
+        "DOJO-v0.5-std|qe@SSSP":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-dojov0.5-with-dojo-oxygen.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-dojov0.5-with-dojo-oxygen.json",
+            "short_label": "dojo-std-qe-sssp"
         }
     }
 }    

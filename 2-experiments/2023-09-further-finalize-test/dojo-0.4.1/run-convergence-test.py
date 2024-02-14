@@ -96,7 +96,7 @@ else:
  'I.nc.z_7.oncvpsp3.dojo.v0.4.1-std.upf',
  'Xe.nc.z_8.oncvpsp3.dojo.v0.4.1-std.upf',
  #'Cs.nc.z_9.oncvpsp3.dojo.v0.4.1-std.upf',
- #'Ba.nc.z_10.oncvpsp3.dojo.v0.4.1-std.upf',
+ 'Ba.nc.z_10.oncvpsp3.dojo.v0.4.1-std.upf',
  #'Hf.nc.z_12.oncvpsp3.dojo.v0.4.1-std.upf',
  #'Ta.nc.z_13.oncvpsp3.dojo.v0.4.1-std.upf',
  #'W.nc.z_14.oncvpsp3.dojo.v0.4.1-std.upf',
@@ -116,11 +116,10 @@ else:
     ]
 
 
-
-    #computer = 'eiger-mc-mr32-mem'
-    computer = 'daint-mc-mrcloud-mem'
-    mpiprocs = 36 # 128 for eiger
-    npool = 4 # 8 for eiger
+    computer = 'eiger-mc-mr32-mem'
+    #computer = 'daint-mc-mrcloud-mem'
+    mpiprocs = 128 # 128 for eiger
+    npool = 16 # 16 for eiger
     base_path = lib_path
 
     for pseudo in pseudos:

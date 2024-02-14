@@ -167,6 +167,30 @@ if len(sys.argv) == 2:
         SET_NAMES = ['unaries']
         QUANTITIES=["nu"]
 
+    if sys.argv[1] == "SI-PSEUDODOJO-SECTION-1e":
+        # Section S16
+        USE_AE_AVERAGE_AS_REFERENCE = True
+        LABELS_KEY = 'methods-main'
+        ONLY_CODES = ["SSSP-NC-curated-v1|qe@SSSP"]
+        SET_NAMES = ['unaries', 'oxides']
+        QUANTITIES=["nu"]
+
+    if sys.argv[1] == "SI-PSEUDODOJO-SECTION-1f":
+        # Section S16
+        USE_AE_AVERAGE_AS_REFERENCE = True
+        LABELS_KEY = 'methods-main'
+        ONLY_CODES = ["SSSP-v1.3-lib|QE|dojo-str-v0.5-oxygen-pseudo"]
+        SET_NAMES = ['oxides', 'unaries']
+        QUANTITIES=["nu"]
+
+    if sys.argv[1] == "SI-PSEUDODOJO-SECTION-1g":
+        # Section S16
+        USE_AE_AVERAGE_AS_REFERENCE = True
+        LABELS_KEY = 'methods-main'
+        ONLY_CODES = ["DOJO-v0.5-std|qe@SSSP"]
+        SET_NAMES = ['oxides', 'unaries']
+        QUANTITIES=["nu"]
+
     if sys.argv[1] == "SI-PSEUDODOJO-SECTION-3":
         # Section S16
         USE_AE_AVERAGE_AS_REFERENCE = False
@@ -447,7 +471,8 @@ def export_json_file(SET_NAME, QUANTITY, collect, list_confs, short_labels, plug
         json.dump(data_to_export, fhandle)
 
 BINS = 50
-EXCLUDE_ELEMENTS = []
+EXCLUDE_ELEMENTS = ['At', 'Fr', 'Po', 'Ra', 'Rn', 'Cu', 'Zn', 'Tl', 'Pb', 'Bi', 'Xe', 'Pd', 'Cd']
+#EXCLUDE_ELEMENTS = ['At', 'Fr', 'Po', 'Ra', 'Rn']
 
 def create_histo(SET_NAME, QUANTITY, collect, list_confs, short_labels, plugin, reference_short_label, unaries, SET_MAX_SCALE):
     """
@@ -474,16 +499,19 @@ def create_histo(SET_NAME, QUANTITY, collect, list_confs, short_labels, plugin, 
     data = []
 
     lim = 2.0
+    mild_lim = 0.33
 
     for conf in list_confs:
         #data += collect[conf]["values"]
         elements = collect[conf]["elements"]
         values = collect[conf]["values"]
         for i, ele in enumerate(elements):
-            if values[i] > lim:
-                print(f"Found outlier {ele}-{conf}: {values[i]}")
             if ele in EXCLUDE_ELEMENTS:
                 continue
+            if values[i] > lim:
+                print(f"Found outlier (> 2) {ele}-{conf}: {values[i]}")
+            if values[i] > mild_lim:
+                print(f"Found mild outlier (> 0.33) {ele}-{conf}: {values[i]}")
             data.append(values[i])
        
     hist_y, bins, patches = ax.hist(data, bins=BINS, range=[0,lim], alpha=0.5)
@@ -502,6 +530,7 @@ def create_histo(SET_NAME, QUANTITY, collect, list_confs, short_labels, plugin, 
     #ax.axvline(mean, color='b', linestyle=':')#, label=f"mean {round(mean,3)}, std {round(sta_dev,3)}")
     ## Reset the xlim
     ax.set_xlim([0, lim])
+    ax.set_ylim([0,70])
     #ax.set_ylim([0,max(hist_y)+max(hist_y)/20])
     #ax.annotate(f"Mean: {round(mean,3)}",xy=(-lim+lim/20,max(hist_y)-max(hist_y)/10), fontsize=TINY_SIZE) 
     #ax.annotate(f"Stdev: {round(sta_dev,2)}",xy=(-lim+lim/20,max(hist_y)-max(hist_y)/5), fontsize=TINY_SIZE)

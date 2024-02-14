@@ -1,7 +1,6 @@
 import os
 
-pseudos = {
- 'Ag.us.z_11.ld1.psl.v0.1': (200.0, 1600.0),
+pseudos = {'Ag.us.z_11.ld1.psl.v0.1': (200.0, 1600.0),
  'Al.us.z_3.ld1.psl.v0.1': (40.0, 300.0),
  'Ar.us.z_8.ld1.psl.v0.3.0': (120.0, 900.0),
  'As.us.z_5.ld1.psl.v0.2': (35.0, 210.0),
@@ -41,21 +40,28 @@ pseudos = {
  'Ta.us.z_13.ld1.psl.v0.2': (70.0, 560.0),
  'Tc.us.z_15.ld1.psl.v0.3.0': (75.0, 600.0),
  'Tl.us.z_13.ld1.psl.v0.2.3': (65.0, 390.0),
- 'Zr.us.z_12.ld1.psl.v0.2.3': (50.0, 300.0),
-}
+ 'Zr.us.z_12.ld1.psl.v0.2.3': (50.0, 300.0)}
 
-comment = "us-psl-0.x"
+comment = "US-PSL-0.x"
 computer = 'eiger-mc-mr32-mem'
 #computer = 'daint-mc-mrcloud-mem'
+#mpiprocs = 36 # 36 for daint
 mpiprocs = 128 # 128 for eiger
 #npool = 4 # 4 for daint
-npool = 8 # 8 for eiger
-base_path = "/home/jyu/Projects/WP-SSSP/sssp-verify-scripts/libraries-pbe/US-PSL0.x"
+npool = 16 # 16 for eiger
+base_path = '/home/jyu/Projects/WP-SSSP/sssp-verify-scripts/libraries-pbe/US-PSL0.x'
+dojo_base_path = "/home/jyu/Projects/WP-SSSP/sssp-verify-scripts/libraries-pbe/NC-DOJOv0.5-standard"
+sssp_base_path = "/home/jyu/Projects/WP-SSSP/sssp-verify-scripts/libraries-pbe/MIX-SSSP-precision-1.3.0-recollected"
+#oxygen_pseudo_path = os.path.join(dojo_base_path, "O.nc.z_6.oncvpsp3.dojo.v0.5.0-std.upf")
+oxygen_pseudo_path = os.path.join(sssp_base_path, 'O.paw.z_6.ld1.psl.v0.1.upf')
+
+oxygen_ecutwfc = 70
+oxygen_ecutrho = 560
 
 for pseudo, (wfc_cutoff, rho_cutoff) in pseudos.items():
     pseudo = pseudo + '.upf'
     pseudo_path = os.path.join(base_path, pseudo)
-    command = f"aiida-sssp-workflow launch --property measure.precision --ecutwfc {wfc_cutoff} --ecutrho {rho_cutoff} --pw-code pw-7.0@{computer} --protocol acwf --withmpi True --num-mpiprocs {mpiprocs} --npool {npool} --comment {comment} -- {pseudo_path}"
+    command = f"aiida-sssp-workflow launch --property measure.precision --oxygen-pseudo {oxygen_pseudo_path} --oxygen-ecutwfc {oxygen_ecutwfc} --oxygen-ecutrho {oxygen_ecutrho} --ecutwfc {wfc_cutoff} --ecutrho {rho_cutoff} --pw-code pw-7.0@{computer} --protocol acwf --withmpi True --num-mpiprocs {mpiprocs} --npool {npool} --comment {comment} -- {pseudo_path}"
     os.system(command)
     print(f"Launched {pseudo}")
     # print(command)

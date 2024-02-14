@@ -1,0 +1,367 @@
+{
+    "H.us.z_1.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "be2962a3-037a-41cc-b61b-1afc7b0dd369"
+    },
+    "He.us.z_2.ld1.psl.v1.0.0-high": {
+        "wavefunction_cutoff": 100.0,
+        "charge_density_cutoff": 600.0,
+        "uuid": "d304afe5-78ec-4379-a56d-916a958a5c9c"
+    },
+    "Li.us.z_3.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 40.0,
+        "charge_density_cutoff": 240.0,
+        "uuid": "1b0a9c69-08da-456e-970b-5be8da285eb5"
+    },
+    "Be.us.z_2.ld1.psl.v1.0.0-low.n": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "0a821f91-e6ca-4165-93ab-cd36cacceec0"
+    },
+    "B.us.z_3.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 50.0,
+        "charge_density_cutoff": 300.0,
+        "uuid": "48f68bf0-5465-40cc-b7f6-1678f14c7214"
+    },
+    "C.paw.z_4.ld1.psl.v0.1": {
+        "wavefunction_cutoff": 60.0,
+        "charge_density_cutoff": 360.0,
+        "uuid": "7b069dac-593f-45df-b8f5-8e3a4b44effb"
+    },
+    "N.us.z_5.uspp.gbrv.v1.2": {
+        "wavefunction_cutoff": 55.0,
+        "charge_density_cutoff": 330.0,
+        "uuid": "5ee37b4f-837b-4b8d-b959-98f0bd80e46a"
+    },
+    "O.paw.z_6.ld1.psl.v0.1": {
+        "wavefunction_cutoff": 70.0,
+        "charge_density_cutoff": 560.0,
+        "uuid": "600b6872-ab6c-4c6f-b283-bfbd41bf0dc6"
+    },
+    "F.us.z_7.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 270.0,
+        "uuid": "2f5a4e2a-95f2-4764-bae6-16da88c3d266"
+    },
+    "Ne.paw.z_8.ld1.psl.v1.0.0-high": {
+        "wavefunction_cutoff": 200.0,
+        "charge_density_cutoff": 1200.0,
+        "uuid": "0ea8ddac-58bd-47bf-9338-898a643da29f"
+    },
+    "Na.paw.z_9.ld1.psl.v0.2": {
+        "wavefunction_cutoff": 60.0,
+        "charge_density_cutoff": 360.0,
+        "uuid": "54447136-edd8-48db-b4fd-c448ece5b28c"
+    },
+    "Mg.us.z_10.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 40.0,
+        "charge_density_cutoff": 240.0,
+        "uuid": "a0f7275f-fc32-49b7-af14-f0b5aa9cf751"
+    },
+    "Al.nc.z_3.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 60.0,
+        "uuid": "88a47267-574a-46d1-8bbc-9234476123e5"
+    },
+    "Si.us.z_4.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "e76d648e-1e99-42df-a666-b857fd045360"
+    },
+    "P.us.z_5.uspp.gbrv.v1.5": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "5fd7c896-b18f-47d8-923e-57660c9f3d77"
+    },
+    "S.us.z_6.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "1fec0ef0-32ef-4a7e-a871-2c57fb38e4b7"
+    },
+    "Cl.us.z_7.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 210.0,
+        "uuid": "3eb0ba2b-6355-43c4-8ef5-2ab3ac9d5c71"
+    },
+    "Ar.paw.z_8.ld1.psl.v0.3.0": {
+        "wavefunction_cutoff": 90.0,
+        "charge_density_cutoff": 720.0,
+        "uuid": "affd30d3-6866-4c98-96d8-cc56e35f8d9e"
+    },
+    "K.nc.z_9.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 105.0,
+        "uuid": "5c77aa43-f647-47db-9dff-719be57a13d9"
+    },
+    "Ca.us.z_10.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "40ec6ada-3c20-41a3-92fb-605a9b1fe4cd"
+    },
+    "Sc.us.z_11.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 270.0,
+        "uuid": "c7b31466-9307-454a-ac90-a11b8fe190d0"
+    },
+    "Ti.us.z_12.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 210.0,
+        "uuid": "115d04ce-93b9-45ae-88db-99a6adc0d7d5"
+    },
+    "V.nc.z_13.oncvpsp3.dojo.v0.5.0-std": {
+        "wavefunction_cutoff": 80.0,
+        "charge_density_cutoff": 262.0,
+        "uuid": "74515301-46fb-4137-87fa-9c16006b8702"
+    },
+    "Cr.nc.z_14.oncvpsp3.dojo.v0.5.0-std": {
+        "wavefunction_cutoff": 90.0,
+        "charge_density_cutoff": 270.0,
+        "uuid": "0281d988-f290-440c-b4e8-6a78404eba97"
+    },
+    "Mn.nc.z_15.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 75.0,
+        "charge_density_cutoff": 225.0,
+        "uuid": "fcc4d27d-5597-4d6a-86b3-9a2acbb20e6a"
+    },
+    "Fe.nc.z_16.oncvpsp3.dojo.v0.5.0-std": {
+        "wavefunction_cutoff": 90.0,
+        "charge_density_cutoff": 270.0,
+        "uuid": "2ce334c3-fd7c-4158-94ac-c84dd76042b0"
+    },
+    "Co.us.z_9.ld1.psl.v1.0.0-low": {
+        "wavefunction_cutoff": 75.0,
+        "charge_density_cutoff": 600.0,
+        "uuid": "7357ad88-9751-4f7b-93ec-4fab6797cd98"
+    },
+    "Ni.us.z_18.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 100.0,
+        "charge_density_cutoff": 1800.0,
+        "uuid": "e435b52b-5bdc-436b-827a-14bb6a2dd029"
+    },
+    "Cu.paw.z_11.ld1.psl.v1.0.0-low": {
+        "wavefunction_cutoff": 70.0,
+        "charge_density_cutoff": 455.0,
+        "uuid": "ce38b052-5359-4d49-b47c-5e495510e5c4"
+    },
+    "Zn.paw.z_12.ld1.psl.v1.0.0-low": {
+        "wavefunction_cutoff": 65.0,
+        "charge_density_cutoff": 390.0,
+        "uuid": "f993893b-c507-4613-a98b-9e91c34d6b30"
+    },
+    "Ga.paw.z_13.ld1.psl.v1.0.0-low": {
+        "wavefunction_cutoff": 65.0,
+        "charge_density_cutoff": 390.0,
+        "uuid": "a6196659-7e06-4a91-881b-d65589c21263"
+    },
+    "Ge.us.z_14.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 40.0,
+        "charge_density_cutoff": 240.0,
+        "uuid": "76e72359-540d-4824-af1e-eef67d36f950"
+    },
+    "As.nc.z_15.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 60.0,
+        "charge_density_cutoff": 192.0,
+        "uuid": "2afe5db3-aa5c-4f91-b0fe-764909dd6222"
+    },
+    "Se.us.z_6.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 262.0,
+        "uuid": "e2476b47-6794-4d24-8481-c06279c79000"
+    },
+    "Br.nc.z_7.oncvpsp3.dojo.v0.5.0-std": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 90.0,
+        "uuid": "bc6324a5-bf23-4d27-9b09-100ae87a1da6"
+    },
+    "Kr.paw.z_18.ld1.psl.v1.0.0-high": {
+        "wavefunction_cutoff": 200.0,
+        "charge_density_cutoff": 1600.0,
+        "uuid": "d246232c-6719-473f-a070-23f48e588694"
+    },
+    "Rb.us.z_9.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "90b19821-e1a3-483e-b830-2d2443ad31c7"
+    },
+    "Sr.nc.z_10.oncvpsp4.sg15.v0": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 60.0,
+        "uuid": "82a128d6-3931-488d-b928-53d3cd968e3f"
+    },
+    "Y.us.z_11.uspp.gbrv.v1.4": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 270.0,
+        "uuid": "cc99cc3a-f1ce-48eb-bda5-cde219fbce82"
+    },
+    "Zr.us.z_12.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "afe3d7eb-cf5e-42ff-b3a0-ca991557f93f"
+    },
+    "Nb.us.z_13.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 50.0,
+        "charge_density_cutoff": 375.0,
+        "uuid": "e61dec5a-eb62-4c27-807f-b44e47d85a75"
+    },
+    "Mo.nc.z_14.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 120.0,
+        "uuid": "018b16cf-67d1-4f17-89cb-7ce476fe240d"
+    },
+    "Tc.nc.z_15.oncvpsp4.sg15.v0": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 112.0,
+        "uuid": "e4abcf3b-9d5b-4afd-ad30-2a20d08c4587"
+    },
+    "Ru.us.z_16.uspp.gbrv.v1.2": {
+        "wavefunction_cutoff": 50.0,
+        "charge_density_cutoff": 300.0,
+        "uuid": "633e8fb7-b97f-4de1-9175-97196fd219d1"
+    },
+    "Rh.nc.z_17.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 50.0,
+        "charge_density_cutoff": 158.0,
+        "uuid": "d9552bd3-da41-45dc-b55e-75b9baa92d4e"
+    },
+    "Pd.nc.z_18.oncvpsp4.sg15.v0": {
+        "wavefunction_cutoff": 50.0,
+        "charge_density_cutoff": 140.0,
+        "uuid": "39371762-3424-40f3-b68c-935d353ac978"
+    },
+    "Ag.nc.z_19.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "8c9ba840-72c0-450b-a350-478cdeedce59"
+    },
+    "Cd.nc.z_20.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 180.0,
+        "uuid": "8d1c8287-f8a9-4420-806a-466dd3396bb5"
+    },
+    "In.us.z_13.ld1.psl.v0.2.2": {
+        "wavefunction_cutoff": 50.0,
+        "charge_density_cutoff": 300.0,
+        "uuid": "142900d2-4f35-4c5f-b3e3-5670e0dbece3"
+    },
+    "Sn.nc.z_14.oncvpsp4.sg15.v0": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 140.0,
+        "uuid": "638f1931-faf4-4921-8692-affaeccc3346"
+    },
+    "Sb.nc.z_15.oncvpsp4.sg15.v0": {
+        "wavefunction_cutoff": 55.0,
+        "charge_density_cutoff": 160.0,
+        "uuid": "b5b14490-c176-4115-a910-1076f156157a"
+    },
+    "Te.nc.z_16.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 50.0,
+        "charge_density_cutoff": 158.0,
+        "uuid": "93a13543-5b72-47bc-8910-c4a8f4719723"
+    },
+    "I.us.z_7.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 210.0,
+        "uuid": "644bc041-4187-4564-87f0-479ad9843cee"
+    },
+    "Xe.nc.z_8.oncvpsp4.dojo.v0.5.0-std": {
+        "wavefunction_cutoff": 150.0,
+        "charge_density_cutoff": 300.0,
+        "uuid": "19457a6c-acec-40c0-901e-b152d4283605"
+    },
+    "Cs.nc.z_9.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 40.0,
+        "charge_density_cutoff": 80.0,
+        "uuid": "a5dc0ea2-6f25-485c-b5b9-ce59207bb286"
+    },
+    "Ba.nc.z_10.oncvpsp4.dojo.v0.5.0-std": {
+        "wavefunction_cutoff": 55.0,
+        "charge_density_cutoff": 110.0,
+        "uuid": "e424794a-316c-458e-b536-9c0c231528c8"
+    },
+    "Hf.paw.z_26.ld1.psl.v1.0.0-high.spfn": {
+        "wavefunction_cutoff": 90.0,
+        "charge_density_cutoff": 1620.0,
+        "uuid": "d8c4c6d6-525c-44a8-b978-e2cbd9cac278"
+    },
+    "Ta.nc.z_13.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 75.0,
+        "uuid": "4f94e49b-9cbd-42fa-a47e-c536307b8d71"
+    },
+    "W.nc.z_14.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 75.0,
+        "uuid": "8869808d-7b8f-4516-a953-05368afed39a"
+    },
+    "Re.nc.z_15.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 70.0,
+        "uuid": "bc111e7e-781a-43e1-b43e-d6dcffbff156"
+    },
+    "Os.us.z_16.uspp.gbrv.v1.2": {
+        "wavefunction_cutoff": 40.0,
+        "charge_density_cutoff": 240.0,
+        "uuid": "35c97444-a272-4d58-b787-2dd3f7f56886"
+    },
+    "Ir.nc.z_17.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 75.0,
+        "uuid": "759968ec-8ca5-4165-ac70-8b652e90cb02"
+    },
+    "Pt.nc.z_18.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 40.0,
+        "charge_density_cutoff": 100.0,
+        "uuid": "257be9b3-0d05-46a0-9112-f29a7de4372c"
+    },
+    "Au.nc.z_19.oncvpsp4.spms.v1": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 90.0,
+        "uuid": "39c041db-b0b6-471e-9e5f-09f8ab5463ff"
+    },
+    "Hg.us.z_12.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 150.0,
+        "charge_density_cutoff": 1200.0,
+        "uuid": "2b571e96-0b11-47ad-9536-83487f30ca60"
+    },
+    "Tl.nc.z_13.oncvpsp4.sg15.v0": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 120.0,
+        "uuid": "c2f65054-4ada-4796-8a3a-8ae2823a6dc2"
+    },
+    "Pb.nc.z_14.oncvpsp4.sg15.v0": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 120.0,
+        "uuid": "d2d01dc7-019e-4c1a-83bb-ac61d7440b2e"
+    },
+    "Bi.us.z_15.uspp.gbrv.v1": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 270.0,
+        "uuid": "e9e328ad-2f24-467b-ae51-25503c57833e"
+    },
+    "Po.us.z_16.ld1.psl.v1.0.0-high": {
+        "wavefunction_cutoff": 100.0,
+        "charge_density_cutoff": 750.0,
+        "uuid": "852bad6a-ade9-49f8-a83a-bbd2040e097e"
+    },
+    "At.us.z_17.ld1.psl.v1.0.0-high": {
+        "wavefunction_cutoff": 120.0,
+        "charge_density_cutoff": 750.0,
+        "uuid": "4d763780-2264-4ff9-bdce-fc9941999e3b"
+    },
+    "Rn.paw.z_18.ld1.psl.v1.0.0-high": {
+        "wavefunction_cutoff": 200.0,
+        "charge_density_cutoff": 1600.0,
+        "uuid": "0f0461d3-6f61-43c9-9f55-2010cf32099f"
+    },
+    "Fr.paw.z_19.ld1.psl.v1.0.0-high": {
+        "wavefunction_cutoff": 200.0,
+        "charge_density_cutoff": 1600.0,
+        "uuid": "2db164f2-6d90-4b1e-821a-18fed9de2c4a"
+    },
+    "Ra.paw.z_20.ld1.psl.v1.0.0-high": {
+        "wavefunction_cutoff": 200.0,
+        "charge_density_cutoff": 1600.0,
+        "uuid": "0d395e62-e56b-4603-9ba1-5a7471a346df"
+    }
+}
