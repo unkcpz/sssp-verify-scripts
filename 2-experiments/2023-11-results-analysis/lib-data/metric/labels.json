@@ -34,6 +34,11 @@
             "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-lib-NC-curated-precision-v24-0001.json",
             "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-lib-NC-curated-precision-v24-0001.json",
             "short_label": "sssp-nc-v0-qe-sssp"
+        },
+        "SSSP-eff-v2-curated-v00|qe@SSSP":{
+            "oxides": "results-oxides-verification-PBE-v1-quantum_espresso-sssp-eff-v2-0000.json",
+            "unaries": "results-unaries-verification-PBE-v1-quantum_espresso-sssp-eff-v2-0000.json",
+            "short_label": "sssp-v2-eff-qe-sssp"
         }
     }
 }    

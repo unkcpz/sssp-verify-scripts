@@ -1,0 +1,27 @@
+S 16
+XC_GGA_X_PBE+XC_GGA_C_PBE scalarrelativistic loggrid 1400
+3 3 0 0 0 0
+3 1 4
+0 0 0
+c
+c
+v
+c
+v
+1
+1.9 1.6 1.7 1.4
+y
+4.0
+n
+y
+0.50
+n
+custom rrkj
+2 0.0
+1.9
+1.9
+1.9
+1.9
+PWSCFOUT
+upfdx 0.005 upfxmin -9.0 upfzmesh 1.0
+0   ! END

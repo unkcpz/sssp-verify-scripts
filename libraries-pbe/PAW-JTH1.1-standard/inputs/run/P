@@ -1,0 +1,81 @@
+ Completed calculations for P
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+  J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+Correlation functional (LibXC):
+  J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+  J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   4.0634468E-04 h =   6.0951702E-03   n =      2001 rmax =   8.0000000E+01
+ Scalar relativistic calculation
+   AEatom converged in          31  iterations
+     for nz =  15.00
+     delta  =    2.3852302174948974E-017
+  All Electron Orbital energies:         
+  n  l     occupancy       energy
+ 1  0      2.0000000E+00 -1.5318380E+02
+ 2  0      2.0000000E+00 -1.2788127E+01
+ 3  0      2.0000000E+00 -1.0267284E+00
+ 2  1      6.0000000E+00 -9.1500967E+00
+ 3  1      3.0000000E+00 -4.0474358E-01
+
+  Total energy
+     Total                    :    -683.80432762570081     
+ Completed calculations for P
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+  J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+Correlation functional (LibXC):
+  J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 77, 3865 (1996)
+  J. P. Perdew, K. Burke, and M. Ernzerhof, Phys. Rev. Lett. 78, 1396 (1997)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   4.0634468E-04 h =   6.0951702E-03   n =      2001 rmax =   8.0000000E+01
+ Scalar relativistic calculation
+   SCatom converged in           1  iterations
+     for nz =  15.00
+     delta  =    1.1364032333577103E-018
+   Valence Electron Orbital energies:         
+  n  l     occupancy       energy
+ 3  0      2.0000000E+00 -1.0267284E+00
+ 3  1      3.0000000E+00 -4.0474358E-01
+
+  Total energy
+     Total                    :    -683.80432762576584     
+     Valence                  :    -55.140640708807226     
+  paw parameters: 
+       lmax =            1
+         rc =    1.9069007536618399     
+        irc =         1388
+   rc_shape =    1.6076522090084182     
+    rc_vloc =    1.6076522090084182     
+    rc_core =    1.7087147977036179     
+ Vloc: Norm-conserving Troullier-Martins with l= 2;e=   0.0000E+00
+ Projector type: RRKJ pseudization + Gram-Schmidt ortho.
+ Sinc^2 compensation charge shape zeroed at   1.6077E+00
+
+Number of basis functions     4
+ No.    n nodes    l      Energy         Cp coeff         Occ
+    1    3    2    0 -1.0267284E+00  1.0000000E+00  2.0000000E+00
+    2  999    3    0  3.0000000E+00  4.9157806E-02  0.0000000E+00
+    3    3    1    1 -4.0474358E-01  1.0000000E+00  3.0000000E+00
+    4  999    2    1  3.5000000E+00  5.9563578E-02  0.0000000E+00
+ Completed diagonalization of ovlp with info =        0
+  
+ Eigenvalues of overlap operator (in the basis of projectors):
+    1        1.21637277E-02
+    2        3.08278382E-02
+    3        1.48084181E+00
+    4        5.23301250E+00
+  
+  Summary of PAW energies
+        Total valence energy       -55.140656380278173     
+          Smooth energy             10.989186790910267     
+          One center               -66.129843171188440     
+          Smooth kinetic            5.1133940294316647     
+          Vloc energy              -2.1960241451352114     
+          Smooth exch-corr         -3.7614001336560579     
+          One-center xc            -42.223266721215730     

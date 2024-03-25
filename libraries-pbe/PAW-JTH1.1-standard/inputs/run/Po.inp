@@ -1,0 +1,39 @@
+Po 84
+XC_GGA_X_PBE+XC_GGA_C_PBE scalarrelativistic loggrid 1500 100. 2.5
+6 6 5 4 0 0
+6 0 2
+6 1 4
+0 0 0
+c
+c
+c
+c
+c
+v
+c
+c
+c
+c
+v
+c
+c
+c
+c
+2
+2.9 2.4 2.5 2.0
+y
+2.75
+n
+y
+4.5
+n
+n
+Vanderbilt
+2 0.02 ultrasoft
+2.9
+2.9
+2.9
+2.9
+PWSCFOUT
+upfdx 0.005 upfxmin -9.0 upfzmesh 1.0
+0   ! END

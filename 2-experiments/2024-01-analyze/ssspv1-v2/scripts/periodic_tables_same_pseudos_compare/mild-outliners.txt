@@ -1,0 +1,93 @@
+dict_keys(['SSSP-NC-curated-v1|qe@SSSP'])
+Using data for method 'SSSP-NC-curated-v1|qe@SSSP' (set 'unaries') compared with ae.
+dict_keys(['X/Diamond', 'X/FCC', 'X/BCC', 'X/SC', 'X2O3', 'X2O5', 'XO2', 'XO3', 'XO', 'X2O'])
+Found mild outlier (> 0.33) Ar-X/Diamond: 0.680609664419756
+Found mild outlier (> 0.33) C-X/Diamond: 0.35471956385553366
+Found mild outlier (> 0.33) Cr-X/Diamond: 0.3600518421129052
+Found mild outlier (> 0.33) Cu-X/Diamond: 0.5988183908761254
+Found mild outlier (> 0.33) He-X/Diamond: 0.4336108602574289
+Found mild outlier (> 0.33) Hf-X/Diamond: 0.5115883547589921
+Found mild outlier (> 0.33) Hg-X/Diamond: 0.866247640193959
+Found mild outlier (> 0.33) Kr-X/Diamond: 0.5937123765829654
+Found mild outlier (> 0.33) N-X/Diamond: 0.3550768680812828
+Found mild outlier (> 0.33) Ne-X/Diamond: 0.8690471619696306
+Found mild outlier (> 0.33) Xe-X/Diamond: 0.5270787655821533
+Found mild outlier (> 0.33) Y-X/Diamond: 0.3693292361196293
+Found mild outlier (> 0.33) Zn-X/Diamond: 0.9750480247787234
+Found mild outlier (> 0.33) Ar-X/FCC: 0.8665271698319688
+Found mild outlier (> 0.33) Cu-X/FCC: 0.38995463560567584
+Found mild outlier (> 0.33) He-X/FCC: 0.3980610070979013
+Found mild outlier (> 0.33) Hg-X/FCC: 0.8166039001877703
+Found mild outlier (> 0.33) Kr-X/FCC: 0.7760169110251824
+Found mild outlier (> 0.33) Ne-X/FCC: 1.4132947870730563
+Found mild outlier (> 0.33) Xe-X/FCC: 0.5618226609710052
+Found mild outlier (> 0.33) Zn-X/FCC: 0.5521543520371693
+Found mild outlier (> 0.33) Ar-X/BCC: 1.0571463877194753
+Found mild outlier (> 0.33) He-X/BCC: 0.5088073603653295
+Found mild outlier (> 0.33) Hf-X/BCC: 0.3832768706918951
+Found mild outlier (> 0.33) Hg-X/BCC: 0.6344906273057253
+Found mild outlier (> 0.33) Kr-X/BCC: 0.8486552760316778
+Found mild outlier (> 0.33) Ne-X/BCC: 1.5855367737492916
+Found mild outlier (> 0.33) Xe-X/BCC: 0.5709601549163181
+Found mild outlier (> 0.33) Zn-X/BCC: 1.6602458506340319
+Found mild outlier (> 0.33) Ar-X/SC: 0.7945318492054811
+Found mild outlier (> 0.33) Cu-X/SC: 0.4064262073377462
+Found mild outlier (> 0.33) He-X/SC: 0.7201716722600363
+Found mild outlier (> 0.33) Hf-X/SC: 0.5161615503083352
+Found mild outlier (> 0.33) Hg-X/SC: 0.5189890283816538
+Found mild outlier (> 0.33) Kr-X/SC: 0.6502433946545457
+Found mild outlier (> 0.33) N-X/SC: 0.48341753692087
+Found mild outlier (> 0.33) Ne-X/SC: 1.3091065565712492
+Found mild outlier (> 0.33) Xe-X/SC: 0.47819961756674145
+Found mild outlier (> 0.33) Zn-X/SC: 0.7409375792342183
+oxides
+dict_keys(['SSSP-NC-curated-v1|qe@SSSP'])
+Using data for method 'SSSP-NC-curated-v1|qe@SSSP' (set 'oxides') compared with ae.
+dict_keys(['X/Diamond', 'X/FCC', 'X/BCC', 'X/SC', 'X2O3', 'X2O5', 'XO2', 'XO3', 'XO', 'X2O'])
+Found mild outlier (> 0.33) Cs-X2O3: 0.40212362406773106
+Found mild outlier (> 0.33) Fe-X2O3: 0.37115791000767
+Found mild outlier (> 0.33) Hf-X2O3: 0.37681027142005497
+Found mild outlier (> 0.33) Hg-X2O3: 0.3482454592598507
+Found mild outlier (> 0.33) Si-X2O3: 0.40578077185314965
+Found mild outlier (> 0.33) Ta-X2O3: 0.47253215641901203
+Found mild outlier (> 0.33) Cs-X2O5: 0.36265589198578146
+Found mild outlier (> 0.33) Hf-X2O5: 0.3632024243706367
+Found mild outlier (> 0.33) Hg-X2O5: 0.3306704766103599
+Found mild outlier (> 0.33) Ta-X2O5: 0.4304849132107211
+Found mild outlier (> 0.33) Xe-X2O5: 0.4577193800293278
+Found mild outlier (> 0.33) Ar-X2O: 0.841285159544766
+Found mild outlier (> 0.33) H-X2O: 0.4571638577243844
+Found mild outlier (> 0.33) He-X2O: 1.1025036441361986
+Found mild outlier (> 0.33) Hg-X2O: 0.3400739803723652
+Found mild outlier (> 0.33) Kr-X2O: 0.5288507959163382
+Found mild outlier (> 0.33) Ne-X2O: 1.281869077161737
+Found mild outlier (> 0.33) Xe-X2O: 0.427861172816531
+Found mild outlier (> 0.33) Fe-XO2: 0.35000567448292325
+Found mild outlier (> 0.33) Hf-XO2: 0.40251771873660136
+Found mild outlier (> 0.33) Hg-XO2: 0.36006569533479765
+Found mild outlier (> 0.33) Si-XO2: 0.4181386232283005
+Found mild outlier (> 0.33) Ta-XO2: 0.47276127431276793
+Found mild outlier (> 0.33) Xe-XO2: 0.40270699254981923
+Found mild outlier (> 0.33) Bi-XO3: 0.621169193566498
+Found mild outlier (> 0.33) C-XO3: 0.3768179150647419
+Found mild outlier (> 0.33) Cd-XO3: 0.4865844644458603
+Found mild outlier (> 0.33) Cs-XO3: 0.6035778215654426
+Found mild outlier (> 0.33) Cu-XO3: 0.34259664207285156
+Found mild outlier (> 0.33) I-XO3: 1.8923289940899228
+Found mild outlier (> 0.33) In-XO3: 0.5754228914978625
+Found mild outlier (> 0.33) Ne-XO3: 0.5931122416708696
+Found mild outlier (> 0.33) Pd-XO3: 0.35200709442489997
+Found mild outlier (> 0.33) Pt-XO3: 0.5649652237189242
+Found mild outlier (> 0.33) Rb-XO3: 0.4962760864928995
+Found mild outlier (> 0.33) S-XO3: 1.0276400724419128
+Found mild outlier (> 0.33) Ta-XO3: 0.5085968723913142
+Found mild outlier (> 0.33) Te-XO3: 1.4964079524373313
+Found mild outlier (> 0.33) Xe-XO3: 0.9548479540578657
+Found mild outlier (> 0.33) Zn-XO3: 0.843626402044739
+Found mild outlier (> 0.33) Ar-XO: 0.37027277389760155
+Found mild outlier (> 0.33) Be-XO: 0.39059545841157617
+Found mild outlier (> 0.33) He-XO: 0.46806934692156893
+Found mild outlier (> 0.33) Ne-XO: 0.9521828495245074
+Found mild outlier (> 0.33) Ta-XO: 0.3808719033833515
+Found mild outlier (> 0.33) Xe-XO: 0.3424223560332878
+

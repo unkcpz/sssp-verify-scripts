@@ -1,0 +1,36 @@
+Tc 43
+XC_GGA_X_PBE+XC_GGA_C_PBE scalarrelativistic loggrid 600 80 2.20
+5 4 4 0 0 0
+5 0 1
+4 2 6
+0 0 0
+c
+c
+c
+v
+v
+c
+c
+v
+c
+v
+2
+2.2 2.0 1.75 2.0
+n
+y
+3.0
+n
+y
+4.0
+n
+custom polynom2 7 10 vanderbiltortho
+3 -0.0 ultrasoft
+1.7
+1.7
+1.7
+1.7
+2.1
+2.1
+PWSCFOUT
+upfdx 0.005 upfxmin -9.0 upfzmesh 1.0
+0   ! END
