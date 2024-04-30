@@ -19,10 +19,10 @@
         "charge_density_cutoff": 180.0,
         "uuid": "0a821f91-e6ca-4165-93ab-cd36cacceec0"
     },
-    "B.us.z_3.uspp.gbrv.v1.4": {
-        "wavefunction_cutoff": 50.0,
-        "charge_density_cutoff": 300.0,
-        "uuid": "48f68bf0-5465-40cc-b7f6-1678f14c7214"
+    "B.paw.z_3.atompaw.jth.v1.1-std": {
+        "wavefunction_cutoff": 40.0,
+        "charge_density_cutoff": 240.0,
+        "uuid": "12826c57-9dba-4d3e-8e7c-f64234166e89"
     },
     "C.paw.z_4.ld1.psl.v0.1": {
         "wavefunction_cutoff": 60.0,
@@ -144,25 +144,25 @@
         "charge_density_cutoff": 455.0,
         "uuid": "ce38b052-5359-4d49-b47c-5e495510e5c4"
     },
-    "Zn.paw.z_12.ld1.psl.v1.0.0-low": {
-        "wavefunction_cutoff": 65.0,
-        "charge_density_cutoff": 390.0,
-        "uuid": "f993893b-c507-4613-a98b-9e91c34d6b30"
+    "Zn.paw.z_12.atompaw.jth.v1.1-std": {
+        "wavefunction_cutoff": 60.0,
+        "charge_density_cutoff": 480.0,
+        "uuid": "6446df24-5720-4cc8-a770-e0f62cbea9c1"
     },
-    "Ga.paw.z_13.ld1.psl.v1.0.0-low": {
-        "wavefunction_cutoff": 65.0,
-        "charge_density_cutoff": 390.0,
-        "uuid": "a6196659-7e06-4a91-881b-d65589c21263"
+    "Ga.paw.z_13.atompaw.jth.v1.1-std": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 225.0,
+        "uuid": "611a42ad-a759-4489-ae7f-8aba1b9db7ad"
     },
     "Ge.us.z_14.uspp.gbrv.v1.4": {
         "wavefunction_cutoff": 40.0,
         "charge_density_cutoff": 240.0,
         "uuid": "76e72359-540d-4824-af1e-eef67d36f950"
     },
-    "As.nc.z_15.oncvpsp4.spms.v1": {
-        "wavefunction_cutoff": 60.0,
-        "charge_density_cutoff": 192.0,
-        "uuid": "2afe5db3-aa5c-4f91-b0fe-764909dd6222"
+    "As.paw.z_15.atompaw.jth.v1.1-std": {
+        "wavefunction_cutoff": 35.0,
+        "charge_density_cutoff": 262.0,
+        "uuid": "acbff2d1-6a40-4455-9867-98abce9bc4e2"
     },
     "Se.us.z_6.uspp.gbrv.v1": {
         "wavefunction_cutoff": 35.0,
@@ -189,30 +189,30 @@
         "charge_density_cutoff": 60.0,
         "uuid": "82a128d6-3931-488d-b928-53d3cd968e3f"
     },
-    "Y.us.z_11.uspp.gbrv.v1.4": {
+    "Y.paw.z_11.atompaw.jth.v1.1-std": {
         "wavefunction_cutoff": 45.0,
-        "charge_density_cutoff": 270.0,
-        "uuid": "cc99cc3a-f1ce-48eb-bda5-cde219fbce82"
+        "charge_density_cutoff": 360.0,
+        "uuid": "4ae7f3f0-0a0b-414d-a209-0e11a2eb8d64"
     },
     "Zr.us.z_12.uspp.gbrv.v1": {
         "wavefunction_cutoff": 30.0,
         "charge_density_cutoff": 180.0,
         "uuid": "afe3d7eb-cf5e-42ff-b3a0-ca991557f93f"
     },
-    "Nb.us.z_13.uspp.gbrv.v1": {
-        "wavefunction_cutoff": 50.0,
-        "charge_density_cutoff": 375.0,
-        "uuid": "e61dec5a-eb62-4c27-807f-b44e47d85a75"
+    "Nb.paw.z_13.atompaw.jth.v1.1-std": {
+        "wavefunction_cutoff": 45.0,
+        "charge_density_cutoff": 270.0,
+        "uuid": "cc9d982a-9c28-4e5a-9d65-399bc243a564"
     },
     "Mo.nc.z_14.oncvpsp4.spms.v1": {
         "wavefunction_cutoff": 45.0,
         "charge_density_cutoff": 120.0,
         "uuid": "018b16cf-67d1-4f17-89cb-7ce476fe240d"
     },
-    "Tc.paw.z_15.ld1.psl.v1.0.0-high": {
-        "wavefunction_cutoff": 60.0,
-        "charge_density_cutoff": 360.0,
-        "uuid": "39890dd8-8e10-4bf7-b2ff-bfda3f8c0686"
+    "Tc.paw.z_15.atompaw.jth.v1.1-std": {
+        "wavefunction_cutoff": 30.0,
+        "charge_density_cutoff": 240.0,
+        "uuid": "23871460-f2f4-4012-bb6d-e8a6ecdaad29"
     },
     "Ru.us.z_16.uspp.gbrv.v1.2": {
         "wavefunction_cutoff": 50.0,
