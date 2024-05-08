@@ -1,0 +1,19 @@
+codes:
+  pw_code: pw-7.0@eiger-hq
+  ph_code: ph-7.0@eiger-hq
+
+groups:
+  upf_candidate: &upf_candidate experimental/upf/candidate
+  convergence_eos_balanced_dc: &convergence_eos_balanced experimental/convergence/eos/balanced/dc
+  convergence_eos_acwf_dc: &convergence_eos_acwf experimental/convergence/eos/acwf/dc
+
+max_wallclock_seconds: &walltime 1800
+
+resources: &default_resources
+  num_machines: 1
+  num_cpus: 16
+  memory_mb: 120000
+
+convergence_eos:
+  parent_group_label: *upf_candidate
+  group_label: *convergence_eos_balanced

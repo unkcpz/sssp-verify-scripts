@@ -3,9 +3,9 @@ requires = ['flit_core >=3.4,<4']
 build-backend = 'flit_core.buildapi'
 
 [project]
-name = 'sssp-paper-plots'
-dynamic = ['version']  # read from aiida/__init__.py
-description = "Scripts for the AiiDA (SSSP) verification paper."
+name = 'sssp-verify-scripts'
+dynamic = ['version']  # read from __init__.py
+description = "Scripts for the SSSP verification paper."
 authors = [{name = 'AiiDA team', email = 'jusong.yu@psi.ch'}]
 readme = 'README.md'
 license = {file = 'LICENSE'}
@@ -16,26 +16,16 @@ classifiers = [
     'Operating System :: POSIX :: Linux',
     'Operating System :: MacOS :: MacOS X',
     'Programming Language :: Python',
-    'Programming Language :: Python :: 3.8',
     'Programming Language :: Python :: 3.9',
     'Programming Language :: Python :: 3.10',
 ]
 keywords = ['aiida', 'dft']
-requires-python = '>=3.6'
+requires-python = '>=3.9'
 dependencies = [
-    "numpy",
-    "matplotlib",
-    "tqdm",
-    "ase",
-    "bokeh<3",
-    "selenium",
-    "pandas",
-    "chromedriver-binary",
-#    "aiida-common-workflows @ git+https://github.com/aiidateam/aiida-common-workflows@v0.1.0",
+    "aiida-sssp-workflow~=4.2",
+    "aiida-submission-controller~=0.1.0",
 ]
 
 [project.urls]
-Home = 'https://www.aiida.net'
-Source = 'https://github.com/aiida/sssp-verification-scripts'
-Documentation = ''
+Source = 'https://github.com/unkcpz/sssp-verify-scripts'
 
