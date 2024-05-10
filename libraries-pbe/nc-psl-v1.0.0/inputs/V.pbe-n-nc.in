@@ -1,0 +1,20 @@
+ &input
+   title='V',
+   zed=23.,
+   rel=1,
+   config='[Ar] 4s2.0 4p0.0 3d3.0',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=2,
+   file_pseudopw='V.pbe-n-nc.UPF',
+   author='TM',
+   lloc=0,
+   nlcc=.true.,
+   tm=.true.
+ /
+3
+4P  2  1  0.00  0.00  2.70  2.70  0.0
+3D  3  2  3.00  0.00  2.35  2.35  0.0
+4S  1  0  2.00  0.00  2.35  2.35  0.0

@@ -8,10 +8,10 @@ UpfData = DataFactory("pseudo.upf")
 GROUP_NAME = "experimental/upf/candidate"
 
 base_path = Path(__file__).resolve().parent / "libraries-pbe"
-gbrv_lib_path = base_path / "us-gbrv-1.x-upf2"
-jth_lib_path = base_path / "paw-jth-1.1-std"
+gbrv_lib_path = base_path / "us-gbrv-v1.x-upf2"
+jth_lib_path = base_path / "paw-jth-v1.1-std"
 dojo_lib_path = base_path / "nc-dojo-v0.4.1-std"
-psl_paw_lib_path = base_path / "paw-psl-1.0.0-high"
+psl_paw_lib_path = base_path / "paw-psl-v1.0.0-high"
 
 
 # Hg, Ga, N, Cs, Mn
@@ -23,11 +23,11 @@ pseudos = [
     f"{gbrv_lib_path}/Cs.us.pbe.z_9.uspp.gbrv.v1.upf",
     f"{gbrv_lib_path}/Mn.us.pbe.z_15.uspp.gbrv.v1.5.upf",
     # JTH
-    #f"{jth_lib_path}/Hg.paw.pbe.z_12.atompaw.jth.v1.1-std.upf",
-    #f"{jth_lib_path}/Ga.paw.pbe.z_13.atompaw.jth.v1.1-std.upf",
-    #f"{jth_lib_path}/N.paw.pbe.z_5.atompaw.jth.v1.1-std.upf",
-    #f"{jth_lib_path}/Cs.paw.pbe.z_9.atompaw.jth.v1.1-std.upf",
-    #f"{jth_lib_path}/Mn.paw.pbe.z_15.atompaw.jth.v1.1-std.upf",
+    f"{jth_lib_path}/Hg.paw.pbe.z_12.atompaw.jth.v1.1-std.upf",
+    f"{jth_lib_path}/Ga.paw.pbe.z_13.atompaw.jth.v1.1-std.upf",
+    f"{jth_lib_path}/N.paw.pbe.z_5.atompaw.jth.v1.1-std.upf",
+    f"{jth_lib_path}/Cs.paw.pbe.z_9.atompaw.jth.v1.1-std.upf",
+    f"{jth_lib_path}/Mn.paw.pbe.z_15.atompaw.jth.v1.1-std.upf",
     # DOJO
     f"{dojo_lib_path}/Hg.nc.pbe.z_20.oncvpsp3.dojo.v0.4.1-std.upf",
     f"{dojo_lib_path}/Ga.nc.pbe.z_13.oncvpsp3.dojo.v0.4.1-std.upf",

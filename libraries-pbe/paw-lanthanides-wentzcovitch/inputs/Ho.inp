@@ -1,0 +1,45 @@
+Ho  67
+GGA-PBE  loggrid 700 scalarrelativistic logderivrange -8 8 500
+6 5 5 4 0
+5 2 1
+4 3 10
+0 0 0
+c
+c
+c
+c
+v
+v
+c
+c
+c
+v
+c
+c
+v
+v
+3
+2.37 1.975 2.37 2.37
+n
+y
+2.0
+n
+y
+2.0
+n
+y
+2.0
+n
+VANDERBILT BESSELSHAPE
+4 0.0
+2.33
+2.33
+2.33
+2.33
+2.33
+2.33
+2.33
+2.33
+PWSCFOUT
+upfdx 0.005 upfxmin -9.0 upfzmesh 1.0
+0   ! END

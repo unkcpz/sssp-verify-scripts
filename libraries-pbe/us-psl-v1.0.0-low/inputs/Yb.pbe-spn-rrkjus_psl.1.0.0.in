@@ -1,0 +1,29 @@
+ &input
+   title='Yb',
+   zed=70.0,
+   rel=1,
+   config='[Xe] 4f14.0 5d0.0 6s1.5 6p0.5',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   lpaw=.false.,
+   pseudotype=3,
+   file_pseudopw='Yb.pbe-spn-rrkjus_psl.1.0.0.UPF',
+   author='ADC',
+   lloc=-1,
+   rcloc=1.9,
+   which_augfun='PSQ',
+   rmatch_augfun_nc=.true.,
+   nlcc=.true.,
+   new_core_ps=.true.,
+   rcore=1.1,
+   tm=.true.
+ /
+6
+5S  1  0  2.00  0.00  1.15  1.60  0.0
+6S  2  0  1.50  0.00  1.15  1.60  0.0
+5P  2  1  6.00  0.00  1.15  1.60  0.0
+6P  3  1  0.50  0.00  1.15  1.60  0.0
+5D  3  2  0.00  0.00  1.15  1.80  0.0
+5D  3  2  0.00  2.00  1.15  1.80  0.0

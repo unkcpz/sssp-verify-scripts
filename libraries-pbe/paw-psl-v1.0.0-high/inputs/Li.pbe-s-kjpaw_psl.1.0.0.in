@@ -1,0 +1,24 @@
+ &input
+   title='Li',
+   zed=3.,
+   rel=1,
+   config='[He] 2s1 2p0',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   lpaw=.true.,
+   pseudotype=3,
+   file_pseudopw='Li.pbe-s-kjpaw_psl.1.0.0.UPF',
+   author='ADC',
+   lloc=-1,
+   rcloc=0.6
+   which_augfun='PSQ',
+   rmatch_augfun_nc=.true.,
+   tm=.true.
+ /
+4
+1S  1  0  2.00  0.00  0.80  1.00  0.0
+2S  2  0  1.00  0.00  0.80  1.00  0.0
+2P  2  1  0.00  0.00  0.85  1.20  0.0
+2P  2  1  0.00  1.00  0.85  1.20  0.0

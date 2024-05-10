@@ -1,0 +1,36 @@
+Sr 38                                       ! Definition of material
+XC_GGA_X_PBE+XC_GGA_C_PBE scalarrelativistic loggrid 1500     ! All-e
+5 4 4 0 0 0                                 ! Max. n per angular momentum: 4s 3p
+5 0 1.0
+4 2 1.0
+0 0 0
+c
+c
+c
+v
+v
+c
+c
+v
+c
+v
+2                                           ! Max. l for partial waves basis
+2.2 1.8 2.2  1.2                            ! r_PAW radius
+n
+y
+2.0
+n
+y
+2.0
+n                                           ! Do we add an additional d partial
+custom polynom2 4 10.0 vanderbiltortho         ! Scheme for PS partial waves and
+3 0.0 ultrasoft                                       ! Scheme for pseudopotent
+1.8                                         ! r_c matching radius for first  s p
+1.8                                         ! r_c matching radius for second s p
+2.0                                         ! r_c matching radius for first  p p
+2.0                                         ! r_c matching radius for second p p
+2.2
+2.2
+PWSCFOUT
+upfdx 0.005 upfxmin -9.0 upfzmesh 1.0
+0   ! END

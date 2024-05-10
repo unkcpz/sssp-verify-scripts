@@ -1,0 +1,29 @@
+ &input
+   title='Hf',
+   zed=72.,
+   rel=1,
+   config='[Xe] 4f14 6s2 6p0 5d2',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   lpaw=.false.,
+   pseudotype=3,
+   file_pseudopw='Hf.pbe-spn-rrkjus_psl.1.0.0.UPF',
+   author='ADC',
+   lloc=-1,
+   rcloc=1.7,
+   which_augfun='PSQ',
+   rmatch_augfun_nc=.true.,
+   nlcc=.true.,
+   new_core_ps=.true.,
+   rcore=1.2,
+   tm=.true.
+ /
+6
+5S  1  0  2.00  0.00  1.00  1.30  0.0
+6S  2  0  2.00  0.00  1.00  1.30  0.0
+5P  2  1  6.00  0.00  1.10  1.30  0.0
+6P  3  1  0.00 -2.20  1.10  1.30  0.0
+5D  3  2  2.00  0.00  1.50  1.60  0.0
+5D  3  2  0.00  0.05  1.50  1.60  0.0

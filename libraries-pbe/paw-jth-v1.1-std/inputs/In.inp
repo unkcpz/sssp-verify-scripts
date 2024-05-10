@@ -1,0 +1,38 @@
+In 49
+XC_GGA_X_PBE+XC_GGA_C_PBE scalarrelativistic loggrid 2000
+5 5 4 0 0 0
+5 1 1
+0 0 0
+c
+c
+c
+c
+v
+c
+c
+c
+v
+c
+v
+2
+2.5 1.4 2.4 1.4
+y
+2.0
+n
+y
+4.0
+n
+y
+1.5
+n
+custom polynom2 7 10. vanderbiltortho besselshape
+3 0.0 ultrasoft
+2.0
+1.8
+2.0
+2.0
+1.7
+1.7
+PWSCFOUT
+upfdx 0.005 upfxmin -9.0 upfzmesh 1.0
+0   ! END

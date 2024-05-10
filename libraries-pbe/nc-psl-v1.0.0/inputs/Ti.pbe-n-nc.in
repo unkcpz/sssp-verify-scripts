@@ -1,0 +1,20 @@
+ &input
+   title='Ti',
+   zed=22.,
+   rel=1,
+   config='[Ar] 4s2.0 4p0.0 3d2.0',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=2,
+   file_pseudopw='Ti.pbe-n-nc.UPF',
+   author='TM',
+   lloc=0,
+   nlcc=.true.,
+   tm=.true.
+ /
+3
+4P  2  1  0.00  0.00  2.96  2.96  0.0
+3D  3  2  2.00  0.00  2.25  2.25  0.0
+4S  1  0  2.00  0.00  2.54  2.54  0.0

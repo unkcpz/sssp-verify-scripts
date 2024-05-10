@@ -29,3 +29,6 @@ dependencies = [
 [project.urls]
 Source = 'https://github.com/unkcpz/sssp-verify-scripts'
 
+[project.scripts]
+atompaw-regenerate = "sssp_verify_scripts.scripts:atompaw_regenerate.main"
+
