@@ -1,0 +1,485 @@
+{
+    "Ag.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
+        "md5": "061d234e0f4d616d29b87bd0d60382f3",
+        "cutoffs": [
+            40,
+            160
+        ]
+    },
+    "Al.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
+        "md5": "5565b45fdbe36db6c96fd87e34f83df6",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Ar.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
+        "md5": "d799d352d87b8bbcdea9ff1a2f215339",
+        "cutoffs": [
+            50,
+            200
+        ]
+    },
+    "As.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "6a7f30dc3dad2e477025c7eedd1590b6",
+        "cutoffs": [
+            55,
+            220
+        ]
+    },
+    "Au.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
+        "md5": "49e23284cd9981056426cad96e23fede",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "B.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
+        "md5": "5668651e8bce7ed162579456daeea4a6",
+        "cutoffs": [
+            50,
+            200
+        ]
+    },
+    "Ba.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
+        "md5": "9ed80c37e217c9f29033b360ef1cca51",
+        "cutoffs": [
+            200,
+            800
+        ]
+    },
+    "Be.nc.pbe.z_4.oncvpsp4.spms.v1.upf": {
+        "md5": "b4b253fc820054609693963dd7acf43e",
+        "cutoffs": [
+            50,
+            200
+        ]
+    },
+    "Bi.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "4a2689a81101bad619841ee6c7dcb06f",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Br.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
+        "md5": "3c32c7f68ba2cea499b4bda914da2bde",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "C.nc.pbe.z_4.oncvpsp4.spms.v1.upf": {
+        "md5": "1830815dda0152e4d6ab2c6dac390a80",
+        "cutoffs": [
+            70,
+            280
+        ]
+    },
+    "Ca.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
+        "md5": "a79b2baeccb58408740f89fdce300970",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "Cd.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
+        "md5": "824d5a76c24bf61881d6b06fb45c9686",
+        "cutoffs": [
+            40,
+            160
+        ]
+    },
+    "Cl.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
+        "md5": "ffc43260514206b174ab5d98e6c1ef90",
+        "cutoffs": [
+            75,
+            300
+        ]
+    },
+    "Co.nc.pbe.z_17.oncvpsp4.spms.v1.upf": {
+        "md5": "3ac903b308c672f8bf9f4cd16543a038",
+        "cutoffs": [
+            55,
+            220
+        ]
+    },
+    "Cr.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "b2cc2e610e0aa5ac79c83f2d4b8e54a0",
+        "cutoffs": [
+            60,
+            240
+        ]
+    },
+    "Cs.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
+        "md5": "da6bfc295964cfcff4e40f26d273e712",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "Cu.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
+        "md5": "900d8f0839bc5970f3576802751937be",
+        "cutoffs": [
+            70,
+            280
+        ]
+    },
+    "F.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
+        "md5": "14429741c3970f693a4f84dcb0ca3b12",
+        "cutoffs": [
+            200,
+            800
+        ]
+    },
+    "Fe.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "8153c8d6a1610eb862e3c8c232ee9c30",
+        "cutoffs": [
+            50,
+            200
+        ]
+    },
+    "Ga.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "6d95632eb484eb8ddbc07a7526ebee8a",
+        "cutoffs": [
+            60,
+            240
+        ]
+    },
+    "Ge.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "b9ac9aadfd371d3108278194747fb964",
+        "cutoffs": [
+            45,
+            180
+        ]
+    },
+    "H.nc.pbe.z_1.oncvpsp4.spms.v1.upf": {
+        "md5": "52296a9447f5d71c7954fb2768d6a819",
+        "cutoffs": [
+            60,
+            240
+        ]
+    },
+    "He.nc.pbe.z_2.oncvpsp4.spms.v1.upf": {
+        "md5": "60c8a33a18040f777e61258b64a18e99",
+        "cutoffs": [
+            150,
+            600
+        ]
+    },
+    "Hf.nc.pbe.z_12.oncvpsp4.spms.v1.upf": {
+        "md5": "403f3cb9c148ab75c02f2773e2b4ab78",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Hg.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
+        "md5": "886bc33e42733a96aa2e20891a719df7",
+        "cutoffs": [
+            200,
+            800
+        ]
+    },
+    "I.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
+        "md5": "5b293a2b2afd0e3537a4bb43b908b57d",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "In.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "8493b004ae6b0efa27ff89b23df371f3",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "Ir.nc.pbe.z_17.oncvpsp4.spms.v1.upf": {
+        "md5": "4f8a79564e6ceeec4cf9957f9f0f2db9",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "K.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
+        "md5": "bc137aa45e6c151ba842fdf907c13e99",
+        "cutoffs": [
+            150,
+            600
+        ]
+    },
+    "Kr.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
+        "md5": "03b750ecc943040ee6d6ad45fc237c2c",
+        "cutoffs": [
+            60,
+            240
+        ]
+    },
+    "La.nc.pbe.z_11.oncvpsp4.spms.v1.upf": {
+        "md5": "3939e966d4514d6a4b7bdbf486cfc25d",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "Li.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
+        "md5": "6f21d014c55e3b006af3e8c3de7cf6eb",
+        "cutoffs": [
+            55,
+            220
+        ]
+    },
+    "Mg.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
+        "md5": "6a0b0868bd60106ec43f119f864978b2",
+        "cutoffs": [
+            50,
+            200
+        ]
+    },
+    "Mn.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "85fbf61bace8b586ed120892eebe5990",
+        "cutoffs": [
+            70,
+            280
+        ]
+    },
+    "Mo.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "2a40cd44d341a8576e1382bcab6aa217",
+        "cutoffs": [
+            40,
+            160
+        ]
+    },
+    "N.nc.pbe.z_5.oncvpsp4.spms.v1.upf": {
+        "md5": "49a1db1b2e569f0e653c71e8aae5d6fa",
+        "cutoffs": [
+            70,
+            280
+        ]
+    },
+    "Na.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
+        "md5": "1a15dfbe740de7456faba99c6b543ea8",
+        "cutoffs": [
+            90,
+            360
+        ]
+    },
+    "Nb.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "8fbc13f4eb11b35701d9ec36f0d7872e",
+        "cutoffs": [
+            50,
+            200
+        ]
+    },
+    "Ne.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
+        "md5": "76e30c6518f0be98b25e63a39e855976",
+        "cutoffs": [
+            120,
+            480
+        ]
+    },
+    "Ni.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
+        "md5": "6d7a04bdca84783c03c353c95de999c1",
+        "cutoffs": [
+            60,
+            240
+        ]
+    },
+    "O.nc.pbe.z_6.oncvpsp4.spms.v1.upf": {
+        "md5": "77eacdbac5615a8e38e2692d02ca795d",
+        "cutoffs": [
+            75,
+            300
+        ]
+    },
+    "Os.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "ab9dd3afec5eaf8a08c8ae1e671b8e2c",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "P.nc.pbe.z_5.oncvpsp4.spms.v1.upf": {
+        "md5": "bfbd6e557eb6fb932959f1710eaa032a",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Pb.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "787987a5e9ac568b436a41615e6d31df",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Pd.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
+        "md5": "5b7e326e375a5823bd1acb3f7db81304",
+        "cutoffs": [
+            45,
+            180
+        ]
+    },
+    "Pt.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
+        "md5": "1c029bec8d29987ef0fe395cea4cc85e",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "Rb.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
+        "md5": "79e81c19d7405c596eb647376beb9e77",
+        "cutoffs": [
+            120,
+            480
+        ]
+    },
+    "Re.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "144c09c38ca778b2e0b902255dc20958",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Rh.nc.pbe.z_17.oncvpsp4.spms.v1.upf": {
+        "md5": "1cc645b6b903a5845827e4d1faf2b013",
+        "cutoffs": [
+            40,
+            160
+        ]
+    },
+    "Ru.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "eab2bc4a64bfce9c6289c338288d5b43",
+        "cutoffs": [
+            70,
+            280
+        ]
+    },
+    "S.nc.pbe.z_6.oncvpsp4.spms.v1.upf": {
+        "md5": "a47eda68eb6e58d5a3108aaa63274a20",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "Sb.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "5424b466dffa8dd89175bf01c378fdf7",
+        "cutoffs": [
+            45,
+            180
+        ]
+    },
+    "Sc.nc.pbe.z_11.oncvpsp4.spms.v1.upf": {
+        "md5": "4110f3ec70100346d872677bae63db1b",
+        "cutoffs": [
+            45,
+            180
+        ]
+    },
+    "Se.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "2236a9ecc8de6e0593dc0cacb39e66aa",
+        "cutoffs": [
+            55,
+            220
+        ]
+    },
+    "Si.nc.pbe.z_4.oncvpsp4.spms.v1.upf": {
+        "md5": "5bc9ac70f20c2e07cb4af10970cfbac5",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Sn.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "06c49158bc3f9dcbeec2189cc921168d",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "Sr.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
+        "md5": "f5d852a78f1e912b41455597bfd796c9",
+        "cutoffs": [
+            90,
+            360
+        ]
+    },
+    "Ta.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "77b2c64cd97916623c5aef1c67923dce",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Tc.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "772b7f2e8385370850142dce151cb7bb",
+        "cutoffs": [
+            200,
+            800
+        ]
+    },
+    "Te.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "9006b7d045390dc8b33f4554bc6f8bc1",
+        "cutoffs": [
+            45,
+            180
+        ]
+    },
+    "Ti.nc.pbe.z_12.oncvpsp4.spms.v1.upf": {
+        "md5": "dc4daf9593efddec852809411bcd81c2",
+        "cutoffs": [
+            50,
+            200
+        ]
+    },
+    "Tl.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "a5b91adbafc60bc9e05c57b9e0c130c4",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "V.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "ab437d55ef5231f85b6fb368ed235393",
+        "cutoffs": [
+            60,
+            240
+        ]
+    },
+    "W.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "0e00a6ee5a4169147a74fc9266817fe0",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Xe.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
+        "md5": "6b4ef680ce28027ea1ae563b14eecdb1",
+        "cutoffs": [
+            30,
+            120
+        ]
+    },
+    "Y.nc.pbe.z_11.oncvpsp4.spms.v1.upf": {
+        "md5": "d0df407de3616335240fb72b0ea8f863",
+        "cutoffs": [
+            35,
+            140
+        ]
+    },
+    "Zn.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
+        "md5": "352b145d8a55b7e67f7c942c59f0f1cd",
+        "cutoffs": [
+            55,
+            220
+        ]
+    },
+    "Zr.nc.pbe.z_12.oncvpsp4.spms.v1.upf": {
+        "md5": "ff29dc233249eb0a271426fc79dc99a4",
+        "cutoffs": [
+            30,
+            120
+        ]
+    }
+}

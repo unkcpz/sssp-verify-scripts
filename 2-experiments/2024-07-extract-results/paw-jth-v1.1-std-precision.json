@@ -1,0 +1,604 @@
+{
+    "Ag.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
+        "md5": "03ce088ed9916fb24abb02662d5b6c76",
+        "cutoffs": [
+            70,
+            560
+        ]
+    },
+    "Al.paw.pbe.z_3.atompaw.jth.v1.1-std.upf": {
+        "md5": "ae45d364263dd34565c1c2d232ed0075",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Ar.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
+        "md5": "bdec70c731cf65729f01ff1db973a7e2",
+        "cutoffs": [
+            70,
+            560
+        ]
+    },
+    "As.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
+        "md5": "53ce51edc935e5b9b853ce3363fafeae",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "At.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
+        "md5": "8d3bbdbb08527b98085d2ee41c7f8ea4",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Au.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
+        "md5": "7e6b945f1b5eb99daf4f2d52cfd80ea4",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "B.paw.pbe.z_3.atompaw.jth.v1.1-std.upf": {
+        "md5": "c3e61bdfb7e69751a71b5a2fc2fbd0b4",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Ba.paw.pbe.z_10.atompaw.jth.v1.1-std.upf": {
+        "md5": "00d35b6497c6673cabf70e84ffa5e25a",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Be.paw.pbe.z_4.atompaw.jth.v1.1-std.upf": {
+        "md5": "f4576ff1592f80f6c25ae678e19b2bd4",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "Bi.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
+        "md5": "a336c4fabf544baa05312d8d344067a6",
+        "cutoffs": [
+            65,
+            520
+        ]
+    },
+    "Br.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
+        "md5": "9d798f93c62df783cc4fbac1a9e79a55",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "C.paw.pbe.z_4.atompaw.jth.v1.1-std.upf": {
+        "md5": "0e8216a482cca614f495814fba58da89",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Ca.paw.pbe.z_10.atompaw.jth.v1.1-std.upf": {
+        "md5": "1ce4e334ca934228320de244c63cc729",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Cd.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
+        "md5": "22cdf4487ef0ebbbbb2d378c85d06818",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Ce.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
+        "md5": "67416872a568d2d0f97dfb8a3fd47c41",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Cl.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
+        "md5": "508946a52f4446ee0d24ba16639f5323",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Co.paw.pbe.z_17.atompaw.jth.v1.1-std.upf": {
+        "md5": "54f53f5047c18211ec1ee21c98f03a04",
+        "cutoffs": [
+            120,
+            2160
+        ]
+    },
+    "Cr.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
+        "md5": "1168155ef9c94c0b7e53e56ececd9770",
+        "cutoffs": [
+            50,
+            900
+        ]
+    },
+    "Cs.paw.pbe.z_9.atompaw.jth.v1.1-std.upf": {
+        "md5": "09be3fdb7cde4189b4a4ca13931ccd9f",
+        "cutoffs": [
+            100,
+            800
+        ]
+    },
+    "Cu.paw.pbe.z_19.atompaw.jth.v1.1-std.upf": {
+        "md5": "b58fedec8670afd09556944af73cc866",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Dy.paw.pbe.z_20.atompaw.jth.v1.1-std.upf": {
+        "md5": "74f56dbc10c1bb366f3aa0cc39c29093",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Er.paw.pbe.z_22.atompaw.jth.v1.1-std.upf": {
+        "md5": "83399ff8107875a92c35aaf6ae3815f3",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Eu.paw.pbe.z_17.atompaw.jth.v1.1-std.upf": {
+        "md5": "fe05998016b3feaf0f83125dbbf33215",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "F.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
+        "md5": "ec4448abc1c556378a86b9cc313160be",
+        "cutoffs": [
+            70,
+            560
+        ]
+    },
+    "Fe.paw.pbe.z_16.atompaw.jth.v1.1-std.upf": {
+        "md5": "1c54cb285fe24793354a6a809358776a",
+        "cutoffs": [
+            100,
+            1800
+        ]
+    },
+    "Ga.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
+        "md5": "819728501d9f40696985f91da95db4de",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Gd.paw.pbe.z_18.atompaw.jth.v1.1-std.upf": {
+        "md5": "974b4a0981949c8a0561a02392be5eb2",
+        "cutoffs": [
+            35,
+            280
+        ]
+    },
+    "Ge.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
+        "md5": "ab328e4aacfb851d9dd012d144e0d774",
+        "cutoffs": [
+            45,
+            360
+        ]
+    },
+    "H.paw.pbe.z_1.atompaw.jth.v1.1-std.upf": {
+        "md5": "d0ab6b8bd9be8c37b6dca90e3f41c1e8",
+        "cutoffs": [
+            40,
+            320
+        ]
+    },
+    "He.paw.pbe.z_2.atompaw.jth.v1.1-std.upf": {
+        "md5": "c692aa31206dd76b83353260dbb4a292",
+        "cutoffs": [
+            100,
+            800
+        ]
+    },
+    "Hf.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
+        "md5": "19ad7419a059c9d3b81a937e9cb6ef8f",
+        "cutoffs": [
+            45,
+            810
+        ]
+    },
+    "Hg.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
+        "md5": "fd41a58c527812bfe111385a90b30ce1",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Ho.paw.pbe.z_21.atompaw.jth.v1.1-std.upf": {
+        "md5": "f971f0bb70d46102a34108a740c1300f",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "I.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
+        "md5": "2c764ebdf04344151d8b55265508c42b",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "In.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
+        "md5": "b55c32194e9d9bd0bfd4b7ab495cd3e3",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Ir.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
+        "md5": "fd2e5b39c284cc6da154bb88f3409804",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "K.paw.pbe.z_9.atompaw.jth.v1.1-std.upf": {
+        "md5": "774cc44fb3d23a359baa534362c30f9c",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "Kr.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
+        "md5": "0ca512ba4ce6cbb23584f759aa2aa484",
+        "cutoffs": [
+            65,
+            520
+        ]
+    },
+    "La.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
+        "md5": "9678012808088de1d9c5510aefb5e912",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Li.paw.pbe.z_3.atompaw.jth.v1.1-std.upf": {
+        "md5": "fcb8a6765d27726c55f6059348d29d93",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Lu.paw.pbe.z_25.atompaw.jth.v1.1-std.upf": {
+        "md5": "9d2e5e1b39525676e762ad6cd9909f1e",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Mg.paw.pbe.z_10.atompaw.jth.v1.1-std.upf": {
+        "md5": "07146cf05ec66e2c8f1dbc5cdb30c911",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Mn.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
+        "md5": "d8f9e3294e38813cceaba191c09801ff",
+        "cutoffs": [
+            80,
+            1440
+        ]
+    },
+    "Mo.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
+        "md5": "bcb52c950aff88b78be9c17b836fbeb2",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "N.paw.pbe.z_5.atompaw.jth.v1.1-std.upf": {
+        "md5": "3db470c6d05d94d43f91ed20d7cbb392",
+        "cutoffs": [
+            45,
+            360
+        ]
+    },
+    "Na.paw.pbe.z_9.atompaw.jth.v1.1-std.upf": {
+        "md5": "c1dbb89b163c2bbacd519c35f0cb6f7a",
+        "cutoffs": [
+            100,
+            800
+        ]
+    },
+    "Nb.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
+        "md5": "b99525fe09b48f0a71f39c60146b7261",
+        "cutoffs": [
+            40,
+            320
+        ]
+    },
+    "Nd.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
+        "md5": "8e187de1904852079128465adce3666f",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Ne.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
+        "md5": "e4dc4c0405c52d355ec573d39ff3f53d",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Ni.paw.pbe.z_18.atompaw.jth.v1.1-std.upf": {
+        "md5": "a93eda46a1cca9381162e3b9746f3a27",
+        "cutoffs": [
+            100,
+            1800
+        ]
+    },
+    "O.paw.pbe.z_6.atompaw.jth.v1.1-std.upf": {
+        "md5": "c78b3d5fa39d14f908533bf5d8be5349",
+        "cutoffs": [
+            60,
+            1080
+        ]
+    },
+    "Os.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
+        "md5": "7a896417a55a14cd83983afd8ca6dc76",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "P.paw.pbe.z_5.atompaw.jth.v1.1-std.upf": {
+        "md5": "7ed3bba570f332733e3308730c513789",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Pb.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
+        "md5": "619ce1afe669c7e34d024b847665f3e7",
+        "cutoffs": [
+            55,
+            440
+        ]
+    },
+    "Pd.paw.pbe.z_18.atompaw.jth.v1.1-std.upf": {
+        "md5": "8444a986a92c6759af66382df1a4d507",
+        "cutoffs": [
+            100,
+            800
+        ]
+    },
+    "Pm.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
+        "md5": "307b9d72666414d81dc532ba82208853",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Po.paw.pbe.z_6.atompaw.jth.v1.1-std.upf": {
+        "md5": "4eb00a4cfed377852e8ba988b4209486",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Pr.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
+        "md5": "945dc3eac4e7df35355b5a5aa792c80c",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Pt.paw.pbe.z_10.atompaw.jth.v1.1-std.upf": {
+        "md5": "006da381e0c6e5468ecb096eb1831a66",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Rb.paw.pbe.z_9.atompaw.jth.v1.1-std.upf": {
+        "md5": "efbd2babdc009109778be519f5788441",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Re.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
+        "md5": "2ce42cd03eb12d5afe7af53590e16fae",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Rh.paw.pbe.z_17.atompaw.jth.v1.1-std.upf": {
+        "md5": "0722f829e4bef223aa54ddb85ecef667",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Rn.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
+        "md5": "bfc721f3a56665495b71bdf42fa81a34",
+        "cutoffs": [
+            45,
+            360
+        ]
+    },
+    "Ru.paw.pbe.z_16.atompaw.jth.v1.1-std.upf": {
+        "md5": "2e3f92fc8ffd718eb3f0209fce501388",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "S.paw.pbe.z_6.atompaw.jth.v1.1-std.upf": {
+        "md5": "b731a9963d84a5af3ba81acd9aefe90a",
+        "cutoffs": [
+            35,
+            280
+        ]
+    },
+    "Sb.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
+        "md5": "848471e28e3daf93534af190de19a547",
+        "cutoffs": [
+            35,
+            280
+        ]
+    },
+    "Sc.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
+        "md5": "45a1157ed3f3ffa5e5d1cdae22cb3f29",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Se.paw.pbe.z_6.atompaw.jth.v1.1-std.upf": {
+        "md5": "49affa76ecd45ab7ded70065914d4544",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Si.paw.pbe.z_4.atompaw.jth.v1.1-std.upf": {
+        "md5": "e230b03ef6da258094419690e5e91186",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Sm.paw.pbe.z_16.atompaw.jth.v1.1-std.upf": {
+        "md5": "1d713af2f66a1936393d1a08fa8a4473",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Sn.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
+        "md5": "2954c7a4b6d20ed0ae83bcbf8eb5b96e",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Sr.paw.pbe.z_10.atompaw.jth.v1.1-std.upf": {
+        "md5": "319ac18bc1fcfd05b1b594714ea706c2",
+        "cutoffs": [
+            80,
+            640
+        ]
+    },
+    "Ta.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
+        "md5": "bc56b90cf564be39d610d100f7e7c28a",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Tb.paw.pbe.z_19.atompaw.jth.v1.1-std.upf": {
+        "md5": "f046cd8ae8ffe5ac5a772023b4e9f41c",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Tc.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
+        "md5": "00ee7b6d2bc8ad70a5a1a4a162b72f9f",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Te.paw.pbe.z_6.atompaw.jth.v1.1-std.upf": {
+        "md5": "242bb0616a08a08429a6af97469bc877",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Ti.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
+        "md5": "59dfcc404b50dfd5bd283678f4b8fd96",
+        "cutoffs": [
+            45,
+            360
+        ]
+    },
+    "Tl.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
+        "md5": "e56a55eecd762b67d6837be97d04ac45",
+        "cutoffs": [
+            80,
+            640
+        ]
+    },
+    "Tm.paw.pbe.z_23.atompaw.jth.v1.1-std.upf": {
+        "md5": "7069fb74e33993ef06b84b108621a7d7",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "V.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
+        "md5": "014e70d50f1ba61a5de5031a0d46ec47",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "W.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
+        "md5": "932f818efc55227fb2b34e6fa3467a88",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Xe.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
+        "md5": "a6df4439e3c85359b53a4c5b84a4b165",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Y.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
+        "md5": "c4a2a418533828a148b30eac62732ef7",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "Yb.paw.pbe.z_24.atompaw.jth.v1.1-std.upf": {
+        "md5": "0282f723ccc207f8ba56983eadb891f6",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Zn.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
+        "md5": "8661e8e144c286d47c89771d23f5d979",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Zr.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
+        "md5": "249c443721e478db81aa4621f5d4918a",
+        "cutoffs": [
+            45,
+            360
+        ]
+    }
+}

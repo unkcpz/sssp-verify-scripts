@@ -1,0 +1,681 @@
+{
+    "Ac.us.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
+        "md5": "3a78bb30464666358a3ec0edb47f6656",
+        "cutoffs": [
+            45,
+            360
+        ]
+    },
+    "Ag.us.pbe.z_19.ld1.psl.v1.0.0-high.upf": {
+        "md5": "755268830e49dc03e99d066ab53a118d",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Al.us.pbe.z_3.ld1.psl.v1.0.0-high.upf": {
+        "md5": "9dbec5778daf8494c91a074133a9c10e",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Am.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
+        "md5": "ee808eb17a40d1112d42ccbe8f304010",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Ar.us.pbe.z_8.ld1.psl.v1.0.0-high.upf": {
+        "md5": "b5e7776bcff0b2fae1348b0508ebe39d",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "As.us.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
+        "md5": "1213295d2b75b40ad58d953bec2d10ac",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "At.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
+        "md5": "171e941146fbb8d42c50c0ba61055d18",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Au.us.pbe.z_33.ld1.psl.v1.0.0-high.upf": {
+        "md5": "1d9e41da538b6dc07f111d8687d0037c",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "B.us.pbe.z_3.ld1.psl.v1.0.0-high.upf": {
+        "md5": "8030fb062c2c9c1d04bb20a4fba2e261",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Ba.us.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
+        "md5": "59a20b1da90a7dd93d34df65d0421ea0",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Be.us.pbe.z_4.ld1.psl.v1.0.0-high.upf": {
+        "md5": "495bfd64851946d7ab8f3dcbaa476d84",
+        "cutoffs": [
+            100,
+            800
+        ]
+    },
+    "Bi.us.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
+        "md5": "d248d17758f8bdc42af36d79b573c380",
+        "cutoffs": [
+            70,
+            560
+        ]
+    },
+    "Br.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
+        "md5": "f508d7b404c8dddf8cd67fdf71b72ff3",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "C.us.pbe.z_4.ld1.psl.v1.0.0-high.upf": {
+        "md5": "8ebfedd4e31b919fee5dfb8f13760aa1",
+        "cutoffs": [
+            35,
+            280
+        ]
+    },
+    "Ca.us.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
+        "md5": "5406528897c8d319858fb8b086148628",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Cd.us.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
+        "md5": "d7dfd74d062c7b2e68575752bad80c90",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Ce.us.pbe.z_22.ld1.psl.v1.0.0-high.upf": {
+        "md5": "c2bd9002fe54647f305697f75280101c",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Cl.us.pbe.z_7.ld1.psl.v1.0.0-high.upf": {
+        "md5": "fa60ceceb3c79951c992d1b39b085546",
+        "cutoffs": [
+            45,
+            360
+        ]
+    },
+    "Co.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
+        "md5": "bdb163960e83aa226fe047aa07d50d97",
+        "cutoffs": [
+            200,
+            3600
+        ]
+    },
+    "Cr.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
+        "md5": "6da320ca716d59bf9ef6b8f5a372602b",
+        "cutoffs": [
+            200,
+            3600
+        ]
+    },
+    "Cs.us.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
+        "md5": "f3859c749f9214de03cb97874c7e8d76",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Cu.us.pbe.z_19.ld1.psl.v1.0.0-high.upf": {
+        "md5": "039d94ee224199d29c02014ce0ba8e01",
+        "cutoffs": [
+            100,
+            800
+        ]
+    },
+    "Dy.us.pbe.z_30.ld1.psl.v1.0.0-high.upf": {
+        "md5": "3259a4e0520dc6654c9799c1c1d9d85e",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Er.us.pbe.z_32.ld1.psl.v1.0.0-high.upf": {
+        "md5": "fb0d8d1a8b28b9d18b19290eb447e779",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Eu.us.pbe.z_27.ld1.psl.v1.0.0-high.upf": {
+        "md5": "4d0caae6c8901d379c48d7043903d00d",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "F.us.pbe.z_7.ld1.psl.v1.0.0-high.upf": {
+        "md5": "f78986a28ed775ab5ea2f0c1679056b2",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Fe.us.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
+        "md5": "b6984fc37e83af79b0f993f66c6edd8c",
+        "cutoffs": [
+            80,
+            1440
+        ]
+    },
+    "Fr.us.pbe.z_19.ld1.psl.v1.0.0-high.upf": {
+        "md5": "ade83746489937a6cbe1762e5629ceb2",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Ga.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
+        "md5": "018e635c0b1cffb0566ae2913ab35587",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "Gd.us.pbe.z_28.ld1.psl.v1.0.0-high.upf": {
+        "md5": "e9ffd5399b0d80562f955b3cc46450de",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Ge.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
+        "md5": "95dac00c5695764a308695e3a0532751",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "H.us.pbe.z_1.ld1.psl.v1.0.0-high.upf": {
+        "md5": "e76273ea4edb62c5e3246d46a5fe24e3",
+        "cutoffs": [
+            40,
+            320
+        ]
+    },
+    "He.us.pbe.z_2.ld1.psl.v1.0.0-high.upf": {
+        "md5": "8be2413248f6c6706c1f68f23e85e48b",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Hf.us.pbe.z_26.ld1.psl.v1.0.0-high.spfn.upf": {
+        "md5": "db6daea86dadbe454a75e59a263d9bbe",
+        "cutoffs": [
+            200,
+            3600
+        ]
+    },
+    "Hf.us.pbe.z_36.ld1.psl.v1.0.0-high.spdfn.upf": {
+        "md5": "bcafd281ad59abffcd59dda1fadc9457",
+        "cutoffs": [
+            200,
+            3600
+        ]
+    },
+    "Hg.us.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
+        "md5": "7c50f568f265a3b69f1e5d8f70e84895",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Ho.us.pbe.z_31.ld1.psl.v1.0.0-high.upf": {
+        "md5": "431964b0f4d42cfc7acd0a564f976567",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "I.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
+        "md5": "32a82c1e4568088980cd5296624dfdac",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "In.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
+        "md5": "bab311481c2d5f6d263e56933ea49f39",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "Ir.us.pbe.z_31.ld1.psl.v1.0.0-high.upf": {
+        "md5": "38277204e703136c184b6a7dd74a78df",
+        "cutoffs": [
+            80,
+            640
+        ]
+    },
+    "K.us.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
+        "md5": "fcecb7de74b5f6270407dad7b5a10585",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Kr.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
+        "md5": "f0cc05981b8171c67079262aa32f0fb8",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "La.us.pbe.z_11.ld1.psl.v1.0.0-high.spfn.upf": {
+        "md5": "c86ea11d4303ded6a9bf8f5da99b3268",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "La.us.pbe.z_21.ld1.psl.v1.0.0-high.spdfn.upf": {
+        "md5": "54164fabc99de92d3f3c4e30ea6dc57c",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Li.us.pbe.z_3.ld1.psl.v1.0.0-high.upf": {
+        "md5": "bff64ed2354262ca1f71396e766daf5d",
+        "cutoffs": [
+            100,
+            800
+        ]
+    },
+    "Lu.us.pbe.z_35.ld1.psl.v1.0.0-high.upf": {
+        "md5": "160ab35cd674447db9cdcb333f23523e",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Mg.us.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
+        "md5": "084a1707ade3536a834027b26120ba80",
+        "cutoffs": [
+            100,
+            800
+        ]
+    },
+    "Mn.us.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
+        "md5": "0c85badbe3ea3a5337b5375c52517d6b",
+        "cutoffs": [
+            200,
+            3600
+        ]
+    },
+    "Mo.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
+        "md5": "89c1d62e13db63e713569f572c3a064f",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "N.us.pbe.z_5.ld1.psl.v1.0.0-high.upf": {
+        "md5": "33b9b5f8b078a470854b48d3d2327fa4",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Na.us.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
+        "md5": "572f09f8fa3f11a92ecd92802d520a8f",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Nb.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
+        "md5": "dc9c05f6bcd4295e791fc50979166747",
+        "cutoffs": [
+            65,
+            520
+        ]
+    },
+    "Nd.us.pbe.z_24.ld1.psl.v1.0.0-high.upf": {
+        "md5": "7c4c0f3b4788abf7b3a625017d756c7c",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Ne.us.pbe.z_8.ld1.psl.v1.0.0-high.upf": {
+        "md5": "71dd79285d7bef97836ef5486e7906cc",
+        "cutoffs": [
+            40,
+            320
+        ]
+    },
+    "Ni.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
+        "md5": "5dd2315cc9d64536aa328833823ea666",
+        "cutoffs": [
+            100,
+            1800
+        ]
+    },
+    "Np.us.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
+        "md5": "a526f0edc86f5615e3ea574b3341bdd4",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "O.us.pbe.z_6.ld1.psl.v1.0.0-high.upf": {
+        "md5": "11f51e30b63d1b5fe6d46813cec2e72d",
+        "cutoffs": [
+            65,
+            1170
+        ]
+    },
+    "Os.us.pbe.z_30.ld1.psl.v1.0.0-high.upf": {
+        "md5": "5b5de49dc9edbf719c2d632ed9b7f8fc",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "P.us.pbe.z_5.ld1.psl.v1.0.0-high.upf": {
+        "md5": "6c1fe66e5fe6a552967721b615186bc2",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Pa.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
+        "md5": "f481e928b423ccc23e0e5b5394d53b9b",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Pb.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
+        "md5": "39c7ecbe4d867e0569f72e75d989bd53",
+        "cutoffs": [
+            70,
+            560
+        ]
+    },
+    "Pd.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
+        "md5": "a12be17ab1a8eda2ab424c107779d930",
+        "cutoffs": [
+            80,
+            640
+        ]
+    },
+    "Pm.us.pbe.z_25.ld1.psl.v1.0.0-high.upf": {
+        "md5": "34d9acfa5b9096f5cf994d3a35fb16d5",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Po.us.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
+        "md5": "aa0c17ca2598bbca9fb39936fef69849",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Pr.us.pbe.z_23.ld1.psl.v1.0.0-high.upf": {
+        "md5": "5d333ee4f128ba924b0dafd78d91aea9",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Pt.us.pbe.z_32.ld1.psl.v1.0.0-high.upf": {
+        "md5": "6db0971d9e5fe6983b225c1263cdd731",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "Pu.us.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
+        "md5": "9feae4d1ae9481e1856755b4129febba",
+        "cutoffs": [
+            55,
+            440
+        ]
+    },
+    "Ra.us.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
+        "md5": "869a9ac7cbacdb0de5250731c4236e5a",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Rb.us.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
+        "md5": "81314ae7f9f984f97270fb95b2501389",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "Re.us.pbe.z_29.ld1.psl.v1.0.0-high.upf": {
+        "md5": "49c08d06deae4d5c61119909daa300dd",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "Rh.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
+        "md5": "6ffbee5c16ee4d7c331e0d399770a98c",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "Rn.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
+        "md5": "a97268c30fa51062d4f6167aa2b8880f",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Ru.us.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
+        "md5": "3a88c834c88579d44e905152d11c5db7",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "S.us.pbe.z_6.ld1.psl.v1.0.0-high.upf": {
+        "md5": "160ca4ed966265af135934ee88b59bf9",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Sb.us.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
+        "md5": "1705de2c2fc833f08dc7e9d564a09e54",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Sc.us.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
+        "md5": "377e4742a55e762715de384d5b7ab256",
+        "cutoffs": [
+            80,
+            640
+        ]
+    },
+    "Se.us.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
+        "md5": "3c5865e43877dcb2dac073daf0a6b869",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Si.us.pbe.z_4.ld1.psl.v1.0.0-high.upf": {
+        "md5": "8e298c2a3df40404922b81d9358831a3",
+        "cutoffs": [
+            30,
+            240
+        ]
+    },
+    "Sm.us.pbe.z_26.ld1.psl.v1.0.0-high.upf": {
+        "md5": "5bfa8cfade67d344aeea056012bc7130",
+        "cutoffs": [
+            120,
+            960
+        ]
+    },
+    "Sn.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
+        "md5": "9ee3c548d857985383a808ae61503de7",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Sr.us.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
+        "md5": "dba95846fcb925baf958eb243b4f1ace",
+        "cutoffs": [
+            60,
+            480
+        ]
+    },
+    "Ta.us.pbe.z_27.ld1.psl.v1.0.0-high.upf": {
+        "md5": "17330c2e856eae66da4ed7994455adce",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "Tb.us.pbe.z_29.ld1.psl.v1.0.0-high.upf": {
+        "md5": "bbfc06455b12909cd5267c6c461b9791",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Tc.us.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
+        "md5": "4bc0f095efa1704197e918dc5c508a47",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Te.us.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
+        "md5": "1d98b2b42987e6cda71937eae6a25efb",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "Th.us.pbe.z_12.ld1.psl.v1.0.0-high.upf": {
+        "md5": "98dab0388246de6d9523c93b13c28493",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Ti.us.pbe.z_12.ld1.psl.v1.0.0-high.upf": {
+        "md5": "4531c51eced847538e31bc86b4cde28e",
+        "cutoffs": [
+            80,
+            640
+        ]
+    },
+    "Tl.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
+        "md5": "4dabcbbece55e1d9d166e06d3780f3cb",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Tm.us.pbe.z_33.ld1.psl.v1.0.0-high.upf": {
+        "md5": "896a6a999d049640ceb9739df4b0b3f7",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "U.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
+        "md5": "1b90adf57fd8f285fe5a9a51b12a860d",
+        "cutoffs": [
+            80,
+            640
+        ]
+    },
+    "V.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
+        "md5": "ad5d7266845891f865a0c4c04d981f19",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "W.us.pbe.z_28.ld1.psl.v1.0.0-high.upf": {
+        "md5": "cf8f29518be5d5e69cdb427bcced1460",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    },
+    "Xe.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
+        "md5": "ce016ae876601a35848038d7f3be04c2",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Y.us.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
+        "md5": "9c76d294bdb80b42b6f23ad938648a45",
+        "cutoffs": [
+            90,
+            720
+        ]
+    },
+    "Yb.us.pbe.z_34.ld1.psl.v1.0.0-high.upf": {
+        "md5": "f66dd575b9808bf02ebdef68cb34eb37",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Zn.us.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
+        "md5": "ab9c96ac8e63700b610f4f531e361efe",
+        "cutoffs": [
+            150,
+            1200
+        ]
+    },
+    "Zr.us.pbe.z_12.ld1.psl.v1.0.0-high.upf": {
+        "md5": "55b0259ec2a7bec737de1fd152a31b98",
+        "cutoffs": [
+            200,
+            1600
+        ]
+    }
+}

@@ -24,6 +24,9 @@ requires-python = '>=3.9'
 dependencies = [
     "aiida-sssp-workflow~=4.2",
     "aiida-submission-controller~=0.1.0",
+    "tqdm~=4.0",
+    "h5py",
+    "matplotlib",
 ]
 
 [project.urls]
@@ -31,4 +34,5 @@ Source = 'https://github.com/unkcpz/sssp-verify-scripts'
 
 [project.scripts]
 atompaw-regenerate = "sssp_verify_scripts.scripts:atompaw_regenerate.main"
-
+remove_failed_wc = "sssp_verify_scripts.scripts:remove_failed_wc.main"
+import_upf_group = "sssp_verify_scripts.scripts:import_upf_group.main"
