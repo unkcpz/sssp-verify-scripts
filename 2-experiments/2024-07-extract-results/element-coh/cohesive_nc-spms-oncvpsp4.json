@@ -1,0 +1,347 @@
+{
+    "Ag.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
+        "md5": "061d234e0f4d616d29b87bd0d60382f3",
+        "element": "Ag",
+        "cohesive_energy_at_max": -1.9755271864829
+    },
+    "Al.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
+        "md5": "5565b45fdbe36db6c96fd87e34f83df6",
+        "element": "Al",
+        "cohesive_energy_at_max": -3.0949603715747
+    },
+    "Ar.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
+        "md5": "d799d352d87b8bbcdea9ff1a2f215339",
+        "element": "Ar",
+        "cohesive_energy_at_max": -0.012877242970035
+    },
+    "As.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "6a7f30dc3dad2e477025c7eedd1590b6",
+        "element": "As",
+        "cohesive_energy_at_max": -4.4123244660063
+    },
+    "Au.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
+        "md5": "49e23284cd9981056426cad96e23fede",
+        "element": "Au",
+        "cohesive_energy_at_max": -2.578955056933
+    },
+    "B.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
+        "md5": "5668651e8bce7ed162579456daeea4a6",
+        "element": "B",
+        "cohesive_energy_at_max": -5.8166028075117
+    },
+    "Ba.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
+        "md5": "9ed80c37e217c9f29033b360ef1cca51",
+        "element": "Ba",
+        "cohesive_energy_at_max": -1.0882862873292
+    },
+    "Be.nc.pbe.z_4.oncvpsp4.spms.v1.upf": {
+        "md5": "b4b253fc820054609693963dd7acf43e",
+        "element": "Be",
+        "cohesive_energy_at_max": -2.15390862151
+    },
+    "Bi.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "4a2689a81101bad619841ee6c7dcb06f",
+        "element": "Bi",
+        "cohesive_energy_at_max": -3.743765604956
+    },
+    "Br.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
+        "md5": "3c32c7f68ba2cea499b4bda914da2bde",
+        "element": "Br",
+        "cohesive_energy_at_max": -1.2194316178687
+    },
+    "C.nc.pbe.z_4.oncvpsp4.spms.v1.upf": {
+        "md5": "1830815dda0152e4d6ab2c6dac390a80",
+        "element": "C",
+        "cohesive_energy_at_max": -9.0905404754022
+    },
+    "Ca.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
+        "md5": "a79b2baeccb58408740f89fdce300970",
+        "element": "Ca",
+        "cohesive_energy_at_max": -1.0676130509682
+    },
+    "Cd.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
+        "md5": "824d5a76c24bf61881d6b06fb45c9686",
+        "element": "Cd",
+        "cohesive_energy_at_max": -0.48163570465022
+    },
+    "Cl.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
+        "md5": "ffc43260514206b174ab5d98e6c1ef90",
+        "element": "Cl",
+        "cohesive_energy_at_max": -1.2061632112437
+    },
+    "Co.nc.pbe.z_17.oncvpsp4.spms.v1.upf": {
+        "md5": "3ac903b308c672f8bf9f4cd16543a038",
+        "element": "Co",
+        "cohesive_energy_at_max": -5.8648326036605
+    },
+    "Cr.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "b2cc2e610e0aa5ac79c83f2d4b8e54a0",
+        "element": "Cr",
+        "cohesive_energy_at_max": -7.2947702594797
+    },
+    "Cs.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
+        "md5": "da6bfc295964cfcff4e40f26d273e712",
+        "element": "Cs",
+        "cohesive_energy_at_max": -0.68812663484312
+    },
+    "Cu.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
+        "md5": "900d8f0839bc5970f3576802751937be",
+        "element": "Cu",
+        "cohesive_energy_at_max": -2.7591442802441
+    },
+    "F.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
+        "md5": "14429741c3970f693a4f84dcb0ca3b12",
+        "element": "F",
+        "cohesive_energy_at_max": -1.1992239683437
+    },
+    "Fe.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "8153c8d6a1610eb862e3c8c232ee9c30",
+        "element": "Fe",
+        "cohesive_energy_at_max": -7.0541292470521
+    },
+    "Ga.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "6d95632eb484eb8ddbc07a7526ebee8a",
+        "element": "Ga",
+        "cohesive_energy_at_max": -2.6999195204637
+    },
+    "Ge.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "b9ac9aadfd371d3108278194747fb964",
+        "element": "Ge",
+        "cohesive_energy_at_max": -4.5180687863772
+    },
+    "H.nc.pbe.z_1.oncvpsp4.spms.v1.upf": {
+        "md5": "52296a9447f5d71c7954fb2768d6a819",
+        "element": "H",
+        "cohesive_energy_at_max": -2.6158870948695
+    },
+    "He.nc.pbe.z_2.oncvpsp4.spms.v1.upf": {
+        "md5": "60c8a33a18040f777e61258b64a18e99",
+        "element": "He",
+        "cohesive_energy_at_max": -0.0067042045979946
+    },
+    "Hf.nc.pbe.z_12.oncvpsp4.spms.v1.upf": {
+        "md5": "403f3cb9c148ab75c02f2773e2b4ab78",
+        "element": "Hf",
+        "cohesive_energy_at_max": -4.9299729400257
+    },
+    "Hg.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
+        "md5": "886bc33e42733a96aa2e20891a719df7",
+        "element": "Hg",
+        "cohesive_energy_at_max": -0.11527129790011
+    },
+    "I.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
+        "md5": "5b293a2b2afd0e3537a4bb43b908b57d",
+        "element": "I",
+        "cohesive_energy_at_max": -1.1931722246687
+    },
+    "In.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "8493b004ae6b0efa27ff89b23df371f3",
+        "element": "In",
+        "cohesive_energy_at_max": -2.3067793165637
+    },
+    "Ir.nc.pbe.z_17.oncvpsp4.spms.v1.upf": {
+        "md5": "4f8a79564e6ceeec4cf9957f9f0f2db9",
+        "element": "Ir",
+        "cohesive_energy_at_max": -8.0041332021801
+    },
+    "K.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
+        "md5": "bc137aa45e6c151ba842fdf907c13e99",
+        "element": "K",
+        "cohesive_energy_at_max": -0.81212822894315
+    },
+    "Kr.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
+        "md5": "03b750ecc943040ee6d6ad45fc237c2c",
+        "element": "Kr",
+        "cohesive_energy_at_max": -0.014134068779981
+    },
+    "La.nc.pbe.z_11.oncvpsp4.spms.v1.upf": {
+        "md5": "3939e966d4514d6a4b7bdbf486cfc25d",
+        "element": "La",
+        "cohesive_energy_at_max": -3.5961002435021
+    },
+    "Li.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
+        "md5": "6f21d014c55e3b006af3e8c3de7cf6eb",
+        "element": "Li",
+        "cohesive_energy_at_max": -1.433314044188
+    },
+    "Mg.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
+        "md5": "6a0b0868bd60106ec43f119f864978b2",
+        "element": "Mg",
+        "cohesive_energy_at_max": -0.80604444390019
+    },
+    "Mn.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "85fbf61bace8b586ed120892eebe5990",
+        "element": "Mn",
+        "cohesive_energy_at_max": -7.6079326019585
+    },
+    "Mo.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "2a40cd44d341a8576e1382bcab6aa217",
+        "element": "Mo",
+        "cohesive_energy_at_max": -8.8064188016237
+    },
+    "N.nc.pbe.z_5.oncvpsp4.spms.v1.upf": {
+        "md5": "49a1db1b2e569f0e653c71e8aae5d6fa",
+        "element": "N",
+        "cohesive_energy_at_max": -5.248081155501
+    },
+    "Na.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
+        "md5": "1a15dfbe740de7456faba99c6b543ea8",
+        "element": "Na",
+        "cohesive_energy_at_max": -1.0205395345331
+    },
+    "Nb.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "8fbc13f4eb11b35701d9ec36f0d7872e",
+        "element": "Nb",
+        "cohesive_energy_at_max": -7.374009876097
+    },
+    "Ne.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
+        "md5": "76e30c6518f0be98b25e63a39e855976",
+        "element": "Ne",
+        "cohesive_energy_at_max": -0.011934980799992
+    },
+    "Ni.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
+        "md5": "6d7a04bdca84783c03c353c95de999c1",
+        "element": "Ni",
+        "cohesive_energy_at_max": -4.3915053765622
+    },
+    "O.nc.pbe.z_6.oncvpsp4.spms.v1.upf": {
+        "md5": "77eacdbac5615a8e38e2692d02ca795d",
+        "element": "O",
+        "cohesive_energy_at_max": -3.1830323951122
+    },
+    "Os.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "ab9dd3afec5eaf8a08c8ae1e671b8e2c",
+        "element": "Os",
+        "cohesive_energy_at_max": -9.8128099133874
+    },
+    "P.nc.pbe.z_5.oncvpsp4.spms.v1.upf": {
+        "md5": "bfbd6e557eb6fb932959f1710eaa032a",
+        "element": "P",
+        "cohesive_energy_at_max": -4.879513102896
+    },
+    "Pb.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "787987a5e9ac568b436a41615e6d31df",
+        "element": "Pb",
+        "cohesive_energy_at_max": -3.343103834427
+    },
+    "Pd.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
+        "md5": "5b7e326e375a5823bd1acb3f7db81304",
+        "element": "Pd",
+        "cohesive_energy_at_max": -2.8963378169392
+    },
+    "Pt.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
+        "md5": "1c029bec8d29987ef0fe395cea4cc85e",
+        "element": "Pt",
+        "cohesive_energy_at_max": -5.2134395677103
+    },
+    "Rb.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
+        "md5": "79e81c19d7405c596eb647376beb9e77",
+        "element": "Rb",
+        "cohesive_energy_at_max": -0.73853429411304
+    },
+    "Re.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "144c09c38ca778b2e0b902255dc20958",
+        "element": "Re",
+        "cohesive_energy_at_max": -10.034086897123
+    },
+    "Rh.nc.pbe.z_17.oncvpsp4.spms.v1.upf": {
+        "md5": "1cc645b6b903a5845827e4d1faf2b013",
+        "element": "Rh",
+        "cohesive_energy_at_max": -5.5047767480523
+    },
+    "Ru.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "eab2bc4a64bfce9c6289c338288d5b43",
+        "element": "Ru",
+        "cohesive_energy_at_max": -7.8522143613441
+    },
+    "S.nc.pbe.z_6.oncvpsp4.spms.v1.upf": {
+        "md5": "a47eda68eb6e58d5a3108aaa63274a20",
+        "element": "S",
+        "cohesive_energy_at_max": -3.2124534109221
+    },
+    "Sb.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "5424b466dffa8dd89175bf01c378fdf7",
+        "element": "Sb",
+        "cohesive_energy_at_max": -3.8964660247066
+    },
+    "Sc.nc.pbe.z_11.oncvpsp4.spms.v1.upf": {
+        "md5": "4110f3ec70100346d872677bae63db1b",
+        "element": "Sc",
+        "cohesive_energy_at_max": -2.9104545384396
+    },
+    "Se.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "2236a9ecc8de6e0593dc0cacb39e66aa",
+        "element": "Se",
+        "cohesive_energy_at_max": -3.0923564462769
+    },
+    "Si.nc.pbe.z_4.oncvpsp4.spms.v1.upf": {
+        "md5": "5bc9ac70f20c2e07cb4af10970cfbac5",
+        "element": "Si",
+        "cohesive_energy_at_max": -5.4181747514521
+    },
+    "Sn.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "06c49158bc3f9dcbeec2189cc921168d",
+        "element": "Sn",
+        "cohesive_energy_at_max": -3.8385041453271
+    },
+    "Sr.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
+        "md5": "f5d852a78f1e912b41455597bfd796c9",
+        "element": "Sr",
+        "cohesive_energy_at_max": -0.86317195430001
+    },
+    "Ta.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "77b2c64cd97916623c5aef1c67923dce",
+        "element": "Ta",
+        "cohesive_energy_at_max": -7.0920477656714
+    },
+    "Tc.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
+        "md5": "772b7f2e8385370850142dce151cb7bb",
+        "element": "Tc",
+        "cohesive_energy_at_max": -8.9566979525125
+    },
+    "Te.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
+        "md5": "9006b7d045390dc8b33f4554bc6f8bc1",
+        "element": "Te",
+        "cohesive_energy_at_max": -2.8277198917272
+    },
+    "Ti.nc.pbe.z_12.oncvpsp4.spms.v1.upf": {
+        "md5": "dc4daf9593efddec852809411bcd81c2",
+        "element": "Ti",
+        "cohesive_energy_at_max": -4.7517998080737
+    },
+    "Tl.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "a5b91adbafc60bc9e05c57b9e0c130c4",
+        "element": "Tl",
+        "cohesive_energy_at_max": -1.9563381950138
+    },
+    "V.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
+        "md5": "ab437d55ef5231f85b6fb368ed235393",
+        "element": "V",
+        "cohesive_energy_at_max": -6.2774900363665
+    },
+    "W.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
+        "md5": "0e00a6ee5a4169147a74fc9266817fe0",
+        "element": "W",
+        "cohesive_energy_at_max": -8.9553662273506
+    },
+    "Xe.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
+        "md5": "6b4ef680ce28027ea1ae563b14eecdb1",
+        "element": "Xe",
+        "cohesive_energy_at_max": -0.015372594869973
+    },
+    "Y.nc.pbe.z_11.oncvpsp4.spms.v1.upf": {
+        "md5": "d0df407de3616335240fb72b0ea8f863",
+        "element": "Y",
+        "cohesive_energy_at_max": -2.873299231127
+    },
+    "Zn.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
+        "md5": "352b145d8a55b7e67f7c942c59f0f1cd",
+        "element": "Zn",
+        "cohesive_energy_at_max": -0.67000058799931
+    },
+    "Zr.nc.pbe.z_12.oncvpsp4.spms.v1.upf": {
+        "md5": "ff29dc233249eb0a271426fc79dc99a4",
+        "element": "Zr",
+        "cohesive_energy_at_max": -5.1605234271201
+    }
+}

@@ -19,10 +19,10 @@ from aiida_sssp_workflow.workflows.transferability.eos import extract_eos as tra
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
-def extract_convergence(lib_name, property, f_compute_xy, override=False):
+def extract_convergence(lib_name, property, conf, f_compute_xy, override=False):
 
-    with h5py.File('pp_verify_convergence.h5', 'a') as f:
-        group_name = f"validate/{lib_name}/convergence/{property}/standard/dc"
+    with h5py.File(f'pp_verify_convergence_{conf}.h5', 'a') as f:
+        group_name = f"validate/{lib_name}/convergence/{property}/standard/{conf}"
         group = orm.load_group(group_name)
 
         print(f"--- In processing group {group_name} ---")
@@ -33,7 +33,7 @@ def extract_convergence(lib_name, property, f_compute_xy, override=False):
             md5 = node.inputs.pseudo.md5
 
             if node.exit_status != 0:
-                eprint(f"node {node.uuid} verify on {filename} not okay")
+                eprint(f"node {node.uuid} verify on {filename} on/ conf {conf}/ property {property} not okay")
                 continue
 
 
@@ -153,15 +153,27 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument('--override', action='store_true', default=False)
     parser.add_argument('--group', help='`convergence` or `eos`')
+    parser.add_argument('--conf', help='bcc, fcc, dc, sc')
 
     args = parser.parse_args()
 
     for lib_name in [
         "nc-dojo-v0.4.1-std",
+        "nc-dojo-v0.4.1-str",
+        "nc-dojo-v0.5.0-std",
+        "nc-sg15-oncvpsp4",
+        "nc-spms-oncvpsp4",
         "paw-jth-v1.1-std",
+        "paw-jth-v1.1-str",
+        "paw-lanthanides-wentzcovitch",
+        "paw-psl-v0.x",
+        "paw-psl-v1.0.0-high",
+        "paw-psl-v1.0.0-low",
+        "paw-actinides-marburg",
         "us-gbrv-v1.x-upf2",
         "us-psl-v1.0.0-high",
-        "nc-spms-oncvpsp4",
+        "us-psl-v1.0.0-low",
+        "us-psl-v0.x",
     ]:
         if args.group == 'convergence':
             for property in [
@@ -186,7 +198,7 @@ if __name__ == "__main__":
                     case _:
                         raise ValueError(f"Unknow property: {property}")
 
-                extract_convergence(lib_name, property, _compute_xy, override=args.override)
+                extract_convergence(lib_name, property, args.conf, _compute_xy, override=args.override)
         elif args.group == 'eos':
             extract_eos(lib_name, override=args.override)
         else:

@@ -52,9 +52,9 @@ def launch(protocol, curate_type, library, concurrent, unit_num_cpus, ecutwfc=No
     }
 
     if ecutwfc is not None:
-        inputs['ecutoff'] = ecutwfc
+        inputs['ecutwfc'] = ecutwfc
         target_group_label = f"validate/{lib_name}/transferability/{property}/{protocol}-{curate_type}-{ecutwfc}"
-        inputs["group_label"]= target_group_label,
+        inputs["group_label"]= target_group_label
     
     if cutoff_mapping is not None:
         # XXX:flasky

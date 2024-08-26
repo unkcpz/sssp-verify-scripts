@@ -1,0 +1,327 @@
+{
+    "Ag.us.pbe.z_19.uspp.gbrv.v1.4.upf": {
+        "md5": "17ac7ad08eae61c708ae8eb32081b916",
+        "element": "Ag",
+        "cohesive_energy_at_max": -1.966909001183
+    },
+    "Al.us.pbe.z_3.uspp.gbrv.v1.upf": {
+        "md5": "8d01a4a0139395e92628f9a2116f9b59",
+        "element": "Al",
+        "cohesive_energy_at_max": -3.0963059064587
+    },
+    "As.us.pbe.z_5.uspp.gbrv.v1.upf": {
+        "md5": "7bfdf229077c77ec26dae18040720e86",
+        "element": "As",
+        "cohesive_energy_at_max": -4.405848564876
+    },
+    "Au.us.pbe.z_11.uspp.gbrv.v1.upf": {
+        "md5": "a59d1e44b60e3192376fbb3d13302609",
+        "element": "Au",
+        "cohesive_energy_at_max": -2.5688590214329
+    },
+    "B.us.pbe.z_3.uspp.gbrv.v1.4.upf": {
+        "md5": "8f5efb8d1ba60398edacd0a3799a7ce6",
+        "element": "B",
+        "cohesive_energy_at_max": -5.8179363013577
+    },
+    "Ba.us.pbe.z_10.uspp.gbrv.v1.upf": {
+        "md5": "1ab7fa624303671c6258588ebb3215c3",
+        "element": "Ba",
+        "cohesive_energy_at_max": -1.0729329444995
+    },
+    "Be.us.pbe.z_4.uspp.gbrv.v1.4.upf": {
+        "md5": "7f42de0c655ae8976edd98a6a0953a2e",
+        "element": "Be",
+        "cohesive_energy_at_max": -2.1526792112
+    },
+    "Bi.us.pbe.z_15.uspp.gbrv.v1.upf": {
+        "md5": "431177eca1657999c0cd1a40c6f7fc08",
+        "element": "Bi",
+        "cohesive_energy_at_max": -3.7509852612061
+    },
+    "Br.us.pbe.z_7.uspp.gbrv.v1.4.upf": {
+        "md5": "ca326d64590ba58d53d77f398b355995",
+        "element": "Br",
+        "cohesive_energy_at_max": -1.2177590702038
+    },
+    "C.us.pbe.z_4.uspp.gbrv.v1.2.upf": {
+        "md5": "9630a62af89b2189feb759fc7f027601",
+        "element": "C",
+        "cohesive_energy_at_max": -9.1087548911121
+    },
+    "Ca.us.pbe.z_10.uspp.gbrv.v1.upf": {
+        "md5": "fc42f92ad90caa92ee5a436b4a003fed",
+        "element": "Ca",
+        "cohesive_energy_at_max": -1.0636988294926
+    },
+    "Cd.us.pbe.z_12.uspp.gbrv.v1.upf": {
+        "md5": "6563f9956b0ce58c8bbad6911e24d6f0",
+        "element": "Cd",
+        "cohesive_energy_at_max": -0.47912491030002
+    },
+    "Cl.us.pbe.z_7.uspp.gbrv.v1.4.upf": {
+        "md5": "c2567ec560d4e2c192dff8a467afae61",
+        "element": "Cl",
+        "cohesive_energy_at_max": -1.2060040926787
+    },
+    "Co.us.pbe.z_17.uspp.gbrv.v1.2.upf": {
+        "md5": "549f38609b1f25c7fc74fc00e68db7d4",
+        "element": "Co",
+        "cohesive_energy_at_max": -5.9779239976456
+    },
+    "Cr.us.pbe.z_14.uspp.gbrv.v1.5.upf": {
+        "md5": "9b736d9d19c4d046a71125f6990bf61d",
+        "element": "Cr",
+        "cohesive_energy_at_max": -7.2960842291018
+    },
+    "Cs.us.pbe.z_9.uspp.gbrv.v1.upf": {
+        "md5": "45044108945a0ed10b3c66ed67d7548f",
+        "element": "Cs",
+        "cohesive_energy_at_max": -0.68801146269311
+    },
+    "Cu.us.pbe.z_19.uspp.gbrv.v1.2.upf": {
+        "md5": "b30b5221736bee112e02ff0bb6f80e61",
+        "element": "Cu",
+        "cohesive_energy_at_max": -2.790588258139
+    },
+    "F.us.pbe.z_7.uspp.gbrv.v1.4.upf": {
+        "md5": "2ad75c09ea59c8a10a30abee8f5a768d",
+        "element": "F",
+        "cohesive_energy_at_max": -1.1988559343638
+    },
+    "Fe.us.pbe.z_16.uspp.gbrv.v1.5.upf": {
+        "md5": "45da45e270c922b0bd7bedd884623fc8",
+        "element": "Fe",
+        "cohesive_energy_at_max": -7.1529418077548
+    },
+    "Ga.us.pbe.z_19.uspp.gbrv.v1.4.upf": {
+        "md5": "bf59247be121d73eeaca78b7d1025bb9",
+        "element": "Ga",
+        "cohesive_energy_at_max": -2.7023769803636
+    },
+    "Ge.us.pbe.z_14.uspp.gbrv.v1.4.upf": {
+        "md5": "d7c446ad6120c1a23996ed33288df4cd",
+        "element": "Ge",
+        "cohesive_energy_at_max": -4.5243310101273
+    },
+    "H.us.pbe.z_1.uspp.gbrv.v1.4.upf": {
+        "md5": "20c3f3a1d546522821f857ce3759647e",
+        "element": "H",
+        "cohesive_energy_at_max": -2.614796802763
+    },
+    "Hf.us.pbe.z_12.uspp.gbrv.plus4_v1.upf": {
+        "md5": "83b306457c51813cd4d1fcf6abd35abc",
+        "element": "Hf",
+        "cohesive_energy_at_max": -4.8648146700498
+    },
+    "Hf.us.pbe.z_12.uspp.gbrv.v1.upf": {
+        "md5": "6064a524585210b2e313a4aad9430059",
+        "element": "Hf",
+        "cohesive_energy_at_max": -4.9135403937171
+    },
+    "Hg.us.pbe.z_12.uspp.gbrv.v1.upf": {
+        "md5": "33fee92b4563b89c80ae96aa0c9f6644",
+        "element": "Hg",
+        "cohesive_energy_at_max": -0.11387460565015
+    },
+    "I.us.pbe.z_7.uspp.gbrv.v1.upf": {
+        "md5": "90bc8ecfc7de866f0e4062f79badfccd",
+        "element": "I",
+        "cohesive_energy_at_max": -1.1951230767937
+    },
+    "In.us.pbe.z_13.uspp.gbrv.v1.4.upf": {
+        "md5": "dba72931c1559219330324fd251281c9",
+        "element": "In",
+        "cohesive_energy_at_max": -2.3099667219137
+    },
+    "Ir.us.pbe.z_15.uspp.gbrv.v1.2.upf": {
+        "md5": "9167a5d3890d0844de2648af4a3a310c",
+        "element": "Ir",
+        "cohesive_energy_at_max": -7.9702606081128
+    },
+    "K.us.pbe.z_9.uspp.gbrv.v1.4.upf": {
+        "md5": "6c77a6164ad665bcc3d93a37da0b8bf4",
+        "element": "K",
+        "cohesive_energy_at_max": -0.81189965336307
+    },
+    "La.us.pbe.z_11.uspp.gbrv.v1.upf": {
+        "md5": "536c78e13afc561aef8ab88cb8980aef",
+        "element": "La",
+        "cohesive_energy_at_max": -3.7872845664031
+    },
+    "Li.us.pbe.z_3.uspp.gbrv.v1.4.upf": {
+        "md5": "ab40f926ca6decaa01295ae7eb5ebb1a",
+        "element": "Li",
+        "cohesive_energy_at_max": -1.433822556918
+    },
+    "Mg.us.pbe.z_10.uspp.gbrv.v1.4.upf": {
+        "md5": "6ff864fbc24a44e5dee236984f6edeb4",
+        "element": "Mg",
+        "cohesive_energy_at_max": -0.80536504365
+    },
+    "Mn.us.pbe.z_15.uspp.gbrv.v1.5.upf": {
+        "md5": "b9cd9d79f02b605291ce9f884a381a5a",
+        "element": "Mn",
+        "cohesive_energy_at_max": -7.6287727120662
+    },
+    "Mo.us.pbe.z_14.uspp.gbrv.v1.upf": {
+        "md5": "7a5c308f7af4c55fcd36207a60bcaaa5",
+        "element": "Mo",
+        "cohesive_energy_at_max": -8.8145956862595
+    },
+    "N.us.pbe.z_5.uspp.gbrv.v1.2.upf": {
+        "md5": "e3bebb4190c0867c92a1b333844a0f10",
+        "element": "N",
+        "cohesive_energy_at_max": -5.252051772541
+    },
+    "Na.us.pbe.z_9.uspp.gbrv.v1.5.upf": {
+        "md5": "99edccae9c5677ef78a7ae1f80e37397",
+        "element": "Na",
+        "cohesive_energy_at_max": -1.0268699907831
+    },
+    "Nb.us.pbe.z_13.uspp.gbrv.v1.upf": {
+        "md5": "b09789d37be87f606c5a990407ec1579",
+        "element": "Nb",
+        "cohesive_energy_at_max": -7.3929842376358
+    },
+    "Ni.us.pbe.z_18.uspp.gbrv.v1.4.upf": {
+        "md5": "4e8ca7503af416f909858f7b8d0800e1",
+        "element": "Ni",
+        "cohesive_energy_at_max": -4.5087355539972
+    },
+    "O.us.pbe.z_6.uspp.gbrv.v1.2.upf": {
+        "md5": "bc349e3f19c2ec82b61ad01ca30f7aaf",
+        "element": "O",
+        "cohesive_energy_at_max": -3.1629329108072
+    },
+    "Os.us.pbe.z_16.uspp.gbrv.v1.2.upf": {
+        "md5": "4dd34f513fc3f2efd4f223ac363d1f44",
+        "element": "Os",
+        "cohesive_energy_at_max": -9.816515763634
+    },
+    "P.us.pbe.z_5.uspp.gbrv.v1.5.upf": {
+        "md5": "25f32ed205fb300b56b5102a4791bcd5",
+        "element": "P",
+        "cohesive_energy_at_max": -4.882614996526
+    },
+    "Pb.us.pbe.z_14.uspp.gbrv.v1.upf": {
+        "md5": "1eabeb186ee5fefe29768e67d25e6702",
+        "element": "Pb",
+        "cohesive_energy_at_max": -3.3494229979769
+    },
+    "Pd.us.pbe.z_16.uspp.gbrv.v1.4.upf": {
+        "md5": "080cedf54acebfe8f093c76678ee16f4",
+        "element": "Pd",
+        "cohesive_energy_at_max": -2.8718316531922
+    },
+    "Pt.us.pbe.z_16.uspp.gbrv.v1.4.upf": {
+        "md5": "cf27e86981542b29ac6f918ec550e2e9",
+        "element": "Pt",
+        "cohesive_energy_at_max": -5.1999123127634
+    },
+    "Rb.us.pbe.z_9.uspp.gbrv.v1.upf": {
+        "md5": "763f9f6a8a6fc368eed4d5122ba40a04",
+        "element": "Rb",
+        "cohesive_energy_at_max": -0.73845646954317
+    },
+    "Re.us.pbe.z_15.uspp.gbrv.v1.2.upf": {
+        "md5": "610707a9bcf86b9a5e9a4e28314b9092",
+        "element": "Re",
+        "cohesive_energy_at_max": -10.015587986371
+    },
+    "Rh.us.pbe.z_15.uspp.gbrv.v1.4.upf": {
+        "md5": "d98c66f6f830ec3375d5605c50f35e50",
+        "element": "Rh",
+        "cohesive_energy_at_max": -5.5032078756817
+    },
+    "Ru.us.pbe.z_16.uspp.gbrv.v1.2.upf": {
+        "md5": "0222dab65b6a4de6b98c6eae3a38aba9",
+        "element": "Ru",
+        "cohesive_energy_at_max": -7.8517383662575
+    },
+    "S.us.pbe.z_6.uspp.gbrv.v1.4.upf": {
+        "md5": "53a20ef57d924d061fa0151a33d74f75",
+        "element": "S",
+        "cohesive_energy_at_max": -3.2126255909521
+    },
+    "Sb.us.pbe.z_15.uspp.gbrv.v1.4.upf": {
+        "md5": "8ae8e40654f0bfc102410da10ac3eb80",
+        "element": "Sb",
+        "cohesive_energy_at_max": -3.8939107397564
+    },
+    "Sc.us.pbe.z_11.uspp.gbrv.v1.upf": {
+        "md5": "d41376e04d1dc44d6498e677a2c0e43c",
+        "element": "Sc",
+        "cohesive_energy_at_max": -2.9048433471519
+    },
+    "Se.us.pbe.z_6.uspp.gbrv.v1.upf": {
+        "md5": "5da85418b3c613bde689b77ee42c7375",
+        "element": "Se",
+        "cohesive_energy_at_max": -3.0901048403472
+    },
+    "Si.us.pbe.z_4.uspp.gbrv.v1.upf": {
+        "md5": "d01554f7e5fd0015c1656b7bbaf5afdc",
+        "element": "Si",
+        "cohesive_energy_at_max": -5.4233599486022
+    },
+    "Sn.us.pbe.z_14.uspp.gbrv.v1.4.upf": {
+        "md5": "71a5b81999899f82c3bf07e2005c161c",
+        "element": "Sn",
+        "cohesive_energy_at_max": -3.8492699210269
+    },
+    "Sr.us.pbe.z_10.uspp.gbrv.v1.upf": {
+        "md5": "a1984c640e3bf4f99544c2eddc58a491",
+        "element": "Sr",
+        "cohesive_energy_at_max": -0.85517827024
+    },
+    "Ta.us.pbe.z_13.uspp.gbrv.v1.upf": {
+        "md5": "d9fba7947cdf51955f6edd183affc9a3",
+        "element": "Ta",
+        "cohesive_energy_at_max": -7.0877902045715
+    },
+    "Tc.us.pbe.z_15.uspp.gbrv.v1.upf": {
+        "md5": "70022874b2f3b9aa75166312fbf6fa11",
+        "element": "Tc",
+        "cohesive_energy_at_max": -9.0075542594068
+    },
+    "Te.us.pbe.z_6.uspp.gbrv.v1.upf": {
+        "md5": "8677b44cbb5033ae14f3f9c7cca605d9",
+        "element": "Te",
+        "cohesive_energy_at_max": -2.8355194905972
+    },
+    "Ti.us.pbe.z_12.uspp.gbrv.v1.4.upf": {
+        "md5": "39b9a197db899696a42f7e64c5623054",
+        "element": "Ti",
+        "cohesive_energy_at_max": -4.7481011007651
+    },
+    "Tl.us.pbe.z_13.uspp.gbrv.v1.2.upf": {
+        "md5": "eacdd5e7dd9fc131537eb762fc3edfaf",
+        "element": "Tl",
+        "cohesive_energy_at_max": -1.9544155747637
+    },
+    "V.us.pbe.z_13.uspp.gbrv.v1.4.upf": {
+        "md5": "1384e9cdd70c12c7b43991c5bbfa5efc",
+        "element": "V",
+        "cohesive_energy_at_max": -6.2842300919483
+    },
+    "W.us.pbe.z_14.uspp.gbrv.v1.2.upf": {
+        "md5": "f4db61329a56d2b5505d27ea886a62b5",
+        "element": "W",
+        "cohesive_energy_at_max": -8.9417912165004
+    },
+    "Y.us.pbe.z_11.uspp.gbrv.v1.4.upf": {
+        "md5": "fb5e1a20ac91c46591370e6dc03f6f0b",
+        "element": "Y",
+        "cohesive_energy_at_max": -2.8769007258006
+    },
+    "Zn.us.pbe.z_20.uspp.gbrv.v1.upf": {
+        "md5": "d626898e36f3f529a7812b7b4e0995bd",
+        "element": "Zn",
+        "cohesive_energy_at_max": -0.69189377899966
+    },
+    "Zr.us.pbe.z_12.uspp.gbrv.v1.upf": {
+        "md5": "e9ee4c7e02641501111054b1987ac777",
+        "element": "Zr",
+        "cohesive_energy_at_max": -5.1729827032502
+    }
+}

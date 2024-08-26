@@ -1,5 +1,6 @@
 _build/
 *.pyc
+**/*.png
 
 # the temporary files of the ld1 generationg process
 ld1.test

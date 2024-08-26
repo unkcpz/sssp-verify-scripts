@@ -5,14 +5,30 @@ from matplotlib import pyplot as plt
 import numpy as np
 from aiida_sssp_workflow.utils.element import ALL_ELEMENTS, HIGH_DUAL_ELEMENTS
 import sys
+from pathlib import Path
 
 from matplotlib.lines import Line2D
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
 
+# pre--
+CONF = "bcc"
+
+# cri
+CRITERIA = "efficiency"
+
+if CRITERIA == "efficiency":
+	EOS_C_FACTOR = 0.2
+	PRESSURE_C_FACTOR = 1
+	PHONON_C_FACTOR = 2
+elif CRITERIA == "precision":
+	EOS_C_FACTOR = 0.1
+	PRESSURE_C_FACTOR = 0.5
+	PHONON_C_FACTOR = 1
+
 # Load the dataset of convergence results
-converge_h5 = h5py.File('./pp_verify_convergence.h5')
+converge_h5 = h5py.File(f'./pp_verify_convergence_{CONF}.h5')
 eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
 
 # traverse once to collect mapping of element -> all PPs
@@ -43,18 +59,40 @@ converge_h5.visititems(curated_by_element)
 #               )])
 lib_color_mapping = {
     'nc-dojo-v0.4.1-std': '#ffa500',
+    'nc-spms-oncvpsp4': '#7f8001', # XXX: new
+    "nc-dojo-v0.4.1-str": '#ffb500', #: TBD
+    "nc-dojo-v0.5.0-std": '#ffc500', #: TBD
+    "nc-sg15-oncvpsp4": '#000000',
     'us-gbrv-v1.x-upf2': '#00cdcd',
     'us-psl-v1.0.0-high': '#ff0000',
+    "us-psl-v1.0.0-low": '#fa0000', # TBD
+    "us-psl-v0.x": '#0000ff',
     'paw-jth-v1.1-std': '#984ea3', # XXX: new TBD
-    'nc-spms-oncvpsp4': '#7f8001', # XXX: new
+    "paw-jth-v1.1-str": '#984fa3', # TBD
+    "paw-lanthanides-wentzcovitch": '#610b5e',
+    "paw-psl-v0.x": '#ff00ff',
+    "paw-psl-v1.0.0-high": '#008b00',
+    "paw-psl-v1.0.0-low": '#008c00', #TBD
+    "paw-actinides-marburg": '#ea388e',
 }
 
 lib_abbr_name_mapping = {
     'nc-dojo-v0.4.1-std': 'DOJO-041-std',
+    'nc-spms-oncvpsp4': 'SPMS',
+    "nc-dojo-v0.4.1-str": 'DOJO-041-str',
+    "nc-dojo-v0.5.0-std": 'DOJO-050-std',
+    "nc-sg15-oncvpsp4": 'SG15',
     'us-gbrv-v1.x-upf2': 'GBRV-1.X',
     'us-psl-v1.0.0-high': 'PSL-US-v1-high',
+    "us-psl-v1.0.0-low": 'PSL-US-v1-low',
+    "us-psl-v0.x": 'PSL-US-v0.x',
     'paw-jth-v1.1-std': 'JTH-1.1-std',
-    'nc-spms-oncvpsp4': 'SPMS',
+    "paw-jth-v1.1-str": 'JTH-1.1-str',
+    "paw-lanthanides-wentzcovitch": 'Wentzcovitch',
+    "paw-psl-v0.x": 'PSL-PAW-v0.x',
+    "paw-psl-v1.0.0-high": 'PSL-PAW-v1-high',
+    "paw-psl-v1.0.0-low": 'PSL-PAW-v1-low',
+    "paw-actinides-marburg": 'MARBURG',
 }
 
 MAX_CUTOFF = 200
@@ -73,13 +111,13 @@ def plot(element):
     # Define pyplot instance
     plt.figure(figsize=(40, 4 * len(pps)))
 
-    plt.title(f'Verification summary: {element}', fontsize=20)
+    plt.title(f'Verification summary: {element} ({CONF}) ({CRITERIA})', fontsize=20)
     plt.xlim(20, 215)
     plt.ylim(-offset/2.,(len(pps)-0.5)*offset)
 
     dual = 18 if element in HIGH_DUAL_ELEMENTS else 8
     plt.xlabel(f'Wavefunction cutoff [Ry]; Charge density cutoff [Ry] = {dual} x Ewfc (PAW/US) | 4 x Ewfc (NC); q-point = '+str([0.5, 0.5, 0.5]),fontsize=20)
-    plt.ylabel(r'Error w.r.t. ref. wavefunction cutoff (for the SSSP efficiency criteria)',fontsize=20)
+    plt.ylabel(f'Error w.r.t. ref. wavefunction cutoff (for the SSSP {CRITERIA} criteria)',fontsize=20)
 
     # legend manually created
     line_phonon_frequencies = Line2D([0], [0], marker='o', linestyle='-', label=r'$\delta \bar{\omega}$', color='black')
@@ -149,16 +187,17 @@ def plot(element):
         try:
             xs_phonon_frequencies = dataset['convergence_phonon_frequencies']['xs'][()]
             ys_phonon_frequencies = dataset['convergence_phonon_frequencies']['ys'][()]
+            ys_phonon_frequencies *= (2 / PHONON_C_FACTOR)
             ys_phonon_frequencies_max_diff = dataset['convergence_phonon_frequencies']['ys_relative_max_diff'][()]
             low_err_freqs = np.zeros(len(ys_phonon_frequencies))
             high_err_freqs = abs(ys_phonon_frequencies_max_diff) - abs(ys_phonon_frequencies)
             ys_phonon_frequencies += count * offset
 
             ref_omega_max = dataset['convergence_phonon_frequencies']['ys_omega_max'][-1]
-            plt.text(MAX_CUTOFF+13.5, offset*count, '$\omega_{max}$ = ' + f'{ref_omega_max:.2f}' + ' cm$^{-1}$',
+            plt.text(MAX_CUTOFF+13.5, offset*count - 0.6, '$\omega_{max}$ = ' + f'{ref_omega_max:.2f}' + ' cm$^{-1}$',
                 horizontalalignment='right',verticalalignment='center',fontsize=14)
 
-            plt.errorbar(xs_phonon_frequencies, ys_phonon_frequencies, yerr=[low_err_freqs, high_err_freqs], 
+            plt.errorbar(xs_phonon_frequencies, ys_phonon_frequencies, yerr=[low_err_freqs, abs(high_err_freqs)], 
                     capthick=3, capsize=4, marker='o', linestyle='-',
                     color=pcolor, alpha=0.8, lw=2, ms=10)        
         except Exception as exc:
@@ -168,7 +207,7 @@ def plot(element):
         try:
             xs_pressure = dataset['convergence_pressure']['xs'][()]
             ys_pressure = dataset['convergence_pressure']['ys'][()]
-            ys_pressure *= 2 # XXX: magnify so the axhline is the criteria, this value is depend on criteria, => 2 / upper_bound(criteria)
+            ys_pressure *= (2 / PRESSURE_C_FACTOR) # XXX: magnify so the axhline is the criteria, this value is depend on criteria, => 2 / upper_bound(criteria)
             ys_pressure += count * offset
             plt.plot(xs_pressure, ys_pressure, marker='v', linestyle='--',
                         color=pcolor, alpha=0.9, 
@@ -184,6 +223,9 @@ def plot(element):
             plt.plot(xs_cohesive_energy, ys_cohesive_energy, marker='*', linestyle=':',
                     color=pcolor, alpha=0.9,
                     lw=2,ms=10)
+            ref_cohesive_energy_max = dataset['convergence_cohesive_energy']['ys_cohesive_energy_per_atom'][-1]
+            plt.text(MAX_CUTOFF+13.5, offset*count + 0.6, '$E_{cov}$ = ' + f'{ref_cohesive_energy_max:.2f}' + ' $meV/atom$',
+                horizontalalignment='right',verticalalignment='center',fontsize=14)
         except Exception as exc:
             eprint(f"in ploting cohesive energy of {pp_name}: {exc}")
 
@@ -191,7 +233,7 @@ def plot(element):
         try:
             xs_eos = dataset['convergence_eos']['xs'][()]
             ys_eos = dataset['convergence_eos']['ys'][()]
-            ys_eos *= 2 / 0.2 # 0.2 is the upper_bound of criteria
+            ys_eos *= 2 / EOS_C_FACTOR # 0.2 is the upper_bound of efficiency criteria
             ys_eos += count * offset
             plt.plot(xs_eos, ys_eos, marker='s', linestyle='-.',
                     color=pcolor, alpha=0.9,
@@ -242,7 +284,8 @@ def plot(element):
 
 
     # plt.savefig(element+'_'+str(dual)+'_conv_patt.png')
-    plt.savefig(f'plots/{element}_summary.png')
+    Path(f'plots_{CONF}_{CRITERIA}').mkdir(exist_ok=True)
+    plt.savefig(f'plots_{CONF}_{CRITERIA}/{element}_{CONF}_{CRITERIA}_summary.png')
     plt.close()
 
             
