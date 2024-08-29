@@ -110,6 +110,11 @@ Source data of the analysis in supplementary information of the paper.
 """
         group_name = "validate/upf/candidate/sssp-prec-v1.3"
         folder_path = base_path / "libraries-pbe" / "mix-sssp-prec-v1.3.0"
+    elif lib_name == 'high-dual-elements':
+        description = """High dual elements for test purpose, Fe, O, Hf
+"""
+        group_name = "validate/upf/candidate/high-dual-elements"
+        folder_path = base_path / "libraries-pbe" / "high-dual-elements"
     else:
         raise ValueError(f'{lib_name} not found')
 
