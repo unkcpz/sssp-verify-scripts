@@ -62,7 +62,7 @@ class ConvergenceCohesiveEnergyGroupSubmissionController(FromGroupSubmissionCont
                 # atom_memory_mb *= 2
 
 
-        dual = 12
+        dual = 18
         # cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
         cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list[:-1]] + [(200, 3600)]
         

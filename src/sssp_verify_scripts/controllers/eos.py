@@ -59,7 +59,7 @@ class ConvergenceEOSGroupSubmissionController(FromGroupSubmissionController):
             memory_mb = self.unit_memory_mb * 1
             npool = self.unit_npool * 1
 
-        dual = 12
+        dual = 18
         # cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
         cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list[:-1]] + [(200, 3600)]
         
