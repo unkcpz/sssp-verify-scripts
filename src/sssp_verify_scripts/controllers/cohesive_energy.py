@@ -62,7 +62,9 @@ class ConvergenceCohesiveEnergyGroupSubmissionController(FromGroupSubmissionCont
                 # atom_memory_mb *= 2
 
 
-        cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
+        dual = 8
+        # cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
+        cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list[:-1]] + [(200, 3600)]
         
         builder: ProcessBuilder = ConvergenceCohesiveEnergyWorkChain.get_builder(
             pseudo=parent_node,

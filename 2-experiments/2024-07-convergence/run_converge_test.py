@@ -16,7 +16,7 @@ def launch(protocol, property, configuration, experiment, library, concurrent, u
     target_upf_lib = f"validate/upf/candidate/{library}"
 
     lib_name = target_upf_lib.split('/')[-1]
-    target_group_label=f"validate/{lib_name}/convergence/{property}/{protocol}/{configuration.lower()}"
+    target_group_label=f"validate/{lib_name}/convergence/{property}/{protocol}/{configuration.lower()}/dual8"
 
     comment = f"convergence test@ {property}, with {configuration}. experiment mode? ({experiment})"
 
