@@ -56,7 +56,7 @@ class ConvergencePressureGroupSubmissionController(FromGroupSubmissionController
             memory_mb = self.unit_memory_mb * 1
             npool = self.unit_npool * 1
 
-        dual = 8
+        dual = 12
         # cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
         cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list[:-1]] + [(200, 3600)]
         
