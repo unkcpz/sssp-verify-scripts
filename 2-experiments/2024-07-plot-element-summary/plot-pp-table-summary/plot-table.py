@@ -1,3 +1,5 @@
+#!/bin/env python
+
 import matplotlib.pyplot as plt
 import numpy as np
 import json
@@ -7,19 +9,23 @@ from matplotlib.patches import Patch
 with open('table-report.json', 'r') as fh:
 	data = json.load(fh)
 
+with open('conf_mapping.json', 'r') as fh:
+    conf_mapping = json.load(fh)
+    conf_mapping = {k: v.lower() for k, v in conf_mapping.items()}
+
 # Extracting data
 rows = []
 for key, value in data.items():
     ffn = '.'.join(key.split('.')[:-1])
+    element = ffn.split('.')[0]
+    stable_conf = conf_mapping[element]
+    co_precision = value[f"{stable_conf}.precision"] if value[f"{stable_conf}.precision"] is not None else "N/A"
+    co_efficiency = value[f"{stable_conf}.efficiency"] if value[f"{stable_conf}.efficiency"] is not None else "N/A"
     rows.append([ffn, 
         round(value["avg.nu"], 2) if value["avg.nu"] is not None else "N/A",
         round(value["avg.nu.w/o.max"], 2) if value["avg.nu.w/o.max"] is not None else "N/A",
-        value["bcc.efficiency"] if value["bcc.efficiency"] is not None else "N/A",
-        value["bcc.precision"] if value["bcc.precision"] is not None else "N/A",
-        value["fcc.efficiency"] if value["fcc.efficiency"] is not None else "N/A",
-        value["fcc.precision"] if value["fcc.precision"] is not None else "N/A",
-        value["dc.efficiency"] if value["dc.efficiency"] is not None else "N/A",
-        value["dc.precision"] if value["dc.precision"] is not None else "N/A",
+        co_efficiency, co_precision,
+        stable_conf,
         round(value["eff_score"], 2) if value["eff_score"] is not None else "N/A",
         round(value["prec_score"], 2) if value["prec_score"] is not None else "N/A"],
      )
@@ -59,26 +65,25 @@ ax.axis('off')
 # Define column widths
 col_widths = [0.15] + [0.05] * (len(rows[0]) - 1)
 table = ax.table(cellText=rows, colLabels=["Pseudo", "avg.nu", "avg.nu w/o max",
-                                           "bcc eff (Ry)", "bcc prec (Ry)",
-                                           "fcc eff (Ry)", "fcc prec (Ry)",
-                                           "dc eff (Ry)", "dc prec (Ry)", 
+                                           "eff (Ry)", "prec (Ry)",
+                                           "conf",
                                            "Eff score", "Prec score"],
                  cellLoc='center', loc='center', colWidths=col_widths)
 
 # Find the index of the row with the minimum avg.nu for each element
 min_eff_indices = []
 for element, indices in elements.items():
-    valid_indices = [i for i in indices if rows[i, 9] not in ["N/A", ""]]
+    valid_indices = [i for i in indices if rows[i, 6] not in ["N/A", ""]]
     if valid_indices:
-        min_eff_index = min(valid_indices, key=lambda i: float(rows[i, 9]))
+        min_eff_index = min(valid_indices, key=lambda i: float(rows[i, 6]))
         min_eff_indices.append(min_eff_index)
 
 # Find the index of the row with the minimum avg.nu for each element
 min_prec_indices = []
 for element, indices in elements.items():
-    valid_indices = [i for i in indices if rows[i, 10] not in ["N/A", ""]]
+    valid_indices = [i for i in indices if rows[i, 7] not in ["N/A", ""]]
     if valid_indices:
-        min_prec_index = min(valid_indices, key=lambda i: float(rows[i, 10]))
+        min_prec_index = min(valid_indices, key=lambda i: float(rows[i, 7]))
         min_prec_indices.append(min_prec_index)
 
 for min_eff_index in min_eff_indices:
