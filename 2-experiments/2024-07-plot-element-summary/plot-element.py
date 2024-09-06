@@ -3,6 +3,7 @@
 import h5py
 from matplotlib import pyplot as plt
 import numpy as np
+import json
 from aiida_sssp_workflow.utils.element import ALL_ELEMENTS, HIGH_DUAL_ELEMENTS
 import sys
 from pathlib import Path
@@ -11,9 +12,6 @@ from matplotlib.lines import Line2D
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
-
-# pre--
-CONF = "bcc"
 
 # cri
 CRITERIA = "efficiency"
@@ -26,26 +24,6 @@ elif CRITERIA == "precision":
 	EOS_C_FACTOR = 0.1
 	PRESSURE_C_FACTOR = 0.5
 	PHONON_C_FACTOR = 1
-
-# Load the dataset of convergence results
-converge_h5 = h5py.File(f'./pp_verify_convergence_{CONF}.h5')
-eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
-
-# traverse once to collect mapping of element -> all PPs
-element_pps_mapping = {}
-
-def curated_by_element(name: str, obj):
-    # only get result for first layer
-    if '/' in name:
-        return
-    element = obj.attrs.get('element')
-    if element is None:
-        raise ValueError(f"element attr of {obj} is None")
-
-    element_pps_mapping.setdefault(element, []).append(name)
-
-
-converge_h5.visititems(curated_by_element)
 
 # pseudos_colors_dict = dict([(pseudo,color) for pseudo,color in zip(
 #              ['100PAW','100PAW_low','100US','100US_low','031PAW','031US',
@@ -98,7 +76,7 @@ lib_abbr_name_mapping = {
 MAX_CUTOFF = 200
 MIN_CUTOFF = 30
 
-def plot(element):
+def plot(element, conff, converge_h5):
     count = 0
     plot_lines = []
     offset = 8
@@ -111,7 +89,7 @@ def plot(element):
     # Define pyplot instance
     plt.figure(figsize=(40, 4 * len(pps)))
 
-    plt.title(f'Verification summary: {element} ({CONF}) ({CRITERIA})', fontsize=20)
+    plt.title(f'Verification summary: {element} ({conff}) ({CRITERIA})', fontsize=20)
     plt.xlim(20, 215)
     plt.ylim(-offset/2.,(len(pps)-0.5)*offset)
 
@@ -282,13 +260,53 @@ def plot(element):
         plt.axhline(-2+offset*(count-1), 
                 color=lib_color_mapping[lib_name], linestyle=axhlstyle, lw=2)
 
+        # half precission
+        plt.axhline(1+offset*(count-1), 
+                color=lib_color_mapping[lib_name], linestyle=(0, (3, 10, 1, 10, 1, 10)), lw=2)  # horizontal line is at y=2
 
     # plt.savefig(element+'_'+str(dual)+'_conv_patt.png')
-    Path(f'plots_{CONF}_{CRITERIA}').mkdir(exist_ok=True)
-    plt.savefig(f'plots_{CONF}_{CRITERIA}/{element}_{CONF}_{CRITERIA}_summary.png')
+    folder_name = f'plots_{CRITERIA}_stable_conf'
+    Path(folder_name).mkdir(exist_ok=True)
+    plt.savefig(f'{folder_name}/{element}_{conff}_{CRITERIA}_summary.png')
     plt.close()
 
             
 if __name__ == "__main__":
-    for element in ALL_ELEMENTS:
-        plot(element)
+    # pre--
+    with open('conf_mapping.json', 'r') as fh:
+        conf_mapping = json.load(fh)
+        conf_mapping = {k: v.lower() for k, v in conf_mapping.items()}
+
+    for conf in ["bcc", "fcc", "dc"]:
+        # Load the dataset of convergence results
+        converge_h5 = h5py.File(f'./pp_verify_convergence_{conf}.h5')
+        eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
+
+        # traverse once to collect mapping of element -> all PPs
+        element_pps_mapping = {}
+
+        def curated_by_element(name: str, obj):
+            # only get result for first layer
+            if '/' in name:
+                return
+            element = obj.attrs.get('element')
+            if element is None:
+                raise ValueError(f"element attr of {obj} is None")
+
+            element_pps_mapping.setdefault(element, []).append(name)
+
+
+        converge_h5.visititems(curated_by_element)
+
+        for element in ALL_ELEMENTS:
+            # if element and conf not compatible (the stable conf of element), skip
+            try:
+                stable_conf = conf_mapping[element]
+            except KeyError as exc:
+                eprint(f"key {element} not found: {exc}")
+                continue
+            else:
+                if stable_conf != conf:
+                    continue
+            
+            plot(element, conf, converge_h5)
