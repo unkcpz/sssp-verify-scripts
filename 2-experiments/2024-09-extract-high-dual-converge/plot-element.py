@@ -279,7 +279,17 @@ if __name__ == "__main__":
         conf_mapping = json.load(fh)
         conf_mapping = {k: v.lower() for k, v in conf_mapping.items()}
 
-    for conf_dual in ["bcc_dual8", "bcc_dual12", "bcc_dual18", "dc_dual8", "dc_dual12", "dc_dual18"]:
+    for conf_dual in [
+        "bcc_dual8", 
+        "bcc_dual12", 
+        "bcc_dual18", 
+        "fcc_dual8", 
+        "fcc_dual12", 
+        "fcc_dual18", 
+        "dc_dual8", 
+        "dc_dual12", 
+        "dc_dual18"
+    ]:
         conff = conf_dual.split('_')[0]
         dual = conf_dual.split('_dual')[1]
 
@@ -304,8 +314,6 @@ if __name__ == "__main__":
         converge_h5.visititems(curated_by_element)
 
         for element in ALL_ELEMENTS:
-            if element == 'Fe':
-                import ipdb; ipdb.set_trace()
             # if element and conf not compatible (the stable conf of element), skip
             try:
                 stable_conf = conf_mapping[element]

@@ -160,7 +160,7 @@ def plot(element, conff, converge_h5):
             plt.text(MAX_CUTOFF+21, offset * count, text_blob,
                 verticalalignment='center',horizontalalignment='center',fontsize=14)
         except:
-            pass
+            text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n"
 
         try:
             xs_phonon_frequencies = dataset['convergence_phonon_frequencies']['xs'][()]
