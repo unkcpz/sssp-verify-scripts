@@ -132,7 +132,7 @@ def extract_eos(lib_name, override=False):
                 transferability_eos_group = pp_grp.create_group(subgroup_name)
 
             # Store dataset in every group of a configuration
-            eos_dict, metric_dict = transferability_extract_eos(node)
+            eos_dict, birch_murnaghan_fit, metric_dict = transferability_extract_eos(node)
             for conf in [k for k in eos_dict.keys() if k != 'metadata']:
                 c_group = transferability_eos_group.create_group(conf)
 
@@ -145,6 +145,13 @@ def extract_eos(lib_name, override=False):
                 c_group.attrs['delta'] = metric_dict[conf]['delta/natoms']
                 c_group.attrs['delta1'] = metric_dict[conf]['delta1']
                 c_group.attrs['nu'] = metric_dict[conf]['rel_errors_vec_length']
+
+                V0, B0, B1 = list(metric_dict[conf]['birch_murnaghan_results'])
+                E0 = birch_murnaghan_fit[conf]['energy0']
+                c_group.attrs['V0'] = V0
+                c_group.attrs['B0'] = B0
+                c_group.attrs['B1'] = B1
+                c_group.attrs['E0'] = E0
 
 
 if __name__ == "__main__":
