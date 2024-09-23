@@ -55,6 +55,7 @@ def extract(element, element_pps_mapping) -> dict:
                 'V0': data.attrs.get('V0'), 
                 'B0': data.attrs.get('B0'), 
                 'B1': data.attrs.get('B1'), 
+                'E0': data.attrs.get('E0'), 
             }
 
         pps_info[lib_name_abbr] = pp_info
