@@ -3,6 +3,7 @@
 import h5py
 import json
 import sys
+from aiida_sssp_workflow.utils.element import ALL_ELEMENTS
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
@@ -27,6 +28,50 @@ lib_abbr_name_mapping = {
     "paw-actinides-marburg": 'MARBURG',
 }
 
+REF_DATA = {}
+with open("./results-oxides-verification-PBE-v1-AE-average.json", "r") as fh:
+    data = json.load(fh)
+    data = data["BM_fit_data"]
+
+    for element in ALL_ELEMENTS:
+        if element not in REF_DATA:
+            REF_DATA[element] = {}
+
+        for c in ['XO', 'XO2', 'XO3', 'X2O', 'X2O3', 'X2O5']:
+            try:
+                d = data[f"{element}-{c}"]
+            except KeyError:
+                continue
+            REF_DATA[element][c] = {
+                'V0': d['min_volume'],
+                'B0': d['bulk_modulus_ev_ang3'],
+                'B1': d['bulk_deriv'],
+            }
+            
+with open("./results-unaries-verification-PBE-v1-AE-average.json", "r") as fh:
+    data = json.load(fh)
+    data = data["BM_fit_data"]
+
+    for element in ALL_ELEMENTS:
+        if element not in REF_DATA:
+            REF_DATA[element] = {}
+
+        for c in ['BCC', 'FCC', 'SC', 'DC']:
+            if c == 'DC':
+                cc = 'Diamond'
+            else:
+                cc = c
+
+            try:
+                d = data[f"{element}-X/{cc}"]
+            except KeyError:
+                continue
+            REF_DATA[element][c] = {
+                'V0': d['min_volume'],
+                'B0': d['bulk_modulus_ev_ang3'],
+                'B1': d['bulk_deriv'],
+            }
+
 def extract(element, element_pps_mapping) -> dict:
 
     pps_info = {}
@@ -35,6 +80,8 @@ def extract(element, element_pps_mapping) -> dict:
         pps = element_pps_mapping[element]
     except KeyError:
         return {}
+
+    pps_info['REF'] = REF_DATA[element]
 
     for pp_name in pps:
         print(f"------> Pseudopotential = {pp_name}")
@@ -63,7 +110,6 @@ def extract(element, element_pps_mapping) -> dict:
     return pps_info
             
 if __name__ == "__main__":
-    from aiida_sssp_workflow.utils.element import ALL_ELEMENTS
     # traverse once to collect mapping of element -> all PPs
     eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
     element_pps_mapping = {}
