@@ -1,9 +1,11 @@
 #!/bin/env python
 
+from copy import deepcopy
 import h5py
 import json
 import sys
 from aiida_sssp_workflow.utils.element import ALL_ELEMENTS
+from aiida_sssp_workflow.calculations.calculate_metric import rel_errors_vec_length
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
@@ -83,6 +85,10 @@ def extract(element, element_pps_mapping) -> dict:
 
     pps_info['REF'] = REF_DATA[element]
 
+    if element == "O":
+        pps_info['REF']["XO"]["V0"] *= 2
+        pps_info['REF']["X2O5"]["V0"] *= 2
+
     for pp_name in pps:
         print(f"------> Pseudopotential = {pp_name}")
 
@@ -95,14 +101,29 @@ def extract(element, element_pps_mapping) -> dict:
             volumes = data['volumes']
             energies = data['energies']
 
+            V0 = data.attrs.get('V0') 
+            B0 = data.attrs.get('B0') 
+            B1 = data.attrs.get('B1') 
+            E0 = data.attrs.get('E0') 
+
+            # acwf ref use premitive cell, I use same cell as other elements.
+            if element == "O" and conf in ["XO", "X2O5"]:
+                # acwf ref use primitive cell for XO and X2O5 the cell size is half
+                ref_V0 = pps_info['REF'][conf]["V0"]
+                ref_B0 = pps_info['REF'][conf]["B0"]
+                ref_B1 = pps_info['REF'][conf]["B1"]
+                nu = rel_errors_vec_length(ref_V0, ref_B0, ref_B1, V0, B0, B1)
+            else:
+                nu = data.attrs.get('nu')
+
             pp_info[conf] = {
                 'volumes': list(volumes),
                 'energies': list(energies),
-                'nu': data.attrs.get('nu'),
-                'V0': data.attrs.get('V0'), 
-                'B0': data.attrs.get('B0'), 
-                'B1': data.attrs.get('B1'), 
-                'E0': data.attrs.get('E0'), 
+                'nu': nu,
+                'V0': V0, 
+                'B0': B0, 
+                'B1': B1, 
+                'E0': E0, 
             }
 
         pps_info[lib_name_abbr] = pp_info
@@ -129,7 +150,7 @@ if __name__ == "__main__":
     with open("eos.json", "w") as fh:
         info = {}
         for element in ALL_ELEMENTS:
-        # for element in ["Ag", "Al"]:
+        # for element in ["Fe"]:
             epp_info = extract(element, element_pps_mapping)
             
             info[element] = epp_info

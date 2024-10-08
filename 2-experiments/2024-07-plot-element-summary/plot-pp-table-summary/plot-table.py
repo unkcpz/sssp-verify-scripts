@@ -70,21 +70,35 @@ table = ax.table(cellText=rows, colLabels=["Pseudo", "avg.nu", "avg.nu w/o max",
                                            "Eff score", "Prec score"],
                  cellLoc='center', loc='center', colWidths=col_widths)
 
+eff_table = {}
 # Find the index of the row with the minimum avg.nu for each element
 min_eff_indices = []
 for element, indices in elements.items():
     valid_indices = [i for i in indices if rows[i, 6] not in ["N/A", ""]]
     if valid_indices:
         min_eff_index = min(valid_indices, key=lambda i: float(rows[i, 6]))
+        pseudo = rows[min_eff_index, 0]
+        eff_cutoff = rows[min_eff_index, 3]
+        eff_table[pseudo] = eff_cutoff
         min_eff_indices.append(min_eff_index)
 
+prec_table = {}
 # Find the index of the row with the minimum avg.nu for each element
 min_prec_indices = []
 for element, indices in elements.items():
     valid_indices = [i for i in indices if rows[i, 7] not in ["N/A", ""]]
     if valid_indices:
         min_prec_index = min(valid_indices, key=lambda i: float(rows[i, 7]))
+        pseudo = rows[min_prec_index, 0]
+        prec_cutoff = rows[min_prec_index, 4]
+        prec_table[pseudo] = prec_cutoff
         min_prec_indices.append(min_prec_index)
+
+with open('eff_curated.json', 'w') as fh:
+    json.dump(eff_table, fh, indent=4)
+
+with open('prec_curated.json', 'w') as fh:
+    json.dump(prec_table, fh, indent=4)
 
 for min_eff_index in min_eff_indices:
     for i in range(len(rows[min_eff_index])):
