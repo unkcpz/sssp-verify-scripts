@@ -115,6 +115,11 @@ Source data of the analysis in supplementary information of the paper.
 """
         group_name = "validate/upf/candidate/high-dual-elements"
         folder_path = base_path / "libraries-pbe" / "high-dual-elements"
+    elif lib_name == 'magnetic-elements':
+        description = """Magnetic elements Fe, Cr, Mn, Fe, Co, O
+"""
+        group_name = "validate/upf/candidate/magnetic-elements"
+        folder_path = base_path / "libraries-pbe" / "magnetic-elements"
     else:
         raise ValueError(f'{lib_name} not found')
 
