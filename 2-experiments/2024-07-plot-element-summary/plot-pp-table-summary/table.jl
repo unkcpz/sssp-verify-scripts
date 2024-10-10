@@ -90,8 +90,7 @@ function filter_df(df, element; criteria = :ecut_eff, w_ecut = 1 / 100, verbose 
         [:eos_score, criteria] => ((x1, x2) -> x1 .+ @.ecut_score(x2, w_ecut)) => :score,
     )
 
-    out_cols =
-        [:element, :abbr_name, :z_valence, criteria, :eos_score, :score]
+    out_cols = [:element, :abbr_name, :z_valence, criteria, :eos_score, :score]
 
     if verbose
         append!(out_cols, confs)
@@ -105,12 +104,16 @@ function filter_df(df, element; criteria = :ecut_eff, w_ecut = 1 / 100, verbose 
 end
 
 # %%
-# eleemnt to check: 
+# eleemnt to check:
 # W, As, Au ...
 # In order:
 # H, He, Li, Be, ...
-df_final = filter_df(df, "As"; criteria = :ecut_eff, w_ecut = 1 / 100, verbose = false);
-println(df_final)
+# for element in ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne"]
+for element in ["He"]
+    df_final =
+        filter_df(df, element; criteria = :ecut_prec, w_ecut = 1 / 100, verbose = true)
+    println(df_final)
+end
 
 # %%
 # EOS data extract
@@ -118,7 +121,7 @@ jfh = "/home/jyu/project/sssp-project/sssp-verify-scripts/2-experiments/2024-07-
 eos_data = JSON3.read(open(jfh))
 
 # %%
-p = plot_eos(eos_data, "Fe", "PSL-US-v1-low", "GBRV-1.X")
+p = plot_eos(eos_data, "W", "SPMS", "GBRV-1.X")
 display(p)
 
 # %%
@@ -184,11 +187,18 @@ function plot_eos(eos_data, element, pp1, pp2)
             length = 100,
         )
         y_smooth_ref = @.birch_murnaghan(x_smooth_ref, 0.0, ref_V0, ref_B0, ref_B1)
-        plot!(x_smooth_ref, y_smooth_ref, subplot = i_, linestyle = :dash, color = :black, label = "AE $conf")
+        plot!(
+            x_smooth_ref,
+            y_smooth_ref,
+            subplot = i_,
+            linestyle = :dash,
+            color = :black,
+            label = "AE $conf",
+        )
 
         # x, y labels
-        plot!(xlabel="Cell volume per atom [A 3]")
-        plot!(ylabel="Energy per atom [eV]")
+        plot!(xlabel = "Cell volume per atom [A 3]")
+        plot!(ylabel = "Energy per atom [eV]")
     end
 
     p

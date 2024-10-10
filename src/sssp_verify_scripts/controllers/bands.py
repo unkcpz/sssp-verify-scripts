@@ -31,7 +31,7 @@ class ConvergenceBandsGroupSubmissionController(FromGroupSubmissionController):
         if not isinstance(parent_node, UpfData):
             raise ValueError(f"The parent node should be a UpfData node, but got {parent_node}")
 
-        if self.configuration not in UNARIE_CONFIGURATIONS:
+        if self.configuration not in UNARIE_CONFIGURATIONS + ["GS"]:
             raise ValueError(f"Got {self.configuration}, the configuration shuold be on of {UNARIE_CONFIGURATIONS}.")
 
         pseudo = parent_node
