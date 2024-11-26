@@ -120,6 +120,16 @@ Source data of the analysis in supplementary information of the paper.
 """
         group_name = "validate/upf/candidate/magnetic-elements"
         folder_path = base_path / "libraries-pbe" / "magnetic-elements"
+    elif lib_name == 'magnetic-elements-dense':
+        description = """Magnetic elements Fe, Cr, Mn, Fe, Co, O
+"""
+        group_name = "validate/upf/candidate/magnetic-elements-dense"
+        folder_path = base_path / "libraries-pbe" / "magnetic-elements-dense"
+    elif lib_name == 'convergence-recheck':
+        description = """elements that shows extremly lower cutoff than SSSP v1
+"""
+        group_name = "validate/upf/candidate/convergence-recheck"
+        folder_path = base_path / "libraries-pbe" / "convergence-recheck"
     else:
         raise ValueError(f'{lib_name} not found')
 

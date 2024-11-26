@@ -32,12 +32,14 @@ def launch(protocol, property, configuration, experiment, library, concurrent, u
     control_mapping = {
         'standard': 'standard',
         'experiment': 'experiment',
+        'legacy': 'standard',
     }
 
     # XXX: convergence protocol should have a independent CLI option to override
     convergence_mapping = {
         'standard': 'balanced',
         'experiment': 'balanced',
+        'legacy': 'legacy',
     }
 
     try:

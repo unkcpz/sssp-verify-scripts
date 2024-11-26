@@ -41,6 +41,8 @@ end
 
 rename!(df, :efficiency => :ecut_eff)
 rename!(df, :precision => :ecut_prec)
+rename!(df, :abbr_name => :name)
+rename!(df, :z_valence => :Z)
 
 println(df)
 
@@ -71,12 +73,15 @@ end
 confs = [:SC, :BCC, :FCC, :DC, :XO, :XO2, :XO3, :X2O, :X2O3, :X2O5];
 
 # Filter by element
-function filter_df(df, element; criteria = :ecut_eff, w_ecut = 1 / 100, verbose = false)
+function filter_df(df, element; verbose = false)
     edf = df[df.element .== element, :]
+
+    # fill missing with 200
+    edf.ecut_eff .= coalesce.(edf.ecut_eff, 200)
     # compute eos score for all confs
     transform!(edf, confs .=> x -> @.eos_score(x))
 
-    # compute eos score
+    # compute eos score (without the maximum nu)
     new_confs = Symbol.(string.(confs) .* "_function")
     transform!(
         edf,
@@ -84,13 +89,28 @@ function filter_df(df, element; criteria = :ecut_eff, w_ecut = 1 / 100, verbose 
             ((row...) -> (sum(row) - maximum(row)) / (length(row) - 1)) => :eos_score,
     )
 
-    # compute final score with taking cutoff into account
+    # compute avg eos score
     transform!(
         edf,
-        [:eos_score, criteria] => ((x1, x2) -> x1 .+ @.ecut_score(x2, w_ecut)) => :score,
+        new_confs =>
+            ((row...) -> (sum(x -> x .^ 2, row) / (length(row)))) => :_sum_square_score,
+    )
+    transform!(edf, [:_sum_square_score] => (x -> sqrt.(x)) => :avg_sq_score)
+
+    # find the min of Z and min of ecut_eff
+    min_Z = minimum(edf.Z)
+    min_ecut_eff = minimum(edf.ecut_eff)
+
+    @. edf.cost = (edf.Z / min_Z)^2 * sqrt((edf.ecut_eff / min_ecut_eff)^3)
+
+    # compute final score with taking cutoff into account
+    w_ecut = 1 / 100
+    transform!(
+        edf,
+        [:eos_score, :ecut_eff] => ((x1, x2) -> x1 .+ @.ecut_score(x2, w_ecut)) => :myscore,
     )
 
-    out_cols = [:element, :abbr_name, :z_valence, criteria, :eos_score, :score]
+    out_cols = [:element, :name, :Z, :ecut_eff, :ecut_prec, :cost, :avg_sq_score]
 
     if verbose
         append!(out_cols, confs)
@@ -99,9 +119,80 @@ function filter_df(df, element; criteria = :ecut_eff, w_ecut = 1 / 100, verbose 
     select!(edf, out_cols)
 
     # Sort the non-missing DataFrame
-    df_sorted = sort(edf, :score)
+    df_sorted = sort(edf, :avg_sq_score)
+    # Apply formatting to all columns
+    for col in names(df_sorted)
+        if eltype(df_sorted[!, col]) <: Real  # Check if column type is numeric
+            df_sorted[!, col] = round.(df_sorted[!, col], digits = 2)
+        end
+    end
     df_sorted
 end
+
+# %%
+# Filter by element
+function full_df(df; verbose = false)
+    edf = df
+
+    # fill missing with 200
+    edf.ecut_eff .= coalesce.(edf.ecut_eff, 200)
+    # compute eos score for all confs
+    transform!(edf, confs .=> x -> @.eos_score(x))
+
+    # compute eos score (without the maximum nu)
+    new_confs = Symbol.(string.(confs) .* "_function")
+    transform!(
+        edf,
+        new_confs =>
+            ((row...) -> (sum(row) - maximum(row)) / (length(row) - 1)) => :eos_score,
+    )
+
+    # compute avg eos score
+    transform!(
+        edf,
+        new_confs =>
+            ((row...) -> (sum(x -> x .^ 2, row) / (length(row)))) => :_sum_square_score,
+    )
+    transform!(edf, [:_sum_square_score] => (x -> sqrt.(x)) => :avg_sq_score)
+
+    # find the min of Z and min of ecut_eff
+    min_Z = minimum(edf.Z)
+    min_ecut_eff = minimum(edf.ecut_eff)
+
+    @. edf.cost = (edf.Z / min_Z)^2 * sqrt((edf.ecut_eff / min_ecut_eff)^3)
+
+    # compute final score with taking cutoff into account
+    w_ecut = 1 / 100
+    transform!(
+        edf,
+        [:eos_score, :ecut_eff] => ((x1, x2) -> x1 .+ @.ecut_score(x2, w_ecut)) => :myscore,
+    )
+
+    out_cols = [:element, :name, :Z, :ecut_eff, :ecut_prec, :cost, :avg_sq_score, :myscore]
+
+    if verbose
+        append!(out_cols, confs)
+    end
+
+    select!(edf, out_cols)
+
+    # Sort the non-missing DataFrame
+    df_sorted = sort(edf, :avg_sq_score)
+    # Apply formatting to all columns
+    for col in names(df_sorted)
+        if eltype(df_sorted[!, col]) <: Real  # Check if column type is numeric
+            df_sorted[!, col] = round.(df_sorted[!, col], digits = 2)
+        end
+    end
+    df_sorted
+end
+
+folder = "/home/jyu/project/sssp-project/sssp-verify-scripts/2-experiments/2024-11-curated-libs"
+df_final = full_df(df; verbose = true)
+# println(df_final)
+
+csv_file = "$folder/full.csv"
+CSV.write(csv_file, df_final)
 
 # %%
 # eleemnt to check:
@@ -109,11 +200,119 @@ end
 # In order:
 # H, He, Li, Be, ...
 # for element in ["H", "He", "Li", "Be", "B", "C", "N", "O", "F", "Ne"]
-for element in ["He"]
-    df_final =
-        filter_df(df, element; criteria = :ecut_prec, w_ecut = 1 / 100, verbose = true)
-    println(df_final)
+# eles = ["Li"]
+eles = [
+    "H",
+    "He",
+    "Li",
+    "Be",
+    "B",
+    "C",
+    # "N",
+    "O",
+    "F",
+    "Ne",
+    "Na",
+    "Mg",
+    "Al",
+    "Si",
+    "P",
+    "S",
+    "Cl",
+    "Ar",
+    "K",
+    "Ca",
+    "Sc",
+    "Ti",
+    "V",
+    "Cr",
+    "Mn",
+    "Fe",
+    "Co",
+    "Ni",
+    "Cu",
+    "Zn",
+    "Ga",
+    "Ge",
+    "As",
+    "Se",
+    "Br",
+    "Kr",
+    "Rb",
+    "Sr",
+    "Y",
+    "Zr",
+    "Nb",
+    "Mo",
+    "Tc",
+    "Ru",
+    "Rh",
+    "Pd",
+    "Ag",
+    "Cd",
+    "In",
+    "Sn",
+    "Sb",
+    "Te",
+    "I",
+    "Xe",
+    "Cs",
+    "Ba",
+    "La",
+    "Ce",
+    "Pr",
+    "Nd",
+    "Pm",
+    "Sm",
+    "Eu",
+    "Gd",
+    "Tb",
+    "Dy",
+    "Ho",
+    "Er",
+    "Tm",
+    "Yb",
+    "Lu",
+    "Hf",
+    "Ta",
+    "W",
+    "Re",
+    "Os",
+    "Ir",
+    "Pt",
+    "Au",
+    "Hg",
+    "Tl",
+    "Pb",
+    "Bi",
+    "Po",
+    "At",
+    "Rn",
+    "Fr",
+    "Ra",
+    "Ac",
+    "Th",
+    "Pa",
+    "U",
+    "Np",
+    "Pu",
+    "Am",
+    # "Cm", "Bk",
+    # "Cf", "Es", "Fm", "Md", "No",
+    # "Lr", "Rf", "Db", "Sg", "Bh", "Hs", "Mt", "Ds", "Rg", "Cn", "Nh", "Fl", "Mc", "Lv", "Ts", "Og"
+]
+for element in eles
+    df_final = filter_df(df, element; verbose = true)
+    # println(df_final)
+    csv_file = "$folder/$element.csv"
+    CSV.write(csv_file, df_final)
 end
+
+# for element in eles
+#     df_final =
+#         filter_df(df, element; criteria = :ecut_prec, w_ecut = 1 / 100, verbose = true)
+#     println(df_final)
+# end
 
 # %%
 # EOS data extract
@@ -121,7 +320,7 @@ jfh = "/home/jyu/project/sssp-project/sssp-verify-scripts/2-experiments/2024-07-
 eos_data = JSON3.read(open(jfh))
 
 # %%
-p = plot_eos(eos_data, "W", "SPMS", "GBRV-1.X")
+p = plot_eos(eos_data, "Sn", "SG15", "GBRV-1.X")
 display(p)
 
 # %%
