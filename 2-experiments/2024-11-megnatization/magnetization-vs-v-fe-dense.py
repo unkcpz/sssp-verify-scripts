@@ -67,6 +67,7 @@ lib_abbr_name_mapping = {
 #     "4824414": "Fe.nc.pbe.z_16.oncvpsp3.dojo.v0.4.1-str.upf",
 # }
 
+# Which is more dense and kind reproduce the thesis's results
 pk_name_mapping = {
     "4806075": "Fe.us.pbe.z_16.uspp.gbrv.v1.5-fd.upf",
     "4786669": "Fe.us.pbe.z_16.ld1.psl.v0.2.1-fd.upf",

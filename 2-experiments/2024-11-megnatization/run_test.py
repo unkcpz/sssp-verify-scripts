@@ -38,7 +38,7 @@ def launch(protocol, library, concurrent, unit_num_cpus, ecutwfc, configuration,
     # unit_num_cpus = 18
     # unit_memory_mb = 60000 # mb
     # unit_npool = 2
-    scale_list = ((1.0 + 0.01 * np.arange(-6, 16, step)) ** 3).tolist()
+    scale_list = (1.0 + 0.01 * np.arange(-6, 16, step) ** 3).tolist()
 
     print("\nLaunching transferability magnetization controller ---\n")
     inputs = {
