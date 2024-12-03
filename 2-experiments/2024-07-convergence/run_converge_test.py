@@ -11,12 +11,13 @@ from sssp_verify_scripts.controllers.phonon_frequencies import ConvergencePhonon
 from sssp_verify_scripts.controllers.pressure import ConvergencePressureGroupSubmissionController
 
 
-def launch(protocol, property, configuration, experiment, library, concurrent, unit_num_cpus):
+# batch=2: start at 2024-12-03
+def launch(protocol, property, configuration, experiment, library, concurrent, unit_num_cpus, batch=2):
     computer = 'eiger-hq'
     target_upf_lib = f"validate/upf/candidate/{library}"
 
     lib_name = target_upf_lib.split('/')[-1]
-    target_group_label=f"validate/{lib_name}/convergence/{property}/{protocol}/{configuration.lower()}"
+    target_group_label=f"validate/{lib_name}/convergence/{property}/{protocol}/{configuration.lower()}/{batch}"
 
     comment = f"convergence test@ {property}, with {configuration}. experiment mode? ({experiment})"
 
