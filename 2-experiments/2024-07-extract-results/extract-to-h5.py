@@ -21,8 +21,8 @@ def eprint(*args, **kwargs):
 
 def extract_convergence(lib_name, property, conf, f_compute_xy, override=False):
 
-    with h5py.File(f'pp_verify_convergence_{conf}.h5', 'a') as f:
-        group_name = f"validate/{lib_name}/convergence/{property}/standard/{conf}"
+    with h5py.File(f'pp_verify_convergence_{conf}_2.h5', 'a') as f:
+        group_name = f"validate/{lib_name}/convergence/{property}/standard/{conf}/2"
         group = orm.load_group(group_name)
 
         print(f"--- In processing group {group_name} ---")
@@ -205,7 +205,11 @@ if __name__ == "__main__":
                     case _:
                         raise ValueError(f"Unknow property: {property}")
 
-                extract_convergence(lib_name, property, args.conf, _compute_xy, override=args.override)
+                try:
+                    extract_convergence(lib_name, property, args.conf, _compute_xy, override=args.override)
+                except Exception as exc:
+                    print(exc)
+                    pass
         elif args.group == 'eos':
             extract_eos(lib_name, override=args.override)
         else:
