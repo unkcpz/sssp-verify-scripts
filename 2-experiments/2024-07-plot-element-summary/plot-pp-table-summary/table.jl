@@ -9,89 +9,109 @@ json_data = JSON3.read(open(json_file))
 
 df = DataFrame()
 
-for (key, value) in json_data
-    # Create a copy of the data without the 'nu_confs' field
-    if !haskey(value, :nu_confs)
-        continue
+# Collect all possible column names
+column_names = Set{Symbol}()
+for (_, value) in json_data
+    union!(column_names, keys(value))
+    if haskey(value, :nu_confs)
+        union!(column_names, keys(value[:nu_confs]))
+    else
+        push!(column_names, :nu_confs)  # Ensure 'nu_confs' exists
     end
+end
+push!(column_names, :filename)  # Ensure 'filename' exists
 
-    nu_confs = value[:nu_confs]
-    row = copy(value)
-    delete!(row, :nu_confs)  # Remove 'nu_confs' field
+# Ensure `df` is initialized with the correct columns
+df =
+    isempty(df) ? DataFrame(; [name => Union{Missing,Any}[] for name in column_names]...) :
+    df
 
-    for (k, v) in nu_confs
+# Process each JSON entry
+for (key, value) in json_data
+    row = Dict{Symbol,Any}(name => missing for name in column_names)  # Default all fields to `missing`
+
+    # Copy existing values from `value`
+    for (k, v) in value
+        if k == :nu_confs
+            continue  # Handle nu_confs separately
+        end
         row[k] = v
     end
 
-    for key in keys(row)
-        if isnothing(row[key])
-            row[key] = missing
+    # Handle `nu_confs`
+    if haskey(value, :nu_confs)
+        for (k, v) in value[:nu_confs]
+            row[k] = v
         end
     end
 
-    # Add the key (filename) as a separate column
-    row[:filename] = key
+    row[:filename] = key  # Add filename column
 
-    if nrow(df) == 0
-        df = DataFrame(row)
-    else
-        push!(df, row; promote = true)
-    end
+    push!(df, row; promote = true)  # Ensure insertion works
 end
+
 
 rename!(df, :efficiency => :ecut_eff)
 rename!(df, :precision => :ecut_prec)
 
-println(df)
-
-
 # %%
-function eos_score(nu)
-    nu = nu - 0.1
-    if nu < 0
-        return 0.0
-    end
-
-    nu
-end
-
-function ecut_score(ecut, w_ecut)
-    if ismissing(ecut)
+function eos_score(nu::Union{Missing,Nothing,Real})
+    if ismissing(nu) || nu === nothing
         return missing
     end
-
-    ecut = ecut - 30
-    if ecut < 0
-        return 0.0
-    end
-
-    ecut * w_ecut
+    nu = nu - 0.1
+    return max(nu, 0.0)  # Ensures non-negative output
 end
+
+function ecut_score(ecut::Union{Missing,Nothing,Real}, w_ecut::Real)
+    if ismissing(ecut) || ecut === nothing
+        return missing
+    end
+    ecut = ecut - 30
+    return max(ecut * w_ecut, 0.0)  # Ensures non-negative output
+end
+
 
 confs = [:SC, :BCC, :FCC, :DC, :XO, :XO2, :XO3, :X2O, :X2O3, :X2O5];
 
 # Filter by element
-function filter_df(df, element; criteria = :ecut_eff, w_ecut = 1 / 100, verbose = false)
-    edf = df[df.element .== element, :]
-    # compute eos score for all confs
-    transform!(edf, confs .=> x -> @.eos_score(x))
 
-    # compute eos score
+function filter_df(df, element; criteria = :ecut_eff, w_ecut = 1 / 100, verbose = false)
+    if element !== Nothing
+        edf = df[df.element .== element, :]
+    else
+        edf = df[:, :]
+    end
+
+    # Compute eos_score for all confs while preserving missing values
+    transform!(edf, confs .=> ByRow(x -> something(eos_score(x), missing)))
+
+    # Compute eos_score function, handling missing values
     new_confs = Symbol.(string.(confs) .* "_function")
     transform!(
         edf,
         new_confs =>
-            ((row...) -> (sum(row) - maximum(row)) / (length(row) - 1)) => :eos_score,
+            ByRow(
+                (row...) -> begin
+                    row_vals = collect(skipmissing(row))  # Remove missing values
+                    if isempty(row_vals)
+                        missing
+                    else
+                        (sum(row_vals) - maximum(row_vals)) / (length(row_vals) - 1)
+                    end
+                end,
+            ) => :eos_score,
     )
 
-    # compute final score with taking cutoff into account
+    # Compute final score with cutoff consideration
     transform!(
         edf,
-        [:eos_score, criteria] => ((x1, x2) -> x1 .+ @.ecut_score(x2, w_ecut)) => :score,
+        [:eos_score, criteria] =>
+            ByRow((x1, x2) -> something(x1, 0) + something(ecut_score(x2, w_ecut), 0)) =>
+                :score,
     )
 
-    out_cols =
-        [:element, :abbr_name, :z_valence, criteria, :eos_score, :score]
+    out_cols = [:element, :abbr_name, :z_valence, :ecut_eff, :ecut_prec, :eos_score, :score]
 
     if verbose
         append!(out_cols, confs)
@@ -99,18 +119,46 @@ function filter_df(df, element; criteria = :ecut_eff, w_ecut = 1 / 100, verbose 
 
     select!(edf, out_cols)
 
-    # Sort the non-missing DataFrame
-    df_sorted = sort(edf, :score)
-    df_sorted
+    # Sort the DataFrame while keeping missing values visible
+    df_sorted = sort(edf, [:score], rev = false, by = x -> something(x, Inf))
+
+    return df_sorted
 end
 
+
 # %%
-# eleemnt to check: 
+# eleemnt to check:
 # W, As, Au ...
 # In order:
 # H, He, Li, Be, ...
-df_final = filter_df(df, "As"; criteria = :ecut_eff, w_ecut = 1 / 100, verbose = false);
+using PeriodicTable
+
+df_final = filter_df(df, Nothing; criteria = :ecut_eff, w_ecut = 1 / 100, verbose = true);
+rename!(df_final, :abbr_name => :name);
+df_final[!, :z_valence] = parse.(Int, df_final[!, :z_valence]);  # Convert to integer
+df_final.ZA = [haskey(PeriodicTable.elements, Symbol(el)) ? PeriodicTable.elements[Symbol(el)].number : missing for el in df_final.element]
+df_final = sort(df_final, [:ZA], rev = false);
+# d_final = sort(df_final, [:z_valence], rev = false)
+# Apply rounding to selected columns
+for col in confs
+    df_final[!, col] .= round.(df_final[!, col], digits=2)
+end
 println(df_final)
+
+# %% element inspect
+filtered_df = df_final[df_final.element .== "C", :];
+filtered_df
+out_cols = [:element, :name, :z_valence, :eos_score, :score]
+append!(out_cols, confs)
+select!(filtered_df, out_cols)
+
+# %% filter and write csv
+#
+using CSV, DataFrames
+
+# CSV.write("filtered_pseudopotential_data_N.csv", filtered_df; transform=(col, val) -> something(val, missing))
+CSV.write(stdout, filtered_df; transform=(col, val) -> something(val, missing))
+
 
 # %%
 # EOS data extract
@@ -184,11 +232,18 @@ function plot_eos(eos_data, element, pp1, pp2)
             length = 100,
         )
         y_smooth_ref = @.birch_murnaghan(x_smooth_ref, 0.0, ref_V0, ref_B0, ref_B1)
-        plot!(x_smooth_ref, y_smooth_ref, subplot = i_, linestyle = :dash, color = :black, label = "AE $conf")
+        plot!(
+            x_smooth_ref,
+            y_smooth_ref,
+            subplot = i_,
+            linestyle = :dash,
+            color = :black,
+            label = "AE $conf",
+        )
 
         # x, y labels
-        plot!(xlabel="Cell volume per atom [A 3]")
-        plot!(ylabel="Energy per atom [eV]")
+        plot!(xlabel = "Cell volume per atom [A 3]")
+        plot!(ylabel = "Energy per atom [eV]")
     end
 
     p

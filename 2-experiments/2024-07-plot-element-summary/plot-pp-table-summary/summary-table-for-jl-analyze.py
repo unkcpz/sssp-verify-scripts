@@ -37,9 +37,10 @@ def eprint(*args, **kwargs):
 eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
 
 converge_h5 = {}
-converge_h5['bcc'] = h5py.File(f'./pp_verify_convergence_bcc.h5')
-converge_h5['fcc'] = h5py.File(f'./pp_verify_convergence_fcc.h5')
-converge_h5['dc'] = h5py.File(f'./pp_verify_convergence_dc.h5')
+converge_h5['bcc'] = h5py.File(f'./pp_verify_convergence_bcc_2.h5')
+converge_h5['fcc'] = h5py.File(f'./pp_verify_convergence_fcc_2.h5')
+converge_h5['dc'] = h5py.File(f'./pp_verify_convergence_dc_2.h5')
+converge_h5['sc'] = h5py.File(f'./pp_verify_convergence_sc_2.h5')
 
 # traverse once to collect mapping of element -> all PPs
 element_pps_mapping = {}
@@ -55,7 +56,7 @@ def curated_by_element(name: str, obj):
     element_pps_mapping.setdefault(element, []).append(name)
 
 
-for conf in ['bcc', 'fcc', 'dc']:
+for conf in ['bcc', 'fcc', 'dc', 'sc']:
     converge_h5['bcc'].visititems(curated_by_element)
 
 # pseudos_colors_dict = dict([(pseudo,color) for pseudo,color in zip(
@@ -115,10 +116,11 @@ def compute_rec_cutoff(conff, pp_name, converge_h5): # -> rec_cutoff
         dataset = converge_h5[conff][pp_name]
     except:
         rec_cutoff = {'efficiency': None, 'precision': None}
-        return rec_cutoff
+        return rec_cutoff, None
 
     lib_name = dataset.attrs.get('lib_name')
     z_valence = dataset.attrs.get('z_valence')
+
     if lib_name is None:
         raise ValueError(f"lib_name of {dataset} is None")
 
@@ -131,7 +133,7 @@ def compute_rec_cutoff(conff, pp_name, converge_h5): # -> rec_cutoff
     except Exception as exc:
         eprint(f"in ploting phonon of {pp_name}: {exc}")
         rec_cutoff = {'efficiency': None, 'precision': None}
-        return rec_cutoff
+        return rec_cutoff, lib_name
     else:
         for protocol in ['efficiency', 'precision']:
             property = "phonon_frequencies"
@@ -148,7 +150,7 @@ def compute_rec_cutoff(conff, pp_name, converge_h5): # -> rec_cutoff
     except Exception as exc:
         eprint(f"in ploting pressure of {pp_name}: {exc}")
         rec_cutoff = {'efficiency': None, 'precision': None}
-        return rec_cutoff
+        return rec_cutoff, lib_name
     else:
         for protocol in ['efficiency', 'precision']:
             property = "pressure"
@@ -165,7 +167,7 @@ def compute_rec_cutoff(conff, pp_name, converge_h5): # -> rec_cutoff
     except Exception as exc:
         eprint(f"in ploting cohesive energy of {pp_name}: {exc}")
         rec_cutoff = {'efficiency': None, 'precision': None}
-        return rec_cutoff
+        return rec_cutoff, lib_name
     else:
         for protocol in ['efficiency', 'precision']:
             property = "cohesive_energy"
@@ -183,7 +185,7 @@ def compute_rec_cutoff(conff, pp_name, converge_h5): # -> rec_cutoff
     except Exception as exc:
         eprint(f"in ploting cohesive energy of {pp_name}: {exc}")
         rec_cutoff = {'efficiency': None, 'precision': None}
-        return rec_cutoff
+        return rec_cutoff, lib_name
     else:
         for protocol in ['efficiency', 'precision']:
             property = "eos"
@@ -200,7 +202,7 @@ def compute_rec_cutoff(conff, pp_name, converge_h5): # -> rec_cutoff
     except Exception as exc:
         eprint(f"in ploting bands of {pp_name}: {exc}")
         rec_cutoff = {'efficiency': None, 'precision': None}
-        return rec_cutoff
+        return rec_cutoff, lib_name
     else:
         for protocol in ['efficiency', 'precision']:
             property = "bands"
@@ -209,7 +211,7 @@ def compute_rec_cutoff(conff, pp_name, converge_h5): # -> rec_cutoff
             if co > rec_cutoff[protocol]:
                 rec_cutoff[protocol] = co
 
-    return rec_cutoff
+    return rec_cutoff, lib_name
 
 def summary(element):
     ele_full_report = {}
@@ -273,7 +275,10 @@ def summary(element):
             eprint(exc)
 
 
-        rec_cutoff = compute_rec_cutoff(stable_conf, pp_name, converge_h5)      
+        rec_cutoff, lib_name = compute_rec_cutoff(stable_conf, pp_name, converge_h5)      
+        if 'abbr_name' not in ereport:
+            abbr_name = lib_abbr_name_mapping[lib_name]
+            ereport['abbr_name'] = abbr_name
 
         for cri in ['efficiency', 'precision']:
             ereport[cri] = rec_cutoff[cri]
@@ -341,7 +346,7 @@ if __name__ == "__main__":
 
     all_report = {}
     for element in ALL_ELEMENTS:
-    # for element in ['Fe']:
+    # for element in ['H']:
         report = summary(element)
         all_report.update(report)
 

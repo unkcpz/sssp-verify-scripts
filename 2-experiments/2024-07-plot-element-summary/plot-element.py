@@ -160,7 +160,9 @@ def plot(element, conff, converge_h5):
             plt.text(MAX_CUTOFF+21, offset * count, text_blob,
                 verticalalignment='center',horizontalalignment='center',fontsize=14)
         except:
-            text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n"
+            text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n" + "not all EOS valid\n"
+            plt.text(MAX_CUTOFF+21, offset * count, text_blob,
+                verticalalignment='center',horizontalalignment='center',fontsize=14)
 
         try:
             xs_phonon_frequencies = dataset['convergence_phonon_frequencies']['xs'][()]
@@ -179,6 +181,8 @@ def plot(element, conff, converge_h5):
                     capthick=3, capsize=4, marker='o', linestyle='-',
                     color=pcolor, alpha=0.8, lw=2, ms=10)        
         except Exception as exc:
+            plt.text(MAX_CUTOFF+13.5, offset*count - 0.6, '$\omega_{max}$ (not avail) ',
+                horizontalalignment='right',verticalalignment='center',fontsize=14)
             eprint(f"in ploting phonon of {pp_name}: {exc}")
 
         # Pressure
@@ -205,6 +209,8 @@ def plot(element, conff, converge_h5):
             plt.text(MAX_CUTOFF+13.5, offset*count + 0.6, '$E_{cov}$ = ' + f'{ref_cohesive_energy_max:.2f}' + ' $meV/atom$',
                 horizontalalignment='right',verticalalignment='center',fontsize=14)
         except Exception as exc:
+            plt.text(MAX_CUTOFF+13.5, offset*count + 0.6, '$E_{cov}$ (not avail) ',
+                horizontalalignment='right',verticalalignment='center',fontsize=14)
             eprint(f"in ploting cohesive energy of {pp_name}: {exc}")
 
         # EOS (nu w.r.t 200 Ry)
@@ -279,7 +285,7 @@ if __name__ == "__main__":
 
     for conf in ["bcc", "fcc", "dc"]:
         # Load the dataset of convergence results
-        converge_h5 = h5py.File(f'./pp_verify_convergence_{conf}.h5')
+        converge_h5 = h5py.File(f'./pp_verify_convergence_{conf}_2.h5')
         eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
 
         # traverse once to collect mapping of element -> all PPs

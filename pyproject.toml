@@ -36,3 +36,6 @@ Source = 'https://github.com/unkcpz/sssp-verify-scripts'
 atompaw-regenerate = "sssp_verify_scripts.scripts:atompaw_regenerate.main"
 remove_failed_wc = "sssp_verify_scripts.scripts:remove_failed_wc.main"
 import_upf_group = "sssp_verify_scripts.scripts:import_upf_group.main"
+
+[tool.uv.sources]
+aiida-sssp-workflow = { path = "../aiida-sssp-workflow", editable = true }
