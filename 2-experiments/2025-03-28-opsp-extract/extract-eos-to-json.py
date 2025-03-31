@@ -1,5 +1,6 @@
 #!/bin/env python
 
+from aiida import load_profile
 from aiida import orm
 import sys
 import numpy as np
@@ -12,10 +13,12 @@ from aiida_sssp_workflow.workflows.transferability.eos import (
     extract_eos as transferability_extract_eos,
 )
 
+load_profile()
+
 def extract_custom_name(filename: str) -> str:
     parts = filename.split(".")
 
-    return ".".join(parts[1:-2])
+    return ".".join(parts[1:-1])
 
 def eprint(*args, **kwargs):
     print(*args, file=sys.stderr, **kwargs)
