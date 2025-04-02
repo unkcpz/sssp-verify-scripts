@@ -115,6 +115,11 @@ Source data of the analysis in supplementary information of the paper.
 """
         group_name = "validate/upf/candidate/high-dual-elements"
         folder_path = base_path / "libraries-pbe" / "high-dual-elements"
+    elif lib_name == 'f4d':
+        description = """fish4diet test
+"""
+        group_name = "validate/upf/candidate/f4d"
+        folder_path = base_path / "libraries-pbe" / "f4d"
     else:
         raise ValueError(f'{lib_name} not found')
 
