@@ -41,12 +41,8 @@ class ConvergenceCohesiveEnergyGroupSubmissionController(FromGroupSubmissionCont
         pp_info = extract_pseudo_info(pseudo.get_content())
         element = pp_info.element
 
-        num_cpus = self.unit_num_cpus * 1
-        memory_mb = self.unit_memory_mb * 1
         npool = self.unit_npool * 1
 
-        atom_num_cpus = num_cpus
-        atom_memory_mb = memory_mb
         atom_npool = 1  # For isolate atom always use 1 npool
 
         dual_list = None
@@ -78,15 +74,15 @@ class ConvergenceCohesiveEnergyGroupSubmissionController(FromGroupSubmissionCont
             bulk_parallelization={"npool": npool},
             bulk_mpi_options={
                 'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
+                    'num_machines': 1,
+                    'tot_num_mpiprocs': 48
                 },
             },
             atom_parallelization={"npool": atom_npool},
             atom_mpi_options={
                 'resources': {
-                    'num_cpus': atom_num_cpus,
-                    'memory_mb': atom_memory_mb,
+                    'num_machines': 1,
+                    'tot_num_mpiprocs': 48
                 },
             },
             clean_workdir=self.clean_workdir,

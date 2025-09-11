@@ -33,7 +33,6 @@ def launch(
     unit_num_cpus,
     batch=2,
 ):
-    computer = "eiger-hq"
     target_upf_lib = f"validate/upf/candidate/{library}"
 
     lib_name = target_upf_lib.split("/")[-1]
@@ -46,7 +45,7 @@ def launch(
     if unit_num_cpus % 4 != 0:
         raise ValueError(f"Expect times of 4: got {unit_num_cpus}")
 
-    mem_per_cpu = 3500  # mb
+    mem_per_cpu = 10000  # mb
     unit_memory_mb = mem_per_cpu * unit_num_cpus  # mb
     unit_npool = unit_num_cpus / 4
 
@@ -68,7 +67,7 @@ def launch(
         "pw_code": "qe-7.3-pw-gf@thor",
         "protocol": convergence_mapping[protocol],
         "configuration": configuration,
-        "wavefunction_cutoff_mapping": wavefunction_cutoff_mapping,
+        "element_wavefunction_cutoff_mapping": wavefunction_cutoff_mapping,
         "unit_num_cpus": unit_num_cpus,
         "unit_memory_mb": unit_memory_mb,
         "unit_npool": unit_npool,
