@@ -20,7 +20,7 @@ class ConvergenceEOSGroupSubmissionController(FromGroupSubmissionController):
 
     pw_code: str
     protocol: str
-    wavefunction_cutoff_list: list
+    element_wavefunction_cutoff_mapping: dict[str, float]
     unit_num_cpus: int
     unit_memory_mb: int
     unit_npool: int
@@ -43,23 +43,26 @@ class ConvergenceEOSGroupSubmissionController(FromGroupSubmissionController):
         pp_info = extract_pseudo_info(pseudo.get_content())
         element = pp_info.element
 
-        if pp_info.type == 'nc':
-            dual = 4
-        else:
-            dual = 8
+        npool = self.unit_npool * 1
 
-        if element in HIGH_DUAL_ELEMENTS and pp_info.type != 'nc':
-            dual = 18
+        dual_list = None
+        match get_dual_type(pp_info.type, element):
+            case DualType.NC:
+                dual_list = [2.0, 2.5, 3.0, 3.5, 4.0]
+            case DualType.AUGLOW:
+                dual_list = [6.0, 6.5, 7.0, 7.5, 8.0]
+            case DualType.AUGHIGH:
+                dual_list = [8.0, 9.0, 10.0, 12.0, 16.0, 18.0]
 
-            num_cpus = self.unit_num_cpus * 2
-            memory_mb = self.unit_memory_mb * 2
-            npool = self.unit_npool * 2
-        else:
-            num_cpus = self.unit_num_cpus * 1
-            memory_mb = self.unit_memory_mb * 1
-            npool = self.unit_npool * 1
+                # atom_npool *= 2
+                # atom_num_cpus *= 2
+                # atom_memory_mb *= 2
 
-        cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
+        if dual_list is None:
+            raise ValueError("dual_list can not be None")
+
+        ecutwfc = self.element_wavefunction_cutoff_mapping[element]
+        cutoff_list = [(ecutwfc, ecutwfc * dual) for dual in dual_list]
         
         builder: ProcessBuilder = ConvergenceEOSWorkChain.get_builder(
             pseudo=parent_node,
@@ -70,8 +73,8 @@ class ConvergenceEOSGroupSubmissionController(FromGroupSubmissionController):
             parallelization={"npool": npool},
             mpi_options={
                 'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
+                    'num_machines': 1,
+                    'tot_num_mpiprocs': 48
                 },
             },
             clean_workdir=self.clean_workdir,
@@ -79,91 +82,3 @@ class ConvergenceEOSGroupSubmissionController(FromGroupSubmissionController):
 
         return builder
 
-class TransferabilityEOSGroupSubmissionController(FromGroupSubmissionController):
-    """The submission controller for transferability EOS group."""
-    unique_extra_keys: tuple = ('md5',)
-    parent_group_label: str
-    group_label: str
-    pw_code: str
-    curate_type: str
-    protocol: str
-    ecutwfc: int | None = None
-    cutoff_mapping: dict | None = None
-    unit_num_cpus: int
-    unit_memory_mb: int
-    unit_npool: int
-    clean_workdir: bool
-
-    def get_inputs_and_processclass_from_extras(self, extras_values):
-        """Return the builder for the submission."""
-        parent_node = self.get_parent_node_from_extras(extras_values)
-
-        pseudo: UpfData = parent_node
-        
-        pp_info = extract_pseudo_info(pseudo.get_content())
-        element = pp_info.element
-
-        match get_dual_type(pp_info.type, element):
-            case DualType.NC:
-                dual = 4
-            case DualType.AUGLOW:
-                dual = 8
-            case DualType.AUGHIGH:
-                dual = 18
-            case _:
-                raise ValueError("Unknow condition to set dual")
-
-        # the parent_node should be a pseudo node
-        if not isinstance(parent_node, UpfData):
-            raise ValueError(f"The parent node should be a UpfData node, but got {parent_node}")
-
-        if self.ecutwfc is None and self.cutoff_mapping is None:
-            raise ValueError("Cannot be both None")
-
-        if self.ecutwfc is not None and self.cutoff_mapping is not None:
-            raise ValueError("Can only set one of it to None")
-
-        if self.ecutwfc is not None:
-            cutoffs = (self.ecutwfc, self.ecutwfc * dual)
-
-        # cutoff_mapping -> dict
-        # {'Ag.paw......upf': {'md5': xxxx, 'cutoffs': (20, 20)}}
-        elif self.cutoff_mapping is not None:
-            for pp_name, info in self.cutoff_mapping.items():
-                if info.get('md5') == extras_values[0]:
-                    cutoffs = info.get('cutoffs')
-                    print(f"[bold blue]Info:[/] Using cutoff={cutoffs} for {pp_name}.")
-
-        num_cpus = self.unit_num_cpus * 1
-        memory_mb = self.unit_memory_mb * 1
-        npool = self.unit_npool * 1
-
-        code = orm.load_code(self.pw_code)
-        if 'hq' in code.computer.label:
-            mpi_options = {
-                'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
-                },
-            }
-        else:
-            mpi_options={
-                'resources': {
-                    "num_machines": 1,
-                    "num_mpiprocs_per_machine": num_cpus,
-                },
-            }
-
-
-        builder: ProcessBuilder = TransferabilityEOSWorkChain.get_builder(
-            code=code,
-            pseudo=parent_node,
-            protocol=self.protocol,
-            curate_type=self.curate_type,
-            cutoffs=cutoffs,
-            parallelization={"npool": npool},
-            mpi_options=mpi_options,
-            clean_workdir=self.clean_workdir,
-        )
-
-        return builder

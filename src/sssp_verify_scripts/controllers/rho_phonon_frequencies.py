@@ -8,6 +8,7 @@ from aiida_sssp_workflow.utils import extract_pseudo_info
 from aiida_sssp_workflow.utils.element import HIGH_DUAL_ELEMENTS
 from aiida_sssp_workflow.utils.structure import UNARIE_CONFIGURATIONS
 from aiida_sssp_workflow.workflows.convergence.phonon_frequencies import ConvergencePhononFrequenciesWorkChain
+from aiida_sssp_workflow.utils.pseudo import DualType, get_dual_type
 
 class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionController):
     """The submission controller for convergence EOS group."""
@@ -18,7 +19,7 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
     pw_code: str
     ph_code: str
     protocol: str
-    wavefunction_cutoff_list: list
+    element_wavefunction_cutoff_mapping: dict[str, float]
     unit_num_cpus: int
     unit_memory_mb: int
     unit_npool: int
@@ -41,23 +42,29 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
         pp_info = extract_pseudo_info(pseudo.get_content())
         element = pp_info.element
 
-        if pp_info.type == 'nc':
-            dual = 4
-        else:
-            dual = 8
+        npool = self.unit_npool * 1
 
-        if element in HIGH_DUAL_ELEMENTS and pp_info.type != 'nc':
-            dual = 18
+        atom_npool = 1  # For isolate atom always use 1 npool
 
-            num_cpus = self.unit_num_cpus * 2
-            memory_mb = self.unit_memory_mb * 2
-            npool = self.unit_npool * 2
-        else:
-            num_cpus = self.unit_num_cpus * 1
-            memory_mb = self.unit_memory_mb * 1
-            npool = self.unit_npool * 1
+        dual_list = None
+        match get_dual_type(pp_info.type, element):
+            case DualType.NC:
+                dual_list = [2.0, 2.5, 3.0, 3.5, 4.0]
+            case DualType.AUGLOW:
+                dual_list = [6.0, 6.5, 7.0, 7.5, 8.0]
+            case DualType.AUGHIGH:
+                dual_list = [8.0, 9.0, 10.0, 12.0, 16.0, 18.0]
 
-        cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
+                # atom_npool *= 2
+                # atom_num_cpus *= 2
+                # atom_memory_mb *= 2
+
+
+        if dual_list is None:
+            raise ValueError("dual_list can not be None")
+
+        ecutwfc = self.element_wavefunction_cutoff_mapping[element]
+        cutoff_list = [(ecutwfc, ecutwfc * dual) for dual in dual_list]
         
         builder: ProcessBuilder = ConvergencePhononFrequenciesWorkChain.get_builder(
             pseudo=parent_node,
@@ -69,15 +76,15 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
             pw_parallelization={"npool": npool},
             pw_mpi_options={
                 'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
+                    'num_machines': 1,
+                    'tot_num_mpiprocs': 48
                 },
             },
             ph_settings = {"CMDLINE": ["-npool", f"{npool}"]},
             ph_mpi_options={
                 'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
+                    'num_machines': 1,
+                    'tot_num_mpiprocs': 48
                 },
             },
             clean_workdir=self.clean_workdir,

@@ -9,9 +9,6 @@ from .phonon_frequencies import ConvergencePhononFrequenciesGroupSubmissionContr
 from .rho_eos import (
     ConvergenceEOSGroupSubmissionController as RhoConvergenceEOSGroupSubmissionController,
 )
-from .rho_eos import (
-    TransferabilityEOSGroupSubmissionController as RhoTransferabilityEOSGroupSubmissionController,
-)
 from .rho_cohesive_energy import (
     ConvergenceCohesiveEnergyGroupSubmissionController as RhoConvergenceCohesiveEnergyGroupSubmissionController,
 )
@@ -37,5 +34,4 @@ __all__ = (
     "RhoConvergencePressureGroupSubmissionController",
     "RhoConvergenceBandsGroupSubmissionController",
     "RhoConvergencePhononFrequenciesGroupSubmissionController",
-    "RhoTransferabilityEOSGroupSubmissionController",
 )
