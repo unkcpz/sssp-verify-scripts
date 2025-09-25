@@ -227,7 +227,9 @@ def plot(ax, element, conff, converge_h5):
     try:
         xs = dataset["convergence_phonon_frequencies"]["xs"][()]
     except:
-        xs = dataset["convergence_eos"]["xs"][()]
+        # xs = dataset["convergence_eos"]["xs"][()]
+        return
+
 
     xs_max = max(xs)
 
@@ -295,41 +297,47 @@ if __name__ == "__main__":
     from tqdm import tqdm
     import os
 
-    os.makedirs("rho_conv_plots_dc", exist_ok=True)
+    os.makedirs("rho_conv_plots", exist_ok=True)
 
     with open("conf_mapping.json", "r") as fh:
         conf_mapping = json.load(fh)
-        conf_mapping = {k: "dc" for k, v in conf_mapping.items()}
-
-    configs = ["dc"]
+        conf_mapping = {k: v.lower() for k, v in conf_mapping.items()}
 
     pairs = []
-    for conf in configs:
-        converge_h5 = h5py.File(f"./pp_verify_convergence_{conf}_2.h5")
 
-        selected_elements = [el for el in ALL_ELEMENTS if conf_mapping.get(el) == conf]
+    converge_h5 = h5py.File(f"./pp_verify_convergence_final_conf.h5")
 
-        for el in selected_elements:
-            pairs.append((conf, el, converge_h5))
+    selected_elements = [el for el in ALL_ELEMENTS]
 
-        element_pps_mapping = {}
+    for el in selected_elements:
+        pairs.append((el, converge_h5))
 
-        def curated_by_element(name: str, obj):
-            if "/" in name:
-                return
-            element = obj.attrs.get("element")
-            if element is None:
-                raise ValueError(f"element attr of {obj} is None")
+    element_pps_mapping = {}
 
-            element_pps_mapping.setdefault(element, []).append(name)
+    def curated_by_element(name: str, obj):
+        if "/" in name:
+            return
+        element = obj.attrs.get("element")
+        if element is None:
+            raise ValueError(f"element attr of {obj} is None")
 
-        converge_h5.visititems(curated_by_element)
+        element_pps_mapping.setdefault(element, []).append(name)
+
+    converge_h5.visititems(curated_by_element)
 
     # now do one figure per element
-    for conf, element, converge_h5 in tqdm(pairs, total=len(pairs)):
+    for element, converge_h5 in tqdm(pairs, total=len(pairs)):
         fig, ax = plt.subplots(figsize=(12, 6), constrained_layout=False)
 
         # call your plot() on this one axis
+        with open("./conf_mapping.json", mode="r") as fh:
+            conf_map: dict[str, str] = json.load(fh)
+
+        try:
+            conf = conf_map[element]
+        except:
+            continue
+
         plot(ax, element, conf, converge_h5)
 
         # shared legend on each figure
@@ -388,6 +396,6 @@ if __name__ == "__main__":
         )
 
         # save into folder
-        out_path = os.path.join("rho_conv_plots_dc", f"{element}.png")
+        out_path = os.path.join("rho_conv_plots", f"{element}.png")
         fig.savefig(out_path)
         plt.close(fig)

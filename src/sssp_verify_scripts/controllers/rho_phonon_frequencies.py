@@ -23,7 +23,7 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
     unit_num_cpus: int
     unit_memory_mb: int
     unit_npool: int
-    configuration: str = 'DC'
+    element_configuration_mapping: dict[str, str]
     clean_workdir: bool
 
     def get_inputs_and_processclass_from_extras(self, extras_values):
@@ -33,9 +33,6 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
         # the parent_node should be a pseudo node
         if not isinstance(parent_node, UpfData):
             raise ValueError(f"The parent node should be a UpfData node, but got {parent_node}")
-
-        if self.configuration not in UNARIE_CONFIGURATIONS:
-            raise ValueError(f"Got {self.configuration}, the configuration shuold be on of {UNARIE_CONFIGURATIONS}.")
 
         pseudo = parent_node
         
@@ -49,11 +46,11 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
         dual_list = None
         match get_dual_type(pp_info.type, element):
             case DualType.NC:
-                dual_list = [2.0, 2.5, 3.0, 3.5, 4.0]
+                dual_list = [1.0, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0]
             case DualType.AUGLOW:
-                dual_list = [6.0, 6.5, 7.0, 7.5, 8.0]
+                dual_list = [2.0, 2.5, 3.0, 3.5, 4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0]
             case DualType.AUGHIGH:
-                dual_list = [8.0, 9.0, 10.0, 12.0, 16.0, 18.0]
+                dual_list = [4.0, 4.5, 5.0, 5.5, 6.0, 6.5, 7.0, 7.5, 8.0, 9.0, 10.0, 12.0, 16.0, 18.0]
 
                 # atom_npool *= 2
                 # atom_num_cpus *= 2
@@ -65,12 +62,14 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
 
         ecutwfc = self.element_wavefunction_cutoff_mapping[element]
         cutoff_list = [(ecutwfc, ecutwfc * dual) for dual in dual_list]
+
+        configuration = self.element_configuration_mapping[element]
         
         builder: ProcessBuilder = ConvergencePhononFrequenciesWorkChain.get_builder(
             pseudo=parent_node,
             protocol=self.protocol,
             cutoff_list=cutoff_list,
-            configuration=self.configuration,
+            configuration=configuration,
             pw_code=orm.load_code(self.pw_code),
             ph_code=orm.load_code(self.ph_code),
             pw_parallelization={"npool": npool},

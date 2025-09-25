@@ -25,20 +25,19 @@ from sssp_verify_scripts.controllers.rho_pressure import (
 def launch(
     protocol,
     property,
-    configuration,
     experiment,
     library,
     wavefunction_cutoff_mapping,
+    configuration_mapping,
     concurrent,
     unit_num_cpus,
-    batch=2,
 ):
     target_upf_lib = f"validate/upf/candidate/{library}"
 
     lib_name = target_upf_lib.split("/")[-1]
-    target_group_label = f"validate/{lib_name}/convergence/{property}/{protocol}/{configuration.lower()}/{batch}"
+    target_group_label = f"validate/{lib_name}/convergence/{property}/{protocol}/the-stable"
 
-    comment = f"convergence test@ {property}, with {configuration}. experiment mode? ({experiment})"
+    comment = f"convergence test@ {property}, with the-stable-conf. experiment mode? ({experiment})"
 
     print(f"{comment}")
 
@@ -66,7 +65,7 @@ def launch(
         "max_concurrent": concurrent,
         "pw_code": "qe-7.3-pw-gf@thor",
         "protocol": convergence_mapping[protocol],
-        "configuration": configuration,
+        "element_configuration_mapping": configuration_mapping,
         "element_wavefunction_cutoff_mapping": wavefunction_cutoff_mapping,
         "unit_num_cpus": unit_num_cpus,
         "unit_memory_mb": unit_memory_mb,
@@ -114,14 +113,15 @@ if __name__ == "__main__":
         default=False,
         help="Using dense cutoff grid. default=False",
     )
-    parser.add_argument(
-        "--configuration",
-        default="DC",
-        help="configuration to run convergence, default=DC",
-    )
+    # parser.add_argument(
+    #     "--configuration",
+    #     default="DC",
+    #     help="configuration to run convergence, default=DC",
+    # )
     # parser.add_argument('--computer', help="computer label name")
     parser.add_argument("--library", help="name of library")
     parser.add_argument("--library-ecut-mapping", help="ecut mapping file")
+    parser.add_argument("--library-conf-mapping", help="conf mapping file")
     parser.add_argument(
         "--concurrent", type=int, default=1, help="max number of concurrent"
     )
@@ -135,6 +135,9 @@ if __name__ == "__main__":
     with open(args.library_ecut_mapping, mode="r") as f:
         wavefunction_cutoff_mapping = json.load(f)
 
+    with open(args.library_conf_mapping, mode="r") as f:
+        configuration_mapping = json.load(f)
+
     if args.dry_run:
         print(args)
     else:
@@ -144,8 +147,8 @@ if __name__ == "__main__":
             # computer=args.computer,
             library=args.library,
             wavefunction_cutoff_mapping=wavefunction_cutoff_mapping,
+            configuration_mapping=configuration_mapping,
             unit_num_cpus=args.ncpus,
-            configuration=args.configuration,
             experiment=args.experiment,
             concurrent=args.concurrent,
         )
