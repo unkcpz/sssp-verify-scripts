@@ -1,0 +1,19 @@
+ &input
+   title='Na',
+   zed=11.0,
+   rel=1,
+   config='[Ne] 3s1.0 3p0 3d-2',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=2,
+   file_pseudopw='Na.pbe-n-nc.UPF',
+   author='TM',
+   lloc=1,
+   nlcc=.true.,
+   tm=.true.
+ /
+2
+3S  1  0  1.00  0.00  2.30  2.30  0.0
+3P  2  1  0.00  0.00  2.50  2.50  0.0

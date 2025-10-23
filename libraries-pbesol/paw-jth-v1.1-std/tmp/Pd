@@ -1,0 +1,88 @@
+ Completed calculations for Pd
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+Correlation functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   3.2060349E-04 h =   1.4747760E-02   n =       844 rmax =   8.0403093E+01
+ Scalar relativistic calculation
+   AEatom converged in          30  iterations
+     for nz =  46.00
+     delta  =    7.4921090184446150E-017
+  All Electron Orbital energies:         
+  n  l     occupancy       energy
+ 1  0      2.0000000E+00 -1.7754321E+03
+ 2  0      2.0000000E+00 -2.5945457E+02
+ 3  0      2.0000000E+00 -4.6967674E+01
+ 4  0      2.0000000E+00 -6.5152193E+00
+ 5  0      1.0000000E+00 -3.2162168E-01
+ 2  1      6.0000000E+00 -2.3268337E+02
+ 3  1      6.0000000E+00 -3.8169911E+01
+ 4  1      6.0000000E+00 -3.9998856E+00
+ 3  2      1.0000000E+01 -2.4186213E+01
+ 4  2      9.0000000E+00 -4.9233889E-01
+
+  Total energy
+     Total                    :    -10086.753376518871     
+ Completed calculations for Pd
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+Correlation functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   3.2060349E-04 h =   1.4747760E-02   n =       844 rmax =   8.0403093E+01
+ Scalar relativistic calculation
+   SCatom converged in           1  iterations
+     for nz =  46.00
+     delta  =    3.0103710843275997E-017
+   Valence Electron Orbital energies:         
+  n  l     occupancy       energy
+ 4  0      2.0000000E+00 -6.5152193E+00
+ 5  0      1.0000000E+00 -3.2162168E-01
+ 4  1      6.0000000E+00 -3.9998856E+00
+ 4  2      9.0000000E+00 -4.9233889E-01
+
+  Total energy
+     Total                    :    -10086.753376516153     
+     Valence                  :    -506.68115601480088     
+  paw parameters: 
+       lmax =            2
+         rc =    2.5123167067968657     
+        irc =          609
+   rc_shape =    2.5123167067968657     
+    rc_vloc =    2.1047727134160188     
+    rc_core =    1.0066755300911612     
+ Vloc: Non norm-conserving form with l= 3;e=   5.0000E-01
+ Projector type: RRKJ pseudization + Vanderbilt ortho.
+ Sinc^2 compensation charge shape zeroed at rc
+
+Number of basis functions     6
+ No.    n nodes    l      Energy         Cp coeff         Occ
+    1    4    3    0 -6.5152193E+00  5.0891462E+00  2.0000000E+00
+    2    5    4    0 -3.2162168E-01 -1.6044094E+00  1.0000000E+00
+    3    4    2    1 -3.9998856E+00  8.0726607E+00  6.0000000E+00
+    4  999    3    1  2.0000000E+00 -4.6955907E-01  0.0000000E+00
+    5    4    1    2 -4.9233889E-01 -2.0447122E+00  9.0000000E+00
+    6  999    2    2  2.0000000E+00 -2.3971355E-01  0.0000000E+00
+ Completed diagonalization of ovlp with info =        0
+  
+ Eigenvalues of overlap operator (in the basis of projectors):
+    1        1.21368342E-01
+    2        3.35902537E-01
+    3        1.39871971E+00
+    4        1.44984921E+01
+    5        1.16263027E+03
+    6        2.38462526E+03
+  
+  Summary of PAW energies
+        Total valence energy       -506.68117044184447     
+          Smooth energy             11.165217785368409     
+          One center               -517.84638822721286     
+          Smooth kinetic            26.826432437841355     
+          Vloc energy              -10.417563479470950     
+          Smooth exch-corr         -8.0142855833251367     
+          One-center xc            -274.47392338008979     

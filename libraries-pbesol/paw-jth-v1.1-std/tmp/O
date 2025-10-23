@@ -1,0 +1,75 @@
+ Completed calculations for O
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+Correlation functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   7.2565451E-04 h =   5.8052361E-03   n =      2001 rmax =   8.0000000E+01
+ Scalar relativistic calculation
+   AEatom converged in          28  iterations
+     for nz =   8.00
+     delta  =    3.1346415205537319E-017
+  All Electron Orbital energies:         
+  n  l     occupancy       energy
+ 1  0      2.0000000E+00 -3.7688118E+01
+ 2  0      2.0000000E+00 -1.7498997E+00
+ 2  1      4.0000000E+00 -6.5959283E-01
+
+  Total energy
+     Total                    :    -149.49770947948272     
+ Completed calculations for O
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+Correlation functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   7.2565451E-04 h =   5.8052361E-03   n =      2001 rmax =   8.0000000E+01
+ Scalar relativistic calculation
+   SCatom converged in           1  iterations
+     for nz =   8.00
+     delta  =    1.0400059112166557E-017
+   Valence Electron Orbital energies:         
+  n  l     occupancy       energy
+ 2  0      2.0000000E+00 -1.7498997E+00
+ 2  1      4.0000000E+00 -6.5959283E-01
+
+  Total energy
+     Total                    :    -149.49770948055743     
+     Valence                  :    -40.635244589354045     
+  paw parameters: 
+       lmax =            1
+         rc =    1.4146523028044693     
+        irc =         1306
+   rc_shape =    1.2023123064707886     
+    rc_vloc =    1.4064595031424274     
+    rc_core =    1.2023123064707886     
+ Vloc: Non norm-conserving form with l= 2;e=   2.5000E+00
+ Projector type: polynomial pseudization + Vanderbilt ortho.
+ Sinc^2 compensation charge shape zeroed at   1.2023E+00
+
+Number of basis functions     4
+ No.    n nodes    l      Energy         Cp coeff         Occ
+    1    2    1    0 -1.7498997E+00  1.7709738E+01  2.0000000E+00
+    2  999    2    0  2.0000000E+00  1.4847938E+00  0.0000000E+00
+    3    2    0    1 -6.5959283E-01  9.8193893E+01  4.0000000E+00
+    4  999    1    1  2.0000000E+00  4.1411248E+00  0.0000000E+00
+ Completed diagonalization of ovlp with info =        0
+  
+ Eigenvalues of overlap operator (in the basis of projectors):
+    1        1.43460916E-01
+    2        3.72641977E-01
+    3        1.45793029E+01
+    4        2.57122195E+01
+  
+  Summary of PAW energies
+        Total valence energy       -40.635278175267807     
+          Smooth energy             19.040491840756566     
+          One center               -59.675770016024373     
+          Smooth kinetic            14.284851589968596     
+          Vloc energy             -0.13842737383527109     
+          Smooth exch-corr         -5.3917048396331193     
+          One-center xc            -10.625577563416376     

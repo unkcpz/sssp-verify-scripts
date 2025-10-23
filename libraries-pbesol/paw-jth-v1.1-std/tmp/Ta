@@ -1,0 +1,94 @@
+ Completed calculations for Ta
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+Correlation functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   1.9550878E-04 h =   1.4272141E-02   n =       971 rmax =   2.0115397E+02
+ Scalar relativistic calculation
+   AEatom converged in          35  iterations
+     for nz =  73.00
+     delta  =    3.5515566384891350E-017
+  All Electron Orbital energies:         
+  n  l     occupancy       energy
+ 1  0      2.0000000E+00 -4.9499068E+03
+ 2  0      2.0000000E+00 -8.5046445E+02
+ 3  0      2.0000000E+00 -1.9480984E+02
+ 4  0      2.0000000E+00 -3.9694722E+01
+ 5  0      2.0000000E+00 -5.3677300E+00
+ 6  0      2.0000000E+00 -4.0209353E-01
+ 2  1      6.0000000E+00 -7.4533350E+02
+ 3  1      6.0000000E+00 -1.6354730E+02
+ 4  1      6.0000000E+00 -2.9439541E+01
+ 5  1      6.0000000E+00 -2.8970571E+00
+ 6  1      0.0000000E+00 -1.0022810E-01
+ 3  2      1.0000000E+01 -1.2706825E+02
+ 4  2      1.0000000E+01 -1.6318987E+01
+ 5  2      3.0000000E+00 -2.6611292E-01
+ 4  3      1.4000000E+01 -1.8177362E+00
+
+  Total energy
+     Total                    :    -31199.818465250253     
+ Completed calculations for Ta
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+Correlation functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   1.9550878E-04 h =   1.4272141E-02   n =       971 rmax =   2.0115397E+02
+ Scalar relativistic calculation
+   SCatom converged in           3  iterations
+     for nz =  73.00
+     delta  =    7.8107886867872530E-017
+   Valence Electron Orbital energies:         
+  n  l     occupancy       energy
+ 5  0      2.0000000E+00 -5.3677300E+00
+ 6  0      2.0000000E+00 -4.0209353E-01
+ 5  1      6.0000000E+00 -2.8970571E+00
+ 6  1      0.0000000E+00 -1.0022810E-01
+ 5  2      3.0000000E+00 -2.6611292E-01
+
+  Total energy
+     Total                    :    -31199.818465239518     
+     Valence                  :    -717.10049746222558     
+  paw parameters: 
+       lmax =            2
+         rc =    2.4099999999999993     
+        irc =          661
+   rc_shape =    2.1194706378679089     
+    rc_vloc =    1.8115034317129681     
+    rc_core =    1.2146842347601390     
+ Vloc: Non norm-conserving form with l= 3;e=  -3.0000E-01
+ Projector type: improved polynomial pseudization + Vanderbilt ortho.
+ Sinc^2 compensation charge shape zeroed at   2.1195E+00
+
+Number of basis functions     6
+ No.    n nodes    l      Energy         Cp coeff         Occ
+    1    5    4    0 -5.3677300E+00 -3.8494338E-01  2.0000000E+00
+    2    6    5    0 -4.0209353E-01  1.4261876E+01  2.0000000E+00
+    3    5    3    1 -2.8970571E+00 -3.5900062E+00  6.0000000E+00
+    4    6    4    1 -1.0022810E-01  8.5251981E+01  0.0000000E+00
+    5    5    2    2 -2.6611292E-01  3.3507796E+02  3.0000000E+00
+    6  999    3    2  3.0000000E-01  1.9785786E+01  0.0000000E+00
+ Completed diagonalization of ovlp with info =        0
+  
+ Eigenvalues of overlap operator (in the basis of projectors):
+    1        2.18121953E-01
+    2        2.07026522E+00
+    3        3.15309270E+00
+    4        5.33995863E+01
+    5        2.06401505E+03
+    6        7.59996479E+03
+  
+  Summary of PAW energies
+        Total valence energy       -717.10055687110946     
+          Smooth energy             13.552935827367255     
+          One center               -730.65349269847673     
+          Smooth kinetic            11.738699659403563     
+          Vloc energy               10.194461389333030     
+          Smooth exch-corr         -15.164056814568662     
+          One-center xc            -605.70086264055226     

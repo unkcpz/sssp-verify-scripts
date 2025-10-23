@@ -1,0 +1,20 @@
+ &input
+   title='Cd',
+   zed=48.,
+   rel=1,
+   config='[Kr] 4d10.0 5s2.0 5p0.0',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=2,
+   file_pseudopw='Cd.pbe-n-nc.UPF',
+   author='TM',
+   lloc=0,
+   nlcc=.true.,
+   tm=.true.
+ /
+3
+5P  2  1  0.00  0.00  2.65  2.65  0.0
+4D  3  2 10.00  0.00  2.65  2.65  0.0
+5S  1  0  2.00  0.00  2.65  2.65  0.0

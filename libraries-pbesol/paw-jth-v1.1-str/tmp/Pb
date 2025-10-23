@@ -1,0 +1,89 @@
+ Completed calculations for Pb
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+Correlation functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   6.4457926E-05 h =   5.2855500E-03   n =      2698 rmax =   1.0004597E+02
+ Scalar relativistic calculation
+   AEatom converged in          40  iterations
+     for nz =  82.00
+     delta  =    1.3849089533113810E-015
+  All Electron Orbital energies:         
+  n  l     occupancy       energy
+ 1  0      2.0000000E+00 -6.4758414E+03
+ 2  0      2.0000000E+00 -1.1582908E+03
+ 3  0      2.0000000E+00 -2.7803590E+02
+ 4  0      2.0000000E+00 -6.2921079E+01
+ 5  0      2.0000000E+00 -1.0597752E+01
+ 6  0      2.0000000E+00 -8.8901997E-01
+ 2  1      6.0000000E+00 -9.9347848E+02
+ 3  1      6.0000000E+00 -2.3079287E+02
+ 4  1      6.0000000E+00 -4.7441228E+01
+ 5  1      6.0000000E+00 -6.3070851E+00
+ 6  1      2.0000000E+00 -2.5846566E-01
+ 3  2      1.0000000E+01 -1.8263657E+02
+ 4  2      1.0000000E+01 -2.9539830E+01
+ 5  2      1.0000000E+01 -1.5553309E+00
+ 4  3      1.4000000E+01 -9.7707233E+00
+
+  Total energy
+     Total                    :    -41752.639468609363     
+ Completed calculations for Pb
+ Exchange-correlation type:
+Exchange functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+Correlation functional (LibXC):
+  J. P. Perdew, A. Ruzsinszky, G. I. Csonka, O. A. Vydrov, G. E. Scuseria, L. A. Constantin, X. Zhou, and K. Burke, Phys. Rev. Lett. 100, 136406 (2008)
+ Conventional Kohn-Sham equations solved
+  Radial integration grid is logarithmic 
+r0 =   6.4457926E-05 h =   5.2855500E-03   n =      2698 rmax =   1.0004597E+02
+ Scalar relativistic calculation
+   SCatom converged in           4  iterations
+     for nz =  82.00
+     delta  =    1.0509028947340212E-015
+   Valence Electron Orbital energies:         
+  n  l     occupancy       energy
+ 6  0      2.0000000E+00 -8.8901997E-01
+ 6  1      2.0000000E+00 -2.5846566E-01
+
+  Total energy
+     Total                    :    -41752.639468612011     
+     Valence                  :    -765.57806371756055     
+  paw parameters: 
+       lmax =            2
+         rc =    2.9141417315723395     
+        irc =         2029
+   rc_shape =    2.2021497573508553     
+    rc_vloc =    2.8082897308036259     
+    rc_core =    2.2021497573508553     
+ Vloc: truncated form - Vps(r)=A.sin(qr)/r for r<rc
+ Projector type: polynomial pseudization + Vanderbilt ortho.
+ Sinc^2 compensation charge shape zeroed at   2.2021E+00
+
+Number of basis functions     5
+ No.    n nodes    l      Energy         Cp coeff         Occ
+    1    6    5    0 -8.8901997E-01 -1.2253192E+02  2.0000000E+00
+    2  999    6    0  3.0000000E+00 -2.3226559E+00  0.0000000E+00
+    3    6    4    1 -2.5846566E-01 -3.8579447E+01  2.0000000E+00
+    4  999    5    1  4.5000000E+00 -4.7636610E-01  0.0000000E+00
+    5  999    3    2 -2.0000000E-01  1.0040294E+01  0.0000000E+00
+ Completed diagonalization of ovlp with info =        0
+  
+ Eigenvalues of overlap operator (in the basis of projectors):
+    1        3.89016866E-02
+    2        2.62843217E-01
+    3        3.07777505E+00
+    4        4.48537529E+00
+    5        8.16780206E+02
+  
+  Summary of PAW energies
+        Total valence energy       -765.57806625724959     
+          Smooth energy             11.178664027792077     
+          One center               -776.75673028504161     
+          Smooth kinetic            2.3712401776130285     
+          Vloc energy               5.0922403130590190     
+          Smooth exch-corr         -8.0033192413061620     
+          One-center xc            -753.62199814866506     

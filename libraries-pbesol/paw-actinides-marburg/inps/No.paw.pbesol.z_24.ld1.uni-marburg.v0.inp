@@ -1,0 +1,33 @@
+ &input
+   title='Nobelium',
+   atom = 'No'
+   rel=1,
+   config='[Rn] 6d0.0 7s2.0 7p0.0 5f14.0',
+   iswitch=3,
+   dft='PBESOL'
+ /
+ &inputp
+   lpaw=.true.,
+   pseudotype=3,
+   file_pseudopw='No.paw.pbesol.z_24.ld1.uni-marburg.v0.upf',
+   author='MS',
+   lloc=-2,
+   rcloc=1.20,
+   which_augfun='PSQ',
+   rmatch_augfun_nc=.true.,
+   nlcc=.true.,
+   new_core_ps=.true.,
+   rcore=0.95,
+   tm=.true.
+   lgipaw_reconstruction=.true.,
+   use_paw_as_gipaw=.true.,
+ /
+8
+6S  1  0  2.00  0.00  1.10  1.55  0.0
+7S  2  0  2.00  0.00  1.10  1.55  0.0
+6P  2  1  6.00  0.00  1.20  2.00  0.0
+7P  3  1  0.00  2.00  1.20  2.00  0.0
+6D  3  2  0.00  0.00  1.40  2.10  0.0
+6D  3  2  0.00  3.00  1.40  2.10  0.0
+5F  4  3 14.00  0.00  1.20  1.70  0.0
+5F  4  3  0.00  1.50  1.20  1.90  0.0

@@ -1,0 +1,20 @@
+ &input
+   title='Y',
+   zed=39.,
+   rel=1,
+   config='[Kr] 5s2.0 5p0.0 4d1.0',
+   iswitch=3,
+   dft='PBE'
+ /
+ &inputp
+   pseudotype=2,
+   file_pseudopw='Y.pbe-n-nc.UPF',
+   author='TM',
+   lloc=0,
+   nlcc=.true.,
+   tm=.true.
+ /
+3
+5P  2  1  0.00  0.00  3.45  3.45  0.0
+4D  3  2  1.00  0.00  2.50  2.50  0.0
+5S  1  0  2.00  0.00  3.05  3.05  0.0
