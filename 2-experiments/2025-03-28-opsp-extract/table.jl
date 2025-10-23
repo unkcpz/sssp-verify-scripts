@@ -149,9 +149,9 @@ end
 println(df_final)
 
 # %% element inspect
-filtered_df = df_final[df_final.element .== "C", :];
+filtered_df = df_final[df_final.element .== "K", :];
 filtered_df
-out_cols = [:element, :name, :z_valence, :eos_score, :score]
+out_cols = [:element, :name, :z_valence, :ecut_eff, :ecut_prec, :eos_score, :score]
 append!(out_cols, confs)
 select!(filtered_df, out_cols)
 
@@ -277,7 +277,7 @@ using JSON3
 element = "N"
 jfh = "/home/jyu/project/sssp-project/sssp-verify-scripts/2-experiments/2025-03-28-opsp-extract/$(element).EOS.json"
 eos_data = JSON3.read(open(jfh))
-p = plot_eos(eos_data, element)
+p = plot_eos(eos_data, element; save=true)
 display(p)
 
 # %%

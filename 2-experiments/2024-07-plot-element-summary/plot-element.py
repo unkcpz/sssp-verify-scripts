@@ -76,7 +76,7 @@ lib_abbr_name_mapping = {
 MAX_CUTOFF = 200
 MIN_CUTOFF = 30
 
-def plot(element, conff, converge_h5):
+def plot(element, conff, converge_h5, eos_json):
     count = 0
     plot_lines = []
     offset = 8
@@ -89,13 +89,13 @@ def plot(element, conff, converge_h5):
     # Define pyplot instance
     plt.figure(figsize=(40, 4 * len(pps)))
 
-    plt.title(f'Verification summary: {element} ({conff}) ({CRITERIA})', fontsize=20)
+    plt.title(f'Verification summary: {element} ({conff})', fontsize=20)
     plt.xlim(20, 215)
     plt.ylim(-offset/2.,(len(pps)-0.5)*offset)
 
     dual = 18 if element in HIGH_DUAL_ELEMENTS else 8
     plt.xlabel(f'Wavefunction cutoff [Ry]; Charge density cutoff [Ry] = {dual} x Ewfc (PAW/US) | 4 x Ewfc (NC); q-point = '+str([0.5, 0.5, 0.5]),fontsize=20)
-    plt.ylabel(f'Error w.r.t. ref. wavefunction cutoff (for the SSSP {CRITERIA} criteria)',fontsize=20)
+    plt.ylabel(f'Error w.r.t. ref. wavefunction cutoff (rescaled where solid/dash horizontal line for efficiency/precision criteria)',fontsize=20)
 
     # legend manually created
     line_phonon_frequencies = Line2D([0], [0], marker='o', linestyle='-', label=r'$\delta \bar{\omega}$', color='black')
@@ -129,34 +129,41 @@ def plot(element, conff, converge_h5):
         if lib_name is None:
             raise ValueError(f"lib_name of {dataset} is None")
 
+        abbr_lib_name = lib_abbr_name_mapping[lib_name]
+
         pcolor = lib_color_mapping[lib_name]
 
         print(f"------> Pseudopotential = {pp_name}")
 
         # label, Z_valence, TODO: avg.nu, max.nu (conf), friendly-nu (which give lower weight on XO3)
         try:
-            eos_dataset = eos_h5[pp_name]
-            avg_nu = 0
+            eos_data = eos_json[element][abbr_lib_name]
+            tot_nu = 0
             n_nu = 0
-            avg_nu_wo_xo3 = 0
+            tot_nu_wo_xo3 = 0
             n_nu_wo_xo3 = 0
             max_nu = 0
             max_conf = 'n/a'
-            for conf, data in eos_dataset['transferability_eos'].items():
-                nu = data.attrs.get('nu')
-                avg_nu += nu
+            for conf in ["BCC", "FCC", "SC", "DC", "XO", "XO2", "XO3", "X2O", "X2O3", "X2O5"]:
+                nu = eos_data[conf]["nu"]
+                tot_nu += nu
                 n_nu += 1
                 if conf != "XO3":
-                    avg_nu_wo_xo3 += nu
+                    tot_nu_wo_xo3 += nu
                     n_nu_wo_xo3 += 1
 
                 # max_nu = max(max_nu, nu)
                 if nu > max_nu:
                     max_nu = nu
                     max_conf = conf
-            avg_nu /= n_nu
-            avg_nu_wo_xo3 /= n_nu_wo_xo3
-            text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n" + f"avg.$\\nu$ = {avg_nu:.2f}\n" + f"max.$\\nu$ = {max_nu:.2f} ({max_conf})\n" + f"ang.$\\nu$ = {avg_nu_wo_xo3:.2f} (w/o XO3)"
+            avg_nu = tot_nu / n_nu
+            avg_nu_wo_xo3 = tot_nu_wo_xo3 / n_nu_wo_xo3
+            avg_nu_wo_maxconf = (tot_nu - max_nu) / (n_nu - 1)
+            if max_conf == "XO3":
+                text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n" + f"avg.$\\nu$ = {avg_nu:.2f}\n" + f"max.$\\nu$ = {max_nu:.2f} ({max_conf})\n" + f"avg.$\\nu$ = {avg_nu_wo_maxconf:.2f} (w/o {max_conf})\n"
+            else:
+                text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n" + f"avg.$\\nu$ = {avg_nu:.2f}\n" + f"max.$\\nu$ = {max_nu:.2f} ({max_conf})\n" + f"avg.$\\nu$ = {avg_nu_wo_maxconf:.2f} (w/o {max_conf})\n" + f"avg.$\\nu$ = {avg_nu_wo_xo3:.2f} (w/o XO3)\n"
+
             plt.text(MAX_CUTOFF+21, offset * count, text_blob,
                 verticalalignment='center',horizontalalignment='center',fontsize=14)
         except:
@@ -273,9 +280,29 @@ def plot(element, conff, converge_h5):
     # plt.savefig(element+'_'+str(dual)+'_conv_patt.png')
     folder_name = f'plots_{CRITERIA}_stable_conf'
     Path(folder_name).mkdir(exist_ok=True)
-    plt.savefig(f'{folder_name}/{element}_{conff}_{CRITERIA}_summary.png')
+    z_a = e2za(element)
+    plt.savefig(f'{folder_name}/{z_a}-{element}.png')
     plt.close()
 
+def e2za(symbol):
+    periodic_table = {
+        "H": 1, "He": 2, "Li": 3, "Be": 4, "B": 5, "C": 6, "N": 7, "O": 8, "F": 9, "Ne": 10,
+        "Na": 11, "Mg": 12, "Al": 13, "Si": 14, "P": 15, "S": 16, "Cl": 17, "Ar": 18,
+        "K": 19, "Ca": 20, "Sc": 21, "Ti": 22, "V": 23, "Cr": 24, "Mn": 25, "Fe": 26,
+        "Co": 27, "Ni": 28, "Cu": 29, "Zn": 30, "Ga": 31, "Ge": 32, "As": 33, "Se": 34,
+        "Br": 35, "Kr": 36, "Rb": 37, "Sr": 38, "Y": 39, "Zr": 40, "Nb": 41, "Mo": 42,
+        "Tc": 43, "Ru": 44, "Rh": 45, "Pd": 46, "Ag": 47, "Cd": 48, "In": 49, "Sn": 50,
+        "Sb": 51, "Te": 52, "I": 53, "Xe": 54, "Cs": 55, "Ba": 56, "La": 57, "Ce": 58,
+        "Pr": 59, "Nd": 60, "Pm": 61, "Sm": 62, "Eu": 63, "Gd": 64, "Tb": 65, "Dy": 66,
+        "Ho": 67, "Er": 68, "Tm": 69, "Yb": 70, "Lu": 71, "Hf": 72, "Ta": 73, "W": 74,
+        "Re": 75, "Os": 76, "Ir": 77, "Pt": 78, "Au": 79, "Hg": 80, "Tl": 81, "Pb": 82,
+        "Bi": 83, "Po": 84, "At": 85, "Rn": 86, "Fr": 87, "Ra": 88, "Ac": 89, "Th": 90,
+        "Pa": 91, "U": 92, "Np": 93, "Pu": 94, "Am": 95, "Cm": 96, "Bk": 97, "Cf": 98,
+        "Es": 99, "Fm": 100, "Md": 101, "No": 102, "Lr": 103, "Rf": 104, "Db": 105,
+        "Sg": 106, "Bh": 107, "Hs": 108, "Mt": 109, "Ds": 110, "Rg": 111, "Cn": 112,
+        "Nh": 113, "Fl": 114, "Mc": 115, "Lv": 116, "Ts": 117, "Og": 118
+    }
+    return periodic_table.get(symbol.capitalize(), None)
             
 if __name__ == "__main__":
     # pre--
@@ -283,10 +310,14 @@ if __name__ == "__main__":
         conf_mapping = json.load(fh)
         conf_mapping = {k: v.lower() for k, v in conf_mapping.items()}
 
-    for conf in ["bcc", "fcc", "dc"]:
+    with open('eos.json', 'r') as fh:
+        eos_json = json.load(fh)
+
+    # eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
+
+    for conf in ["bcc", "fcc", "dc", "sc"]:
         # Load the dataset of convergence results
         converge_h5 = h5py.File(f'./pp_verify_convergence_{conf}_2.h5')
-        eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
 
         # traverse once to collect mapping of element -> all PPs
         element_pps_mapping = {}
@@ -305,6 +336,7 @@ if __name__ == "__main__":
         converge_h5.visititems(curated_by_element)
 
         for element in ALL_ELEMENTS:
+        # for element in ["Zn"]:
             # if element and conf not compatible (the stable conf of element), skip
             try:
                 stable_conf = conf_mapping[element]
@@ -315,4 +347,4 @@ if __name__ == "__main__":
                 if stable_conf != conf:
                     continue
             
-            plot(element, conf, converge_h5)
+            plot(element, conf, converge_h5, eos_json)

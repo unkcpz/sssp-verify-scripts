@@ -146,13 +146,13 @@ end
 println(df_final)
 
 # %% element inspect
-filtered_df = df_final[df_final.element .== "C", :];
+filtered_df = df_final[df_final.element .== "Zr", :];
 filtered_df
-out_cols = [:element, :name, :z_valence, :eos_score, :score]
+out_cols = [:element, :name, :z_valence, :ecut_eff, :ecut_prec, :eos_score, :score]
 append!(out_cols, confs)
 select!(filtered_df, out_cols)
 
-# %% filter and write csv
+j %% filter and write csv
 #
 using CSV, DataFrames
 
@@ -166,10 +166,11 @@ jfh = "/home/jyu/project/sssp-project/sssp-verify-scripts/2-experiments/2024-07-
 eos_data = JSON3.read(open(jfh))
 
 # %%
-p = plot_eos(eos_data, "Fe", "PSL-US-v1-low", "GBRV-1.X")
+# p = plot_eos(eos_data, "Ne", "PSL-US-v1-low", "GBRV-1.X")
+p = plot_eos(eos_data, "Ne", "JTH-1.1-std", "SPMS")
 display(p)
 
-# %%
+j %%
 # plot eos
 using Plots
 gr()
@@ -186,7 +187,7 @@ function plot_eos(eos_data, element, pp1, pp2)
     data_pp1 = eos_data[Symbol(element)][Symbol(pp1)]
     data_pp2 = eos_data[Symbol(element)][Symbol(pp2)]
 
-    p = plot(layout = (5, 2), size = (1000, 1200))
+    p = plot(layout = (5, 2), size = (1000, 1200), plot_title=element)
 
     # Loop over 10 confs
     # for conf in confs
@@ -246,8 +247,8 @@ function plot_eos(eos_data, element, pp1, pp2)
         plot!(ylabel = "Energy per atom [eV]")
     end
 
-    p
-    # savefig(p, "/tmp/x.pdf")
+    # p
+    savefig(p, "/tmp/$element.pdf")
 end
 
 # %%

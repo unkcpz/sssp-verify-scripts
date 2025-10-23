@@ -18,12 +18,14 @@ with open('eos.json', 'r') as fh:
     eos_mapping = json.load(fh)
 
 def compute_recommended_cutoffs(xs, ys, criteria) -> int:
+    conv_cutoff = ys[-1]
     for x, y in zip(reversed(xs), reversed(ys)):
-        cutoff = x
         if y > criteria:
             break
+        else:
+            conv_cutoff = x
 
-    return cutoff
+    return conv_cutoff
 
 def get_criteria(protocol, property):
     criteria = get_protocol(category='criteria', name=protocol)

@@ -150,7 +150,7 @@ if __name__ == "__main__":
     with open("eos.json", "w") as fh:
         info = {}
         for element in ALL_ELEMENTS:
-        # for element in ["Fe"]:
+        # for element in ["Br"]:
             epp_info = extract(element, element_pps_mapping)
             
             info[element] = epp_info

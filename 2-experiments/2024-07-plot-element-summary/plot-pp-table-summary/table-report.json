@@ -17,8 +17,8 @@
             "XO3": 0.074836870570601
         },
         "avg.nu.w/o.max": 0.09374404120736878,
-        "efficiency": 50,
-        "precision": 60
+        "efficiency": 55,
+        "precision": 65
     },
     "H.nc.pbe.z_1.oncvpsp4.sg15.v0.upf": {
         "element": "H",
@@ -38,8 +38,8 @@
             "XO3": 0.045975297613465
         },
         "avg.nu.w/o.max": 0.024162730670079086,
-        "efficiency": 55,
-        "precision": 65
+        "efficiency": 60,
+        "precision": 70
     },
     "H.nc.pbe.z_1.oncvpsp4.spms.v1.upf": {
         "element": "H",
@@ -59,8 +59,8 @@
             "XO3": 0.077954331430342
         },
         "avg.nu.w/o.max": 0.09908874008881087,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "H.paw.pbe.z_1.atompaw.jth.v1.1-std.upf": {
         "element": "H",
@@ -80,8 +80,8 @@
             "XO3": 0.033419198520905
         },
         "avg.nu.w/o.max": 0.052863355779099924,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "H.paw.pbe.z_1.ld1.psl.v0.1.upf": {
         "element": "H",
@@ -101,8 +101,8 @@
             "XO3": 0.058643840433057
         },
         "avg.nu.w/o.max": 0.022594237225382997,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "H.paw.pbe.z_1.ld1.psl.v1.0.0-high.upf": {
         "element": "H",
@@ -122,8 +122,8 @@
             "XO3": 0.058643840433057
         },
         "avg.nu.w/o.max": 0.022594237225382997,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "H.us.pbe.z_1.ld1.psl.v0.1.upf": {
         "element": "H",
@@ -143,8 +143,8 @@
             "XO3": 0.064725027697962
         },
         "avg.nu.w/o.max": 0.05111909464490266,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "H.us.pbe.z_1.ld1.psl.v1.0.0-high.upf": {
         "element": "H",
@@ -206,8 +206,8 @@
             "XO3": 0.048903732678313
         },
         "avg.nu.w/o.max": 0.2596166086346556,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "He.nc.pbe.z_2.oncvpsp4.sg15.v0.upf": {
         "element": "He",
@@ -227,8 +227,8 @@
             "XO3": 1.5725521847971
         },
         "avg.nu.w/o.max": 0.39082224659580345,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "He.nc.pbe.z_2.oncvpsp4.spms.v1.upf": {
         "element": "He",
@@ -248,8 +248,8 @@
             "XO3": 0.079782330769461
         },
         "avg.nu.w/o.max": 0.2566391710003188,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "He.paw.pbe.z_2.atompaw.jth.v1.1-std.upf": {
         "element": "He",
@@ -269,8 +269,8 @@
             "XO3": 0.67087065655206
         },
         "avg.nu.w/o.max": 0.13025172912527955,
-        "efficiency": 75,
-        "precision": 100
+        "efficiency": 80,
+        "precision": 120
     },
     "He.paw.pbe.z_2.ld1.psl.v1.0.0-high.upf": {
         "element": "He",
@@ -290,8 +290,8 @@
             "XO3": 0.20566946181913
         },
         "avg.nu.w/o.max": 0.08754724033244987,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "He.us.pbe.z_2.ld1.psl.v1.0.0-high.upf": {
         "element": "He",
@@ -311,8 +311,8 @@
             "XO3": 0.19168950732175
         },
         "avg.nu.w/o.max": 0.13022177396134776,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Li.nc.pbe.z_3.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Li",
@@ -332,8 +332,8 @@
             "XO3": 0.36512129899371
         },
         "avg.nu.w/o.max": 0.12099898368402356,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "Li.nc.pbe.z_3.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Li",
@@ -353,8 +353,8 @@
             "XO3": 0.077779835736275
         },
         "avg.nu.w/o.max": 0.04498685124799203,
-        "efficiency": 80,
-        "precision": 90
+        "efficiency": 90,
+        "precision": 100
     },
     "Li.nc.pbe.z_3.oncvpsp4.sg15.v0.upf": {
         "element": "Li",
@@ -374,8 +374,8 @@
             "XO3": 0.7634018550819
         },
         "avg.nu.w/o.max": 0.24107968431173277,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Li.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
         "element": "Li",
@@ -395,8 +395,8 @@
             "XO3": 1.0836288246639
         },
         "avg.nu.w/o.max": 0.3655625745609236,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Li.paw.pbe.z_3.atompaw.jth.v1.1-std.upf": {
         "element": "Li",
@@ -416,8 +416,8 @@
             "XO3": 1.2192545298949
         },
         "avg.nu.w/o.max": 0.36204001063630264,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Li.paw.pbe.z_3.ld1.psl.v0.2.1.upf": {
         "element": "Li",
@@ -458,8 +458,8 @@
             "XO3": 0.015689566254682
         },
         "avg.nu.w/o.max": 0.01839724475231224,
-        "efficiency": 90,
-        "precision": 100
+        "efficiency": 100,
+        "precision": 120
     },
     "Li.paw.pbe.z_3.ld1.psl.v1.0.0-low.upf": {
         "element": "Li",
@@ -479,8 +479,8 @@
             "XO3": 0.1147950224801
         },
         "avg.nu.w/o.max": 0.07621933989389645,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Li.us.pbe.z_3.ld1.psl.v0.2.1.upf": {
         "element": "Li",
@@ -500,8 +500,8 @@
             "XO3": 0.23018094115605
         },
         "avg.nu.w/o.max": 0.09883249826117921,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Li.us.pbe.z_3.ld1.psl.v1.0.0-high.upf": {
         "element": "Li",
@@ -521,8 +521,8 @@
             "XO3": 0.013079710472893
         },
         "avg.nu.w/o.max": 0.022995232619823298,
-        "efficiency": 90,
-        "precision": 100
+        "efficiency": 100,
+        "precision": 120
     },
     "Li.us.pbe.z_3.ld1.psl.v1.0.0-low.upf": {
         "element": "Li",
@@ -542,8 +542,8 @@
             "XO3": 0.090118214286062
         },
         "avg.nu.w/o.max": 0.06754012464371012,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Li.us.pbe.z_3.uspp.gbrv.v1.4.upf": {
         "element": "Li",
@@ -563,8 +563,8 @@
             "XO3": 0.064087273667232
         },
         "avg.nu.w/o.max": 0.020384151422257413,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Be.nc.pbe.z_4.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Be",
@@ -584,8 +584,8 @@
             "XO3": 0.32479799753623
         },
         "avg.nu.w/o.max": 0.28429768882329376,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Be.nc.pbe.z_4.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Be",
@@ -605,8 +605,8 @@
             "XO3": 0.24455568756395
         },
         "avg.nu.w/o.max": 0.2105344533101203,
-        "efficiency": 90,
-        "precision": 100
+        "efficiency": 100,
+        "precision": 120
     },
     "Be.nc.pbe.z_4.oncvpsp4.sg15.v0.upf": {
         "element": "Be",
@@ -626,8 +626,8 @@
             "XO3": 0.038159642000302
         },
         "avg.nu.w/o.max": 0.18639051486185337,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Be.nc.pbe.z_4.oncvpsp4.spms.v1.upf": {
         "element": "Be",
@@ -647,8 +647,8 @@
             "XO3": 0.17012644838186
         },
         "avg.nu.w/o.max": 0.11056983760349956,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Be.paw.pbe.z_2.ld1.psl.v1.0.0-low.upf": {
         "element": "Be",
@@ -689,8 +689,8 @@
             "XO3": 0.24217890868614
         },
         "avg.nu.w/o.max": 0.3064906660971584,
-        "efficiency": 35,
-        "precision": 60
+        "efficiency": 40,
+        "precision": 65
     },
     "Be.paw.pbe.z_4.ld1.psl.v1.0.0-high.upf": {
         "element": "Be",
@@ -710,8 +710,8 @@
             "XO3": 0.08638732758253
         },
         "avg.nu.w/o.max": 0.06554871552058678,
-        "efficiency": 70,
-        "precision": 100
+        "efficiency": 75,
+        "precision": 120
     },
     "Be.paw.pbe.z_4.ld1.psl.v1.0.0-low.sl.upf": {
         "element": "Be",
@@ -731,8 +731,8 @@
             "XO3": 0.10238654712643
         },
         "avg.nu.w/o.max": 0.09275561555269578,
-        "efficiency": 60,
-        "precision": 90
+        "efficiency": 65,
+        "precision": 100
     },
     "Be.us.pbe.z_2.ld1.psl.v1.0.0-low.n.upf": {
         "element": "Be",
@@ -773,8 +773,8 @@
             "XO3": 0.10334562158435
         },
         "avg.nu.w/o.max": 0.08948829248561856,
-        "efficiency": 80,
-        "precision": 100
+        "efficiency": 90,
+        "precision": 120
     },
     "Be.us.pbe.z_4.ld1.psl.v1.0.0-low.sl.upf": {
         "element": "Be",
@@ -794,8 +794,8 @@
             "XO3": 0.10779005012229
         },
         "avg.nu.w/o.max": 0.09950832604794256,
-        "efficiency": 60,
-        "precision": 90
+        "efficiency": 65,
+        "precision": 100
     },
     "Be.us.pbe.z_4.uspp.gbrv.v1.4.upf": {
         "element": "Be",
@@ -815,8 +815,8 @@
             "XO3": 0.17440143796678
         },
         "avg.nu.w/o.max": 0.181038806769833,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "B.nc.pbe.z_3.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "B",
@@ -836,8 +836,8 @@
             "XO3": 0.23985543174281
         },
         "avg.nu.w/o.max": 0.12660976021982723,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "B.nc.pbe.z_3.oncvpsp4.sg15.v0.upf": {
         "element": "B",
@@ -857,8 +857,8 @@
             "XO3": 0.51975317610686
         },
         "avg.nu.w/o.max": 0.2739158433897557,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "B.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
         "element": "B",
@@ -878,8 +878,8 @@
             "XO3": 0.087611243641679
         },
         "avg.nu.w/o.max": 0.07853287872150812,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "B.paw.pbe.z_3.atompaw.jth.v1.1-std.upf": {
         "element": "B",
@@ -920,8 +920,8 @@
             "XO3": 0.090956924955252
         },
         "avg.nu.w/o.max": 0.048184277433712716,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "B.paw.pbe.z_3.ld1.psl.v1.0.0-high.upf": {
         "element": "B",
@@ -941,8 +941,8 @@
             "XO3": 0.18964976282174
         },
         "avg.nu.w/o.max": 0.14526781988497112,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "B.us.pbe.z_3.ld1.psl.v0.1.upf": {
         "element": "B",
@@ -962,8 +962,8 @@
             "XO3": 0.037544196414079
         },
         "avg.nu.w/o.max": 0.05376928059152067,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "B.us.pbe.z_3.ld1.psl.v1.0.0-high.upf": {
         "element": "B",
@@ -983,8 +983,8 @@
             "XO3": 0.09792119885802
         },
         "avg.nu.w/o.max": 0.13886818858900496,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "B.us.pbe.z_3.uspp.gbrv.v1.4.upf": {
         "element": "B",
@@ -1004,8 +1004,8 @@
             "XO3": 0.067669279809929
         },
         "avg.nu.w/o.max": 0.10161863688421756,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "C.nc.pbe.z_4.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "C",
@@ -1025,8 +1025,8 @@
             "XO3": 0.46292113556558
         },
         "avg.nu.w/o.max": 0.23518517288343807,
-        "efficiency": 65,
-        "precision": 65
+        "efficiency": 70,
+        "precision": 70
     },
     "C.nc.pbe.z_4.oncvpsp4.sg15.v0.upf": {
         "element": "C",
@@ -1046,8 +1046,8 @@
             "XO3": 0.12231605806861
         },
         "avg.nu.w/o.max": 0.07575650623013387,
-        "efficiency": 60,
-        "precision": 65
+        "efficiency": 65,
+        "precision": 70
     },
     "C.nc.pbe.z_4.oncvpsp4.spms.v1.upf": {
         "element": "C",
@@ -1067,8 +1067,8 @@
             "XO3": 0.47064284470496
         },
         "avg.nu.w/o.max": 0.2430951008430693,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "C.paw.pbe.z_4.atompaw.jth.v1.1-std.upf": {
         "element": "C",
@@ -1089,7 +1089,7 @@
         },
         "avg.nu.w/o.max": 0.15554657673393854,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "C.paw.pbe.z_4.ld1.psl.v0.1.upf": {
         "element": "C",
@@ -1130,8 +1130,8 @@
             "XO3": 0.089804638198495
         },
         "avg.nu.w/o.max": 0.07328436322992445,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "C.us.pbe.z_4.ld1.psl.v0.1.upf": {
         "element": "C",
@@ -1151,8 +1151,8 @@
             "XO3": 0.10346516919875
         },
         "avg.nu.w/o.max": 0.06737635775291413,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "C.us.pbe.z_4.ld1.psl.v1.0.0-high.upf": {
         "element": "C",
@@ -1172,8 +1172,8 @@
             "XO3": 0.14035002416128
         },
         "avg.nu.w/o.max": 0.0922927314311429,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "C.us.pbe.z_4.uspp.gbrv.v1.2.upf": {
         "element": "C",
@@ -1214,8 +1214,8 @@
             "XO3": 0.45468151193427
         },
         "avg.nu.w/o.max": 0.2719537542954916,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "N.nc.pbe.z_5.oncvpsp4.sg15.v0.upf": {
         "element": "N",
@@ -1235,8 +1235,8 @@
             "XO3": 0.31635120351858
         },
         "avg.nu.w/o.max": 0.20200139635658654,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "N.nc.pbe.z_5.oncvpsp4.spms.v1.upf": {
         "element": "N",
@@ -1256,8 +1256,8 @@
             "XO3": 0.45661693768038
         },
         "avg.nu.w/o.max": 0.27195615977794224,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "N.paw.pbe.z_5.atompaw.jth.v1.1-std.upf": {
         "element": "N",
@@ -1277,8 +1277,8 @@
             "XO3": 0.16535016311121
         },
         "avg.nu.w/o.max": 0.1046445457670709,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "N.paw.pbe.z_5.ld1.psl.v0.1.upf": {
         "element": "N",
@@ -1298,8 +1298,8 @@
             "XO3": 0.034083914506893
         },
         "avg.nu.w/o.max": 0.023191050523217887,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "N.paw.pbe.z_5.ld1.psl.v1.0.0-high.upf": {
         "element": "N",
@@ -1319,8 +1319,8 @@
             "XO3": 0.3575187385173
         },
         "avg.nu.w/o.max": 0.2364857142308438,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "N.us.pbe.z_5.ld1.psl.v0.1.upf": {
         "element": "N",
@@ -1361,8 +1361,8 @@
             "XO3": 0.35278908370585
         },
         "avg.nu.w/o.max": 0.2255156617025587,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "N.us.pbe.z_5.uspp.gbrv.v1.2.upf": {
         "element": "N",
@@ -1382,8 +1382,8 @@
             "XO3": 0.043332340881947
         },
         "avg.nu.w/o.max": 0.06254311962247688,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "O.nc.pbe.z_6.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "O",
@@ -1403,8 +1403,8 @@
             "XO3": 0.098325946706722
         },
         "avg.nu.w/o.max": 0.05465952976045896,
-        "efficiency": 70,
-        "precision": 75
+        "efficiency": 75,
+        "precision": 80
     },
     "O.nc.pbe.z_6.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "O",
@@ -1445,8 +1445,8 @@
             "XO3": 0.22779119584462
         },
         "avg.nu.w/o.max": 0.04835988234913013,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "O.nc.pbe.z_6.oncvpsp4.spms.v1.upf": {
         "element": "O",
@@ -1466,8 +1466,8 @@
             "XO3": 0.10243973803844
         },
         "avg.nu.w/o.max": 0.049541087922934324,
-        "efficiency": 70,
-        "precision": 75
+        "efficiency": 75,
+        "precision": 80
     },
     "O.paw.pbe.z_6.atompaw.jth.v1.1-std.upf": {
         "element": "O",
@@ -1487,8 +1487,8 @@
             "XO3": 0.48287123354725
         },
         "avg.nu.w/o.max": 0.24219907728051876,
-        "efficiency": 35,
-        "precision": 60
+        "efficiency": 40,
+        "precision": 65
     },
     "O.paw.pbe.z_6.ld1.psl.v0.1.upf": {
         "element": "O",
@@ -1508,8 +1508,8 @@
             "XO3": 0.012352187496213
         },
         "avg.nu.w/o.max": 0.008899120157181983,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "O.paw.pbe.z_6.ld1.psl.v1.0.0-high.upf": {
         "element": "O",
@@ -1529,8 +1529,8 @@
             "XO3": 0.43713324321839
         },
         "avg.nu.w/o.max": 0.2253232212293227,
-        "efficiency": 40,
-        "precision": 65
+        "efficiency": 45,
+        "precision": 70
     },
     "O.paw.pbe.z_6.ld1.psl.v1.0.0-low.upf": {
         "element": "O",
@@ -1550,8 +1550,8 @@
             "XO3": 0.44257835134433
         },
         "avg.nu.w/o.max": 0.22305350711987731,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "O.us.pbe.z_6.ld1.psl.v0.1.upf": {
         "element": "O",
@@ -1634,8 +1634,8 @@
             "XO3": 0.80926005239977
         },
         "avg.nu.w/o.max": 0.4931296329256796,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "F.nc.pbe.z_7.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "F",
@@ -1655,8 +1655,8 @@
             "XO3": 0.043075087910136
         },
         "avg.nu.w/o.max": 0.11433091831326633,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "F.nc.pbe.z_7.oncvpsp4.sg15.v0.upf": {
         "element": "F",
@@ -1676,8 +1676,8 @@
             "XO3": 0.19901399501894
         },
         "avg.nu.w/o.max": 0.06468928222286979,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "F.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
         "element": "F",
@@ -1697,8 +1697,8 @@
             "XO3": 0.044759835800272
         },
         "avg.nu.w/o.max": 0.10977277812502702,
-        "efficiency": 70,
-        "precision": 75
+        "efficiency": 75,
+        "precision": 80
     },
     "F.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
         "element": "F",
@@ -1718,8 +1718,8 @@
             "XO3": 0.058704291238724
         },
         "avg.nu.w/o.max": 0.07319508229841566,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "F.paw.pbe.z_7.ld1.psl.v0.1.upf": {
         "element": "F",
@@ -1739,8 +1739,8 @@
             "XO3": 0.048474705753732
         },
         "avg.nu.w/o.max": 0.026811735227678664,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "F.paw.pbe.z_7.ld1.psl.v1.0.0-high.upf": {
         "element": "F",
@@ -1760,8 +1760,8 @@
             "XO3": 0.14280974158052
         },
         "avg.nu.w/o.max": 0.04058531621469533,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "F.us.pbe.z_7.ld1.psl.v0.1.upf": {
         "element": "F",
@@ -1781,8 +1781,8 @@
             "XO3": 0.069683966988404
         },
         "avg.nu.w/o.max": 0.028819981627363725,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "F.us.pbe.z_7.ld1.psl.v1.0.0-high.upf": {
         "element": "F",
@@ -1802,8 +1802,8 @@
             "XO3": 0.1659209504255
         },
         "avg.nu.w/o.max": 0.0685240561527179,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "F.us.pbe.z_7.uspp.gbrv.v1.4.upf": {
         "element": "F",
@@ -1823,8 +1823,8 @@
             "XO3": 0.018226064178369
         },
         "avg.nu.w/o.max": 0.11578607204048444,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Ne.nc.pbe.z_8.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Ne",
@@ -1844,8 +1844,8 @@
             "XO3": 0.40577963453315
         },
         "avg.nu.w/o.max": 0.6509606882582911,
-        "efficiency": 80,
-        "precision": 100
+        "efficiency": 90,
+        "precision": 120
     },
     "Ne.nc.pbe.z_8.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Ne",
@@ -1865,8 +1865,8 @@
             "XO3": 0.39876983072435
         },
         "avg.nu.w/o.max": 0.6719883631642387,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Ne.nc.pbe.z_8.oncvpsp4.sg15.v0.upf": {
         "element": "Ne",
@@ -1907,8 +1907,8 @@
             "XO3": 0.59067113705114
         },
         "avg.nu.w/o.max": 0.6475519775486624,
-        "efficiency": 65,
-        "precision": 90
+        "efficiency": 70,
+        "precision": 100
     },
     "Ne.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
         "element": "Ne",
@@ -1928,8 +1928,8 @@
             "XO3": 0.40765063823248
         },
         "avg.nu.w/o.max": 0.197848331045282,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "Ne.paw.pbe.z_8.ld1.psl.v1.0.0-high.upf": {
         "element": "Ne",
@@ -1949,8 +1949,8 @@
             "XO3": 0.075548235021764
         },
         "avg.nu.w/o.max": 0.09650166802299118,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Ne.us.pbe.z_8.ld1.psl.v1.0.0-high.upf": {
         "element": "Ne",
@@ -1970,8 +1970,8 @@
             "XO3": 8.7921603457483
         },
         "avg.nu.w/o.max": 12.129840460433776,
-        "efficiency": 50,
-        "precision": 65
+        "efficiency": 55,
+        "precision": 70
     },
     "Na.nc.pbe.z_9.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Na",
@@ -1991,8 +1991,8 @@
             "XO3": 0.29605628962664
         },
         "avg.nu.w/o.max": 0.16222329106808686,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Na.nc.pbe.z_9.oncvpsp4.sg15.v0.upf": {
         "element": "Na",
@@ -2012,8 +2012,8 @@
             "XO3": 1.1903453380502
         },
         "avg.nu.w/o.max": 0.39986264565167556,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Na.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
         "element": "Na",
@@ -2033,8 +2033,8 @@
             "XO3": 2.7549936848859
         },
         "avg.nu.w/o.max": 1.401061303310001,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Na.paw.pbe.z_9.atompaw.jth.v1.1-std.upf": {
         "element": "Na",
@@ -2054,8 +2054,8 @@
             "XO3": 1.7493167336926
         },
         "avg.nu.w/o.max": 0.6631245376618233,
-        "efficiency": 65,
-        "precision": 100
+        "efficiency": 70,
+        "precision": 120
     },
     "Na.paw.pbe.z_9.ld1.psl.v0.2.upf": {
         "element": "Na",
@@ -2096,8 +2096,8 @@
             "XO3": 0.4455431156132
         },
         "avg.nu.w/o.max": 0.2805321804789755,
-        "efficiency": 80,
-        "precision": 120
+        "efficiency": 90,
+        "precision": 150
     },
     "Na.paw.pbe.z_9.ld1.psl.v1.0.0-low.upf": {
         "element": "Na",
@@ -2117,8 +2117,8 @@
             "XO3": 0.12746047857029
         },
         "avg.nu.w/o.max": 0.03924448569876788,
-        "efficiency": 80,
-        "precision": 120
+        "efficiency": 90,
+        "precision": 150
     },
     "Na.us.pbe.z_9.ld1.psl.v0.2.upf": {
         "element": "Na",
@@ -2138,8 +2138,8 @@
             "XO3": 0.67010059591805
         },
         "avg.nu.w/o.max": 0.27331815981585567,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Na.us.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
         "element": "Na",
@@ -2159,8 +2159,8 @@
             "XO3": 0.46195147030085
         },
         "avg.nu.w/o.max": 0.3388105400279533,
-        "efficiency": 80,
-        "precision": 120
+        "efficiency": 90,
+        "precision": 150
     },
     "Na.us.pbe.z_9.ld1.psl.v1.0.0-low.upf": {
         "element": "Na",
@@ -2180,8 +2180,8 @@
             "XO3": 0.13838717864953
         },
         "avg.nu.w/o.max": 0.078053872983952,
-        "efficiency": 80,
-        "precision": 120
+        "efficiency": 90,
+        "precision": 150
     },
     "Na.us.pbe.z_9.uspp.gbrv.v1.5.upf": {
         "element": "Na",
@@ -2201,8 +2201,8 @@
             "XO3": 1.4491203651399
         },
         "avg.nu.w/o.max": 0.5645452272912266,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Mg.nc.pbe.z_10.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Mg",
@@ -2222,8 +2222,8 @@
             "XO3": 0.36476702657153
         },
         "avg.nu.w/o.max": 0.20599817977293647,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Mg.nc.pbe.z_10.oncvpsp4.sg15.v0.upf": {
         "element": "Mg",
@@ -2243,8 +2243,8 @@
             "XO3": 0.5919756252428
         },
         "avg.nu.w/o.max": 0.20370706143128114,
-        "efficiency": 45,
-        "precision": 80
+        "efficiency": 50,
+        "precision": 90
     },
     "Mg.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
         "element": "Mg",
@@ -2264,8 +2264,8 @@
             "XO3": 0.45019289423337
         },
         "avg.nu.w/o.max": 0.1116922161425069,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Mg.paw.pbe.z_10.atompaw.jth.v1.1-std.upf": {
         "element": "Mg",
@@ -2285,8 +2285,8 @@
             "XO3": 2.3535816720003
         },
         "avg.nu.w/o.max": 0.6065311765131922,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Mg.paw.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
         "element": "Mg",
@@ -2306,8 +2306,8 @@
             "XO3": 0.16336848844596
         },
         "avg.nu.w/o.max": 0.06229814846319949,
-        "efficiency": 80,
-        "precision": 100
+        "efficiency": 90,
+        "precision": 120
     },
     "Mg.paw.pbe.z_10.ld1.psl.v1.0.0-low.upf": {
         "element": "Mg",
@@ -2327,8 +2327,8 @@
             "XO3": 0.024661369482898
         },
         "avg.nu.w/o.max": 0.02499667570252311,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Mg.us.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
         "element": "Mg",
@@ -2348,8 +2348,8 @@
             "XO3": 0.29785096013731
         },
         "avg.nu.w/o.max": 0.2471269518046771,
-        "efficiency": 80,
-        "precision": 100
+        "efficiency": 90,
+        "precision": 120
     },
     "Mg.us.pbe.z_10.ld1.psl.v1.0.0-low.upf": {
         "element": "Mg",
@@ -2369,8 +2369,8 @@
             "XO3": 0.01931036128371
         },
         "avg.nu.w/o.max": 0.01338173969089329,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Mg.us.pbe.z_10.uspp.gbrv.v1.4.upf": {
         "element": "Mg",
@@ -2390,8 +2390,8 @@
             "XO3": 0.018932713217996
         },
         "avg.nu.w/o.max": 0.023852003637886907,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Al.nc.pbe.z_11.oncvpsp4.sg15.v0.upf": {
         "element": "Al",
@@ -2411,8 +2411,8 @@
             "XO3": 0.17031976124775
         },
         "avg.nu.w/o.max": 0.15298036727960568,
-        "efficiency": 60,
-        "precision": 65
+        "efficiency": 65,
+        "precision": 70
     },
     "Al.nc.pbe.z_3.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Al",
@@ -2432,8 +2432,8 @@
             "XO3": 0.064258801273931
         },
         "avg.nu.w/o.max": 0.186749192096912,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Al.nc.pbe.z_3.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Al",
@@ -2453,8 +2453,8 @@
             "XO3": 0.064262194627504
         },
         "avg.nu.w/o.max": 0.18674972913492058,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Al.nc.pbe.z_3.oncvpsp4.spms.v1.upf": {
         "element": "Al",
@@ -2945,8 +2945,8 @@
             "XO3": 0.1995000674228
         },
         "avg.nu.w/o.max": 0.06358417550021822,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "P.nc.pbe.z_5.oncvpsp4.spms.v1.upf": {
         "element": "P",
@@ -2967,7 +2967,7 @@
         },
         "avg.nu.w/o.max": 0.06390171720170196,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "P.paw.pbe.z_5.atompaw.jth.v1.1-std.upf": {
         "element": "P",
@@ -2987,8 +2987,8 @@
             "XO3": 0.098866436540334
         },
         "avg.nu.w/o.max": 0.04210322690580734,
-        "efficiency": 40,
-        "precision": 120
+        "efficiency": 45,
+        "precision": 150
     },
     "P.paw.pbe.z_5.ld1.psl.v0.1.upf": {
         "element": "P",
@@ -3008,8 +3008,8 @@
             "XO3": 0.1116565340155
         },
         "avg.nu.w/o.max": 0.23279816018694444,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "P.paw.pbe.z_5.ld1.psl.v1.0.0-high.upf": {
         "element": "P",
@@ -3050,8 +3050,8 @@
             "XO3": 0.59740856960813
         },
         "avg.nu.w/o.max": 0.2722623307297295,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "P.us.pbe.z_5.ld1.psl.v0.1.upf": {
         "element": "P",
@@ -3071,8 +3071,8 @@
             "XO3": 0.063779892831351
         },
         "avg.nu.w/o.max": 0.21813249890273564,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "P.us.pbe.z_5.ld1.psl.v1.0.0-high.upf": {
         "element": "P",
@@ -3113,8 +3113,8 @@
             "XO3": 0.62753990118849
         },
         "avg.nu.w/o.max": 0.2774443277254336,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "P.us.pbe.z_5.uspp.gbrv.v1.5.upf": {
         "element": "P",
@@ -3155,8 +3155,8 @@
             "XO3": 0.01815381540137
         },
         "avg.nu.w/o.max": 0.030751392789741636,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "S.nc.pbe.z_6.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "S",
@@ -3176,8 +3176,8 @@
             "XO3": 0.016920399949827
         },
         "avg.nu.w/o.max": 0.02428042353450259,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "S.nc.pbe.z_6.oncvpsp4.sg15.v0.upf": {
         "element": "S",
@@ -3239,8 +3239,8 @@
             "XO3": 0.15609531046352
         },
         "avg.nu.w/o.max": 0.04720378728869089,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "S.paw.pbe.z_6.ld1.psl.v0.1.upf": {
         "element": "S",
@@ -3302,8 +3302,8 @@
             "XO3": 1.0157810328029
         },
         "avg.nu.w/o.max": 0.1661096683437189,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "S.us.pbe.z_6.ld1.psl.v0.1.upf": {
         "element": "S",
@@ -3365,8 +3365,8 @@
             "XO3": 0.69580698128971
         },
         "avg.nu.w/o.max": 0.16164036049324806,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "S.us.pbe.z_6.uspp.gbrv.v1.4.upf": {
         "element": "S",
@@ -3407,8 +3407,8 @@
             "XO3": 0.0094332383456521
         },
         "avg.nu.w/o.max": 0.07024043177956679,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Cl.nc.pbe.z_7.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Cl",
@@ -3449,8 +3449,8 @@
             "XO3": 2.7159339918193
         },
         "avg.nu.w/o.max": 0.7639411053395576,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Cl.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
         "element": "Cl",
@@ -3470,8 +3470,8 @@
             "XO3": 0.52780795102803
         },
         "avg.nu.w/o.max": 0.078895010279825,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Cl.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
         "element": "Cl",
@@ -3491,8 +3491,8 @@
             "XO3": 0.89799546055201
         },
         "avg.nu.w/o.max": 0.15570083328213433,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Cl.paw.pbe.z_7.ld1.psl.v0.3.0.upf": {
         "element": "Cl",
@@ -3512,8 +3512,8 @@
             "XO3": 0.035329048096508
         },
         "avg.nu.w/o.max": 0.19970609354670874,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Cl.paw.pbe.z_7.ld1.psl.v1.0.0-high.upf": {
         "element": "Cl",
@@ -3533,8 +3533,8 @@
             "XO3": 0.32520636749513
         },
         "avg.nu.w/o.max": 0.036573829550924315,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Cl.paw.pbe.z_7.ld1.psl.v1.0.0-low.upf": {
         "element": "Cl",
@@ -3554,8 +3554,8 @@
             "XO3": 0.026672753126393
         },
         "avg.nu.w/o.max": 0.02653328641961715,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Cl.us.pbe.z_7.ld1.psl.v0.3.0.upf": {
         "element": "Cl",
@@ -3575,8 +3575,8 @@
             "XO3": 0.17908237370445
         },
         "avg.nu.w/o.max": 0.22511744401838996,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Cl.us.pbe.z_7.ld1.psl.v1.0.0-high.upf": {
         "element": "Cl",
@@ -3596,8 +3596,8 @@
             "XO3": 0.26182552348603
         },
         "avg.nu.w/o.max": 0.03942621477094457,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Cl.us.pbe.z_7.ld1.psl.v1.0.0-low.upf": {
         "element": "Cl",
@@ -3617,8 +3617,8 @@
             "XO3": 0.069181451155519
         },
         "avg.nu.w/o.max": 0.039144908352867394,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Cl.us.pbe.z_7.uspp.gbrv.v1.4.upf": {
         "element": "Cl",
@@ -3638,8 +3638,8 @@
             "XO3": 0.12555504726653
         },
         "avg.nu.w/o.max": 0.09457108400382536,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Ar.nc.pbe.z_8.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Ar",
@@ -3659,8 +3659,8 @@
             "XO3": 0.039622479616428
         },
         "avg.nu.w/o.max": 0.3761998394388264,
-        "efficiency": 60,
-        "precision": 65
+        "efficiency": 65,
+        "precision": 70
     },
     "Ar.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
         "element": "Ar",
@@ -3680,8 +3680,8 @@
             "XO3": 0.34838258248043
         },
         "avg.nu.w/o.max": 0.39454445825571377,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Ar.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
         "element": "Ar",
@@ -3701,8 +3701,8 @@
             "XO3": 4.9114576330655
         },
         "avg.nu.w/o.max": 0.7844018301152833,
-        "efficiency": 45,
-        "precision": 65
+        "efficiency": 50,
+        "precision": 70
     },
     "Ar.paw.pbe.z_8.ld1.psl.v0.3.0.upf": {
         "element": "Ar",
@@ -3743,8 +3743,8 @@
             "XO3": 0.32040316536089
         },
         "avg.nu.w/o.max": 0.06579090504344368,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Ar.paw.pbe.z_8.ld1.psl.v1.0.0-low.upf": {
         "element": "Ar",
@@ -3764,8 +3764,8 @@
             "XO3": 0.20769032780255
         },
         "avg.nu.w/o.max": 0.070318305653767,
-        "efficiency": 70,
-        "precision": 100
+        "efficiency": 75,
+        "precision": 120
     },
     "Ar.us.pbe.z_8.ld1.psl.v0.3.0.upf": {
         "element": "Ar",
@@ -3785,8 +3785,8 @@
             "XO3": 0.50396313002507
         },
         "avg.nu.w/o.max": 0.12318595320513756,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Ar.us.pbe.z_8.ld1.psl.v1.0.0-high.upf": {
         "element": "Ar",
@@ -3806,8 +3806,8 @@
             "XO3": 0.19422654644422
         },
         "avg.nu.w/o.max": 0.13391127259042934,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Ar.us.pbe.z_8.ld1.psl.v1.0.0-low.upf": {
         "element": "Ar",
@@ -3827,8 +3827,8 @@
             "XO3": 0.17189246192166
         },
         "avg.nu.w/o.max": 0.16704322000490496,
-        "efficiency": 70,
-        "precision": 100
+        "efficiency": 75,
+        "precision": 120
     },
     "K.nc.pbe.z_9.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "K",
@@ -3848,8 +3848,8 @@
             "XO3": 0.064985638884287
         },
         "avg.nu.w/o.max": 0.03737901596585482,
-        "efficiency": 65,
-        "precision": 65
+        "efficiency": 70,
+        "precision": 70
     },
     "K.nc.pbe.z_9.oncvpsp4.sg15.v0.upf": {
         "element": "K",
@@ -3869,8 +3869,8 @@
             "XO3": 0.13810585674849
         },
         "avg.nu.w/o.max": 0.02187628719579599,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "K.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
         "element": "K",
@@ -3911,8 +3911,8 @@
             "XO3": 1.6482471402844
         },
         "avg.nu.w/o.max": 0.3985041626487772,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "K.paw.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
         "element": "K",
@@ -3932,8 +3932,8 @@
             "XO3": 0.029210962069539
         },
         "avg.nu.w/o.max": 0.027923809932670542,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "K.us.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
         "element": "K",
@@ -3953,8 +3953,8 @@
             "XO3": 0.0075506390648466
         },
         "avg.nu.w/o.max": 0.02818130329534572,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "K.us.pbe.z_9.uspp.gbrv.v1.4.upf": {
         "element": "K",
@@ -3974,8 +3974,8 @@
             "XO3": 0.069744955440726
         },
         "avg.nu.w/o.max": 0.04410558578182846,
-        "efficiency": 70,
-        "precision": 75
+        "efficiency": 75,
+        "precision": 80
     },
     "Ca.nc.pbe.z_10.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Ca",
@@ -3995,8 +3995,8 @@
             "XO3": 0.032858346509536
         },
         "avg.nu.w/o.max": 0.048695171445178334,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Ca.nc.pbe.z_10.oncvpsp4.sg15.v0.upf": {
         "element": "Ca",
@@ -4037,8 +4037,8 @@
             "XO3": 0.027273399733275
         },
         "avg.nu.w/o.max": 0.1726780150335057,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Ca.paw.pbe.z_10.atompaw.jth.v1.1-std.upf": {
         "element": "Ca",
@@ -4058,8 +4058,8 @@
             "XO3": 0.020524418955831
         },
         "avg.nu.w/o.max": 0.031183466487776215,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Ca.paw.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
         "element": "Ca",
@@ -4079,8 +4079,8 @@
             "XO3": 0.021103126536904
         },
         "avg.nu.w/o.max": 0.017123199685787398,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Ca.us.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
         "element": "Ca",
@@ -4100,8 +4100,8 @@
             "XO3": 0.040623105846184
         },
         "avg.nu.w/o.max": 0.02931582349851367,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Ca.us.pbe.z_10.uspp.gbrv.v1.upf": {
         "element": "Ca",
@@ -4142,8 +4142,8 @@
             "XO3": 0.064387781900281
         },
         "avg.nu.w/o.max": 0.04587631663063166,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "Sc.nc.pbe.z_11.oncvpsp4.sg15.v0.upf": {
         "element": "Sc",
@@ -4163,8 +4163,8 @@
             "XO3": 0.39409874146591
         },
         "avg.nu.w/o.max": 0.20991879548766,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Sc.nc.pbe.z_11.oncvpsp4.spms.v1.upf": {
         "element": "Sc",
@@ -4184,8 +4184,8 @@
             "XO3": 0.2616162587423
         },
         "avg.nu.w/o.max": 0.1966165750404483,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Sc.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
         "element": "Sc",
@@ -4226,8 +4226,8 @@
             "XO3": 0.35086332668829
         },
         "avg.nu.w/o.max": 0.19574910637900775,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Sc.paw.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
         "element": "Sc",
@@ -4268,8 +4268,8 @@
             "XO3": 0.34193397835574
         },
         "avg.nu.w/o.max": 0.20655978772170222,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Sc.us.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
         "element": "Sc",
@@ -4289,8 +4289,8 @@
             "XO3": 0.089784717929868
         },
         "avg.nu.w/o.max": 0.054440032944831886,
-        "efficiency": 60,
-        "precision": 70
+        "efficiency": 65,
+        "precision": 75
     },
     "Sc.us.pbe.z_11.uspp.gbrv.v1.upf": {
         "element": "Sc",
@@ -4331,8 +4331,8 @@
             "XO3": 0.12793283311153
         },
         "avg.nu.w/o.max": 0.05919880822704959,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "Ti.nc.pbe.z_12.oncvpsp4.sg15.v0.upf": {
         "element": "Ti",
@@ -4352,8 +4352,8 @@
             "XO3": 0.43128830710094
         },
         "avg.nu.w/o.max": 0.20203163133042804,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Ti.nc.pbe.z_12.oncvpsp4.spms.v1.upf": {
         "element": "Ti",
@@ -4415,8 +4415,8 @@
             "XO3": 0.50723687056975
         },
         "avg.nu.w/o.max": 0.39521777829395677,
-        "efficiency": 45,
-        "precision": 55
+        "efficiency": 50,
+        "precision": 60
     },
     "Ti.us.pbe.z_12.ld1.psl.v1.0.0-high.upf": {
         "element": "Ti",
@@ -4436,8 +4436,8 @@
             "XO3": 0.49480584896741
         },
         "avg.nu.w/o.max": 0.4392510686609789,
-        "efficiency": 45,
-        "precision": 55
+        "efficiency": 50,
+        "precision": 60
     },
     "Ti.us.pbe.z_12.uspp.gbrv.v1.4.upf": {
         "element": "Ti",
@@ -4458,7 +4458,7 @@
         },
         "avg.nu.w/o.max": 0.031700945286407003,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "V.nc.pbe.z_13.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "V",
@@ -4478,8 +4478,8 @@
             "XO3": 0.11956764257075
         },
         "avg.nu.w/o.max": 0.05251228102166742,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "V.nc.pbe.z_13.oncvpsp4.sg15.v0.upf": {
         "element": "V",
@@ -4562,8 +4562,8 @@
             "XO3": 0.55386462962896
         },
         "avg.nu.w/o.max": 0.46080822764946106,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "V.paw.pbe.z_13.ld1.psl.v1.0.0-low.upf": {
         "element": "V",
@@ -4583,8 +4583,8 @@
             "XO3": 0.63380719400769
         },
         "avg.nu.w/o.max": 0.5464937509991233,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "V.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "V",
@@ -4604,8 +4604,8 @@
             "XO3": 0.55629682860345
         },
         "avg.nu.w/o.max": 0.4920312132538721,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "V.us.pbe.z_13.ld1.psl.v1.0.0-low.upf": {
         "element": "V",
@@ -4625,8 +4625,8 @@
             "XO3": 0.63709410148268
         },
         "avg.nu.w/o.max": 0.5751904264050733,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "V.us.pbe.z_13.uspp.gbrv.v1.4.upf": {
         "element": "V",
@@ -4646,8 +4646,8 @@
             "XO3": 0.061126573509481
         },
         "avg.nu.w/o.max": 0.08313998791685379,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Cr.nc.pbe.z_14.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Cr",
@@ -4667,8 +4667,8 @@
             "XO3": 0.1291250975083
         },
         "avg.nu.w/o.max": 0.12233122270123342,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Cr.nc.pbe.z_14.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Cr",
@@ -4688,8 +4688,8 @@
             "XO3": 0.01797572177045
         },
         "avg.nu.w/o.max": 0.027826497379673576,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Cr.nc.pbe.z_14.oncvpsp4.sg15.v0.upf": {
         "element": "Cr",
@@ -4709,8 +4709,8 @@
             "XO3": 0.88015931177442
         },
         "avg.nu.w/o.max": 0.4004076348888066,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Cr.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
         "element": "Cr",
@@ -4772,8 +4772,8 @@
             "XO3": 0.40105912464412
         },
         "avg.nu.w/o.max": 0.28884965330239887,
-        "efficiency": 45,
-        "precision": 70
+        "efficiency": 50,
+        "precision": 75
     },
     "Cr.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
         "element": "Cr",
@@ -4793,8 +4793,8 @@
             "XO3": 0.36934812760483
         },
         "avg.nu.w/o.max": 0.30286468107188325,
-        "efficiency": 45,
-        "precision": 70
+        "efficiency": 50,
+        "precision": 75
     },
     "Cr.us.pbe.z_14.uspp.gbrv.v1.5.upf": {
         "element": "Cr",
@@ -4814,8 +4814,8 @@
             "XO3": 0.032139167752073
         },
         "avg.nu.w/o.max": 0.02000913540496778,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Mn.nc.pbe.z_15.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Mn",
@@ -4835,8 +4835,8 @@
             "XO3": 0.042532989863543
         },
         "avg.nu.w/o.max": 0.02414790582611799,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Mn.nc.pbe.z_15.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Mn",
@@ -4856,8 +4856,8 @@
             "XO3": 0.036917744368711
         },
         "avg.nu.w/o.max": 0.07596384173863442,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Mn.nc.pbe.z_15.oncvpsp4.sg15.v0.upf": {
         "element": "Mn",
@@ -4877,8 +4877,8 @@
             "XO3": 0.79198105517669
         },
         "avg.nu.w/o.max": 0.50139440699407,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Mn.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
         "element": "Mn",
@@ -4898,8 +4898,8 @@
             "XO3": 0.171257873054
         },
         "avg.nu.w/o.max": 0.09275779027804422,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Mn.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
         "element": "Mn",
@@ -4919,8 +4919,8 @@
             "XO3": 1.3875337584103
         },
         "avg.nu.w/o.max": 1.0968058045399556,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Mn.paw.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
         "element": "Mn",
@@ -4970,8 +4970,8 @@
             "XO3": 0.062305373152203
         },
         "avg.nu.w/o.max": 0.01688194101035672,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Fe.nc.pbe.z_16.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Fe",
@@ -4991,8 +4991,8 @@
             "XO3": 0.026934575023623
         },
         "avg.nu.w/o.max": 0.05480935879839688,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Fe.nc.pbe.z_16.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Fe",
@@ -5012,8 +5012,8 @@
             "XO3": 0.0058860776654354
         },
         "avg.nu.w/o.max": 0.08194918807322124,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Fe.nc.pbe.z_16.oncvpsp4.sg15.v0.upf": {
         "element": "Fe",
@@ -5033,8 +5033,8 @@
             "XO3": 0.80586236187804
         },
         "avg.nu.w/o.max": 0.6062029446772422,
-        "efficiency": 65,
-        "precision": 65
+        "efficiency": 70,
+        "precision": 70
     },
     "Fe.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
         "element": "Fe",
@@ -5054,8 +5054,8 @@
             "XO3": 0.36614623223192
         },
         "avg.nu.w/o.max": 0.2712884691987418,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Fe.paw.pbe.z_16.atompaw.jth.v1.1-std.upf": {
         "element": "Fe",
@@ -5075,8 +5075,8 @@
             "XO3": 1.3419659937323
         },
         "avg.nu.w/o.max": 0.9430556236384456,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Fe.paw.pbe.z_16.ld1.psl.v0.2.1.upf": {
         "element": "Fe",
@@ -5138,8 +5138,8 @@
             "XO3": 1.0508686081954
         },
         "avg.nu.w/o.max": 0.21014049696002066,
-        "efficiency": 30,
-        "precision": 45
+        "efficiency": 35,
+        "precision": 50
     },
     "Fe.us.pbe.z_16.ld1.psl.v0.2.1.upf": {
         "element": "Fe",
@@ -5159,8 +5159,8 @@
             "XO3": 0.99850565991237
         },
         "avg.nu.w/o.max": 0.5468697000834098,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Fe.us.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
         "element": "Fe",
@@ -5180,8 +5180,8 @@
             "XO3": 0.48842876336565
         },
         "avg.nu.w/o.max": 0.40673426846812444,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Fe.us.pbe.z_16.uspp.gbrv.v1.5.upf": {
         "element": "Fe",
@@ -5201,8 +5201,8 @@
             "XO3": 0.026277892473368
         },
         "avg.nu.w/o.max": 0.027905267243131717,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Fe.us.pbe.z_8.ld1.psl.v1.0.0-low.upf": {
         "element": "Fe",
@@ -5222,8 +5222,8 @@
             "XO3": 0.98035386662881
         },
         "avg.nu.w/o.max": 0.2055576946728231,
-        "efficiency": 30,
-        "precision": 45
+        "efficiency": 35,
+        "precision": 50
     },
     "Co.nc.pbe.z_17.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Co",
@@ -5243,8 +5243,8 @@
             "XO3": 0.20202352017105
         },
         "avg.nu.w/o.max": 0.08481606123289911,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Co.nc.pbe.z_17.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Co",
@@ -5264,8 +5264,8 @@
             "XO3": 0.1990124746385
         },
         "avg.nu.w/o.max": 0.099780163542781,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Co.nc.pbe.z_17.oncvpsp4.sg15.v0.upf": {
         "element": "Co",
@@ -5285,8 +5285,8 @@
             "XO3": 1.0551408987849
         },
         "avg.nu.w/o.max": 0.4139711680392463,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Co.nc.pbe.z_17.oncvpsp4.spms.v1.upf": {
         "element": "Co",
@@ -5306,8 +5306,8 @@
             "XO3": 0.065437622362867
         },
         "avg.nu.w/o.max": 0.18425537115985235,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Co.paw.pbe.z_17.atompaw.jth.v1.1-std.upf": {
         "element": "Co",
@@ -5327,8 +5327,8 @@
             "XO3": 0.68491729330379
         },
         "avg.nu.w/o.max": 0.4144734258486532,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Co.paw.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
         "element": "Co",
@@ -5357,8 +5357,8 @@
             "XO3": 0.55243953602153
         },
         "avg.nu.w/o.max": 0.19331033521340693,
-        "efficiency": 30,
-        "precision": 50
+        "efficiency": 35,
+        "precision": 55
     },
     "Co.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
         "element": "Co",
@@ -5399,8 +5399,8 @@
             "XO3": 0.13051753552459
         },
         "avg.nu.w/o.max": 0.10381286642896209,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Co.us.pbe.z_9.ld1.psl.v1.0.0-low.upf": {
         "element": "Co",
@@ -5441,8 +5441,8 @@
             "XO3": 0.20299650417982
         },
         "avg.nu.w/o.max": 0.07913719156767633,
-        "efficiency": 80,
-        "precision": 90
+        "efficiency": 90,
+        "precision": 100
     },
     "Ni.nc.pbe.z_18.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Ni",
@@ -5450,8 +5450,8 @@
         "z_valence": "18",
         "avg.nu.w/o.max": null,
         "abbr_name": "DOJO-041-str",
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Ni.nc.pbe.z_18.oncvpsp4.sg15.v0.upf": {
         "element": "Ni",
@@ -5471,8 +5471,8 @@
             "XO3": 0.96181696764086
         },
         "avg.nu.w/o.max": 0.3771047439680343,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Ni.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
         "element": "Ni",
@@ -5492,8 +5492,8 @@
             "XO3": 0.095289532387378
         },
         "avg.nu.w/o.max": 0.14590879986898322,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Ni.paw.pbe.z_10.ld1.psl.v0.1.upf": {
         "element": "Ni",
@@ -5534,8 +5534,8 @@
             "XO3": 0.84896600593496
         },
         "avg.nu.w/o.max": 0.38736908960255334,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Ni.paw.pbe.z_18.atompaw.jth.v1.1-std.upf": {
         "element": "Ni",
@@ -5555,8 +5555,8 @@
             "XO3": 0.79526582515639
         },
         "avg.nu.w/o.max": 0.6255703852616767,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Ni.paw.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
         "element": "Ni",
@@ -5564,8 +5564,8 @@
         "z_valence": "18",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-PAW-v1-high",
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "Ni.us.pbe.z_10.ld1.psl.v0.1.upf": {
         "element": "Ni",
@@ -5585,8 +5585,8 @@
             "XO3": 0.82661014278154
         },
         "avg.nu.w/o.max": 0.4365666593788499,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Ni.us.pbe.z_10.ld1.psl.v1.0.0-low.upf": {
         "element": "Ni",
@@ -5606,8 +5606,8 @@
             "XO3": 0.82661014278154
         },
         "avg.nu.w/o.max": 0.4365666593788499,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Ni.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
         "element": "Ni",
@@ -5648,8 +5648,8 @@
             "XO3": 0.15465632688368
         },
         "avg.nu.w/o.max": 0.04232392617408127,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Cu.nc.pbe.z_19.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Cu",
@@ -5669,8 +5669,8 @@
             "XO3": 0.41438036518304
         },
         "avg.nu.w/o.max": 1.0486573145555742,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Cu.nc.pbe.z_19.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Cu",
@@ -5690,8 +5690,8 @@
             "XO3": 0.42929113204117
         },
         "avg.nu.w/o.max": 1.036640821416109,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Cu.nc.pbe.z_19.oncvpsp4.sg15.v0.upf": {
         "element": "Cu",
@@ -5711,8 +5711,8 @@
             "XO3": 0.51460270794523
         },
         "avg.nu.w/o.max": 0.24786591956494705,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Cu.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
         "element": "Cu",
@@ -5732,8 +5732,8 @@
             "XO3": 0.76952231507828
         },
         "avg.nu.w/o.max": 1.41248230015537,
-        "efficiency": 65,
-        "precision": 65
+        "efficiency": 70,
+        "precision": 70
     },
     "Cu.paw.pbe.z_11.ld1.psl.v0.2.upf": {
         "element": "Cu",
@@ -5753,8 +5753,8 @@
             "XO3": 1.7317063582546
         },
         "avg.nu.w/o.max": 1.1251813401326356,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Cu.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Cu",
@@ -5774,8 +5774,8 @@
             "XO3": 0.41887945926907
         },
         "avg.nu.w/o.max": 0.08898115914104342,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Cu.paw.pbe.z_19.atompaw.jth.v1.1-std.upf": {
         "element": "Cu",
@@ -5795,8 +5795,8 @@
             "XO3": 1.4822236403743
         },
         "avg.nu.w/o.max": 0.7327251103701722,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Cu.paw.pbe.z_19.ld1.psl.v1.0.0-high.upf": {
         "element": "Cu",
@@ -5816,8 +5816,8 @@
             "XO3": 0.24155564312296
         },
         "avg.nu.w/o.max": 0.21955207710035954,
-        "efficiency": 90,
-        "precision": 100
+        "efficiency": 100,
+        "precision": 120
     },
     "Cu.us.pbe.z_11.ld1.psl.v0.2.upf": {
         "element": "Cu",
@@ -5837,8 +5837,8 @@
             "XO3": 1.6443910157734
         },
         "avg.nu.w/o.max": 1.2623732575316433,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Cu.us.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Cu",
@@ -5879,8 +5879,8 @@
             "XO3": 4.248263227536
         },
         "avg.nu.w/o.max": 5.005677317865645,
-        "efficiency": 90,
-        "precision": 100
+        "efficiency": 100,
+        "precision": 120
     },
     "Cu.us.pbe.z_19.uspp.gbrv.v1.2.upf": {
         "element": "Cu",
@@ -5900,8 +5900,8 @@
             "XO3": 0.31331574233663
         },
         "avg.nu.w/o.max": 0.2954120004160877,
-        "efficiency": 50,
-        "precision": 80
+        "efficiency": 55,
+        "precision": 90
     },
     "Zn.nc.pbe.z_20.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Zn",
@@ -5921,8 +5921,8 @@
             "XO3": 0.49235465144511
         },
         "avg.nu.w/o.max": 0.5447354572992958,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Zn.nc.pbe.z_20.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Zn",
@@ -5942,8 +5942,8 @@
             "XO3": 0.49235465144511
         },
         "avg.nu.w/o.max": 0.5447311505655715,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Zn.nc.pbe.z_20.oncvpsp4.sg15.v0.upf": {
         "element": "Zn",
@@ -5963,8 +5963,8 @@
             "XO3": 0.67755001268254
         },
         "avg.nu.w/o.max": 0.5243847816716812,
-        "efficiency": 60,
-        "precision": 65
+        "efficiency": 65,
+        "precision": 70
     },
     "Zn.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
         "element": "Zn",
@@ -5984,8 +5984,8 @@
             "XO3": 1.0159500746078
         },
         "avg.nu.w/o.max": 0.5501135075758756,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Zn.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
         "element": "Zn",
@@ -6005,8 +6005,8 @@
             "XO3": 0.22739000803645
         },
         "avg.nu.w/o.max": 0.07999702814926625,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Zn.paw.pbe.z_12.ld1.psl.v1.0.0-low.upf": {
         "element": "Zn",
@@ -6026,8 +6026,8 @@
             "XO3": 0.19494702244305
         },
         "avg.nu.w/o.max": 0.13515655983624242,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Zn.paw.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
         "element": "Zn",
@@ -6047,8 +6047,8 @@
             "XO3": 0.30844586951139
         },
         "avg.nu.w/o.max": 0.25870710658405155,
-        "efficiency": 100,
-        "precision": 120
+        "efficiency": 120,
+        "precision": 150
     },
     "Zn.us.pbe.z_12.ld1.psl.v1.0.0-low.upf": {
         "element": "Zn",
@@ -6068,8 +6068,8 @@
             "XO3": 0.20662110607961
         },
         "avg.nu.w/o.max": 0.10755504792446469,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Zn.us.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
         "element": "Zn",
@@ -6089,8 +6089,8 @@
             "XO3": 0.71433738385666
         },
         "avg.nu.w/o.max": 0.6980496542690591,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Zn.us.pbe.z_20.uspp.gbrv.v1.upf": {
         "element": "Zn",
@@ -6110,8 +6110,8 @@
             "XO3": 0.41550500904355
         },
         "avg.nu.w/o.max": 0.2044999654248033,
-        "efficiency": 35,
-        "precision": 50
+        "efficiency": 40,
+        "precision": 55
     },
     "Ga.nc.pbe.z_13.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Ga",
@@ -6131,8 +6131,8 @@
             "XO3": 0.35667974676157
         },
         "avg.nu.w/o.max": 0.0816710114033102,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Ga.nc.pbe.z_13.oncvpsp4.sg15.v0.upf": {
         "element": "Ga",
@@ -6152,8 +6152,8 @@
             "XO3": 0.59909402519638
         },
         "avg.nu.w/o.max": 0.14573164098933633,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "Ga.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
         "element": "Ga",
@@ -6173,8 +6173,8 @@
             "XO3": 0.58288067416962
         },
         "avg.nu.w/o.max": 0.2173004414231739,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Ga.nc.pbe.z_21.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Ga",
@@ -6194,8 +6194,8 @@
             "XO3": 0.083608283713993
         },
         "avg.nu.w/o.max": 0.1146482602057829,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Ga.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
         "element": "Ga",
@@ -6236,8 +6236,8 @@
             "XO3": 1.0899872822205
         },
         "avg.nu.w/o.max": 0.5653647338825345,
-        "efficiency": 45,
-        "precision": 80
+        "efficiency": 50,
+        "precision": 90
     },
     "Ga.paw.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "Ga",
@@ -6257,8 +6257,8 @@
             "XO3": 0.21502153705937
         },
         "avg.nu.w/o.max": 0.06562146666145967,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Ga.paw.pbe.z_13.ld1.psl.v1.0.0-low.upf": {
         "element": "Ga",
@@ -6278,8 +6278,8 @@
             "XO3": 0.18329325153181
         },
         "avg.nu.w/o.max": 0.10286526750380576,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Ga.us.pbe.z_13.ld1.psl.v0.2.upf": {
         "element": "Ga",
@@ -6299,8 +6299,8 @@
             "XO3": 0.88160547987783
         },
         "avg.nu.w/o.max": 0.3473049601582534,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Ga.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "Ga",
@@ -6320,8 +6320,8 @@
             "XO3": 3.0724761088777
         },
         "avg.nu.w/o.max": 0.7049014678858616,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Ga.us.pbe.z_13.ld1.psl.v1.0.0-low.upf": {
         "element": "Ga",
@@ -6341,8 +6341,8 @@
             "XO3": 0.21697127491305
         },
         "avg.nu.w/o.max": 0.10486059486056465,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Ga.us.pbe.z_19.uspp.gbrv.v1.4.upf": {
         "element": "Ga",
@@ -6362,8 +6362,8 @@
             "XO3": 0.3264774421064
         },
         "avg.nu.w/o.max": 0.11493632804643056,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Ge.nc.pbe.z_14.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Ge",
@@ -6425,8 +6425,8 @@
             "XO3": 0.70954696828813
         },
         "avg.nu.w/o.max": 0.12294092276719389,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Ge.nc.pbe.z_22.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Ge",
@@ -6467,8 +6467,8 @@
             "XO3": 0.17641896447202
         },
         "avg.nu.w/o.max": 0.3981737443104634,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Ge.paw.pbe.z_14.ld1.psl.v0.3.1.upf": {
         "element": "Ge",
@@ -6488,8 +6488,8 @@
             "XO3": 0.85445317966883
         },
         "avg.nu.w/o.max": 0.16508421032680123,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Ge.paw.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
         "element": "Ge",
@@ -6509,8 +6509,8 @@
             "XO3": 0.58848614869183
         },
         "avg.nu.w/o.max": 0.10348652746616432,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Ge.paw.pbe.z_4.ld1.psl.v1.0.0-low.upf": {
         "element": "Ge",
@@ -6572,8 +6572,8 @@
             "XO3": 0.61645176594968
         },
         "avg.nu.w/o.max": 0.10395509942648312,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Ge.us.pbe.z_14.uspp.gbrv.v1.4.upf": {
         "element": "Ge",
@@ -6593,8 +6593,8 @@
             "XO3": 0.045769275363914
         },
         "avg.nu.w/o.max": 0.09465088837447434,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Ge.us.pbe.z_4.ld1.psl.v1.0.0-low.upf": {
         "element": "Ge",
@@ -6656,8 +6656,8 @@
             "XO3": 0.44261279979738
         },
         "avg.nu.w/o.max": 0.15599535290878086,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "As.nc.pbe.z_23.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "As",
@@ -6677,8 +6677,8 @@
             "XO3": 0.15393907131953
         },
         "avg.nu.w/o.max": 0.06735362044170644,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "As.nc.pbe.z_5.oncvpsp4.sg15.v0.upf": {
         "element": "As",
@@ -6740,8 +6740,8 @@
             "XO3": 1.1582191042848
         },
         "avg.nu.w/o.max": 0.1997629816090411,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "As.paw.pbe.z_5.atompaw.jth.v1.1-str.upf": {
         "element": "As",
@@ -6908,8 +6908,8 @@
             "XO3": 0.53002643760348
         },
         "avg.nu.w/o.max": 0.04735894996940629,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Se.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
         "element": "Se",
@@ -6929,8 +6929,8 @@
             "XO3": 0.62517809626334
         },
         "avg.nu.w/o.max": 0.06959693237351446,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Se.nc.pbe.z_24.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Se",
@@ -6950,8 +6950,8 @@
             "XO3": 0.28354416626785
         },
         "avg.nu.w/o.max": 0.0215897665992599,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Se.nc.pbe.z_6.oncvpsp4.sg15.v0.upf": {
         "element": "Se",
@@ -6992,8 +6992,8 @@
             "XO3": 1.122706067802
         },
         "avg.nu.w/o.max": 0.11312196123379145,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Se.paw.pbe.z_6.ld1.psl.v0.2.upf": {
         "element": "Se",
@@ -7055,8 +7055,8 @@
             "XO3": 1.122480851811
         },
         "avg.nu.w/o.max": 0.10654322176621858,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Se.us.pbe.z_6.ld1.psl.v0.2.upf": {
         "element": "Se",
@@ -7139,8 +7139,8 @@
             "XO3": 0.3389652449337
         },
         "avg.nu.w/o.max": 0.10145980033834268,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Br.nc.pbe.z_7.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Br",
@@ -7160,8 +7160,8 @@
             "XO3": 0.39395825560661
         },
         "avg.nu.w/o.max": 0.11557985482072919,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Br.nc.pbe.z_7.oncvpsp4.sg15.v0.upf": {
         "element": "Br",
@@ -7211,8 +7211,8 @@
             "XO3": 0.7245941162165
         },
         "avg.nu.w/o.max": 0.0843961271048519,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "Br.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
         "element": "Br",
@@ -7275,7 +7275,7 @@
         },
         "avg.nu.w/o.max": 0.17593822848589868,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Br.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
         "element": "Br",
@@ -7379,8 +7379,8 @@
             "XO3": 0.17959474961876
         },
         "avg.nu.w/o.max": 0.31997785175081384,
-        "efficiency": 50,
-        "precision": 70
+        "efficiency": 55,
+        "precision": 75
     },
     "Kr.nc.pbe.z_8.oncvpsp4.sg15.v0.upf": {
         "element": "Kr",
@@ -7421,8 +7421,8 @@
             "XO3": 0.18198547492719
         },
         "avg.nu.w/o.max": 0.33853374410027853,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Kr.paw.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
         "element": "Kr",
@@ -7442,8 +7442,8 @@
             "XO3": 0.62158375086431
         },
         "avg.nu.w/o.max": 0.12403831298495523,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Kr.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
         "element": "Kr",
@@ -7463,8 +7463,8 @@
             "XO3": 0.14505633001019
         },
         "avg.nu.w/o.max": 0.5662996938872278,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Kr.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
         "element": "Kr",
@@ -7484,8 +7484,8 @@
             "XO3": 0.80324002493464
         },
         "avg.nu.w/o.max": 0.27198050049617556,
-        "efficiency": 120,
-        "precision": 150
+        "efficiency": 150,
+        "precision": 200
     },
     "Rb.nc.pbe.z_9.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Rb",
@@ -7505,8 +7505,8 @@
             "XO3": 1.5856459081874
         },
         "avg.nu.w/o.max": 0.06005007732340046,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Rb.nc.pbe.z_9.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Rb",
@@ -7526,8 +7526,8 @@
             "XO3": 0.50008817337883
         },
         "avg.nu.w/o.max": 0.05790801070841978,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Rb.nc.pbe.z_9.oncvpsp4.sg15.v0.upf": {
         "element": "Rb",
@@ -7589,8 +7589,8 @@
             "XO3": 14.670654265015
         },
         "avg.nu.w/o.max": 0.9453928572258347,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Rb.paw.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
         "element": "Rb",
@@ -7610,8 +7610,8 @@
             "XO3": 0.41195961897121
         },
         "avg.nu.w/o.max": 0.03562379569504423,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Rb.us.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
         "element": "Rb",
@@ -7631,8 +7631,8 @@
             "XO3": 0.4449996352807
         },
         "avg.nu.w/o.max": 0.029360964758844293,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Rb.us.pbe.z_9.uspp.gbrv.v1.upf": {
         "element": "Rb",
@@ -7673,8 +7673,8 @@
             "XO3": 0.013890880467426
         },
         "avg.nu.w/o.max": 0.025269462357301875,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Sr.nc.pbe.z_10.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Sr",
@@ -7694,8 +7694,8 @@
             "XO3": 0.046588374829433
         },
         "avg.nu.w/o.max": 0.02880274203889366,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Sr.nc.pbe.z_10.oncvpsp4.sg15.v0.upf": {
         "element": "Sr",
@@ -7758,7 +7758,7 @@
         },
         "avg.nu.w/o.max": 0.12185008174719097,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Sr.paw.pbe.z_10.ld1.psl.v0.2.3.upf": {
         "element": "Sr",
@@ -7779,7 +7779,7 @@
         },
         "avg.nu.w/o.max": 0.16561697908752857,
         "efficiency": 30,
-        "precision": 40
+        "precision": 45
     },
     "Sr.paw.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
         "element": "Sr",
@@ -7821,7 +7821,7 @@
         },
         "avg.nu.w/o.max": 0.16945281939416612,
         "efficiency": 30,
-        "precision": 40
+        "precision": 45
     },
     "Sr.us.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
         "element": "Sr",
@@ -7841,8 +7841,8 @@
             "XO3": 0.21345930927225
         },
         "avg.nu.w/o.max": 0.09465986574711077,
-        "efficiency": 35,
-        "precision": 55
+        "efficiency": 40,
+        "precision": 60
     },
     "Sr.us.pbe.z_10.uspp.gbrv.v1.upf": {
         "element": "Sr",
@@ -7883,8 +7883,8 @@
             "XO3": 0.11035602663569
         },
         "avg.nu.w/o.max": 0.08277044370666645,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Y.nc.pbe.z_11.oncvpsp4.sg15.v0.upf": {
         "element": "Y",
@@ -7904,8 +7904,8 @@
             "XO3": 0.2115180339772
         },
         "avg.nu.w/o.max": 0.12402151050775134,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Y.nc.pbe.z_11.oncvpsp4.spms.v1.upf": {
         "element": "Y",
@@ -7926,7 +7926,7 @@
         },
         "avg.nu.w/o.max": 0.2897734741720302,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Y.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
         "element": "Y",
@@ -7947,7 +7947,7 @@
         },
         "avg.nu.w/o.max": 0.06277438118528544,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Y.paw.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
         "element": "Y",
@@ -7967,8 +7967,8 @@
             "XO3": 0.12109673045888
         },
         "avg.nu.w/o.max": 0.0700862155411839,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Y.us.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
         "element": "Y",
@@ -7988,8 +7988,8 @@
             "XO3": 0.13104241098162
         },
         "avg.nu.w/o.max": 0.11031322428044477,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Y.us.pbe.z_11.uspp.gbrv.v1.4.upf": {
         "element": "Y",
@@ -8030,8 +8030,8 @@
             "XO3": 0.16434947035849
         },
         "avg.nu.w/o.max": 0.13348295410886823,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Zr.nc.pbe.z_12.oncvpsp4.sg15.v0.upf": {
         "element": "Zr",
@@ -8051,8 +8051,8 @@
             "XO3": 0.18423440342231
         },
         "avg.nu.w/o.max": 0.09104893534108911,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Zr.nc.pbe.z_12.oncvpsp4.spms.v1.upf": {
         "element": "Zr",
@@ -8094,7 +8094,7 @@
         },
         "avg.nu.w/o.max": 0.08765655309652867,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Zr.paw.pbe.z_12.ld1.psl.v0.2.3.upf": {
         "element": "Zr",
@@ -8115,7 +8115,7 @@
         },
         "avg.nu.w/o.max": 0.8115065531260801,
         "efficiency": 30,
-        "precision": 45
+        "precision": 50
     },
     "Zr.paw.pbe.z_12.ld1.psl.v1.0.0-high.upf": {
         "element": "Zr",
@@ -8135,8 +8135,8 @@
             "XO3": 0.14912089228714
         },
         "avg.nu.w/o.max": 0.10689227569728256,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Zr.us.pbe.z_12.ld1.psl.v0.2.3.upf": {
         "element": "Zr",
@@ -8157,7 +8157,7 @@
         },
         "avg.nu.w/o.max": 0.8264118806196143,
         "efficiency": 30,
-        "precision": 45
+        "precision": 50
     },
     "Zr.us.pbe.z_12.ld1.psl.v1.0.0-high.upf": {
         "element": "Zr",
@@ -8177,8 +8177,8 @@
             "XO3": 0.15992896958816
         },
         "avg.nu.w/o.max": 0.15761095762428778,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Zr.us.pbe.z_12.uspp.gbrv.v1.upf": {
         "element": "Zr",
@@ -8219,8 +8219,8 @@
             "XO3": 0.18353807356648
         },
         "avg.nu.w/o.max": 0.13424528024380555,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "Nb.nc.pbe.z_13.oncvpsp4.sg15.v0.upf": {
         "element": "Nb",
@@ -8240,8 +8240,8 @@
             "XO3": 0.28917242173914
         },
         "avg.nu.w/o.max": 0.17897127713928113,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Nb.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
         "element": "Nb",
@@ -8261,8 +8261,8 @@
             "XO3": 0.32409857066741
         },
         "avg.nu.w/o.max": 0.1910756699044222,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Nb.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
         "element": "Nb",
@@ -8303,8 +8303,8 @@
             "XO3": 0.25722688597521
         },
         "avg.nu.w/o.max": 0.15565285944415044,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Nb.paw.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "Nb",
@@ -8324,8 +8324,8 @@
             "XO3": 0.25807395595766
         },
         "avg.nu.w/o.max": 0.15957827764844798,
-        "efficiency": 35,
-        "precision": 60
+        "efficiency": 40,
+        "precision": 65
     },
     "Nb.us.pbe.z_13.ld1.psl.v0.3.0.upf": {
         "element": "Nb",
@@ -8345,8 +8345,8 @@
             "XO3": 0.27120495766639
         },
         "avg.nu.w/o.max": 0.1941614069601389,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Nb.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "Nb",
@@ -8366,8 +8366,8 @@
             "XO3": 0.27999752015476
         },
         "avg.nu.w/o.max": 0.21082061543994668,
-        "efficiency": 35,
-        "precision": 60
+        "efficiency": 40,
+        "precision": 65
     },
     "Nb.us.pbe.z_13.uspp.gbrv.v1.upf": {
         "element": "Nb",
@@ -8388,7 +8388,7 @@
         },
         "avg.nu.w/o.max": 0.14715468157639,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Mo.nc.pbe.z_14.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Mo",
@@ -8408,8 +8408,8 @@
             "XO3": 0.25276411684396
         },
         "avg.nu.w/o.max": 0.14918468899601556,
-        "efficiency": 65,
-        "precision": 65
+        "efficiency": 70,
+        "precision": 70
     },
     "Mo.nc.pbe.z_14.oncvpsp4.sg15.v0.upf": {
         "element": "Mo",
@@ -8429,8 +8429,8 @@
             "XO3": 0.39480669943985
         },
         "avg.nu.w/o.max": 0.0996945879919886,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Mo.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
         "element": "Mo",
@@ -8492,8 +8492,8 @@
             "XO3": 0.27616693265486
         },
         "avg.nu.w/o.max": 0.1455100551390629,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Mo.paw.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
         "element": "Mo",
@@ -8513,8 +8513,8 @@
             "XO3": 0.2425588355181
         },
         "avg.nu.w/o.max": 0.12018667049917046,
-        "efficiency": 40,
-        "precision": 55
+        "efficiency": 45,
+        "precision": 60
     },
     "Mo.us.pbe.z_14.ld1.psl.v0.3.0.upf": {
         "element": "Mo",
@@ -8535,7 +8535,7 @@
         },
         "avg.nu.w/o.max": 0.18584461746407002,
         "efficiency": 40,
-        "precision": 40
+        "precision": 45
     },
     "Mo.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
         "element": "Mo",
@@ -8555,8 +8555,8 @@
             "XO3": 0.26709609322686
         },
         "avg.nu.w/o.max": 0.1828125771839411,
-        "efficiency": 40,
-        "precision": 55
+        "efficiency": 45,
+        "precision": 60
     },
     "Mo.us.pbe.z_14.uspp.gbrv.v1.upf": {
         "element": "Mo",
@@ -8577,7 +8577,7 @@
         },
         "avg.nu.w/o.max": 0.17350497024903555,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Tc.nc.pbe.z_15.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Tc",
@@ -8619,7 +8619,7 @@
         },
         "avg.nu.w/o.max": 0.13069653231948478,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Tc.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
         "element": "Tc",
@@ -8681,8 +8681,8 @@
             "XO3": 0.21524980614807
         },
         "avg.nu.w/o.max": 0.08720011990696232,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Tc.paw.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
         "element": "Tc",
@@ -8723,8 +8723,8 @@
             "XO3": 0.31732359953234
         },
         "avg.nu.w/o.max": 0.1155988193432278,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Tc.us.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
         "element": "Tc",
@@ -8786,8 +8786,8 @@
             "XO3": 0.44410384912154
         },
         "avg.nu.w/o.max": 0.20181893055426445,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Ru.nc.pbe.z_16.oncvpsp4.sg15.v0.upf": {
         "element": "Ru",
@@ -8807,8 +8807,8 @@
             "XO3": 0.5293765981901
         },
         "avg.nu.w/o.max": 0.11133992131281799,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Ru.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
         "element": "Ru",
@@ -8828,8 +8828,8 @@
             "XO3": 0.42325414356915
         },
         "avg.nu.w/o.max": 0.09303459566863721,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Ru.paw.pbe.z_16.atompaw.jth.v1.1-std.upf": {
         "element": "Ru",
@@ -8891,8 +8891,8 @@
             "XO3": 0.37464315234726
         },
         "avg.nu.w/o.max": 0.18632852364654223,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Ru.us.pbe.z_16.uspp.gbrv.v1.2.upf": {
         "element": "Ru",
@@ -8912,8 +8912,8 @@
             "XO3": 0.15179787570423
         },
         "avg.nu.w/o.max": 0.13853984493935445,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Rh.nc.pbe.z_17.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Rh",
@@ -8933,8 +8933,8 @@
             "XO3": 0.48627217738442
         },
         "avg.nu.w/o.max": 0.19890338740580774,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Rh.nc.pbe.z_17.oncvpsp4.sg15.v0.upf": {
         "element": "Rh",
@@ -8954,8 +8954,8 @@
             "XO3": 0.58708287183159
         },
         "avg.nu.w/o.max": 0.11841872399020643,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Rh.nc.pbe.z_17.oncvpsp4.spms.v1.upf": {
         "element": "Rh",
@@ -8975,8 +8975,8 @@
             "XO3": 0.30755420689282
         },
         "avg.nu.w/o.max": 0.13795991779313135,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Rh.paw.pbe.z_17.atompaw.jth.v1.1-std.upf": {
         "element": "Rh",
@@ -9017,8 +9017,8 @@
             "XO3": 1.4828743644585
         },
         "avg.nu.w/o.max": 0.6454415011521399,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Rh.paw.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
         "element": "Rh",
@@ -9038,8 +9038,8 @@
             "XO3": 0.27698076507868
         },
         "avg.nu.w/o.max": 0.08767076368652867,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Rh.us.pbe.z_15.uspp.gbrv.v1.4.upf": {
         "element": "Rh",
@@ -9059,8 +9059,8 @@
             "XO3": 0.81276613525178
         },
         "avg.nu.w/o.max": 0.26061782907945,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Rh.us.pbe.z_17.ld1.psl.v0.3.0.upf": {
         "element": "Rh",
@@ -9080,8 +9080,8 @@
             "XO3": 1.4946567780922
         },
         "avg.nu.w/o.max": 0.6601813415421989,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Rh.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
         "element": "Rh",
@@ -9101,8 +9101,8 @@
             "XO3": 0.3095322311375
         },
         "avg.nu.w/o.max": 0.13399265544127179,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Pd.nc.pbe.z_18.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Pd",
@@ -9122,8 +9122,8 @@
             "XO3": 0.50499389190486
         },
         "avg.nu.w/o.max": 0.19127375179102868,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Pd.nc.pbe.z_18.oncvpsp4.sg15.v0.upf": {
         "element": "Pd",
@@ -9143,8 +9143,8 @@
             "XO3": 0.60741626553463
         },
         "avg.nu.w/o.max": 0.09608156183165001,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Pd.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
         "element": "Pd",
@@ -9164,8 +9164,8 @@
             "XO3": 1.1274815098026
         },
         "avg.nu.w/o.max": 0.3867224665031277,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Pd.paw.pbe.z_10.ld1.psl.v0.3.0.upf": {
         "element": "Pd",
@@ -9185,8 +9185,8 @@
             "XO3": 2.5539867422984
         },
         "avg.nu.w/o.max": 0.7201334814658055,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Pd.paw.pbe.z_10.ld1.psl.v1.0.0-low.upf": {
         "element": "Pd",
@@ -9206,8 +9206,8 @@
             "XO3": 2.4475280930585
         },
         "avg.nu.w/o.max": 0.7044660421261923,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Pd.paw.pbe.z_18.atompaw.jth.v1.1-std.upf": {
         "element": "Pd",
@@ -9227,8 +9227,8 @@
             "XO3": 1.2468078705808
         },
         "avg.nu.w/o.max": 2.357238447676367,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Pd.paw.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
         "element": "Pd",
@@ -9248,8 +9248,8 @@
             "XO3": 0.25139753242082
         },
         "avg.nu.w/o.max": 0.060487499448906336,
-        "efficiency": 65,
-        "precision": 75
+        "efficiency": 70,
+        "precision": 80
     },
     "Pd.us.pbe.z_10.ld1.psl.v0.3.0.upf": {
         "element": "Pd",
@@ -9269,8 +9269,8 @@
             "XO3": 2.443325231143
         },
         "avg.nu.w/o.max": 0.6825935763576302,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Pd.us.pbe.z_10.ld1.psl.v1.0.0-low.upf": {
         "element": "Pd",
@@ -9290,8 +9290,8 @@
             "XO3": 2.3351786681868
         },
         "avg.nu.w/o.max": 0.7413334679572166,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Pd.us.pbe.z_16.uspp.gbrv.v1.4.upf": {
         "element": "Pd",
@@ -9311,8 +9311,8 @@
             "XO3": 1.6141185452259
         },
         "avg.nu.w/o.max": 0.51605141131441,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Pd.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
         "element": "Pd",
@@ -9332,8 +9332,8 @@
             "XO3": 0.28393159176413
         },
         "avg.nu.w/o.max": 0.09645123750409487,
-        "efficiency": 65,
-        "precision": 75
+        "efficiency": 70,
+        "precision": 80
     },
     "Ag.nc.pbe.z_19.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Ag",
@@ -9353,8 +9353,8 @@
             "XO3": 0.51241562281209
         },
         "avg.nu.w/o.max": 0.10279832272036067,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Ag.nc.pbe.z_19.oncvpsp4.sg15.v0.upf": {
         "element": "Ag",
@@ -9374,8 +9374,8 @@
             "XO3": 0.58014770435125
         },
         "avg.nu.w/o.max": 0.17772727298122706,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Ag.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
         "element": "Ag",
@@ -9395,8 +9395,8 @@
             "XO3": 0.35856616498288
         },
         "avg.nu.w/o.max": 0.1398922439033711,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Ag.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
         "element": "Ag",
@@ -9437,8 +9437,8 @@
             "XO3": 2.6779323283142
         },
         "avg.nu.w/o.max": 0.8962313074830269,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Ag.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Ag",
@@ -9458,8 +9458,8 @@
             "XO3": 2.4223469745
         },
         "avg.nu.w/o.max": 0.6882986198443487,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "Ag.paw.pbe.z_19.ld1.psl.v1.0.0-high.upf": {
         "element": "Ag",
@@ -9479,8 +9479,8 @@
             "XO3": 0.41586957137348
         },
         "avg.nu.w/o.max": 0.10420107537781355,
-        "efficiency": 80,
-        "precision": 90
+        "efficiency": 90,
+        "precision": 100
     },
     "Ag.us.pbe.z_11.ld1.psl.v0.1.upf": {
         "element": "Ag",
@@ -9500,8 +9500,8 @@
             "XO3": 2.6719498214741
         },
         "avg.nu.w/o.max": 0.8757565673370269,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Ag.us.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Ag",
@@ -9563,8 +9563,8 @@
             "XO3": 0.94405254916726
         },
         "avg.nu.w/o.max": 0.2966425014630711,
-        "efficiency": 75,
-        "precision": 100
+        "efficiency": 80,
+        "precision": 120
     },
     "Cd.nc.pbe.z_20.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Cd",
@@ -9605,8 +9605,8 @@
             "XO3": 0.29054601027477
         },
         "avg.nu.w/o.max": 0.17653756911618335,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Cd.nc.pbe.z_20.oncvpsp4.sg15.v0.upf": {
         "element": "Cd",
@@ -9626,8 +9626,8 @@
             "XO3": 0.26776958509102
         },
         "avg.nu.w/o.max": 0.2939965151593444,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Cd.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
         "element": "Cd",
@@ -9647,8 +9647,8 @@
             "XO3": 0.59591622703101
         },
         "avg.nu.w/o.max": 0.1317195106899948,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Cd.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
         "element": "Cd",
@@ -9668,8 +9668,8 @@
             "XO3": 0.28961905645355
         },
         "avg.nu.w/o.max": 0.06478422076263121,
-        "efficiency": 35,
-        "precision": 120
+        "efficiency": 40,
+        "precision": 150
     },
     "Cd.paw.pbe.z_12.ld1.psl.v0.3.1.upf": {
         "element": "Cd",
@@ -9689,8 +9689,8 @@
             "XO3": 0.98862092114885
         },
         "avg.nu.w/o.max": 0.23096521333382192,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Cd.paw.pbe.z_12.ld1.psl.v1.0.0-low.upf": {
         "element": "Cd",
@@ -9710,8 +9710,8 @@
             "XO3": 1.9825574071431
         },
         "avg.nu.w/o.max": 0.43234416686529015,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Cd.paw.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
         "element": "Cd",
@@ -9752,8 +9752,8 @@
             "XO3": 0.89393073751054
         },
         "avg.nu.w/o.max": 0.2871474527649878,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Cd.us.pbe.z_12.ld1.psl.v1.0.0-low.upf": {
         "element": "Cd",
@@ -9773,8 +9773,8 @@
             "XO3": 1.97439019142
         },
         "avg.nu.w/o.max": 0.41083475719240037,
-        "efficiency": 55,
-        "precision": 55
+        "efficiency": 60,
+        "precision": 60
     },
     "Cd.us.pbe.z_12.uspp.gbrv.v1.upf": {
         "element": "Cd",
@@ -9794,8 +9794,8 @@
             "XO3": 0.91488117834919
         },
         "avg.nu.w/o.max": 0.4615695056977167,
-        "efficiency": 90,
-        "precision": 100
+        "efficiency": 100,
+        "precision": 120
     },
     "Cd.us.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
         "element": "Cd",
@@ -9815,8 +9815,8 @@
             "XO3": 0.30365030265529
         },
         "avg.nu.w/o.max": 0.06647027245813059,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "In.nc.pbe.z_13.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "In",
@@ -9836,8 +9836,8 @@
             "XO3": 0.727523726032
         },
         "avg.nu.w/o.max": 0.18330979842574532,
-        "efficiency": 60,
-        "precision": 65
+        "efficiency": 65,
+        "precision": 70
     },
     "In.nc.pbe.z_13.oncvpsp4.sg15.v0.upf": {
         "element": "In",
@@ -9878,8 +9878,8 @@
             "XO3": 0.82694628043435
         },
         "avg.nu.w/o.max": 0.2377564486525807,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "In.nc.pbe.z_21.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "In",
@@ -9899,8 +9899,8 @@
             "XO3": 0.46901729629694
         },
         "avg.nu.w/o.max": 0.17381911276453568,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "In.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
         "element": "In",
@@ -9920,8 +9920,8 @@
             "XO3": 0.44472554094234
         },
         "avg.nu.w/o.max": 0.10045530572651679,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "In.paw.pbe.z_13.ld1.psl.v0.2.2.upf": {
         "element": "In",
@@ -9941,8 +9941,8 @@
             "XO3": 0.63448564884935
         },
         "avg.nu.w/o.max": 0.14543086426246188,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "In.paw.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "In",
@@ -9962,8 +9962,8 @@
             "XO3": 0.88532301838148
         },
         "avg.nu.w/o.max": 0.30041672150853443,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "In.paw.pbe.z_3.atompaw.jth.v1.1-str.upf": {
         "element": "In",
@@ -10004,8 +10004,8 @@
             "XO3": 0.55913664033112
         },
         "avg.nu.w/o.max": 0.11802881880918455,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "In.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "In",
@@ -10025,8 +10025,8 @@
             "XO3": 0.93006153469987
         },
         "avg.nu.w/o.max": 0.3101793341187167,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "In.us.pbe.z_13.uspp.gbrv.v1.4.upf": {
         "element": "In",
@@ -10046,8 +10046,8 @@
             "XO3": 1.1931546481803
         },
         "avg.nu.w/o.max": 0.2856097041378925,
-        "efficiency": 80,
-        "precision": 100
+        "efficiency": 90,
+        "precision": 120
     },
     "Sn.nc.pbe.z_14.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Sn",
@@ -10067,8 +10067,8 @@
             "XO3": 1.0728608388232
         },
         "avg.nu.w/o.max": 0.34086811925695926,
-        "efficiency": 65,
-        "precision": 65
+        "efficiency": 70,
+        "precision": 70
     },
     "Sn.nc.pbe.z_14.oncvpsp4.sg15.v0.upf": {
         "element": "Sn",
@@ -10088,8 +10088,8 @@
             "XO3": 0.41879443138138
         },
         "avg.nu.w/o.max": 0.15300996260969166,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Sn.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
         "element": "Sn",
@@ -10109,8 +10109,8 @@
             "XO3": 0.10971612005362
         },
         "avg.nu.w/o.max": 0.26777508710353554,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Sn.nc.pbe.z_22.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Sn",
@@ -10130,8 +10130,8 @@
             "XO3": 0.34116873320829
         },
         "avg.nu.w/o.max": 0.28481959167380666,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Sn.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
         "element": "Sn",
@@ -10151,8 +10151,8 @@
             "XO3": 0.32354393986072
         },
         "avg.nu.w/o.max": 0.1257603431579449,
-        "efficiency": 35,
-        "precision": 120
+        "efficiency": 40,
+        "precision": 150
     },
     "Sn.paw.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
         "element": "Sn",
@@ -10172,8 +10172,8 @@
             "XO3": 0.87395564452626
         },
         "avg.nu.w/o.max": 0.342282638166291,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Sn.paw.pbe.z_4.atompaw.jth.v1.1-str.upf": {
         "element": "Sn",
@@ -10214,8 +10214,8 @@
             "XO3": 0.940241264728
         },
         "avg.nu.w/o.max": 0.3613817255039424,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Sn.us.pbe.z_14.uspp.gbrv.v1.4.upf": {
         "element": "Sn",
@@ -10235,8 +10235,8 @@
             "XO3": 0.075337254766981
         },
         "avg.nu.w/o.max": 0.06185908984442813,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Sb.nc.pbe.z_15.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Sb",
@@ -10256,8 +10256,8 @@
             "XO3": 1.3758139574339
         },
         "avg.nu.w/o.max": 0.23377718369802697,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Sb.nc.pbe.z_15.oncvpsp4.sg15.v0.upf": {
         "element": "Sb",
@@ -10277,8 +10277,8 @@
             "XO3": 0.47883978363071
         },
         "avg.nu.w/o.max": 0.12590555862640387,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Sb.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
         "element": "Sb",
@@ -10298,8 +10298,8 @@
             "XO3": 0.56660297623349
         },
         "avg.nu.w/o.max": 0.09996351286437676,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Sb.nc.pbe.z_23.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Sb",
@@ -10319,8 +10319,8 @@
             "XO3": 0.75152105387317
         },
         "avg.nu.w/o.max": 0.31503390195484,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Sb.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
         "element": "Sb",
@@ -10341,7 +10341,7 @@
         },
         "avg.nu.w/o.max": 0.18849140423079114,
         "efficiency": 30,
-        "precision": 35
+        "precision": 40
     },
     "Sb.paw.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
         "element": "Sb",
@@ -10361,8 +10361,8 @@
             "XO3": 1.7975619691556
         },
         "avg.nu.w/o.max": 0.47201535267866224,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Sb.paw.pbe.z_5.atompaw.jth.v1.1-str.upf": {
         "element": "Sb",
@@ -10424,8 +10424,8 @@
             "XO3": 1.8452654663172
         },
         "avg.nu.w/o.max": 0.48537015990568555,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Sb.us.pbe.z_15.uspp.gbrv.v1.4.upf": {
         "element": "Sb",
@@ -10487,8 +10487,8 @@
             "XO3": 3.1172900095947
         },
         "avg.nu.w/o.max": 0.43026214669271223,
-        "efficiency": 65,
-        "precision": 65
+        "efficiency": 70,
+        "precision": 70
     },
     "Te.nc.pbe.z_16.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Te",
@@ -10508,8 +10508,8 @@
             "XO3": 8.1776800618884
         },
         "avg.nu.w/o.max": 1.4543586931082957,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "Te.nc.pbe.z_16.oncvpsp4.sg15.v0.upf": {
         "element": "Te",
@@ -10529,8 +10529,8 @@
             "XO3": 2.534941144849
         },
         "avg.nu.w/o.max": 0.4481230650568132,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Te.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
         "element": "Te",
@@ -10550,8 +10550,8 @@
             "XO3": 2.150007438798
         },
         "avg.nu.w/o.max": 0.2710937090879548,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Te.nc.pbe.z_24.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Te",
@@ -10571,8 +10571,8 @@
             "XO3": 1.56458021617
         },
         "avg.nu.w/o.max": 0.39208228866327,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Te.paw.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
         "element": "Te",
@@ -10592,8 +10592,8 @@
             "XO3": 3.7794674333872
         },
         "avg.nu.w/o.max": 0.6334972647449111,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "Te.paw.pbe.z_6.atompaw.jth.v1.1-std.upf": {
         "element": "Te",
@@ -10655,8 +10655,8 @@
             "XO3": 4.0250956008783
         },
         "avg.nu.w/o.max": 0.6416901237924156,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "Te.us.pbe.z_6.ld1.psl.v1.0.0-low.upf": {
         "element": "Te",
@@ -10718,8 +10718,8 @@
             "XO3": 3.7526107140605
         },
         "avg.nu.w/o.max": 0.5264830682143644,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "I.nc.pbe.z_17.oncvpsp4.sg15.v0.upf": {
         "element": "I",
@@ -10739,8 +10739,8 @@
             "XO3": 2.5412209964671
         },
         "avg.nu.w/o.max": 0.40822836576125837,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "I.nc.pbe.z_7.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "I",
@@ -10760,8 +10760,8 @@
             "XO3": 3.5118480622058
         },
         "avg.nu.w/o.max": 0.36262278021972805,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "I.nc.pbe.z_7.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "I",
@@ -10781,8 +10781,8 @@
             "XO3": 0.82321467228764
         },
         "avg.nu.w/o.max": 0.41695573849655115,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "I.nc.pbe.z_7.oncvpsp4.spms.v1.upf": {
         "element": "I",
@@ -10823,8 +10823,8 @@
             "XO3": 3.555076130767
         },
         "avg.nu.w/o.max": 0.551759816361951,
-        "efficiency": 60,
-        "precision": 90
+        "efficiency": 65,
+        "precision": 100
     },
     "I.paw.pbe.z_7.atompaw.jth.v1.1-std.upf": {
         "element": "I",
@@ -10886,8 +10886,8 @@
             "XO3": 3.5522747718667
         },
         "avg.nu.w/o.max": 0.5460924418397645,
-        "efficiency": 60,
-        "precision": 90
+        "efficiency": 65,
+        "precision": 100
     },
     "I.us.pbe.z_7.ld1.psl.v1.0.0-low.upf": {
         "element": "I",
@@ -10949,8 +10949,8 @@
             "XO3": 5.4798444400068
         },
         "avg.nu.w/o.max": 1.2069122077404464,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Xe.nc.pbe.z_8.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Xe",
@@ -10970,8 +10970,8 @@
             "XO3": 3.1829151332955
         },
         "avg.nu.w/o.max": 0.6296352100546714,
-        "efficiency": 65,
-        "precision": 120
+        "efficiency": 70,
+        "precision": 150
     },
     "Xe.nc.pbe.z_8.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Xe",
@@ -10991,8 +10991,8 @@
             "XO3": 0.5634319331554
         },
         "avg.nu.w/o.max": 0.36537066083511555,
-        "efficiency": 65,
-        "precision": 120
+        "efficiency": 70,
+        "precision": 150
     },
     "Xe.nc.pbe.z_8.oncvpsp4.spms.v1.upf": {
         "element": "Xe",
@@ -11033,8 +11033,8 @@
             "XO3": 4.2340940017774
         },
         "avg.nu.w/o.max": 0.6340631848277213,
-        "efficiency": 120,
-        "precision": 150
+        "efficiency": 150,
+        "precision": 200
     },
     "Xe.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
         "element": "Xe",
@@ -11055,7 +11055,7 @@
         },
         "avg.nu.w/o.max": 0.7104500627195818,
         "efficiency": 30,
-        "precision": 45
+        "precision": 50
     },
     "Xe.us.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
         "element": "Xe",
@@ -11075,8 +11075,8 @@
             "XO3": 4.2346652833373
         },
         "avg.nu.w/o.max": 0.7360008058408299,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "Cs.nc.pbe.z_9.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Cs",
@@ -11117,8 +11117,8 @@
             "XO3": 5.4373164154769
         },
         "avg.nu.w/o.max": 0.615760746266042,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Cs.nc.pbe.z_9.oncvpsp4.spms.v1.upf": {
         "element": "Cs",
@@ -11138,8 +11138,8 @@
             "XO3": 0.37416194954187
         },
         "avg.nu.w/o.max": 0.10618069846499521,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Cs.paw.pbe.z_9.atompaw.jth.v1.1-std.upf": {
         "element": "Cs",
@@ -11159,8 +11159,8 @@
             "XO3": 9.8436945752549
         },
         "avg.nu.w/o.max": 1.241651699614792,
-        "efficiency": 75,
-        "precision": 90
+        "efficiency": 80,
+        "precision": 100
     },
     "Cs.paw.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
         "element": "Cs",
@@ -11202,7 +11202,7 @@
         },
         "avg.nu.w/o.max": 0.5211440523665756,
         "efficiency": 30,
-        "precision": 40
+        "precision": 45
     },
     "Cs.us.pbe.z_9.ld1.psl.v1.0.0-high.upf": {
         "element": "Cs",
@@ -11244,7 +11244,7 @@
         },
         "avg.nu.w/o.max": 0.5194993603195877,
         "efficiency": 30,
-        "precision": 40
+        "precision": 45
     },
     "Cs.us.pbe.z_9.uspp.gbrv.v1.upf": {
         "element": "Cs",
@@ -11285,8 +11285,8 @@
             "XO3": 9.7422628580695
         },
         "avg.nu.w/o.max": 1.3550263735575658,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Ba.nc.pbe.z_10.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Ba",
@@ -11306,8 +11306,8 @@
             "XO3": 9.2633357903496
         },
         "avg.nu.w/o.max": 1.2802332619746588,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Ba.nc.pbe.z_10.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Ba",
@@ -11327,8 +11327,8 @@
             "XO3": 0.0854327064571
         },
         "avg.nu.w/o.max": 0.1127511474787571,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Ba.nc.pbe.z_10.oncvpsp4.sg15.v0.upf": {
         "element": "Ba",
@@ -11348,8 +11348,8 @@
             "XO3": 0.83298929423441
         },
         "avg.nu.w/o.max": 0.08394574530449979,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Ba.nc.pbe.z_10.oncvpsp4.spms.v1.upf": {
         "element": "Ba",
@@ -11390,8 +11390,8 @@
             "XO3": 15.342637349439
         },
         "avg.nu.w/o.max": 2.0427609864486445,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Ba.paw.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
         "element": "Ba",
@@ -11412,7 +11412,7 @@
         },
         "avg.nu.w/o.max": 1.2491705753300242,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Ba.us.pbe.z_10.ld1.psl.v1.0.0-high.upf": {
         "element": "Ba",
@@ -11433,7 +11433,7 @@
         },
         "avg.nu.w/o.max": 1.3053075206341656,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Ba.us.pbe.z_10.uspp.gbrv.v1.upf": {
         "element": "Ba",
@@ -11453,8 +11453,8 @@
             "XO3": 10.767388018365
         },
         "avg.nu.w/o.max": 1.161009561816452,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "La.nc.pbe.z_11.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "La",
@@ -11474,8 +11474,8 @@
             "XO3": 0.14041941932127
         },
         "avg.nu.w/o.max": 0.16465089159398555,
-        "efficiency": 80,
-        "precision": 80
+        "efficiency": 90,
+        "precision": 90
     },
     "La.nc.pbe.z_11.oncvpsp4.sg15.v0.upf": {
         "element": "La",
@@ -11516,8 +11516,8 @@
             "XO3": 3.0354202711783
         },
         "avg.nu.w/o.max": 0.4458481124629766,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "La.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
         "element": "La",
@@ -11621,8 +11621,8 @@
             "XO3": 0.16690668666341
         },
         "avg.nu.w/o.max": 0.09981119428687811,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "La.us.pbe.z_11.uspp.gbrv.v1.upf": {
         "element": "La",
@@ -11684,8 +11684,8 @@
             "XO3": 21.366598609459
         },
         "avg.nu.w/o.max": 18.969915542284454,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Ce.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
         "element": "Ce",
@@ -11768,8 +11768,8 @@
             "XO3": 21.439422104751
         },
         "avg.nu.w/o.max": 19.037148836967155,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Ce.us.pbe.z_22.ld1.psl.v1.0.0-high.upf": {
         "element": "Ce",
@@ -11798,8 +11798,8 @@
         "z_valence": "11",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-PAW-v1-low",
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Pr.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
         "element": "Pr",
@@ -11820,7 +11820,7 @@
         },
         "avg.nu.w/o.max": 2.0915506635059646,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Pr.paw.pbe.z_13.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Pr",
@@ -11841,7 +11841,7 @@
         },
         "avg.nu.w/o.max": 1.7177501698465367,
         "efficiency": 30,
-        "precision": 80
+        "precision": 90
     },
     "Pr.paw.pbe.z_23.ld1.psl.v1.0.0-high.upf": {
         "element": "Pr",
@@ -11870,8 +11870,8 @@
         "z_valence": "11",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-low",
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Pr.us.pbe.z_23.ld1.psl.v1.0.0-high.upf": {
         "element": "Pr",
@@ -11900,8 +11900,8 @@
         "z_valence": "11",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-PAW-v1-low",
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Nd.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
         "element": "Nd",
@@ -11922,7 +11922,7 @@
         },
         "avg.nu.w/o.max": 2.4514724516327004,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Nd.paw.pbe.z_14.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Nd",
@@ -11942,8 +11942,8 @@
             "XO3": 2.3636956553505
         },
         "avg.nu.w/o.max": 1.996350680586377,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Nd.paw.pbe.z_24.ld1.psl.v1.0.0-high.upf": {
         "element": "Nd",
@@ -11972,8 +11972,8 @@
         "z_valence": "11",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-low",
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Nd.us.pbe.z_24.ld1.psl.v1.0.0-high.upf": {
         "element": "Nd",
@@ -11993,8 +11993,8 @@
             "XO3": 0.25016872523118
         },
         "avg.nu.w/o.max": 0.1242998859191732,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Pm.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Pm",
@@ -12002,8 +12002,8 @@
         "z_valence": "11",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-PAW-v1-low",
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Pm.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
         "element": "Pm",
@@ -12023,8 +12023,8 @@
             "XO3": 3.5144006653362
         },
         "avg.nu.w/o.max": 2.855858253972239,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Pm.paw.pbe.z_15.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Pm",
@@ -12074,8 +12074,8 @@
         "z_valence": "11",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-low",
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Pm.us.pbe.z_25.ld1.psl.v1.0.0-high.upf": {
         "element": "Pm",
@@ -12095,8 +12095,8 @@
             "XO3": 0.045984165919121
         },
         "avg.nu.w/o.max": 0.16954633016141107,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Sm.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Sm",
@@ -12116,8 +12116,8 @@
             "XO3": 21.384762965873
         },
         "avg.nu.w/o.max": 21.230674888881495,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Sm.paw.pbe.z_16.atompaw.jth.v1.1-std.upf": {
         "element": "Sm",
@@ -12137,8 +12137,8 @@
             "XO3": 3.6610673153191
         },
         "avg.nu.w/o.max": 2.9693052646666853,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Sm.paw.pbe.z_16.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Sm",
@@ -12158,8 +12158,8 @@
             "XO3": 3.386404403865
         },
         "avg.nu.w/o.max": 3.0714227304196626,
-        "efficiency": 30,
-        "precision": 45
+        "efficiency": 35,
+        "precision": 50
     },
     "Sm.paw.pbe.z_26.ld1.psl.v1.0.0-high.upf": {
         "element": "Sm",
@@ -12230,8 +12230,8 @@
         "z_valence": "10",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-PAW-v1-low",
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Eu.paw.pbe.z_11.ld1.psl.v1.0.0-low.spdn.upf": {
         "element": "Eu",
@@ -12293,8 +12293,8 @@
             "XO3": 4.0411239151204
         },
         "avg.nu.w/o.max": 2.7585960383353,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Eu.paw.pbe.z_27.ld1.psl.v1.0.0-high.upf": {
         "element": "Eu",
@@ -12314,8 +12314,8 @@
             "XO3": 0.13570638916443
         },
         "avg.nu.w/o.max": 0.16981657563789296,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Eu.us.pbe.z_10.ld1.psl.v1.0.0-low.spn.upf": {
         "element": "Eu",
@@ -12323,8 +12323,8 @@
         "z_valence": "10",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-low",
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Eu.us.pbe.z_11.ld1.psl.v1.0.0-low.spdn.upf": {
         "element": "Eu",
@@ -12344,8 +12344,8 @@
             "XO3": 25.098097411025
         },
         "avg.nu.w/o.max": 17.51352462117215,
-        "efficiency": 30,
-        "precision": 40
+        "efficiency": 35,
+        "precision": 45
     },
     "Eu.us.pbe.z_27.ld1.psl.v1.0.0-high.upf": {
         "element": "Eu",
@@ -12353,8 +12353,8 @@
         "z_valence": "27",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-high",
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Gd.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Gd",
@@ -12375,7 +12375,7 @@
         },
         "avg.nu.w/o.max": 14.8025399998967,
         "efficiency": 30,
-        "precision": 40
+        "precision": 45
     },
     "Gd.paw.pbe.z_18.atompaw.jth.v1.1-std.upf": {
         "element": "Gd",
@@ -12437,8 +12437,8 @@
             "XO3": 0.13011432122861
         },
         "avg.nu.w/o.max": 0.16988979578223048,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Gd.us.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Gd",
@@ -12459,7 +12459,7 @@
         },
         "avg.nu.w/o.max": 14.850196182176607,
         "efficiency": 30,
-        "precision": 40
+        "precision": 45
     },
     "Gd.us.pbe.z_28.ld1.psl.v1.0.0-high.upf": {
         "element": "Gd",
@@ -12467,8 +12467,8 @@
         "z_valence": "28",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-high",
-        "efficiency": 120,
-        "precision": 150
+        "efficiency": 150,
+        "precision": 200
     },
     "Tb.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Tb",
@@ -12477,7 +12477,7 @@
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-PAW-v1-low",
         "efficiency": 30,
-        "precision": 40
+        "precision": 45
     },
     "Tb.paw.pbe.z_19.atompaw.jth.v1.1-std.upf": {
         "element": "Tb",
@@ -12518,8 +12518,8 @@
             "XO3": 2.0632761201704
         },
         "avg.nu.w/o.max": 1.428891338785026,
-        "efficiency": 35,
-        "precision": 50
+        "efficiency": 40,
+        "precision": 55
     },
     "Tb.paw.pbe.z_29.ld1.psl.v1.0.0-high.upf": {
         "element": "Tb",
@@ -12549,7 +12549,7 @@
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-low",
         "efficiency": 30,
-        "precision": 40
+        "precision": 45
     },
     "Tb.us.pbe.z_29.ld1.psl.v1.0.0-high.upf": {
         "element": "Tb",
@@ -12567,7 +12567,7 @@
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-PAW-v1-low",
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Dy.paw.pbe.z_20.atompaw.jth.v1.1-std.upf": {
         "element": "Dy",
@@ -12587,8 +12587,8 @@
             "XO3": 6.5228615187093
         },
         "avg.nu.w/o.max": 3.8280094454149887,
-        "efficiency": 30,
-        "precision": 100
+        "efficiency": 35,
+        "precision": 120
     },
     "Dy.paw.pbe.z_20.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Dy",
@@ -12608,8 +12608,8 @@
             "XO3": 2.2813222790124
         },
         "avg.nu.w/o.max": 1.8008790297898867,
-        "efficiency": 35,
-        "precision": 150
+        "efficiency": 40,
+        "precision": 200
     },
     "Dy.paw.pbe.z_30.ld1.psl.v1.0.0-high.upf": {
         "element": "Dy",
@@ -12639,7 +12639,7 @@
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-low",
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Dy.us.pbe.z_30.ld1.psl.v1.0.0-high.upf": {
         "element": "Dy",
@@ -12659,8 +12659,8 @@
             "XO3": 0.58117200320351
         },
         "avg.nu.w/o.max": 7.92550865099239,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Ho.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Ho",
@@ -12668,8 +12668,8 @@
         "z_valence": "11",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-PAW-v1-low",
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Ho.paw.pbe.z_21.atompaw.jth.v1.1-std.upf": {
         "element": "Ho",
@@ -12690,7 +12690,7 @@
         },
         "avg.nu.w/o.max": 4.467034384030111,
         "efficiency": 35,
-        "precision": 75
+        "precision": 80
     },
     "Ho.paw.pbe.z_21.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Ho",
@@ -12710,8 +12710,8 @@
             "XO3": 1.8379636353781
         },
         "avg.nu.w/o.max": 1.5483306257085496,
-        "efficiency": 35,
-        "precision": 100
+        "efficiency": 40,
+        "precision": 120
     },
     "Ho.paw.pbe.z_31.ld1.psl.v1.0.0-high.upf": {
         "element": "Ho",
@@ -12731,8 +12731,8 @@
             "XO3": 0.10853809447652
         },
         "avg.nu.w/o.max": 0.1353814927026909,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Ho.us.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Ho",
@@ -12740,8 +12740,8 @@
         "z_valence": "11",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-low",
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Ho.us.pbe.z_31.ld1.psl.v1.0.0-high.upf": {
         "element": "Ho",
@@ -12791,8 +12791,8 @@
             "XO3": 9.1653930581716
         },
         "avg.nu.w/o.max": 4.857816054021034,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Er.paw.pbe.z_22.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Er",
@@ -12812,8 +12812,8 @@
             "XO3": 2.0032171250815
         },
         "avg.nu.w/o.max": 1.971400831489373,
-        "efficiency": 75,
-        "precision": 120
+        "efficiency": 80,
+        "precision": 150
     },
     "Er.paw.pbe.z_32.ld1.psl.v1.0.0-high.upf": {
         "element": "Er",
@@ -12854,8 +12854,8 @@
             "XO3": 14.276112126717
         },
         "avg.nu.w/o.max": 6.637082531386822,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Er.us.pbe.z_32.ld1.psl.v1.0.0-high.upf": {
         "element": "Er",
@@ -12875,8 +12875,8 @@
             "XO3": 2.176885276379
         },
         "avg.nu.w/o.max": 5.491928486600067,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Tm.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Tm",
@@ -12896,8 +12896,8 @@
             "XO3": 10.704141004045
         },
         "avg.nu.w/o.max": 7.596886991201938,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Tm.paw.pbe.z_23.atompaw.jth.v1.1-std.upf": {
         "element": "Tm",
@@ -12917,8 +12917,8 @@
             "XO3": 8.7275881745042
         },
         "avg.nu.w/o.max": 4.62481441013499,
-        "efficiency": 35,
-        "precision": 50
+        "efficiency": 40,
+        "precision": 55
     },
     "Tm.paw.pbe.z_23.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Tm",
@@ -12938,8 +12938,8 @@
             "XO3": 1.7860225174184
         },
         "avg.nu.w/o.max": 2.1344630276970395,
-        "efficiency": 35,
-        "precision": 150
+        "efficiency": 40,
+        "precision": 200
     },
     "Tm.paw.pbe.z_33.ld1.psl.v1.0.0-high.upf": {
         "element": "Tm",
@@ -12989,8 +12989,8 @@
         "z_valence": "33",
         "avg.nu.w/o.max": null,
         "abbr_name": "PSL-US-v1-high",
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Yb.paw.pbe.z_10.ld1.psl.v1.0.0-low.spn.upf": {
         "element": "Yb",
@@ -13010,8 +13010,8 @@
             "XO3": 6.7372383464934
         },
         "avg.nu.w/o.max": 9.300977688000122,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Yb.paw.pbe.z_11.ld1.psl.v1.0.0-low.spdn.upf": {
         "element": "Yb",
@@ -13031,8 +13031,8 @@
             "XO3": 6.7372383464934
         },
         "avg.nu.w/o.max": 9.300977688000122,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Yb.paw.pbe.z_24.atompaw.jth.v1.1-std.upf": {
         "element": "Yb",
@@ -13052,8 +13052,8 @@
             "XO3": 8.8996520369642
         },
         "avg.nu.w/o.max": 4.371654328405523,
-        "efficiency": 35,
-        "precision": 100
+        "efficiency": 40,
+        "precision": 120
     },
     "Yb.paw.pbe.z_24.atompaw.wentzcovitch.v1.0.legacy.upf": {
         "element": "Yb",
@@ -13073,8 +13073,8 @@
             "XO3": 1.9947335866042
         },
         "avg.nu.w/o.max": 2.253496704453925,
-        "efficiency": 75,
-        "precision": 120
+        "efficiency": 80,
+        "precision": 150
     },
     "Yb.paw.pbe.z_34.ld1.psl.v1.0.0-high.upf": {
         "element": "Yb",
@@ -13115,8 +13115,8 @@
             "XO3": 6.7437439815828
         },
         "avg.nu.w/o.max": 9.258607743465765,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Yb.us.pbe.z_11.ld1.psl.v1.0.0-low.spdn.upf": {
         "element": "Yb",
@@ -13136,8 +13136,8 @@
             "XO3": 6.7437439815828
         },
         "avg.nu.w/o.max": 9.258607743465765,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Yb.us.pbe.z_34.ld1.psl.v1.0.0-high.upf": {
         "element": "Yb",
@@ -13157,8 +13157,8 @@
             "XO3": 3.5038000135553
         },
         "avg.nu.w/o.max": 6.392752174129435,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Lu.nc.pbe.z_25.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Lu",
@@ -13178,8 +13178,8 @@
             "XO3": 1.1503003752853
         },
         "avg.nu.w/o.max": 0.35381066180635273,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Lu.paw.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Lu",
@@ -13199,8 +13199,8 @@
             "XO3": 1.8810373349907
         },
         "avg.nu.w/o.max": 2.009457893877185,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Lu.paw.pbe.z_25.atompaw.jth.v1.1-std.upf": {
         "element": "Lu",
@@ -13229,8 +13229,8 @@
             "XO3": 0.89828121795159
         },
         "avg.nu.w/o.max": 0.25094799725025235,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Lu.paw.pbe.z_35.ld1.psl.v1.0.0-high.upf": {
         "element": "Lu",
@@ -13250,8 +13250,8 @@
             "XO3": 0.18684905289908
         },
         "avg.nu.w/o.max": 0.09617355064434811,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Lu.us.pbe.z_11.ld1.psl.v1.0.0-low.upf": {
         "element": "Lu",
@@ -13271,8 +13271,8 @@
             "XO3": 1.8971368033244
         },
         "avg.nu.w/o.max": 2.040522090012823,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Lu.us.pbe.z_35.ld1.psl.v1.0.0-high.upf": {
         "element": "Lu",
@@ -13292,8 +13292,8 @@
             "XO3": 0.39522061145096
         },
         "avg.nu.w/o.max": 0.39636693101452786,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Hf.nc.pbe.z_12.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Hf",
@@ -13355,8 +13355,8 @@
             "XO3": 0.087743666548304
         },
         "avg.nu.w/o.max": 0.07726216745375175,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "Hf.nc.pbe.z_26.oncvpsp4.sg15.v0.upf": {
         "element": "Hf",
@@ -13397,8 +13397,8 @@
             "XO3": 1.6693748503912
         },
         "avg.nu.w/o.max": 0.8189966719162949,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Hf.paw.pbe.z_12.ld1.psl.v1.0.0-low.upf": {
         "element": "Hf",
@@ -13418,8 +13418,8 @@
             "XO3": 3.2918992823338
         },
         "avg.nu.w/o.max": 2.0806818148597763,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Hf.paw.pbe.z_26.ld1.psl.v1.0.0-high.spfn.upf": {
         "element": "Hf",
@@ -13481,8 +13481,8 @@
             "XO3": 3.2804323455437
         },
         "avg.nu.w/o.max": 2.024845877622307,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Hf.us.pbe.z_12.uspp.gbrv.plus4_v1.upf": {
         "element": "Hf",
@@ -13586,8 +13586,8 @@
             "XO3": 0.28985600287409
         },
         "avg.nu.w/o.max": 0.11116255871867366,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Ta.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
         "element": "Ta",
@@ -13628,8 +13628,8 @@
             "XO3": 0.084914623730577
         },
         "avg.nu.w/o.max": 0.1798461012024181,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "Ta.nc.pbe.z_27.oncvpsp4.sg15.v0.upf": {
         "element": "Ta",
@@ -13649,8 +13649,8 @@
             "XO3": 0.26869983987837
         },
         "avg.nu.w/o.max": 0.16637209927853688,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Ta.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
         "element": "Ta",
@@ -13712,8 +13712,8 @@
             "XO3": 1.3323493082516
         },
         "avg.nu.w/o.max": 0.8662904233268045,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Ta.paw.pbe.z_27.ld1.psl.v1.0.0-high.upf": {
         "element": "Ta",
@@ -13733,8 +13733,8 @@
             "XO3": 0.017123533130824
         },
         "avg.nu.w/o.max": 0.05041372922153849,
-        "efficiency": 60,
-        "precision": 65
+        "efficiency": 65,
+        "precision": 70
     },
     "Ta.us.pbe.z_13.ld1.psl.v0.2.upf": {
         "element": "Ta",
@@ -13754,8 +13754,8 @@
             "XO3": 1.280568770022
         },
         "avg.nu.w/o.max": 0.8181491415226566,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Ta.us.pbe.z_13.ld1.psl.v1.0.0-low.upf": {
         "element": "Ta",
@@ -13775,8 +13775,8 @@
             "XO3": 1.3191939402646
         },
         "avg.nu.w/o.max": 0.8589044786077934,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Ta.us.pbe.z_13.uspp.gbrv.v1.upf": {
         "element": "Ta",
@@ -13817,8 +13817,8 @@
             "XO3": 0.020755314604414
         },
         "avg.nu.w/o.max": 0.020969417932069398,
-        "efficiency": 60,
-        "precision": 60
+        "efficiency": 65,
+        "precision": 65
     },
     "W.nc.pbe.z_14.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "W",
@@ -13880,8 +13880,8 @@
             "XO3": 0.63206915568322
         },
         "avg.nu.w/o.max": 0.19163736633157807,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "W.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
         "element": "W",
@@ -13943,8 +13943,8 @@
             "XO3": 0.067422178871344
         },
         "avg.nu.w/o.max": 0.084588791253946,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "W.us.pbe.z_14.ld1.psl.v1.0.0-low.upf": {
         "element": "W",
@@ -13973,8 +13973,8 @@
             "XO3": 0.46204822570279
         },
         "avg.nu.w/o.max": 0.17058604355934634,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "W.us.pbe.z_28.ld1.psl.v1.0.0-high.upf": {
         "element": "W",
@@ -13994,8 +13994,8 @@
             "XO3": 0.046736802592454
         },
         "avg.nu.w/o.max": 0.028665319698113565,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Re.nc.pbe.z_15.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Re",
@@ -14015,8 +14015,8 @@
             "XO3": 0.035327936190429
         },
         "avg.nu.w/o.max": 0.08304574337407931,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Re.nc.pbe.z_15.oncvpsp4.sg15.v0.upf": {
         "element": "Re",
@@ -14036,8 +14036,8 @@
             "XO3": 0.04881249320613
         },
         "avg.nu.w/o.max": 0.10801838729795879,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Re.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
         "element": "Re",
@@ -14079,7 +14079,7 @@
         },
         "avg.nu.w/o.max": 0.0820831857263241,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Re.paw.pbe.z_15.ld1.psl.v1.0.0-low.upf": {
         "element": "Re",
@@ -14099,8 +14099,8 @@
             "XO3": 0.55050104540231
         },
         "avg.nu.w/o.max": 0.42911546209672774,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Re.paw.pbe.z_29.ld1.psl.v1.0.0-high.upf": {
         "element": "Re",
@@ -14120,8 +14120,8 @@
             "XO3": 0.036712814056181
         },
         "avg.nu.w/o.max": 0.09227666921755201,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Re.us.pbe.z_15.ld1.psl.v1.0.0-low.upf": {
         "element": "Re",
@@ -14141,8 +14141,8 @@
             "XO3": 0.54114537983794
         },
         "avg.nu.w/o.max": 0.42357982191295446,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Re.us.pbe.z_15.uspp.gbrv.v1.2.upf": {
         "element": "Re",
@@ -14204,8 +14204,8 @@
             "XO3": 0.07651020625411
         },
         "avg.nu.w/o.max": 0.12240399640238533,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Os.nc.pbe.z_16.oncvpsp4.sg15.v0.upf": {
         "element": "Os",
@@ -14225,8 +14225,8 @@
             "XO3": 0.069969041060211
         },
         "avg.nu.w/o.max": 0.11535856849719942,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Os.nc.pbe.z_16.oncvpsp4.spms.v1.upf": {
         "element": "Os",
@@ -14267,8 +14267,8 @@
             "XO3": 0.084403956941743
         },
         "avg.nu.w/o.max": 0.05099513344508089,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Os.paw.pbe.z_30.ld1.psl.v1.0.0-high.upf": {
         "element": "Os",
@@ -14288,8 +14288,8 @@
             "XO3": 0.076415323275068
         },
         "avg.nu.w/o.max": 0.10548909324106964,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Os.paw.pbe.z_8.atompaw.jth.v1.1-std.upf": {
         "element": "Os",
@@ -14330,8 +14330,8 @@
             "XO3": 0.080936982124737
         },
         "avg.nu.w/o.max": 0.0431309181773886,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Os.us.pbe.z_16.uspp.gbrv.v1.2.upf": {
         "element": "Os",
@@ -14351,8 +14351,8 @@
             "XO3": 0.028511120278931
         },
         "avg.nu.w/o.max": 0.057245902973711446,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Os.us.pbe.z_30.ld1.psl.v1.0.0-high.upf": {
         "element": "Os",
@@ -14372,8 +14372,8 @@
             "XO3": 0.060786147414593
         },
         "avg.nu.w/o.max": 0.05015578685660271,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Ir.nc.pbe.z_17.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Ir",
@@ -14393,8 +14393,8 @@
             "XO3": 0.067680323075897
         },
         "avg.nu.w/o.max": 0.1460214569313854,
-        "efficiency": 50,
-        "precision": 55
+        "efficiency": 55,
+        "precision": 60
     },
     "Ir.nc.pbe.z_17.oncvpsp4.sg15.v0.upf": {
         "element": "Ir",
@@ -14444,8 +14444,8 @@
             "XO3": 0.71896724117612
         },
         "avg.nu.w/o.max": 0.1666906573524252,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Ir.paw.pbe.z_17.ld1.psl.v1.0.0-low.spn.upf": {
         "element": "Ir",
@@ -14465,8 +14465,8 @@
             "XO3": 0.45250398568223
         },
         "avg.nu.w/o.max": 0.12821818054231165,
-        "efficiency": 40,
-        "precision": 65
+        "efficiency": 45,
+        "precision": 70
     },
     "Ir.paw.pbe.z_31.ld1.psl.v1.0.0-high.upf": {
         "element": "Ir",
@@ -14486,8 +14486,8 @@
             "XO3": 0.1674603361694
         },
         "avg.nu.w/o.max": 0.04877462648584411,
-        "efficiency": 70,
-        "precision": 80
+        "efficiency": 75,
+        "precision": 90
     },
     "Ir.paw.pbe.z_9.ld1.psl.v0.2.3.upf": {
         "element": "Ir",
@@ -14528,8 +14528,8 @@
             "XO3": 0.45250398568223
         },
         "avg.nu.w/o.max": 0.12821818054231165,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Ir.us.pbe.z_15.uspp.gbrv.v1.2.upf": {
         "element": "Ir",
@@ -14550,7 +14550,7 @@
         },
         "avg.nu.w/o.max": 0.06309286137172956,
         "efficiency": 30,
-        "precision": 35
+        "precision": 40
     },
     "Ir.us.pbe.z_17.ld1.psl.v1.0.0-low.spn.upf": {
         "element": "Ir",
@@ -14570,8 +14570,8 @@
             "XO3": 0.6485745629531
         },
         "avg.nu.w/o.max": 0.20710231655541345,
-        "efficiency": 40,
-        "precision": 65
+        "efficiency": 45,
+        "precision": 70
     },
     "Ir.us.pbe.z_31.ld1.psl.v1.0.0-high.upf": {
         "element": "Ir",
@@ -14591,8 +14591,8 @@
             "XO3": 0.20739381199065
         },
         "avg.nu.w/o.max": 0.05967483733577655,
-        "efficiency": 70,
-        "precision": 80
+        "efficiency": 75,
+        "precision": 90
     },
     "Ir.us.pbe.z_9.ld1.psl.v0.2.3.upf": {
         "element": "Ir",
@@ -14633,8 +14633,8 @@
             "XO3": 0.6485745629531
         },
         "avg.nu.w/o.max": 0.20710231655541345,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Pt.nc.pbe.z_18.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Pt",
@@ -14654,8 +14654,8 @@
             "XO3": 0.08808592511157
         },
         "avg.nu.w/o.max": 0.1622810460430849,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Pt.nc.pbe.z_18.oncvpsp4.sg15.v0.upf": {
         "element": "Pt",
@@ -14675,8 +14675,8 @@
             "XO3": 0.34146564532037
         },
         "avg.nu.w/o.max": 0.38770190773192437,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Pt.nc.pbe.z_18.oncvpsp4.spms.v1.upf": {
         "element": "Pt",
@@ -14696,8 +14696,8 @@
             "XO3": 0.20087397889465
         },
         "avg.nu.w/o.max": 0.15787044928443045,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Pt.paw.pbe.z_10.atompaw.jth.v1.1-std.upf": {
         "element": "Pt",
@@ -14739,7 +14739,7 @@
         },
         "avg.nu.w/o.max": 1.3746000936932776,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Pt.paw.pbe.z_10.ld1.psl.v1.0.0-low.n.upf": {
         "element": "Pt",
@@ -14760,7 +14760,7 @@
         },
         "avg.nu.w/o.max": 0.07847522435637577,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Pt.paw.pbe.z_18.ld1.psl.v1.0.0-low.spn.upf": {
         "element": "Pt",
@@ -14780,8 +14780,8 @@
             "XO3": 0.061768051723742
         },
         "avg.nu.w/o.max": 0.07847522435637577,
-        "efficiency": 45,
-        "precision": 65
+        "efficiency": 50,
+        "precision": 70
     },
     "Pt.paw.pbe.z_32.ld1.psl.v1.0.0-high.upf": {
         "element": "Pt",
@@ -14801,8 +14801,8 @@
             "XO3": 0.066338917411754
         },
         "avg.nu.w/o.max": 0.0628219838447767,
-        "efficiency": 90,
-        "precision": 90
+        "efficiency": 100,
+        "precision": 100
     },
     "Pt.us.pbe.z_10.ld1.psl.v0.1.upf": {
         "element": "Pt",
@@ -14823,7 +14823,7 @@
         },
         "avg.nu.w/o.max": 1.3838766953891002,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Pt.us.pbe.z_10.ld1.psl.v1.0.0-low.n.upf": {
         "element": "Pt",
@@ -14844,7 +14844,7 @@
         },
         "avg.nu.w/o.max": 0.084529365406862,
         "efficiency": 30,
-        "precision": 30
+        "precision": 35
     },
     "Pt.us.pbe.z_16.uspp.gbrv.v1.4.upf": {
         "element": "Pt",
@@ -14864,8 +14864,8 @@
             "XO3": 0.05039725171446
         },
         "avg.nu.w/o.max": 0.150126827404018,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Pt.us.pbe.z_18.ld1.psl.v1.0.0-low.spn.upf": {
         "element": "Pt",
@@ -14885,8 +14885,8 @@
             "XO3": 0.082649364600212
         },
         "avg.nu.w/o.max": 0.084529365406862,
-        "efficiency": 45,
-        "precision": 65
+        "efficiency": 50,
+        "precision": 70
     },
     "Pt.us.pbe.z_32.ld1.psl.v1.0.0-high.upf": {
         "element": "Pt",
@@ -14927,8 +14927,8 @@
             "XO3": 0.094507825255529
         },
         "avg.nu.w/o.max": 0.21363937398579325,
-        "efficiency": 60,
-        "precision": 65
+        "efficiency": 65,
+        "precision": 70
     },
     "Au.nc.pbe.z_19.oncvpsp4.sg15.v0.upf": {
         "element": "Au",
@@ -14948,8 +14948,8 @@
             "XO3": 0.56464339242644
         },
         "avg.nu.w/o.max": 0.9489686636920955,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Au.nc.pbe.z_19.oncvpsp4.spms.v1.upf": {
         "element": "Au",
@@ -14969,8 +14969,8 @@
             "XO3": 0.20859976228578
         },
         "avg.nu.w/o.max": 0.10028999867624,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Au.paw.pbe.z_11.atompaw.jth.v1.1-std.upf": {
         "element": "Au",
@@ -14990,8 +14990,8 @@
             "XO3": 1.6280179525518
         },
         "avg.nu.w/o.max": 0.18920330279088113,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Au.paw.pbe.z_11.ld1.psl.v0.3.0.upf": {
         "element": "Au",
@@ -15033,7 +15033,7 @@
         },
         "avg.nu.w/o.max": 0.33372148614905445,
         "efficiency": 30,
-        "precision": 35
+        "precision": 40
     },
     "Au.paw.pbe.z_19.ld1.psl.v1.0.0-low.spn.upf": {
         "element": "Au",
@@ -15074,8 +15074,8 @@
             "XO3": 0.046949232270631
         },
         "avg.nu.w/o.max": 0.13474129635117624,
-        "efficiency": 60,
-        "precision": 80
+        "efficiency": 65,
+        "precision": 90
     },
     "Au.us.pbe.z_11.ld1.psl.v0.3.0.upf": {
         "element": "Au",
@@ -15095,8 +15095,8 @@
             "XO3": 4.2596569855527
         },
         "avg.nu.w/o.max": 1.3074412517960556,
-        "efficiency": 30,
-        "precision": 35
+        "efficiency": 35,
+        "precision": 40
     },
     "Au.us.pbe.z_11.ld1.psl.v1.0.0-low.n.upf": {
         "element": "Au",
@@ -15117,7 +15117,7 @@
         },
         "avg.nu.w/o.max": 0.31976640113652893,
         "efficiency": 30,
-        "precision": 35
+        "precision": 40
     },
     "Au.us.pbe.z_11.uspp.gbrv.v1.upf": {
         "element": "Au",
@@ -15158,8 +15158,8 @@
             "XO3": 0.4963442619723
         },
         "avg.nu.w/o.max": 0.31976640113652893,
-        "efficiency": 55,
-        "precision": 75
+        "efficiency": 60,
+        "precision": 80
     },
     "Au.us.pbe.z_33.ld1.psl.v1.0.0-high.upf": {
         "element": "Au",
@@ -15179,8 +15179,8 @@
             "XO3": 0.0182691921514
         },
         "avg.nu.w/o.max": 0.12578601185781643,
-        "efficiency": 60,
-        "precision": 80
+        "efficiency": 65,
+        "precision": 90
     },
     "Hg.nc.pbe.z_20.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Hg",
@@ -15200,8 +15200,8 @@
             "XO3": 0.12335817922858
         },
         "avg.nu.w/o.max": 0.33883338303791216,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Hg.nc.pbe.z_20.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Hg",
@@ -15230,8 +15230,8 @@
         "z_valence": "20",
         "avg.nu.w/o.max": null,
         "abbr_name": "SG15",
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Hg.nc.pbe.z_20.oncvpsp4.spms.v1.upf": {
         "element": "Hg",
@@ -15251,8 +15251,8 @@
             "XO3": 0.25638008333738
         },
         "avg.nu.w/o.max": 0.4607534097232112,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Hg.paw.pbe.z_12.atompaw.jth.v1.1-std.upf": {
         "element": "Hg",
@@ -15335,8 +15335,8 @@
             "XO3": 1.0090682549354
         },
         "avg.nu.w/o.max": 0.5823835460972178,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Hg.us.pbe.z_12.ld1.psl.v0.2.2.upf": {
         "element": "Hg",
@@ -15356,8 +15356,8 @@
             "XO3": 0.36072733230664
         },
         "avg.nu.w/o.max": 0.9014496185187052,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Hg.us.pbe.z_12.ld1.psl.v1.0.0-low.upf": {
         "element": "Hg",
@@ -15378,7 +15378,7 @@
         },
         "avg.nu.w/o.max": 0.41280093998411554,
         "efficiency": 35,
-        "precision": 50
+        "precision": 55
     },
     "Hg.us.pbe.z_12.uspp.gbrv.v1.upf": {
         "element": "Hg",
@@ -15419,8 +15419,8 @@
             "XO3": 0.96035711767022
         },
         "avg.nu.w/o.max": 0.30844922645506884,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Tl.nc.pbe.z_13.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Tl",
@@ -15440,8 +15440,8 @@
             "XO3": 0.85634479238709
         },
         "avg.nu.w/o.max": 0.23817930337685114,
-        "efficiency": 50,
-        "precision": 50
+        "efficiency": 55,
+        "precision": 55
     },
     "Tl.nc.pbe.z_13.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Tl",
@@ -15461,8 +15461,8 @@
             "XO3": 7.6956832909459
         },
         "avg.nu.w/o.max": 8.540399197122575,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Tl.nc.pbe.z_13.oncvpsp4.sg15.v0.upf": {
         "element": "Tl",
@@ -15482,8 +15482,8 @@
             "XO3": 0.28242079460048
         },
         "avg.nu.w/o.max": 0.12204035833030634,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Tl.nc.pbe.z_13.oncvpsp4.spms.v1.upf": {
         "element": "Tl",
@@ -15524,8 +15524,8 @@
             "XO3": 0.66280631768907
         },
         "avg.nu.w/o.max": 0.2138891024436462,
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Tl.paw.pbe.z_13.atompaw.jth.v1.1-std.upf": {
         "element": "Tl",
@@ -15545,8 +15545,8 @@
             "XO3": 0.20489849904149
         },
         "avg.nu.w/o.max": 0.17491155810985112,
-        "efficiency": 55,
-        "precision": 75
+        "efficiency": 60,
+        "precision": 80
     },
     "Tl.paw.pbe.z_13.ld1.psl.v0.2.3.upf": {
         "element": "Tl",
@@ -15566,8 +15566,8 @@
             "XO3": 0.94960935797993
         },
         "avg.nu.w/o.max": 0.2126934480761367,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Tl.paw.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "Tl",
@@ -15587,8 +15587,8 @@
             "XO3": 0.8308440364529
         },
         "avg.nu.w/o.max": 0.16446084055586596,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 80,
+        "precision": 80
     },
     "Tl.us.pbe.z_13.ld1.psl.v0.2.3.upf": {
         "element": "Tl",
@@ -15608,8 +15608,8 @@
             "XO3": 0.94377447294812
         },
         "avg.nu.w/o.max": 0.20211517287598943,
-        "efficiency": 40,
-        "precision": 45
+        "efficiency": 45,
+        "precision": 50
     },
     "Tl.us.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "Tl",
@@ -15629,8 +15629,8 @@
             "XO3": 0.80927265936055
         },
         "avg.nu.w/o.max": 0.166201754028044,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Tl.us.pbe.z_13.uspp.gbrv.v1.2.upf": {
         "element": "Tl",
@@ -15650,8 +15650,8 @@
             "XO3": 0.2214264987255
         },
         "avg.nu.w/o.max": 0.10320781645468333,
-        "efficiency": 60,
-        "precision": 65
+        "efficiency": 65,
+        "precision": 70
     },
     "Pb.nc.pbe.z_14.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Pb",
@@ -15671,8 +15671,8 @@
             "XO3": 1.4218275112872
         },
         "avg.nu.w/o.max": 0.27574064175965984,
-        "efficiency": 45,
-        "precision": 50
+        "efficiency": 50,
+        "precision": 55
     },
     "Pb.nc.pbe.z_14.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Pb",
@@ -15713,8 +15713,8 @@
             "XO3": 0.22836102243977
         },
         "avg.nu.w/o.max": 0.11871700034477467,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Pb.nc.pbe.z_14.oncvpsp4.spms.v1.upf": {
         "element": "Pb",
@@ -15755,8 +15755,8 @@
             "XO3": 0.54753372913596
         },
         "avg.nu.w/o.max": 0.18741574189638532,
-        "efficiency": 70,
-        "precision": 75
+        "efficiency": 75,
+        "precision": 80
     },
     "Pb.paw.pbe.z_14.atompaw.jth.v1.1-std.upf": {
         "element": "Pb",
@@ -15797,8 +15797,8 @@
             "XO3": 1.2439363446087
         },
         "avg.nu.w/o.max": 0.2571405606716059,
-        "efficiency": 35,
-        "precision": 40
+        "efficiency": 40,
+        "precision": 45
     },
     "Pb.paw.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
         "element": "Pb",
@@ -15818,8 +15818,8 @@
             "XO3": 1.1517800349769
         },
         "avg.nu.w/o.max": 0.22223107649969254,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Pb.paw.pbe.z_4.atompaw.jth.v1.1-str.upf": {
         "element": "Pb",
@@ -15860,8 +15860,8 @@
             "XO3": 1.7608417658565
         },
         "avg.nu.w/o.max": 0.29107043408019084,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Pb.us.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
         "element": "Pb",
@@ -15881,8 +15881,8 @@
             "XO3": 1.1826647840783
         },
         "avg.nu.w/o.max": 0.22451886933381418,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Pb.us.pbe.z_14.uspp.gbrv.v1.upf": {
         "element": "Pb",
@@ -15902,8 +15902,8 @@
             "XO3": 0.75738711665868
         },
         "avg.nu.w/o.max": 0.3862240575486944,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Bi.nc.pbe.z_15.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Bi",
@@ -15923,8 +15923,8 @@
             "XO3": 1.6392587607904
         },
         "avg.nu.w/o.max": 0.24682351391085156,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Bi.nc.pbe.z_15.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Bi",
@@ -15944,8 +15944,8 @@
             "XO3": 8.4838649207298
         },
         "avg.nu.w/o.max": 0.9741917707069779,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Bi.nc.pbe.z_15.oncvpsp4.sg15.v0.upf": {
         "element": "Bi",
@@ -15965,8 +15965,8 @@
             "XO3": 1.0003344274976
         },
         "avg.nu.w/o.max": 0.18060522129798512,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Bi.nc.pbe.z_15.oncvpsp4.spms.v1.upf": {
         "element": "Bi",
@@ -15986,8 +15986,8 @@
             "XO3": 1.6203880560016
         },
         "avg.nu.w/o.max": 0.2902243268685947,
-        "efficiency": 30,
-        "precision": 30
+        "efficiency": 35,
+        "precision": 35
     },
     "Bi.nc.pbe.z_23.oncvpsp3.dojo.v0.4.1-str.upf": {
         "element": "Bi",
@@ -16007,8 +16007,8 @@
             "XO3": 0.4552729975632
         },
         "avg.nu.w/o.max": 0.17921676556238822,
-        "efficiency": 70,
-        "precision": 75
+        "efficiency": 75,
+        "precision": 80
     },
     "Bi.paw.pbe.z_15.atompaw.jth.v1.1-std.upf": {
         "element": "Bi",
@@ -16028,8 +16028,8 @@
             "XO3": 0.399953410288
         },
         "avg.nu.w/o.max": 0.16522322318588678,
-        "efficiency": 35,
-        "precision": 55
+        "efficiency": 40,
+        "precision": 60
     },
     "Bi.paw.pbe.z_15.ld1.psl.v0.2.2.upf": {
         "element": "Bi",
@@ -16049,8 +16049,8 @@
             "XO3": 1.5876900541217
         },
         "avg.nu.w/o.max": 0.258384654198165,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Bi.paw.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
         "element": "Bi",
@@ -16070,8 +16070,8 @@
             "XO3": 1.5115318453513
         },
         "avg.nu.w/o.max": 0.2555622955499664,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 75
     },
     "Bi.paw.pbe.z_5.atompaw.jth.v1.1-str.upf": {
         "element": "Bi",
@@ -16112,8 +16112,8 @@
             "XO3": 3.2465473669068
         },
         "avg.nu.w/o.max": 0.7487370409959591,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Bi.us.pbe.z_15.ld1.psl.v1.0.0-high.upf": {
         "element": "Bi",
@@ -16133,8 +16133,8 @@
             "XO3": 1.5517331577175
         },
         "avg.nu.w/o.max": 0.2710087798566445,
-        "efficiency": 65,
-        "precision": 70
+        "efficiency": 70,
+        "precision": 80
     },
     "Bi.us.pbe.z_15.uspp.gbrv.v1.upf": {
         "element": "Bi",
@@ -16154,8 +16154,8 @@
             "XO3": 0.056460488226467
         },
         "avg.nu.w/o.max": 0.1686493362521768,
-        "efficiency": 40,
-        "precision": 40
+        "efficiency": 45,
+        "precision": 45
     },
     "Po.nc.pbe.z_16.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Po",
@@ -16175,8 +16175,8 @@
             "XO3": 2.1596126122765
         },
         "avg.nu.w/o.max": 0.29640950422880735,
-        "efficiency": 55,
-        "precision": 60
+        "efficiency": 60,
+        "precision": 65
     },
     "Po.nc.pbe.z_16.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Po",
@@ -16205,8 +16205,8 @@
         "z_valence": "24",
         "avg.nu.w/o.max": null,
         "abbr_name": "DOJO-041-str",
-        "efficiency": 75,
-        "precision": 75
+        "efficiency": 80,
+        "precision": 80
     },
     "Po.paw.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
         "element": "Po",
@@ -16226,8 +16226,8 @@
             "XO3": 1.8253618441832
         },
         "avg.nu.w/o.max": 0.28729523475119134,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "Po.paw.pbe.z_6.atompaw.jth.v1.1-std.upf": {
         "element": "Po",
@@ -16268,8 +16268,8 @@
             "XO3": 1.7900406376745
         },
         "avg.nu.w/o.max": 0.26339167479042935,
-        "efficiency": 70,
-        "precision": 70
+        "efficiency": 75,
+        "precision": 75
     },
     "At.paw.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
         "element": "At",
@@ -16331,8 +16331,8 @@
             "XO3": 2.5003957566548
         },
         "avg.nu.w/o.max": 0.4494857545632287,
-        "efficiency": 75,
-        "precision": 100
+        "efficiency": 80,
+        "precision": 120
     },
     "Rn.nc.pbe.z_18.oncvpsp3.dojo.v0.4.1-std.upf": {
         "element": "Rn",
@@ -16352,8 +16352,8 @@
             "XO3": 2.5673559601232
         },
         "avg.nu.w/o.max": 0.9688691179287097,
-        "efficiency": 70,
-        "precision": 80
+        "efficiency": 75,
+        "precision": 90
     },
     "Rn.nc.pbe.z_18.oncvpsp4.dojo.v0.5.0-std.upf": {
         "element": "Rn",
@@ -16373,8 +16373,8 @@
             "XO3": 3.2778355599737
         },
         "avg.nu.w/o.max": 6.364415150127599,
-        "efficiency": 100,
-        "precision": 100
+        "efficiency": 120,
+        "precision": 120
     },
     "Rn.paw.pbe.z_18.ld1.psl.v1.0.0-high.upf": {
         "element": "Rn",
@@ -16436,8 +16436,8 @@
             "XO3": 2.7878919920017
         },
         "avg.nu.w/o.max": 0.6749876169425034,
-        "efficiency": 150,
-        "precision": 150
+        "efficiency": 200,
+        "precision": 200
     },
     "Fr.paw.pbe.z_19.ld1.psl.v1.0.0-high.upf": {
         "element": "Fr",
@@ -16457,8 +16457,8 @@
             "XO3": 5.3395135690313
         },
         "avg.nu.w/o.max": 1.1005876393835043,
-        "efficiency": 120,
-        "precision": 150
+        "efficiency": 150,
+        "precision": 200
     },
     "Fr.us.pbe.z_19.ld1.psl.v1.0.0-high.upf": {
         "element": "Fr",
@@ -16499,8 +16499,8 @@
             "XO3": 9.2609299165153
         },
         "avg.nu.w/o.max": 1.1322409851174298,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "Ra.us.pbe.z_20.ld1.psl.v1.0.0-high.upf": {
         "element": "Ra",
@@ -16520,8 +16520,8 @@
             "XO3": 9.3839762605313
         },
         "avg.nu.w/o.max": 1.1973831468815732,
-        "efficiency": 120,
-        "precision": 120
+        "efficiency": 150,
+        "precision": 150
     },
     "Ac.paw.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
         "element": "Ac",
@@ -16541,8 +16541,8 @@
             "XO3": 0.15531711933715
         },
         "avg.nu.w/o.max": 0.1322293488358978,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Ac.us.pbe.z_11.ld1.psl.v1.0.0-high.upf": {
         "element": "Ac",
@@ -16562,8 +16562,8 @@
             "XO3": 0.19749240685051
         },
         "avg.nu.w/o.max": 0.09005732998894644,
-        "efficiency": 35,
-        "precision": 35
+        "efficiency": 40,
+        "precision": 40
     },
     "Th.paw.pbe.z_12.ld1.psl.v1.0.0-high.upf": {
         "element": "Th",
@@ -16583,8 +16583,8 @@
             "XO3": 0.054456530195477
         },
         "avg.nu.w/o.max": 0.257810262921653,
-        "efficiency": 70,
-        "precision": 75
+        "efficiency": 75,
+        "precision": 80
     },
     "Th.paw.pbe.z_12.ld1.uni-marburg.v0.upf": {
         "element": "Th",
@@ -16625,8 +16625,8 @@
             "XO3": 0.065615618653881
         },
         "avg.nu.w/o.max": 0.11256087966947242,
-        "efficiency": 70,
-        "precision": 75
+        "efficiency": 75,
+        "precision": 80
     },
     "Pa.paw.pbe.z_13.ld1.psl.v1.0.0-high.upf": {
         "element": "Pa",
@@ -16646,8 +16646,8 @@
             "XO3": 0.18715567291405
         },
         "avg.nu.w/o.max": 0.2645180791127333,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "Pa.paw.pbe.z_13.ld1.uni-marburg.v0.upf": {
         "element": "Pa",
@@ -16688,8 +16688,8 @@
             "XO3": 0.18013775474692
         },
         "avg.nu.w/o.max": 0.21257605686695918,
-        "efficiency": 75,
-        "precision": 80
+        "efficiency": 80,
+        "precision": 90
     },
     "U.paw.pbe.z_14.ld1.psl.v1.0.0-high.upf": {
         "element": "U",
@@ -16772,8 +16772,8 @@
             "XO3": 0.32166604651126
         },
         "avg.nu.w/o.max": 0.2960334860921734,
-        "efficiency": 80,
-        "precision": 120
+        "efficiency": 90,
+        "precision": 150
     },
     "Np.paw.pbe.z_15.ld1.uni-marburg.v0.upf": {
         "element": "Np",
@@ -16814,8 +16814,8 @@
             "XO3": 0.27234882636244
         },
         "avg.nu.w/o.max": 0.23934148910297914,
-        "efficiency": 80,
-        "precision": 120
+        "efficiency": 90,
+        "precision": 150
     },
     "Pu.paw.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
         "element": "Pu",
@@ -16835,8 +16835,8 @@
             "XO3": 0.16214714539722
         },
         "avg.nu.w/o.max": 0.1761230400363008,
-        "efficiency": 35,
-        "precision": 55
+        "efficiency": 40,
+        "precision": 60
     },
     "Pu.paw.pbe.z_16.ld1.uni-marburg.v0.upf": {
         "element": "Pu",
@@ -16856,8 +16856,8 @@
             "XO3": 0.24932671563969
         },
         "avg.nu.w/o.max": 0.2695766663286604,
-        "efficiency": 45,
-        "precision": 45
+        "efficiency": 50,
+        "precision": 50
     },
     "Pu.us.pbe.z_16.ld1.psl.v1.0.0-high.upf": {
         "element": "Pu",
@@ -16877,8 +16877,8 @@
             "XO3": 0.064680800949499
         },
         "avg.nu.w/o.max": 0.24546180861744377,
-        "efficiency": 35,
-        "precision": 55
+        "efficiency": 40,
+        "precision": 60
     },
     "Am.paw.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
         "element": "Am",
@@ -16898,8 +16898,8 @@
             "XO3": 0.11185028675869
         },
         "avg.nu.w/o.max": 0.13909535067041812,
-        "efficiency": 40,
-        "precision": 60
+        "efficiency": 45,
+        "precision": 65
     },
     "Am.paw.pbe.z_17.ld1.uni-marburg.v0.upf": {
         "element": "Am",
@@ -16919,8 +16919,8 @@
             "XO3": 0.38735969932723
         },
         "avg.nu.w/o.max": 0.4571911486197578,
-        "efficiency": 40,
-        "precision": 55
+        "efficiency": 45,
+        "precision": 60
     },
     "Am.us.pbe.z_17.ld1.psl.v1.0.0-high.upf": {
         "element": "Am",
@@ -16940,8 +16940,8 @@
             "XO3": 0.11317962957331
         },
         "avg.nu.w/o.max": 0.13746144932387802,
-        "efficiency": 40,
-        "precision": 60
+        "efficiency": 45,
+        "precision": 65
     },
     "Cm.paw.pbe.z_18.ld1.uni-marburg.v0.upf": {
         "element": "Cm",
@@ -16949,7 +16949,7 @@
         "z_valence": "18",
         "avg.nu.w/o.max": null,
         "abbr_name": "MARBURG",
-        "efficiency": 40,
-        "precision": 55
+        "efficiency": 45,
+        "precision": 60
     }
 }

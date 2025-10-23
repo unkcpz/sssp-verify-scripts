@@ -3,6 +3,7 @@
 from aiida import orm
 import sys
 import aiida
+from aiida_sssp_workflow.calculations.calculate_metric import metric_analyze
 import h5py
 import numpy as np
 import argparse
@@ -76,6 +77,24 @@ def extract_convergence(lib_name, property, conf, f_compute_xy, override=False):
             for key in [k for k in xy_dict.keys() if k != 'metadata']:
                 convergence_test_group.create_dataset(key, data=np.array(xy_dict[key]))
 
+def manually_eos_extract(node):
+    eos_dict = {}
+    birch_murnaghan_fit = {}
+    metric_dict = {}
+    for conf in ["BCC", "FCC", "SC", "DC", "XO", "XO2", "XO3", "X2O5", "X2O3", "X2O"]:
+        try:
+            eos = node.outputs[conf]["eos"]
+            eos_dict[conf] = eos["output_volume_energy"]
+            birch_murnaghan_fit[conf] = eos["output_birch_murnaghan_fit"]
+
+            metric_dict[conf] = node.outputs[conf]["output_parameters"]
+        except Exception as err:
+            eprint(err)
+            continue
+
+
+    return eos_dict, birch_murnaghan_fit, metric_dict
+
 def extract_eos(lib_name, override=False):
 
     criteria = 200 # XXX: 200, eff (recommended cutoff using eff criteria), prec (..)
@@ -90,11 +109,11 @@ def extract_eos(lib_name, override=False):
             filename = node.inputs.pseudo.filename
             md5 = node.inputs.pseudo.md5
 
-            if node.exit_status != 0:
-                # XXX: this should loose a bit since any configuraiton failed will result to 
-                # no data for other success confs
-                eprint(f"node {node.uuid} verify on {filename} not okay")
-                continue
+            # if node.exit_status != 0:
+            #     # XXX: this should loose a bit since any configuraiton failed will result to 
+            #     # no data for other success confs
+            #     eprint(f"node {node.uuid} verify on {filename} not okay")
+            #     continue
 
 
             # print(f"extracting {filename}")
@@ -132,11 +151,24 @@ def extract_eos(lib_name, override=False):
                 transferability_eos_group = pp_grp.create_group(subgroup_name)
 
             # Store dataset in every group of a configuration
-            eos_dict, birch_murnaghan_fit, metric_dict = transferability_extract_eos(node)
+            try:
+                eos_dict, birch_murnaghan_fit, metric_dict = transferability_extract_eos(node)
+            except:
+                eos_dict, birch_murnaghan_fit, metric_dict = manually_eos_extract(node)
+
             for conf in [k for k in eos_dict.keys() if k != 'metadata']:
+                try:
+                    volume_energy_dict = eos_dict[conf]
+                    metric_dict[conf]
+                    birch_murnaghan_fit[conf]
+                except KeyError as err:
+                    eprint(err)
+                    continue
+                except:
+                    raise
+
                 c_group = transferability_eos_group.create_group(conf)
 
-                volume_energy_dict = eos_dict[conf]
                 volumes = volume_energy_dict['volumes']
                 energies = volume_energy_dict['energies']
                 c_group.create_dataset('volumes', data=volumes)
