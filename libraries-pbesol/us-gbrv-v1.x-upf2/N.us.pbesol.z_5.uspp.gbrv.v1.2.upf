@@ -9,7 +9,7 @@ nl pn  l   occ               Rcut            Rcut US             E pseu
 2S  2  0  2.00      0.00000000000      1.15000000000     -1.35460642700
 2P  2  1  3.00      0.00000000000      1.20000000000     -0.51750933300
 </PP_INFO>
-  <PP_HEADER element="N" pseudo_type="US" relativistic="scalar" is_ultrasoft="T" is_paw="F" is_coulomb="F" has_so="F" has_wfc="F" has_gipaw="F" core_correction="T" functional="SLA+PW+PSX+PSC+PBEsol" z_valence="5.0" total_psenergy="-19.4602759046" wfc_cutoff="0.0" rho_cutoff="0.0" l_max="1" mesh_size="729" number_of_wfc="2" number_of_proj="4"/>
+  <PP_HEADER element="N" pseudo_type="US" relativistic="scalar" is_ultrasoft="T" is_paw="F" is_coulomb="F" has_so="F" has_wfc="F" has_gipaw="F" core_correction="T" functional="PBESOL" z_valence="5.0" total_psenergy="-19.4602759046" wfc_cutoff="0.0" rho_cutoff="0.0" l_max="1" mesh_size="729" number_of_wfc="2" number_of_proj="4"/>
   <PP_MESH>
     <PP_R>
 0.00000000000000E+00 6.05297272571000E-06 1.22094125726000E-05 1.84710881666000E-05 
