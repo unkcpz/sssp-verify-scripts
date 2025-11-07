@@ -54,7 +54,7 @@ psp_pbe = [
     "Nd.paw.pbe.z_14.atompaw.wentzcovitch.v1.0.legacy.upf",
     "Ni.nc.pbe.z_18.oncvpsp4.spms.v1.upf",
     "Np.us.pbe.z_15.ld1.psl.v1.0.0-high.upf",
-    "O.us.pbe.z_6.ld1.psl.v0.1.upf",
+    "O.paw.pbe.z_6.ld1.psl.v0.1.upf",
     "Os.us.pbe.z_16.uspp.gbrv.v1.2.upf",
     "P.us.pbe.z_5.ld1.psl.v1.0.0-high.upf",
     "Pa.paw.pbe.z_13.ld1.uni-marburg.v0.upf",
@@ -149,7 +149,7 @@ psp_pbesol = [
     "Nd.paw.pbesol.z_14.atompaw.wentzcovitch.v1.0.legacy.upf",
     "Ni.nc.pbesol.z_18.oncvpsp4.spms.v1.upf",
     "Np.us.pbesol.z_15.ld1.psl.v1.0.0-high.upf",
-    "O.us.pbesol.z_6.ld1.psl.v0.1.upf",
+    "O.paw.pbesol.z_6.ld1.psl.v0.1.upf",
     "Os.us.pbesol.z_16.uspp.gbrv.v1.2.upf",
     "P.us.pbesol.z_5.ld1.psl.v1.0.0-high.upf",
     "Pa.paw.pbesol.z_13.ld1.uni-marburg.v0.upf",
@@ -196,11 +196,11 @@ def extract(t):
     if t == "pbe":
         ll = psp_pbe
         base_folder = "../../libraries-pbe/"
-        sssp_path = "./mix-sssp-pbe-eff-lib-v2"
+        sssp_path = "./mix-sssp-pbe-eff-lib-v2/library/"
     else:
         ll = psp_pbesol
         base_folder = "../../libraries-pbesol/"
-        sssp_path = "./mix-sssp-pbesol-eff-lib-v2"
+        sssp_path = "./mix-sssp-pbesol-eff-lib-v2/library/"
 
     for ff in ll:
         f = ff.split(".")[0:-1]
