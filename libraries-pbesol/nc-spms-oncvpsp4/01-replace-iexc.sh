@@ -7,11 +7,9 @@ for inp_file in *.inp; do
     tmp_file="$(mktemp)"
 
     awk '
-        # Match atomic data lines (symbol + numeric fields)
-        /^[A-Za-z]+\s+[0-9]/ && NF >= 6 {
-            $5 = "-116133"   # replace iexc
-            printf "%-3s %6.2f %4d %4d %9d %7s\n", $1, $2, $3, $4, $5, $6
-            next
+        # Match lines like: Symbol Number ... at least 6 fields
+        /^[[:space:]]*[A-Za-z]+[[:space:]]+[0-9.]/ && NF >= 6 {
+            $5 = "-116133"
         }
         { print }
     ' "$inp_file" > "$tmp_file"

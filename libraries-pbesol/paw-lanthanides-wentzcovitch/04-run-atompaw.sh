@@ -35,7 +35,7 @@ for inp in *.inp; do
     element="${base%%.*}"
 
     # Move the generated UPF to parent folder, renaming it
-    mv "${element}.GGA-PBE-paw.UPF" "../${base}.upf"
+    mv "${element}.GGA-PBESOL-paw.UPF" "../${base}.upf"
 
     # Optional: move the full .out back as well
     mv "${base}.out" ..

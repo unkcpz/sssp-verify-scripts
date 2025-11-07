@@ -1,5 +1,5 @@
 Tm  69
-GGA-PBE  loggrid 700 scalarrelativistic logderivrange -8 8 500
+XC_GGA_X_PBE_SOL+XC_GGA_C_PBE_SOL  loggrid 700 scalarrelativistic logderivrange -8 8 500
 6 5 5 4 0
 5 2 1
 4 3 12

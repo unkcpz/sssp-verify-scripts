@@ -1,6 +1,6 @@
 # ATOM AND REFERENCE CONFIGURATION
 # atsym  z   nc   nv     iexc    psfile
-  Be  4.00    0    2       4      upf
+Be 4.00 0 2 -116133 upf
 #
 #   n    l    f        energy (Ha)
     1    0    2.00

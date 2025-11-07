@@ -1,6 +1,6 @@
 # ATOM AND REFERENCE CONFIGURATION
 # atsym  z   nc   nv     iexc    psfile
-  Ga 31.00    5    3       4      upf
+Ga 31.00 5 3 -116133 upf
 #
 #   n    l    f        energy (Ha)
     1    0    2.00
