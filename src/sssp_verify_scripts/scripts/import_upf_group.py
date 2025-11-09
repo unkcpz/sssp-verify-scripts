@@ -115,6 +115,11 @@ Source data of the analysis in supplementary information of the paper.
 """
         group_name = "validate/upf/candidate/sssp-eff-v2-0911"
         folder_path = base_path / "libraries-pbe" / "mix-sssp-eff-v2-0911"
+    elif lib_name == 'mix-sssp-eff-v2-11-09':
+        description = """v2 with Co/Ni after mag check by timo
+"""
+        group_name = "validate/upf/candidate/sssp-eff-v2-1109"
+        folder_path = base_path / "libraries-pbe" / "mix-sssp-eff-v2-1109"
     elif lib_name == 'high-dual-elements':
         description = """High dual elements for test purpose, Fe, O, Hf
 """
