@@ -1,0 +1,248 @@
+#!/bin/env python
+
+from aiida import orm
+import sys
+import aiida
+from aiida_sssp_workflow.calculations.calculate_metric import metric_analyze
+import h5py
+import numpy as np
+import argparse
+from tqdm import tqdm
+
+from aiida_sssp_workflow.utils.pseudo import extract_pseudo_info_from_filename
+from aiida_sssp_workflow.workflows.convergence.bands import compute_xy as compute_xy_bands_distance 
+from aiida_sssp_workflow.workflows.convergence.cohesive_energy import compute_xy as compute_xy_cohesive_energy
+from aiida_sssp_workflow.workflows.convergence.eos import compute_xy as compute_xy_eos
+from aiida_sssp_workflow.workflows.convergence.phonon_frequencies import compute_xy as compute_xy_phonon_frequencies
+from aiida_sssp_workflow.workflows.convergence.pressure import compute_xy as compute_xy_pressure
+from aiida_sssp_workflow.workflows.transferability.eos import extract_eos as transferability_extract_eos
+
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
+def extract_convergence(lib_name, property, conf, f_compute_xy, override=False):
+
+    with h5py.File(f'pp_verify_convergence_{conf}_2.h5', 'a') as f:
+        group_name = f"validate/{lib_name}/convergence/{property}/standard/{conf}/2"
+        group = orm.load_group(group_name)
+
+        print(f"--- In processing group {group_name} ---")
+
+        for node in tqdm(group.nodes, file=sys.stdout):
+            # key is the filename of the pseudo
+            filename = node.inputs.pseudo.filename
+            md5 = node.inputs.pseudo.md5
+
+            if node.exit_status != 0:
+                eprint(f"node {node.uuid} verify on {filename} on/ conf {conf}/ property {property} not okay")
+                continue
+
+
+            # print(f"extracting {filename}")
+            
+            if filename in f:
+                pp_grp = f[filename]
+            else:
+                pp_grp = f.create_group(filename)
+
+            # Add attr:
+            # - md5
+            # - element
+            # - functional
+            # - z_valence
+            # - pp_type
+            # - TODO: pp_code
+            # - TODO: lib_version
+            # - TODO: lib_label (dojo, psl, jth etc) 
+            pseudo_info = extract_pseudo_info_from_filename(filename)
+            pp_grp.attrs['element'] = pseudo_info.element
+            pp_grp.attrs['functional'] = pseudo_info.functional
+            pp_grp.attrs['z_valence'] = pseudo_info.z_valence
+            pp_grp.attrs['pp_type'] = pseudo_info.type
+            pp_grp.attrs['lib_name'] = lib_name
+            pp_grp.attrs['md5'] = md5
+
+            subgroup_name = f'convergence_{property}'
+            if subgroup_name in pp_grp: 
+                if override:
+                    del pp_grp[subgroup_name]
+                    convergence_test_group = pp_grp.create_group(subgroup_name)
+                else:
+                    continue
+            else:
+                convergence_test_group = pp_grp.create_group(subgroup_name)
+
+            # compute the property 
+            xy_dict = f_compute_xy(node)
+            for key in [k for k in xy_dict.keys() if k != 'metadata']:
+                convergence_test_group.create_dataset(key, data=np.array(xy_dict[key]))
+
+def manually_eos_extract(node):
+    eos_dict = {}
+    birch_murnaghan_fit = {}
+    metric_dict = {}
+    for conf in ["BCC", "FCC", "SC", "DC", "XO", "XO2", "XO3", "X2O5", "X2O3", "X2O"]:
+        try:
+            eos = node.outputs[conf]["eos"]
+            eos_dict[conf] = eos["output_volume_energy"]
+            birch_murnaghan_fit[conf] = eos["output_birch_murnaghan_fit"]
+
+            metric_dict[conf] = node.outputs[conf]["output_parameters"]
+        except Exception as err:
+            eprint(err)
+            continue
+
+
+    return eos_dict, birch_murnaghan_fit, metric_dict
+
+def extract_eos(lib_name, override=False):
+
+    criteria = 200 # XXX: 200, eff (recommended cutoff using eff criteria), prec (..)
+    with h5py.File(f'pp_verify_transferability_eos_{criteria}.h5', 'a') as f:
+        group_name = f"validate/{lib_name}/transferability/eos/standard-sssp-{criteria}"
+        group = orm.load_group(group_name)
+
+        print(f"--- In processing group {group_name} ---")
+
+        for node in tqdm(group.nodes, file=sys.stdout):
+            # key is the filename of the pseudo
+            filename = node.inputs.pseudo.filename
+            md5 = node.inputs.pseudo.md5
+
+            # if node.exit_status != 0:
+            #     # XXX: this should loose a bit since any configuraiton failed will result to 
+            #     # no data for other success confs
+            #     eprint(f"node {node.uuid} verify on {filename} not okay")
+            #     continue
+
+
+            # print(f"extracting {filename}")
+            
+            if filename in f:
+                pp_grp = f[filename]
+            else:
+                pp_grp = f.create_group(filename)
+
+            # Add attr:
+            # - md5
+            # - element
+            # - functional
+            # - z_valence
+            # - pp_type
+            # - TODO: pp_code
+            # - TODO: lib_version
+            # - TODO: lib_label (dojo, psl, jth etc) 
+            pseudo_info = extract_pseudo_info_from_filename(filename)
+            pp_grp.attrs['element'] = pseudo_info.element
+            pp_grp.attrs['functional'] = pseudo_info.functional
+            pp_grp.attrs['z_valence'] = pseudo_info.z_valence
+            pp_grp.attrs['pp_type'] = pseudo_info.type
+            pp_grp.attrs['lib_name'] = lib_name
+            pp_grp.attrs['md5'] = md5
+
+            subgroup_name = f'transferability_eos'
+            if subgroup_name in pp_grp: 
+                if override:
+                    del pp_grp[subgroup_name]
+                    transferability_eos_group = pp_grp.create_group(subgroup_name)
+                else:
+                    continue
+            else:
+                transferability_eos_group = pp_grp.create_group(subgroup_name)
+
+            # Store dataset in every group of a configuration
+            try:
+                eos_dict, birch_murnaghan_fit, metric_dict = transferability_extract_eos(node)
+            except:
+                eos_dict, birch_murnaghan_fit, metric_dict = manually_eos_extract(node)
+
+            for conf in [k for k in eos_dict.keys() if k != 'metadata']:
+                try:
+                    volume_energy_dict = eos_dict[conf]
+                    metric_dict[conf]
+                    birch_murnaghan_fit[conf]
+                except KeyError as err:
+                    eprint(err)
+                    continue
+                except:
+                    raise
+
+                c_group = transferability_eos_group.create_group(conf)
+
+                volumes = volume_energy_dict['volumes']
+                energies = volume_energy_dict['energies']
+                c_group.create_dataset('volumes', data=volumes)
+                c_group.create_dataset('energies', data=energies)
+
+                c_group.attrs['delta'] = metric_dict[conf]['delta/natoms']
+                c_group.attrs['delta1'] = metric_dict[conf]['delta1']
+                c_group.attrs['nu'] = metric_dict[conf]['rel_errors_vec_length']
+
+                V0, B0, B1 = list(metric_dict[conf]['birch_murnaghan_results'])
+                E0 = birch_murnaghan_fit[conf]['energy0']
+                c_group.attrs['V0'] = V0
+                c_group.attrs['B0'] = B0
+                c_group.attrs['B1'] = B1
+                c_group.attrs['E0'] = E0
+
+
+if __name__ == "__main__":
+    aiida.load_profile()
+
+    parser = argparse.ArgumentParser()
+    parser.add_argument('--override', action='store_true', default=False)
+    parser.add_argument('--group', help='`convergence` or `eos`')
+    parser.add_argument('--conf', help='bcc, fcc, dc, sc')
+
+    args = parser.parse_args()
+
+    for lib_name in [
+        "nc-dojo-v0.4.1-std",
+        "nc-dojo-v0.4.1-str",
+        "nc-dojo-v0.5.0-std",
+        "nc-sg15-oncvpsp4",
+        "nc-spms-oncvpsp4",
+        "paw-jth-v1.1-std",
+        "paw-jth-v1.1-str",
+        "paw-lanthanides-wentzcovitch",
+        "paw-psl-v0.x",
+        "paw-psl-v1.0.0-high",
+        "paw-psl-v1.0.0-low",
+        "paw-actinides-marburg",
+        "us-gbrv-v1.x-upf2",
+        "us-psl-v1.0.0-high",
+        "us-psl-v1.0.0-low",
+        "us-psl-v0.x",
+    ]:
+        if args.group == 'convergence':
+            for property in [
+                'bands',
+                'eos',
+                'phonon_frequencies',
+                'pressure',
+                'cohesive_energy',
+            ]:
+                         
+                match property:
+                    case 'bands':
+                        _compute_xy = compute_xy_bands_distance
+                    case 'cohesive_energy':
+                        _compute_xy = compute_xy_cohesive_energy
+                    case 'eos':
+                        _compute_xy = compute_xy_eos
+                    case 'phonon_frequencies':
+                        _compute_xy = compute_xy_phonon_frequencies
+                    case 'pressure':
+                        _compute_xy = compute_xy_pressure
+                    case _:
+                        raise ValueError(f"Unknow property: {property}")
+
+                try:
+                    extract_convergence(lib_name, property, args.conf, _compute_xy, override=args.override)
+                except Exception as exc:
+                    print(exc)
+                    pass
+        elif args.group == 'eos':
+            extract_eos(lib_name, override=args.override)
+        else:
+            raise ValueError(f"unknow group flag {args.group}")

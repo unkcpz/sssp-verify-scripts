@@ -25,5 +25,5 @@ us-psl-v0.x \
 us-psl-v1.0.0-high \
 us-psl-v1.0.0-low
 do
-    import_upf_group --base-folder ~/project/sssp-project/sssp-verify-scripts --lib-name "$lib"
+    import_upf_group --base-folder ../../../../sssp-verify-scripts --lib-name "$lib"
 done
