@@ -2,6 +2,9 @@
 
 # -> this script might needed by Edan
 
+# The result of running this script is to have a "aall-pseudos-bands-distance" group that 
+# contains all bands workchain for the target conf structure to calculate the bands distance
+
 # dependency:
 # - "./conf_mapping.json": to map element to its "most realistic" config among bcc/fcc/sc/dc
 
@@ -11,6 +14,7 @@
 
 # Run this script:
 # `cda sssp-project` on thanos
+# `cd` to this folder
 # `verdi run 001-extract-to-a-single-group.py`
 
 import aiida
