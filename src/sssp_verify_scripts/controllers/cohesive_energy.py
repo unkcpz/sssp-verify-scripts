@@ -63,7 +63,39 @@ class ConvergenceCohesiveEnergyGroupSubmissionController(FromGroupSubmissionCont
 
 
         cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
-        
+
+        code = orm.load_code(self.pw_code)
+        if 'hq' in code.computer.label:
+            bulk_mpi_options = {
+                'resources': {
+                    'num_cpus': num_cpus,
+                    'memory_mb': memory_mb,
+                },
+            }
+
+            atom_mpi_options = {
+                'resources': {
+                    'num_cpus': atom_num_cpus,
+                    'memory_mb': atom_memory_mb,
+                },
+            }
+        else:
+            bulk_mpi_options={
+                "queue_name": "short",
+                'resources': {
+                    "num_machines": 1,
+                    "num_mpiprocs_per_machine": num_cpus,
+                },
+            }
+
+            atom_mpi_options={
+                "queue_name": "short",
+                'resources': {
+                    "num_machines": 1,
+                    "num_mpiprocs_per_machine": atom_num_cpus,
+                },
+            }
+
         builder: ProcessBuilder = ConvergenceCohesiveEnergyWorkChain.get_builder(
             pseudo=parent_node,
             protocol=self.protocol,
@@ -71,19 +103,9 @@ class ConvergenceCohesiveEnergyGroupSubmissionController(FromGroupSubmissionCont
             configuration=self.configuration,
             code=orm.load_code(self.pw_code),
             bulk_parallelization={"npool": npool},
-            bulk_mpi_options={
-                'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
-                },
-            },
+            bulk_mpi_options=bulk_mpi_options,
             atom_parallelization={"npool": atom_npool},
-            atom_mpi_options={
-                'resources': {
-                    'num_cpus': atom_num_cpus,
-                    'memory_mb': atom_memory_mb,
-                },
-            },
+            atom_mpi_options=atom_mpi_options,
             clean_workdir=self.clean_workdir,
         )
 

@@ -58,6 +58,23 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
             npool = self.unit_npool * 1
 
         cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
+
+        code = orm.load_code(self.pw_code)
+        if 'hq' in code.computer.label:
+            mpi_options = {
+                'resources': {
+                    'num_cpus': num_cpus,
+                    'memory_mb': memory_mb,
+                },
+            }
+        else:
+            mpi_options={
+                "queue_name": "short",
+                'resources': {
+                    "num_machines": 1,
+                    "num_mpiprocs_per_machine": num_cpus,
+                },
+            }
         
         builder: ProcessBuilder = ConvergencePhononFrequenciesWorkChain.get_builder(
             pseudo=parent_node,
@@ -67,19 +84,9 @@ class ConvergencePhononFrequenciesGroupSubmissionController(FromGroupSubmissionC
             pw_code=orm.load_code(self.pw_code),
             ph_code=orm.load_code(self.ph_code),
             pw_parallelization={"npool": npool},
-            pw_mpi_options={
-                'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
-                },
-            },
+            pw_mpi_options=mpi_options,
             ph_settings = {"CMDLINE": ["-npool", f"{npool}"]},
-            ph_mpi_options={
-                'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
-                },
-            },
+            ph_mpi_options=mpi_options,
             clean_workdir=self.clean_workdir,
         )
 

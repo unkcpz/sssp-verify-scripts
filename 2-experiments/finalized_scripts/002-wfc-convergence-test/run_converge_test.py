@@ -10,10 +10,12 @@ from sssp_verify_scripts.controllers.eos import ConvergenceEOSGroupSubmissionCon
 from sssp_verify_scripts.controllers.phonon_frequencies import ConvergencePhononFrequenciesGroupSubmissionController
 from sssp_verify_scripts.controllers.pressure import ConvergencePressureGroupSubmissionController
 
+COMPUTER = "thor"
+PW_CODE = "qe-7.3-pw-gf"
+PH_CODE = "qe-7.3-ph-gf"
 
 # batch=2: start at 2024-12-03
 def launch(protocol, property, configuration, experiment, library, concurrent, unit_num_cpus, batch=2):
-    computer = 'eiger-hq'
     target_upf_lib = f"validate/upf/candidate/{library}"
 
     lib_name = target_upf_lib.split('/')[-1]
@@ -51,7 +53,7 @@ def launch(protocol, property, configuration, experiment, library, concurrent, u
         "group_label": target_group_label,
         "parent_group_label": target_upf_lib,
         "max_concurrent": concurrent,
-        "pw_code": f"pw-7.2@{computer}",  # XXX: better use code_label??
+        "pw_code": f"{PW_CODE}@{COMPUTER}",  # XXX: better use code_label??
         "protocol": convergence_mapping[protocol],
         "configuration": configuration,
         "wavefunction_cutoff_list": wavefunction_cutoff_list,
@@ -67,7 +69,7 @@ def launch(protocol, property, configuration, experiment, library, concurrent, u
         _SubmissionController = ConvergenceBandsGroupSubmissionController
     elif property == 'phonon_frequencies':
         _SubmissionController = ConvergencePhononFrequenciesGroupSubmissionController
-        controller_inputs['ph_code'] = f"ph-7.2@{computer}"
+        controller_inputs['ph_code'] = f"{PH_CODE}@{COMPUTER}"
     elif property == 'pressure':
         _SubmissionController = ConvergencePressureGroupSubmissionController
     elif property == 'eos':

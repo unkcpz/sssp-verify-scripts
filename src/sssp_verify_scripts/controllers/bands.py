@@ -42,6 +42,23 @@ class ConvergenceBandsGroupSubmissionController(FromGroupSubmissionController):
         npool = self.unit_npool * 1
 
         cutoff_list = [(ecutwfc, ecutwfc * dual) for ecutwfc in self.wavefunction_cutoff_list]
+
+        code = orm.load_code(self.pw_code)
+        if 'hq' in code.computer.label:
+            mpi_options = {
+                'resources': {
+                    'num_cpus': num_cpus,
+                    'memory_mb': memory_mb,
+                },
+            }
+        else:
+            mpi_options={
+                "queue_name": "short",
+                'resources': {
+                    "num_machines": 1,
+                    "num_mpiprocs_per_machine": num_cpus,
+                },
+            }
         
         builder: ProcessBuilder = ConvergenceBandsWorkChain.get_builder(
             pseudo=parent_node,
@@ -50,12 +67,7 @@ class ConvergenceBandsGroupSubmissionController(FromGroupSubmissionController):
             configuration=self.configuration,
             code=orm.load_code(self.pw_code),
             parallelization={"npool": npool},
-            mpi_options={
-                'resources': {
-                    'num_cpus': num_cpus,
-                    'memory_mb': memory_mb,
-                },
-            },
+            mpi_options=mpi_options,
             clean_workdir=self.clean_workdir,
         )
 
