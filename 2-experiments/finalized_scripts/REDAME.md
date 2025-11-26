@@ -49,6 +49,7 @@ After 002 the convergence test, this is to extract the results into a h5 file.
 - depend on 003
 
 After 002 the eos transferability test, this is to extract the results into a h5 file.
+This h5 file is then as the input to generate a `eos.json` which include all the EOS information of all libraries with AE reference.
 
 ## 006
 006-plot-element-summary/
