@@ -36,6 +36,11 @@ def get_lib_info(lib_name: str, base_path: Path) -> tuple:
 """
         group_name = f"validate/upf/candidate/{lib_name}"
         folder_path = base_path / "libraries-pbe" / f"{lib_name}"
+    elif lib_name == "single_pseudo":
+        description = """This group contains a single pseudo - for educational purposes.
+"""
+        group_name = f"validate/upf/candidate/{lib_name}"
+        folder_path = base_path / "libraries-pbe" / f"{lib_name}"
     elif lib_name == 'paw-jth-v1.1-std':
         description = """This group contains the candidate UPF files from JTH std v1.1 library for validate calculations.
 PPs are regenerated with PP pseudo orbital label for every channel.
