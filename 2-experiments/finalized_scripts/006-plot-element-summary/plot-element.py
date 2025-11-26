@@ -36,6 +36,7 @@ elif CRITERIA == "precision":
 #               '#00F0F0','#A5FF00','#B44682','#CD00CD','#86B80B']
 #               )])
 lib_color_mapping = {
+    'single_pseudo': '#ffa500',
     'nc-dojo-v0.4.1-std': '#ffa500',
     'nc-spms-oncvpsp4': '#7f8001', # XXX: new
     "nc-dojo-v0.4.1-str": '#ffb500', #: TBD
@@ -55,6 +56,7 @@ lib_color_mapping = {
 }
 
 lib_abbr_name_mapping = {
+    'single_pseudo': 'SP',
     'nc-dojo-v0.4.1-std': 'DOJO-041-std',
     'nc-spms-oncvpsp4': 'SPMS',
     "nc-dojo-v0.4.1-str": 'DOJO-041-str',
