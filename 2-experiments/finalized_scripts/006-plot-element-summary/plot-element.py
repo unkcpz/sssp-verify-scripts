@@ -1,0 +1,350 @@
+#!/bin/env python
+
+import h5py
+from matplotlib import pyplot as plt
+import numpy as np
+import json
+from aiida_sssp_workflow.utils.element import ALL_ELEMENTS, HIGH_DUAL_ELEMENTS
+import sys
+from pathlib import Path
+
+from matplotlib.lines import Line2D
+
+def eprint(*args, **kwargs):
+    print(*args, file=sys.stderr, **kwargs)
+
+# cri
+CRITERIA = "efficiency"
+
+if CRITERIA == "efficiency":
+	EOS_C_FACTOR = 0.2
+	PRESSURE_C_FACTOR = 1
+	PHONON_C_FACTOR = 2
+elif CRITERIA == "precision":
+	EOS_C_FACTOR = 0.1
+	PRESSURE_C_FACTOR = 0.5
+	PHONON_C_FACTOR = 1
+
+# pseudos_colors_dict = dict([(pseudo,color) for pseudo,color in zip(
+#              ['100PAW','100PAW_low','100US','100US_low','031PAW','031US',
+#               'GBRV-1.2','GBRV-1.4','GBRV-1.5','SG15','SG15-1.1','Goedecker',
+#               'Dojo','THEOS','Wentzcovitch','Vanderbilt','THEOS2','all_elec',
+#               'all_elec_denser','BM','GIPAW','psorigPAW','psorigUS'],
+#              ['#008B00','#80FF80','#FF0000','#FF8080','#FF00FF','#0000FF',
+#               '#00CDCD','#4682B4','#B8860B','#000000','#708090','#808000',
+#               '#FFA500','#D7DF01','#610B5E','#8FBC8F','#F0F000','#F000F0',
+#               '#00F0F0','#A5FF00','#B44682','#CD00CD','#86B80B']
+#               )])
+lib_color_mapping = {
+    'nc-dojo-v0.4.1-std': '#ffa500',
+    'nc-spms-oncvpsp4': '#7f8001', # XXX: new
+    "nc-dojo-v0.4.1-str": '#ffb500', #: TBD
+    "nc-dojo-v0.5.0-std": '#ffc500', #: TBD
+    "nc-sg15-oncvpsp4": '#000000',
+    'us-gbrv-v1.x-upf2': '#00cdcd',
+    'us-psl-v1.0.0-high': '#ff0000',
+    "us-psl-v1.0.0-low": '#fa0000', # TBD
+    "us-psl-v0.x": '#0000ff',
+    'paw-jth-v1.1-std': '#984ea3', # XXX: new TBD
+    "paw-jth-v1.1-str": '#984fa3', # TBD
+    "paw-lanthanides-wentzcovitch": '#610b5e',
+    "paw-psl-v0.x": '#ff00ff',
+    "paw-psl-v1.0.0-high": '#008b00',
+    "paw-psl-v1.0.0-low": '#008c00', #TBD
+    "paw-actinides-marburg": '#ea388e',
+}
+
+lib_abbr_name_mapping = {
+    'nc-dojo-v0.4.1-std': 'DOJO-041-std',
+    'nc-spms-oncvpsp4': 'SPMS',
+    "nc-dojo-v0.4.1-str": 'DOJO-041-str',
+    "nc-dojo-v0.5.0-std": 'DOJO-050-std',
+    "nc-sg15-oncvpsp4": 'SG15',
+    'us-gbrv-v1.x-upf2': 'GBRV-1.X',
+    'us-psl-v1.0.0-high': 'PSL-US-v1-high',
+    "us-psl-v1.0.0-low": 'PSL-US-v1-low',
+    "us-psl-v0.x": 'PSL-US-v0.x',
+    'paw-jth-v1.1-std': 'JTH-1.1-std',
+    "paw-jth-v1.1-str": 'JTH-1.1-str',
+    "paw-lanthanides-wentzcovitch": 'Wentzcovitch',
+    "paw-psl-v0.x": 'PSL-PAW-v0.x',
+    "paw-psl-v1.0.0-high": 'PSL-PAW-v1-high',
+    "paw-psl-v1.0.0-low": 'PSL-PAW-v1-low',
+    "paw-actinides-marburg": 'MARBURG',
+}
+
+MAX_CUTOFF = 200
+MIN_CUTOFF = 30
+
+def plot(element, conff, converge_h5, eos_json):
+    count = 0
+    plot_lines = []
+    offset = 8
+
+    try:
+        pps = element_pps_mapping[element]
+    except:
+        return
+
+    # Define pyplot instance
+    plt.figure(figsize=(40, 4 * len(pps)))
+
+    plt.title(f'Verification summary: {element} ({conff})', fontsize=20)
+    plt.xlim(20, 215)
+    plt.ylim(-offset/2.,(len(pps)-0.5)*offset)
+
+    dual = 18 if element in HIGH_DUAL_ELEMENTS else 8
+    plt.xlabel(f'Wavefunction cutoff [Ry]; Charge density cutoff [Ry] = {dual} x Ewfc (PAW/US) | 4 x Ewfc (NC); q-point = '+str([0.5, 0.5, 0.5]),fontsize=20)
+    plt.ylabel(f'Error w.r.t. ref. wavefunction cutoff (rescaled where solid/dash horizontal line for efficiency/precision criteria)',fontsize=20)
+
+    # legend manually created
+    line_phonon_frequencies = Line2D([0], [0], marker='o', linestyle='-', label=r'$\delta \bar{\omega}$', color='black')
+    line_cohesive_energy = Line2D([0], [0], marker='v', linestyle='--', label=r'$\delta E_{coh}$', color='black')
+    line_pressure = Line2D([0], [0], marker='*', linestyle=':', label=r'$\delta V_{press}$', color='black')
+    line_eos = Line2D([0], [0], marker='s', linestyle='-.', label=r'$\delta \nu$', color='black')
+    handles = [line_phonon_frequencies, line_cohesive_energy, line_pressure, line_eos]
+    legend = plt.legend(handles=handles, bbox_to_anchor=(-0.03, 1.0), fontsize=14, frameon=True, markerscale=1.0)
+    plt.gca().add_artist(legend)
+
+    lxticks = list(range(30, 201, 10))
+    plt.xticks(lxticks, [str(x) for x in lxticks], fontsize=14)
+
+    # yticks
+    ypos = []
+    ylabel = []
+    for i in range(len(pps)):
+        for jp, jl in zip([-2, 0, 2], ['', '0', '']):
+            # reset the middle line of every PP to 0
+            ypos.append(jp + offset * i)
+            ylabel.append(jl)
+
+
+    plt.yticks(ypos, ylabel)
+
+    for pp_name in pps:
+        dataset = converge_h5[pp_name]
+
+        lib_name = dataset.attrs.get('lib_name')
+        z_valence = dataset.attrs.get('z_valence')
+        if lib_name is None:
+            raise ValueError(f"lib_name of {dataset} is None")
+
+        abbr_lib_name = lib_abbr_name_mapping[lib_name]
+
+        pcolor = lib_color_mapping[lib_name]
+
+        print(f"------> Pseudopotential = {pp_name}")
+
+        # label, Z_valence, TODO: avg.nu, max.nu (conf), friendly-nu (which give lower weight on XO3)
+        try:
+            eos_data = eos_json[element][abbr_lib_name]
+            tot_nu = 0
+            n_nu = 0
+            tot_nu_wo_xo3 = 0
+            n_nu_wo_xo3 = 0
+            max_nu = 0
+            max_conf = 'n/a'
+            for conf in ["BCC", "FCC", "SC", "DC", "XO", "XO2", "XO3", "X2O", "X2O3", "X2O5"]:
+                nu = eos_data[conf]["nu"]
+                tot_nu += nu
+                n_nu += 1
+                if conf != "XO3":
+                    tot_nu_wo_xo3 += nu
+                    n_nu_wo_xo3 += 1
+
+                # max_nu = max(max_nu, nu)
+                if nu > max_nu:
+                    max_nu = nu
+                    max_conf = conf
+            avg_nu = tot_nu / n_nu
+            avg_nu_wo_xo3 = tot_nu_wo_xo3 / n_nu_wo_xo3
+            avg_nu_wo_maxconf = (tot_nu - max_nu) / (n_nu - 1)
+            if max_conf == "XO3":
+                text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n" + f"avg.$\\nu$ = {avg_nu:.2f}\n" + f"max.$\\nu$ = {max_nu:.2f} ({max_conf})\n" + f"avg.$\\nu$ = {avg_nu_wo_maxconf:.2f} (w/o {max_conf})\n"
+            else:
+                text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n" + f"avg.$\\nu$ = {avg_nu:.2f}\n" + f"max.$\\nu$ = {max_nu:.2f} ({max_conf})\n" + f"avg.$\\nu$ = {avg_nu_wo_maxconf:.2f} (w/o {max_conf})\n" + f"avg.$\\nu$ = {avg_nu_wo_xo3:.2f} (w/o XO3)\n"
+
+            plt.text(MAX_CUTOFF+21, offset * count, text_blob,
+                verticalalignment='center',horizontalalignment='center',fontsize=14)
+        except:
+            text_blob = f"{lib_abbr_name_mapping[lib_name]}\n" + f"Z = {z_valence}\n" + "not all EOS valid\n"
+            plt.text(MAX_CUTOFF+21, offset * count, text_blob,
+                verticalalignment='center',horizontalalignment='center',fontsize=14)
+
+        try:
+            xs_phonon_frequencies = dataset['convergence_phonon_frequencies']['xs'][()]
+            ys_phonon_frequencies = dataset['convergence_phonon_frequencies']['ys'][()]
+            ys_phonon_frequencies *= (2 / PHONON_C_FACTOR)
+            ys_phonon_frequencies_max_diff = dataset['convergence_phonon_frequencies']['ys_relative_max_diff'][()]
+            low_err_freqs = np.zeros(len(ys_phonon_frequencies))
+            high_err_freqs = abs(ys_phonon_frequencies_max_diff) - abs(ys_phonon_frequencies)
+            ys_phonon_frequencies += count * offset
+
+            ref_omega_max = dataset['convergence_phonon_frequencies']['ys_omega_max'][-1]
+            plt.text(MAX_CUTOFF+13.5, offset*count - 0.6, '$\omega_{max}$ = ' + f'{ref_omega_max:.2f}' + ' cm$^{-1}$',
+                horizontalalignment='right',verticalalignment='center',fontsize=14)
+
+            plt.errorbar(xs_phonon_frequencies, ys_phonon_frequencies, yerr=[low_err_freqs, abs(high_err_freqs)], 
+                    capthick=3, capsize=4, marker='o', linestyle='-',
+                    color=pcolor, alpha=0.8, lw=2, ms=10)        
+        except Exception as exc:
+            plt.text(MAX_CUTOFF+13.5, offset*count - 0.6, '$\omega_{max}$ (not avail) ',
+                horizontalalignment='right',verticalalignment='center',fontsize=14)
+            eprint(f"in ploting phonon of {pp_name}: {exc}")
+
+        # Pressure
+        try:
+            xs_pressure = dataset['convergence_pressure']['xs'][()]
+            ys_pressure = dataset['convergence_pressure']['ys'][()]
+            ys_pressure *= (2 / PRESSURE_C_FACTOR) # XXX: magnify so the axhline is the criteria, this value is depend on criteria, => 2 / upper_bound(criteria)
+            ys_pressure += count * offset
+            plt.plot(xs_pressure, ys_pressure, marker='v', linestyle='--',
+                        color=pcolor, alpha=0.9, 
+                        lw=2, ms=10)        
+        except Exception as exc:
+            eprint(f"in ploting pressure of {pp_name}: {exc}")
+
+        # Cohesive energy - Heats of formation (e.g. cohesive energies)
+        try:
+            xs_cohesive_energy = dataset['convergence_cohesive_energy']['xs'][()]
+            ys_cohesive_energy = dataset['convergence_cohesive_energy']['ys'][()]
+            ys_cohesive_energy += count * offset
+            plt.plot(xs_cohesive_energy, ys_cohesive_energy, marker='*', linestyle=':',
+                    color=pcolor, alpha=0.9,
+                    lw=2,ms=10)
+            ref_cohesive_energy_max = dataset['convergence_cohesive_energy']['ys_cohesive_energy_per_atom'][-1]
+            plt.text(MAX_CUTOFF+13.5, offset*count + 0.6, '$E_{cov}$ = ' + f'{ref_cohesive_energy_max:.2f}' + ' $meV/atom$',
+                horizontalalignment='right',verticalalignment='center',fontsize=14)
+        except Exception as exc:
+            plt.text(MAX_CUTOFF+13.5, offset*count + 0.6, '$E_{cov}$ (not avail) ',
+                horizontalalignment='right',verticalalignment='center',fontsize=14)
+            eprint(f"in ploting cohesive energy of {pp_name}: {exc}")
+
+        # EOS (nu w.r.t 200 Ry)
+        try:
+            xs_eos = dataset['convergence_eos']['xs'][()]
+            ys_eos = dataset['convergence_eos']['ys'][()]
+            ys_eos *= 2 / EOS_C_FACTOR # 0.2 is the upper_bound of efficiency criteria
+            ys_eos += count * offset
+            plt.plot(xs_eos, ys_eos, marker='s', linestyle='-.',
+                    color=pcolor, alpha=0.9,
+                    lw=2,ms=10)
+        except Exception as exc:
+            eprint(f"in ploting cohesive energy of {pp_name}: {exc}")
+
+        # Bands data text
+        try:
+            xs_bands = dataset['convergence_bands']['xs'][()]
+            ys_eta_c = dataset['convergence_bands']['ys_eta_c'][()]
+            ys_max_diff_c = dataset['convergence_bands']['ys_max_diff_c'][()]
+
+            plt.text(MAX_CUTOFF+5,offset/3+offset*count,"[meV]",
+                horizontalalignment='left',verticalalignment='top',fontsize=14)
+            plt.text(MAX_CUTOFF+5,-offset/3+offset*count,"[meV]",
+                horizontalalignment='left',fontsize=14)
+            plt.text(MIN_CUTOFF-2,offset/3+offset*count,'$\eta_{10} =$',horizontalalignment='right',
+                verticalalignment='top',fontsize=14)
+            plt.text(MIN_CUTOFF-2,-offset/3+offset*count,'$\max \eta_{10} =$',
+                horizontalalignment='right',fontsize=14)
+            for eta_10, max_10, cutoff in zip(ys_eta_c, ys_max_diff_c, xs_bands):
+                if eta_10 > 1000:
+                    max_10_text = f"{max_10:.0f}"
+                    eta_10_text = f"{eta_10:.0f}"
+                else:
+                    max_10_text = f"{max_10:.2f}"
+                    eta_10_text = f"{eta_10:.2f}"
+
+                plt.text(cutoff, -offset/3+offset*count, max_10_text,
+                     color='black',horizontalalignment='center',fontsize=14)
+                plt.text(cutoff, offset/3+offset*count, eta_10_text,
+                    color='black',horizontalalignment='center',
+                    verticalalignment='top',fontsize=14)
+        except Exception as exc:
+            eprint(f"in ploting bands of {pp_name}: {exc}")
+                      
+        # increase count so shifting offset for next PP
+        count += 1
+
+        # use ('densely dashdotdotted', (0, (3, 1, 1, 1, 1, 1))) linestyle to seperate
+        # https://matplotlib.org/stable/gallery/lines_bars_and_markers/linestyles.html
+        axhlstyle = (0, (3, 1, 1, 1, 1, 1))
+        plt.axhline(2+offset*(count-1), 
+                color=lib_color_mapping[lib_name], linestyle=axhlstyle, lw=2)  # horizontal line is at y=2
+        plt.axhline(-2+offset*(count-1), 
+                color=lib_color_mapping[lib_name], linestyle=axhlstyle, lw=2)
+
+        # half precission
+        plt.axhline(1+offset*(count-1), 
+                color=lib_color_mapping[lib_name], linestyle=(0, (3, 10, 1, 10, 1, 10)), lw=2)  # horizontal line is at y=2
+
+    # plt.savefig(element+'_'+str(dual)+'_conv_patt.png')
+    folder_name = f'plots_{CRITERIA}_stable_conf'
+    Path(folder_name).mkdir(exist_ok=True)
+    z_a = e2za(element)
+    plt.savefig(f'{folder_name}/{z_a}-{element}.png')
+    plt.close()
+
+def e2za(symbol):
+    periodic_table = {
+        "H": 1, "He": 2, "Li": 3, "Be": 4, "B": 5, "C": 6, "N": 7, "O": 8, "F": 9, "Ne": 10,
+        "Na": 11, "Mg": 12, "Al": 13, "Si": 14, "P": 15, "S": 16, "Cl": 17, "Ar": 18,
+        "K": 19, "Ca": 20, "Sc": 21, "Ti": 22, "V": 23, "Cr": 24, "Mn": 25, "Fe": 26,
+        "Co": 27, "Ni": 28, "Cu": 29, "Zn": 30, "Ga": 31, "Ge": 32, "As": 33, "Se": 34,
+        "Br": 35, "Kr": 36, "Rb": 37, "Sr": 38, "Y": 39, "Zr": 40, "Nb": 41, "Mo": 42,
+        "Tc": 43, "Ru": 44, "Rh": 45, "Pd": 46, "Ag": 47, "Cd": 48, "In": 49, "Sn": 50,
+        "Sb": 51, "Te": 52, "I": 53, "Xe": 54, "Cs": 55, "Ba": 56, "La": 57, "Ce": 58,
+        "Pr": 59, "Nd": 60, "Pm": 61, "Sm": 62, "Eu": 63, "Gd": 64, "Tb": 65, "Dy": 66,
+        "Ho": 67, "Er": 68, "Tm": 69, "Yb": 70, "Lu": 71, "Hf": 72, "Ta": 73, "W": 74,
+        "Re": 75, "Os": 76, "Ir": 77, "Pt": 78, "Au": 79, "Hg": 80, "Tl": 81, "Pb": 82,
+        "Bi": 83, "Po": 84, "At": 85, "Rn": 86, "Fr": 87, "Ra": 88, "Ac": 89, "Th": 90,
+        "Pa": 91, "U": 92, "Np": 93, "Pu": 94, "Am": 95, "Cm": 96, "Bk": 97, "Cf": 98,
+        "Es": 99, "Fm": 100, "Md": 101, "No": 102, "Lr": 103, "Rf": 104, "Db": 105,
+        "Sg": 106, "Bh": 107, "Hs": 108, "Mt": 109, "Ds": 110, "Rg": 111, "Cn": 112,
+        "Nh": 113, "Fl": 114, "Mc": 115, "Lv": 116, "Ts": 117, "Og": 118
+    }
+    return periodic_table.get(symbol.capitalize(), None)
+            
+if __name__ == "__main__":
+    # pre--
+    with open('conf_mapping.json', 'r') as fh:
+        conf_mapping = json.load(fh)
+        conf_mapping = {k: v.lower() for k, v in conf_mapping.items()}
+
+    with open('eos.json', 'r') as fh:
+        eos_json = json.load(fh)
+
+    # eos_h5 = h5py.File('./pp_verify_transferability_eos_200.h5')
+
+    for conf in ["bcc", "fcc", "dc", "sc"]:
+        # Load the dataset of convergence results
+        converge_h5 = h5py.File(f'./pp_verify_convergence_{conf}_2.h5')
+
+        # traverse once to collect mapping of element -> all PPs
+        element_pps_mapping = {}
+
+        def curated_by_element(name: str, obj):
+            # only get result for first layer
+            if '/' in name:
+                return
+            element = obj.attrs.get('element')
+            if element is None:
+                raise ValueError(f"element attr of {obj} is None")
+
+            element_pps_mapping.setdefault(element, []).append(name)
+
+
+        converge_h5.visititems(curated_by_element)
+
+        for element in ALL_ELEMENTS:
+        # for element in ["Zn"]:
+            # if element and conf not compatible (the stable conf of element), skip
+            try:
+                stable_conf = conf_mapping[element]
+            except KeyError as exc:
+                eprint(f"key {element} not found: {exc}")
+                continue
+            else:
+                if stable_conf != conf:
+                    continue
+            
+            plot(element, conf, converge_h5, eos_json)
