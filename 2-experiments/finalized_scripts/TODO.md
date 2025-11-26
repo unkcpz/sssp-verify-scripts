@@ -1,1 +1,1 @@
-- in the convergence-test script, make the code the arguments can passed into script.
+- [x] in the convergence-test script, make the code the arguments can passed as the global (module level) var in script.

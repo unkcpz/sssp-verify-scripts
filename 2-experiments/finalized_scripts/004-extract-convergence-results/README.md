@@ -1,0 +1,1 @@
+- run `extract-to-h5.py --group convergence --conf bcc`
