@@ -304,12 +304,12 @@
         "cutoff_rho": 320
     },
     "Ir": {
-        "cutoff_wfc": 30,
-        "cutoff_rho": 120
+        "cutoff_wfc": 40,
+        "cutoff_rho": 320
     },
     "Pt": {
-        "cutoff_wfc": 35,
-        "cutoff_rho": 280
+        "cutoff_wfc": 50,
+        "cutoff_rho": 400
     },
     "Au": {
         "cutoff_wfc": 35,

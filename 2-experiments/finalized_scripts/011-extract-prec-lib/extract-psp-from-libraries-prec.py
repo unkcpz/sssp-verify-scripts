@@ -41,7 +41,7 @@ psp_pbe = [
     "Ho.paw.pbe.z_21.atompaw.wentzcovitch.v1.0.legacy.upf",
     "I.us.pbe.z_7.uspp.gbrv.v1.upf",
     "In.us.pbe.z_13.ld1.psl.v0.2.2.upf",
-    "Ir.nc.pbe.z_17.oncvpsp4.spms.v1.upf",
+    "Ir.us.pbe.z_15.uspp.gbrv.v1.2.upf",
     "K.nc.pbe.z_9.oncvpsp4.sg15.v0.upf",
     "Li.us.pbe.z_3.uspp.gbrv.v1.4.upf",
     "Lu.paw.pbe.z_25.atompaw.wentzcovitch.v1.0.legacy.upf",
@@ -64,7 +64,7 @@ psp_pbe = [
     "Pm.paw.pbe.z_15.atompaw.wentzcovitch.v1.0.legacy.upf",
     "Po.nc.pbe.z_16.oncvpsp3.dojo.v0.4.1-std.upf",
     "Pr.paw.pbe.z_13.atompaw.wentzcovitch.v1.0.legacy.upf",
-    "Pt.us.pbe.z_10.ld1.psl.v1.0.0-low.n.upf",
+    "Pt.paw.pbe.z_18.ld1.psl.v1.0.0-low.spn.upf",
     "Pu.us.pbe.z_16.ld1.psl.v1.0.0-high.upf",
     "Ra.paw.pbe.z_20.ld1.psl.v1.0.0-high.upf",
     "Rb.us.pbe.z_9.uspp.gbrv.v1.upf",
@@ -137,7 +137,7 @@ psp_pbesol = [
     "Ho.paw.pbesol.z_21.atompaw.wentzcovitch.v1.0.legacy.upf",
     "I.us.pbesol.z_7.uspp.gbrv.v1.upf",
     "In.us.pbesol.z_13.ld1.psl.v0.2.2.upf",
-    "Ir.nc.pbesol.z_17.oncvpsp4.spms.v1.upf",
+    "Ir.us.pbesol.z_15.uspp.gbrv.v1.2.upf",
     "K.nc.pbesol.z_9.oncvpsp4.sg15.v0.upf",
     "Li.us.pbesol.z_3.uspp.gbrv.v1.4.upf",
     "Lu.paw.pbesol.z_25.atompaw.wentzcovitch.v1.0.legacy.upf",
@@ -160,7 +160,7 @@ psp_pbesol = [
     "Pm.paw.pbesol.z_15.atompaw.wentzcovitch.v1.0.legacy.upf",
     "Po.nc.pbesol.z_16.oncvpsp3.dojo.v0.4.1-std.upf",
     "Pr.paw.pbesol.z_13.atompaw.wentzcovitch.v1.0.legacy.upf",
-    "Pt.us.pbesol.z_10.ld1.psl.v1.0.0-low.n.upf",
+    "Pt.paw.pbesol.z_18.ld1.psl.v1.0.0-low.spn.upf",
     "Pu.us.pbesol.z_16.ld1.psl.v1.0.0-high.upf",
     "Ra.paw.pbesol.z_20.ld1.psl.v1.0.0-high.upf",
     "Rb.us.pbesol.z_9.uspp.gbrv.v1.upf",
@@ -198,11 +198,11 @@ psp_pbesol = [
 def extract(t):
     if t == "pbe":
         ll = psp_pbe
-        base_folder = "../../libraries-pbe/"
+        base_folder = "../../../libraries-pbe/"
         sssp_path = "./mix-sssp-prec-pbe-lib-v2/library/"
     else:
         ll = psp_pbesol
-        base_folder = "../../libraries-pbesol/"
+        base_folder = "../../../libraries-pbesol/"
         sssp_path = "./mix-sssp-prec-pbesol-lib-v2/library/"
 
     for ff in ll:

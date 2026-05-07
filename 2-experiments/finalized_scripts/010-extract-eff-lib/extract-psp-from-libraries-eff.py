@@ -64,7 +64,7 @@ psp_pbe = [
     "Pm.paw.pbe.z_15.atompaw.wentzcovitch.v1.0.legacy.upf",
     "Po.nc.pbe.z_16.oncvpsp3.dojo.v0.4.1-std.upf",
     "Pr.paw.pbe.z_13.atompaw.wentzcovitch.v1.0.legacy.upf",
-    "Pt.us.pbe.z_10.ld1.psl.v1.0.0-low.n.upf",
+    "Pt.us.pbe.z_16.uspp.gbrv.v1.4.upf",
     "Pu.us.pbe.z_16.ld1.psl.v1.0.0-high.upf",
     "Ra.paw.pbe.z_20.ld1.psl.v1.0.0-high.upf",
     "Rb.us.pbe.z_9.uspp.gbrv.v1.upf",
@@ -160,7 +160,7 @@ psp_pbesol = [
     "Pm.paw.pbesol.z_15.atompaw.wentzcovitch.v1.0.legacy.upf",
     "Po.nc.pbesol.z_16.oncvpsp3.dojo.v0.4.1-std.upf",
     "Pr.paw.pbesol.z_13.atompaw.wentzcovitch.v1.0.legacy.upf",
-    "Pt.us.pbesol.z_10.ld1.psl.v1.0.0-low.n.upf",
+    "Pt.us.pbesol.z_16.uspp.gbrv.v1.4.upf",
     "Pu.us.pbesol.z_16.ld1.psl.v1.0.0-high.upf",
     "Ra.paw.pbesol.z_20.ld1.psl.v1.0.0-high.upf",
     "Rb.us.pbesol.z_9.uspp.gbrv.v1.upf",
@@ -197,11 +197,11 @@ psp_pbesol = [
 def extract(t):
     if t == "pbe":
         ll = psp_pbe
-        base_folder = "../../libraries-pbe/"
+        base_folder = "../../../libraries-pbe/"
         sssp_path = "./mix-sssp-pbe-eff-lib-v2/library/"
     else:
         ll = psp_pbesol
-        base_folder = "../../libraries-pbesol/"
+        base_folder = "../../../libraries-pbesol/"
         sssp_path = "./mix-sssp-pbesol-eff-lib-v2/library/"
 
     for ff in ll:
