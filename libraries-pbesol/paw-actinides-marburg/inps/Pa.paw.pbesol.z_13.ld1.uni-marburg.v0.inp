@@ -1,7 +1,7 @@
 &input
  title = 'Protactinium'
  atom = 'Pa',
- dft = 'pbe',
+ dft='PBESOL',
  config = '[Rn] 5f2.0 6d1.0 7s2 7p0',
  rel = 1,
  iswitch = 3

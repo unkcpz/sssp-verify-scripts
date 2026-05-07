@@ -1,7 +1,7 @@
 &input
  title = 'Thorium'
  atom = 'Th',
- dft = 'pbe',
+ dft='PBESOL',
  config = '[Rn] 5f0.1 6d1.9 7s2 7p0',
  rel = 1,
  iswitch = 3

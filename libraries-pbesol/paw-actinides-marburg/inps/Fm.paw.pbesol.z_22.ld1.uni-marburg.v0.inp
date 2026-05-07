@@ -1,7 +1,7 @@
 &input
  title = 'Fermium'
  atom = 'Fm',
- dft = 'pbe',
+ dft='PBESOL',
  config = '[Rn] 5f12.0 6d0.0 7s2.0 7p0',
  rel = 1,
  iswitch = 3

@@ -3,7 +3,7 @@
   <PP_INFO><![CDATA[
 Generated using "atomic" code by A. Dal Corso  v.6.3MaX
 Author: MS
-Generation date: 22Oct2025
+Generation date:  7May2026
 Pseudopotential type: PAW
 Element: Pu
 Functional:  SLA  PW   PBX  PBC
@@ -70,7 +70,7 @@ Functional:  SLA  PW   PBX  PBC
   <!--
  END OF HUMAN READABLE SECTION 
 -->
-  <PP_HEADER generated="Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3MaX" author="MS" date="22Oct2025" comment="" element="Pu" pseudo_type="PAW" relativistic="scalar" is_ultrasoft="true" is_paw="true" is_coulomb="false" has_so="false" has_wfc="true" has_gipaw="true" paw_as_gipaw="true" core_correction="true" functional=" SLA  PW   PBX  PBC" z_valence="1.600000000000e1" total_psenergy="-1.099524227201e3" wfc_cutoff="5.135768107519e1" rho_cutoff="3.249261374434e2" l_max="3" l_max_rho="6" l_local="-2" mesh_size="1293" number_of_wfc="5" number_of_proj="8"/>
+  <PP_HEADER generated="Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3MaX" author="MS" date=" 7May2026" comment="" element="Pu" pseudo_type="PAW" relativistic="scalar" is_ultrasoft="true" is_paw="true" is_coulomb="false" has_so="false" has_wfc="true" has_gipaw="true" paw_as_gipaw="true" core_correction="true" functional=" SLA  PW   PBX  PBC" z_valence="1.600000000000e1" total_psenergy="-1.099524227201e3" wfc_cutoff="5.135768107519e1" rho_cutoff="3.249261374434e2" l_max="3" l_max_rho="6" l_local="-2" mesh_size="1293" number_of_wfc="5" number_of_proj="8"/>
   <PP_MESH dx="1.250000000000e-2" mesh="1293" xmin="-7.000000000000e0" rmax="1.000000000000e2" zmesh="9.400000000000e1">
     <PP_R>
       9.700871973984215e-6 9.822893922010875e-6 9.946450717197683e-6 1.007156166554526e-5

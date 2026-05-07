@@ -3,7 +3,7 @@
   <PP_INFO><![CDATA[
 Generated using "atomic" code by A. Dal Corso  v.6.3MaX
 Author: MS
-Generation date: 22Oct2025
+Generation date:  7May2026
 Pseudopotential type: PAW
 Element: Cf
 Functional:  SLA  PW   PSX  PSC
@@ -69,7 +69,7 @@ Functional:  SLA  PW   PSX  PSC
   <!--
  END OF HUMAN READABLE SECTION 
 -->
-  <PP_HEADER generated="Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3MaX" author="MS" date="22Oct2025" comment="" element="Cf" pseudo_type="PAW" relativistic="scalar" is_ultrasoft="true" is_paw="true" is_coulomb="false" has_so="false" has_wfc="true" has_gipaw="true" paw_as_gipaw="true" core_correction="true" functional=" SLA  PW   PSX  PSC" z_valence="2.000000000000e1" total_psenergy="-1.259278440641e3" wfc_cutoff="6.764051770892e1" rho_cutoff="3.720578023820e2" l_max="3" l_max_rho="6" l_local="-2" mesh_size="1297" number_of_wfc="5" number_of_proj="8"/>
+  <PP_HEADER generated="Generated using &quot;atomic&quot; code by A. Dal Corso  v.6.3MaX" author="MS" date=" 7May2026" comment="" element="Cf" pseudo_type="PAW" relativistic="scalar" is_ultrasoft="true" is_paw="true" is_coulomb="false" has_so="false" has_wfc="true" has_gipaw="true" paw_as_gipaw="true" core_correction="true" functional=" SLA  PW   PSX  PSC" z_valence="2.000000000000e1" total_psenergy="-1.259278440641e3" wfc_cutoff="6.764051770892e1" rho_cutoff="3.720578023820e2" l_max="3" l_max_rho="6" l_local="-2" mesh_size="1297" number_of_wfc="5" number_of_proj="8"/>
   <PP_MESH dx="1.250000000000e-2" mesh="1297" xmin="-7.000000000000e0" rmax="1.000000000000e2" zmesh="9.800000000000e1">
     <PP_R>
       9.304918015862411e-6 9.421959476214512e-6 9.540473136903900e-6 9.660477515931163e-6
