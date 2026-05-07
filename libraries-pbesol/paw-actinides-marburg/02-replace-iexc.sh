@@ -2,7 +2,7 @@
 
 for f in *.inp; do
     # Replace dft='PBE' with dft='PBESOL'
-    sed -i "s/dft='PBE'/dft='PBESOL'/g" "$f"
+    sed -i -e "s/dft='PBE'/dft='PBESOL'/g" -e "s/dft = 'pbe'/dft='PBESOL'/g" "$f"
 
     # Replace file_pseudopw='...' with the input filename
     base="${f%.inp}"
