@@ -296,8 +296,8 @@
         "cutoff_rho": 88
     },
     "Pt": {
-        "cutoff_wfc": 30,
-        "cutoff_rho": 120
+        "cutoff_wfc": 35,
+        "cutoff_rho": 280
     },
     "Au": {
         "cutoff_wfc": 30,
