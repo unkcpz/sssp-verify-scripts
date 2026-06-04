@@ -94,6 +94,7 @@ def extract(element, element_pps_mapping) -> dict:
 
         eos_dataset = eos_h5[pp_name]
         lib_name = eos_dataset.attrs.get('lib_name')
+        z_valence = eos_dataset.attrs.get('z_valence')
         lib_name_abbr = lib_abbr_name_mapping[lib_name]
 
         pp_info = {}
@@ -126,7 +127,7 @@ def extract(element, element_pps_mapping) -> dict:
                 'E0': E0, 
             }
 
-        pps_info[lib_name_abbr] = pp_info
+        pps_info[f'{lib_name_abbr}-{z_valence}'] = pp_info
 
     return pps_info
             
@@ -147,10 +148,18 @@ if __name__ == "__main__":
 
     eos_h5.visititems(curated_by_element)
 
-    with open("eos.json", "w") as fh:
+    # with open("eos.json", "w") as fh:
+    #     info = {}
+    #     for element in ALL_ELEMENTS:
+    #         epp_info = extract(element, element_pps_mapping)
+    #         
+    #         info[element] = epp_info
+    #
+    #     json.dump(info, fh, indent=4)
+
+    with open("yb.json", "w") as fh:
         info = {}
-        for element in ALL_ELEMENTS:
-        # for element in ["Br"]:
+        for element in ["Yb"]:
             epp_info = extract(element, element_pps_mapping)
             
             info[element] = epp_info

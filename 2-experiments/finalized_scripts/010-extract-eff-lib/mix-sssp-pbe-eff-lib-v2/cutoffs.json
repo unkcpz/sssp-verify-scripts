@@ -71,6 +71,10 @@
         "cutoff_wfc": 35,
         "cutoff_rho": 105
     },
+    "Kr": {
+        "cutoff_wfc": 65,
+        "cutoff_rho": 260
+    },
     "Ca": {
         "cutoff_wfc": 30,
         "cutoff_rho": 105
@@ -215,6 +219,10 @@
         "cutoff_wfc": 30,
         "cutoff_rho": 45
     },
+    "La": {
+        "cutoff_wfc": 55,
+        "cutoff_rho": 440
+    },
     "Ce": {
         "cutoff_wfc": 35,
         "cutoff_rho": 70
@@ -354,6 +362,10 @@
     "U": {
         "cutoff_wfc": 45,
         "cutoff_rho": 180
+    },
+    "Ne": {
+        "cutoff_wfc": 70,
+        "cutoff_rho": 280
     },
     "Np": {
         "cutoff_wfc": 90,
