@@ -141,7 +141,7 @@ psp_pbesol = [
     "In.us.pbesol.z_13.ld1.psl.v0.2.2.upf",
     "Ir.nc.pbesol.z_17.oncvpsp4.spms.v1.upf",
     "K.nc.pbesol.z_9.oncvpsp4.sg15.v0.upf",
-    "Kr.paw.pbe.z_18.ld1.psl.v1.0.0-high.upf",
+    "Kr.paw.pbesol.z_18.ld1.psl.v1.0.0-high.upf",
     "La.paw.pbesol.z_11.ld1.psl.v1.0.0-high.spfn.upf",
     "Li.us.pbesol.z_3.uspp.gbrv.v1.4.upf",
     "Lu.paw.pbesol.z_25.atompaw.wentzcovitch.v1.0.legacy.upf",
