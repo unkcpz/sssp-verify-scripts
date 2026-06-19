@@ -300,8 +300,8 @@
         "cutoff_rho": 140
     },
     "Ir": {
-        "cutoff_wfc": 35,
-        "cutoff_rho": 88
+        "cutoff_wfc": 30,
+        "cutoff_rho": 120
     },
     "Pt": {
         "cutoff_wfc": 35,
